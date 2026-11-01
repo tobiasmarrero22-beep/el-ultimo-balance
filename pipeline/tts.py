@@ -16,9 +16,16 @@ def tts(text, voice, out, speed=1.0, model=None, tries=2):
             if s["status"] in ("completed", "failed"): break
         if s["status"] == "completed":
             u = s["result"]
-            with urllib.request.urlopen(urllib.request.Request(u), context=CTX, timeout=60) as r, open(out, "wb") as f:
-                f.write(r.read())
-            return out
+            for k in range(4):  # reintentar solo la DESCARGA (la generación ya está cobrada)
+                try:
+                    with urllib.request.urlopen(urllib.request.Request(u), context=CTX, timeout=60) as r:
+                        data = r.read()
+                    if len(data) > 1000:
+                        open(out + ".part", "wb").write(data); import os; os.replace(out + ".part", out)
+                        return out
+                except Exception:
+                    time.sleep(2 * (k + 1))
+            raise RuntimeError(f"descarga fallida: {u}")
     raise RuntimeError(f"TTS failed: {s.get('error')}")
 VOZ = "fishaudio_a48e73d4fb124c689357e88b04c9db30"  # "Narrador Cálido Español" (Fish Audio)
 if __name__ == "__main__":

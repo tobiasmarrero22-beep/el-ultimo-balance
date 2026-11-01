@@ -4,7 +4,7 @@ Datos de la API de YouTube del 2026-11-01. "EN" = mejores vídeos en inglés des
 
 | Prioridad | Tema | EN | ES | Estado |
 |---|---|---|---|---|
-| 1 | Forever 21: el imperio que destruyó su propia familia | 1,5M y 1,47M | máx. 154k (vídeo corto) y noticias | **en producción (002)** |
+| 1 | Forever 21: el imperio que destruyó su propia familia | 1,5M y 1,47M | máx. 154k (vídeo corto) y noticias | **producido (002)** |
 | 2 | ¿Por qué la gente está dejando de comprar en IKEA? | 847k (Michael Girdley, ago-2026) | nada relevante | pendiente — verificar que los datos respaldan la premisa |
 | 3 | La caída de Starbucks (cierre de cientos de tiendas) | 2,7M y 1,7M | 422k (Javier Ledesma), 138k | pendiente — buscar ángulo propio |
 | 4 | Nissan en crisis | 222k | 3 vídeos de 120–150k | competido; público fuerte en México |
