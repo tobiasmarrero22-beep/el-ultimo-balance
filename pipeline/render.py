@@ -102,7 +102,7 @@ def scene_img(v, t, D, W, H, seed):
 def scene_title(v, t, D, W, H, seed):
     im = bg_canvas(W, H, t)
     d = ImageDraw.Draw(im)
-    sc = W / 1920
+    sc = W / 1920 * v.get("zoom", 1)
     # número de capítulo
     a = ease_out(t / 0.6)
     fn = font(ANTON, int(300 * sc))
@@ -137,7 +137,7 @@ def wrap(txt, f, maxw):
     return lines
 
 def scene_num(v, t, D, W, H, seed):
-    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920 * v.get("zoom", 1)
     p = ease_out(t / min(D * 0.7, 2.5))
     val = v["start"] + (v["end"] - v["start"]) * p
     down = v["end"] < v["start"] or v["end"] < 0
@@ -153,7 +153,7 @@ def scene_num(v, t, D, W, H, seed):
     return im
 
 def scene_year(v, t, D, W, H, seed):
-    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920 * v.get("zoom", 1)
     # línea de tiempo
     d.rectangle([0, H * 0.5 - 2 * sc, W, H * 0.5 + 2 * sc], fill=(40, 48, 62))
     k = ease_out(t / 0.45)
@@ -172,7 +172,7 @@ def scene_year(v, t, D, W, H, seed):
     return im
 
 def scene_bars(v, t, D, W, H, seed):
-    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920 * v.get("zoom", 1)
     d.text((W * 0.08, H * 0.09), v["title"], font=font(INTER_B, int(52 * sc)), fill=WHITE, anchor="lt")
     data = v["data"]; n = len(data)
     vmax = max(x[1] for x in data) * 1.12
@@ -201,7 +201,7 @@ def scene_bars(v, t, D, W, H, seed):
     return im
 
 def scene_quote(v, t, D, W, H, seed):
-    im = bg_canvas(W, H, t); sc = W / 1920
+    im = bg_canvas(W, H, t); sc = W / 1920 * v.get("zoom", 1)
     lines = v["text"].split("\n")
     fs = int((130 if len(lines) <= 3 else 100) * sc)
     f = font(ANTON, fs)
@@ -220,7 +220,7 @@ def scene_quote(v, t, D, W, H, seed):
 
 def scene_lines(v, t, D, W, H, seed):
     """Gráfica de líneas que se dibuja de izquierda a derecha. series: [[nombre, valores, color], ...]"""
-    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920 * v.get("zoom", 1)
     d.text((W * 0.08, H * 0.08), v["title"], font=font(INTER_B, int(48 * sc)), fill=WHITE, anchor="lt")
     xs = v["x"]; n = len(xs)
     vmax = max(max(s[1]) for s in v["series"]) * 1.15
@@ -250,7 +250,64 @@ def scene_lines(v, t, D, W, H, seed):
         d.text((ex + 30 * sc, ey), f"{name} {fmt_num(cur)}", font=font(ANTON, int(56 * sc)), fill=col, anchor="lm")
     return im
 
-RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines)
+def fit_font(path, size, txt, maxw):
+    dd = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    while size > 20 and dd.textlength(txt, font=font(path, size)) > maxw: size -= 4
+    return font(path, size)
+
+def scene_versus(v, t, D, W, H, seed):
+    """Antes / después (o A vs B): left=[cifra, texto], right=[cifra, texto], mid="→" o "VS", title opcional."""
+    im = bg_canvas(W, H, t); sc = W / 1920 * v.get("zoom", 1)
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(layer)
+    if v.get("title"):
+        ld.text((W / 2, H * 0.12), v["title"], font=fit_font(INTER_B, int(50 * sc), v["title"], W * 0.9), fill=GREY + (255,), anchor="mt")
+    cols = {"yellow": YEL, "red": RED, "white": WHITE}
+    for side, (top, bottom), col, delay in (("l", v["left"], cols[v.get("lcol", "yellow")], 0.0),
+                                            ("r", v["right"], cols[v.get("rcol", "red")], v.get("delay", 0.6))):
+        a = ease_out((t - delay) / 0.5)
+        if a <= 0: continue
+        sgn = -1 if side == "l" else 1
+        cx = W / 2 + sgn * W * 0.24 + sgn * (1 - a) * W * 0.12
+        ft = fit_font(ANTON, int(170 * sc), top, W * 0.40)
+        ld.text((cx, H * 0.45), top, font=ft, fill=col + (int(255 * a),), anchor="mm")
+        fb = font(INTER_B, int(46 * sc))
+        for k, ln in enumerate(bottom.split("\n")):
+            ld.text((cx, H * 0.62 + k * 66 * sc), ln, font=fit_font(INTER_B, int(56 * sc), ln, W * 0.44), fill=WHITE + (int(255 * a),), anchor="mt")
+    m = ease_out((t - 0.35) / 0.4)
+    if m > 0:
+        ld.text((W / 2, H * 0.45), v.get("mid", "→"), font=font(ANTON, int(130 * sc)), fill=WHITE + (int(255 * m),), anchor="mm")
+    im.paste(layer, (0, 0), layer)
+    return im
+
+def scene_stamp(v, t, D, W, H, seed):
+    """Titular arriba + sello rojo que cae encima. text="línea1\nlínea2", stamp="TEXTO"."""
+    im = bg_canvas(W, H, t); sc = W / 1920 * v.get("zoom", 1)
+    lines = v["text"].split("\n")
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(layer)
+    fs = int(96 * sc); lh = fs * 1.2
+    y0 = H * 0.30 - lh * (len(lines) - 1) / 2
+    for i, ln in enumerate(lines):
+        a = ease_out((t - i * 0.25) / 0.45)
+        if a > 0:
+            ld.text((W / 2, y0 + i * lh + (1 - a) * 25 * sc), ln, font=fit_font(ANTON, fs, ln, W * 0.9), fill=WHITE + (int(255 * a),), anchor="mm")
+    im.paste(layer, (0, 0), layer)
+    t0 = v.get("at", 0.5 + 0.25 * len(lines))
+    if t >= t0:
+        k = ease_out((t - t0) / 0.22)
+        s = 1.7 - 0.7 * k
+        size = int(v.get("size", 190) * sc * s)
+        txt = v["stamp"]
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d2 = ImageDraw.Draw(lay)
+        f = font(ANTON, size); tw = d2.textlength(txt, font=f)
+        cx, cy = W / 2, H * 0.66
+        col = RED + (int(255 * min(1, k * 1.5)),)
+        d2.rectangle([cx - tw / 2 - 34 * sc * s, cy - size * 0.64, cx + tw / 2 + 34 * sc * s, cy + size * 0.64], outline=col, width=max(4, int(16 * sc * s)))
+        d2.text((cx, cy), txt, font=f, fill=col, anchor="mm")
+        lay = lay.rotate(v.get("angle", -7), center=(cx, cy), resample=Image.BICUBIC)
+        im.paste(lay, (0, 0), lay)
+    return im
+
+RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines, versus=scene_versus, stamp=scene_stamp)
 
 def punch(im, i, frames=7, amount=0.06):
     """Entrada de escena: pequeño zoom que se asienta (simula un corte con transición)."""
@@ -306,12 +363,18 @@ def render_scene(args):
 # ---------- Short vertical ----------
 _bg_cache = {}
 def short_frame(sc, t, D, W, H, seed, words_timing, title, fg=None):
-    src = load_img(sc["key"])
-    if fg is None:
+    if sc.get("alt"):
+        bg = bg_canvas(W, H, t)
+        PH = int(W * 9 / 16 * 1.25)
+        fg = RENDER[sc["alt"]["type"]](sc["alt"], t, D, W, PH, seed)
+        ImageDraw.Draw(bg).rectangle([0, int(H * 0.30) - 6, W, int(H * 0.30) + PH + 5], fill=(40, 48, 62))
+    elif fg is None:
+        src = load_img(sc["key"])
         bg = kenburns(src, W, H, t / D, "in", seed).filter(ImageFilter.GaussianBlur(28))
         bg = Image.blend(bg, Image.new("RGB", (W, H), (0, 0, 0)), 0.45)
         fg = kenburns(src, W, int(W * 9 / 16 * 1.25), t / D, "in", seed + 1)
     else:
+        src = load_img(sc["key"])
         if sc["key"] not in _bg_cache:
             b = kenburns(src, W, H, 0.5, "in", seed).filter(ImageFilter.GaussianBlur(28))
             _bg_cache[sc["key"]] = Image.blend(b, Image.new("RGB", (W, H), (0, 0, 0)), 0.45)
@@ -347,7 +410,7 @@ def render_short_scene(args):
     W, H = 1080, 1920
     timing = chunks_for(sc["text"], A)
     n = int(round(D * FPS))
-    if clip_path(sc["key"]):
+    if not sc.get("alt") and clip_path(sc["key"]):
         reader = clip_frames(sc["key"], D, W, int(W * 9 / 16 * 1.25))
         encode(lambda i: punch(short_frame(sc, i / FPS, D, W, H, seed, timing, title, fg=next(reader)), i), n, W, H, out)
     else:
@@ -395,6 +458,27 @@ def shorts_of(ns):
     if "SHORTS" in ns: return ns["SHORTS"]
     return {"a": {"bar": ns.get("SHORT_BAR", "EL ÚLTIMO BALANCE"), "scenes": ns["SHORT"]}}
 
+def has_img(key):
+    return os.path.exists(os.path.join(VD, "img", f"{key}.png")) or bool(clip_path(key))
+
+def with_fallback(scenes, fb, short=False):
+    """Si falta la imagen de una escena, usa FALLBACK[id] (escena de código) en su lugar."""
+    out = []
+    for sc in scenes:
+        key = sc["key"] if short else (sc["visual"].get("key") if sc["visual"]["type"] == "img" else None)
+        if key and not has_img(key):
+            if sc["id"] not in fb: raise SystemExit(f"falta img/{key}.png y no hay FALLBACK para {sc['id']}")
+            print(f"{sc['id']}: sin img/{key}.png -> escena de reserva {fb[sc['id']]['type']}", flush=True)
+            sc = dict(sc, alt=fb[sc["id"]]) if short else dict(sc, visual=fb[sc["id"]])
+        out.append(sc)
+    return out
+
+def sig_of(sc):
+    v = sc.get("visual") or {"key": sc.get("key"), "alt": sc.get("alt")}
+    key = v.get("key") if isinstance(v, dict) else None
+    stamp = [os.path.getmtime(p) for p in (os.path.join(VD, "img", f"{key}.png"), clip_path(key) or "") if key and p and os.path.exists(p)]
+    return json.dumps([v, stamp], sort_keys=True, ensure_ascii=False, default=str)
+
 def main(vd, mode, sname=None):
     global VD
     VD = os.path.abspath(vd); os.environ["VD"] = VD
@@ -402,7 +486,7 @@ def main(vd, mode, sname=None):
     os.makedirs(os.path.join(VD, "build"), exist_ok=True)
     B = lambda *p: os.path.join(VD, "build", *p)
     if mode == "long":
-        scenes = ns["SCENES"]; W, H = 1920, 1080
+        scenes = with_fallback(ns["SCENES"], ns.get("FALLBACK", {})); W, H = 1920, 1080
         jobs, plan = [], []
         for i, sc in enumerate(scenes):
             A = dur_of(os.path.join(VD, "audio", f"{sc['id']}.mp3"))
@@ -412,15 +496,18 @@ def main(vd, mode, sname=None):
             plan.append((sc["id"], pre, A, D))
             out = B(f"{sc['id']}.mp4")
             jobs.append((sc, D, W, H, out, i))
-        todo = [j for j in jobs if not (os.path.exists(j[4]) and abs(dur_of(j[4]) - round(j[1] * FPS) / FPS) < 0.05)]
+        fresh = lambda j: (os.path.exists(j[4]) and abs(dur_of(j[4]) - round(j[1] * FPS) / FPS) < 0.05
+                           and os.path.exists(j[4] + ".sig") and open(j[4] + ".sig").read() == sig_of(j[0]))
+        todo = [j for j in jobs if not fresh(j)]
         print("escenas por renderizar:", [os.path.basename(j[4]) for j in todo], flush=True)
         with ProcessPoolExecutor(4) as ex:
             for o in ex.map(render_scene, todo): print("escena", os.path.basename(o), flush=True)
+        for j in todo: open(j[4] + ".sig", "w").write(sig_of(j[0]))
         build_audio(plan, B, "long", {s["id"]: s["visual"]["type"] for s in scenes})
         concat([j[4] for j in jobs], B("long_video.mp4"))
         mux(B("long_video.mp4"), B("long_audio.wav"), B("final_largo.mp4"), grain=True)
     else:
-        sh = shorts_of(ns)[sname]; scenes = sh["scenes"]
+        sh = shorts_of(ns)[sname]; scenes = with_fallback(sh["scenes"], ns.get("FALLBACK", {}), short=True)
         todo, plan = [], []
         for i, sc in enumerate(scenes):
             A = dur_of(os.path.join(VD, "audio", f"{sc['id']}.mp3"))
@@ -429,7 +516,7 @@ def main(vd, mode, sname=None):
             todo.append((sc, D, A, B(f"{sc['id']}.mp4"), i * 3, sh.get("bar", "EL ÚLTIMO BALANCE")))
         with ProcessPoolExecutor(4) as ex:
             for o in ex.map(render_short_scene, todo): print("escena", os.path.basename(o), flush=True)
-        build_audio(plan, B, f"short_{sname}", {s["id"]: "img" for s in scenes})
+        build_audio(plan, B, f"short_{sname}", {s["id"]: s["alt"]["type"] if s.get("alt") else "img" for s in scenes})
         concat([j[3] for j in todo], B(f"short_{sname}_video.mp4"))
         mux(B(f"short_{sname}_video.mp4"), B(f"short_{sname}_audio.wav"), B(f"final_short_{sname}.mp4"), grain=False)
 

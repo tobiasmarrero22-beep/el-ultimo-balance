@@ -185,6 +185,51 @@ SHORTS = {
     ]},
 }
 
+# Escenas de reserva (solo se usan si falta img/<clave>.png, p. ej. si la generación de imágenes está caída)
+_Z = dict(zoom=1.5)  # en los Shorts el panel es más pequeño: texto más grande
+FALLBACK = {
+    "s01": dict(type="year", year="2011", sub="ELON MUSK SE RÍE DE BYD"),
+    "s04": dict(type="versus", left=["1995", "BATERÍAS\nDE MÓVIL"], right=["2025", "Nº1 MUNDIAL\nEN ELÉCTRICOS"]),
+    "s08": dict(type="versus", title="BATERÍAS RECARGABLES EN LOS AÑOS 90", left=["JAPÓN", "MÁQUINAS\nCARÍSIMAS"],
+                right=["BYD", "MANO DE OBRA\nY COSTES BAJOS"], mid="VS", lcol="white", rcol="yellow"),
+    "s09": dict(type="quote", text="SUS CLIENTES:\nNOKIA\nMOTOROLA"),
+    "s12": dict(type="stamp", text="UNA EMPRESA DE BATERÍAS\nCOMPRA UNA FÁBRICA DE COCHES", stamp="2003"),
+    "s16": dict(type="stamp", text="COCHES BARATOS, HÍBRIDOS\nY AUTOBUSES ELÉCTRICOS", stamp="TODO EN CASA"),
+    "s18": dict(type="quote", text="BATERÍA BLADE:\nLARGA Y DELGADA\nCOMO UNA CUCHILLA"),
+    "s21": dict(type="quote", text="BATERÍAS\nMOTORES\nCHIPS"),
+    "s25": dict(type="num", start=0, end=7000, suffix=" COCHES", label="CAPACIDAD APROXIMADA DE SU PRIMER BARCO (2024)"),
+    "s26": dict(type="year", year="ABRIL 2025", sub="EN EUROPA, BYD VENDE MÁS ELÉCTRICOS QUE TESLA"),
+    "s30": dict(type="num", start=0, end=-34, suffix=" %", label="BAJADA DE PRECIO MÁXIMA · MAYO 2025"),
+    "s33": dict(type="stamp", text="COCHES NUEVOS VENDIDOS\nCOMO \"DE SEGUNDA MANO\"", stamp="0 KM"),
+    "s34": dict(type="num", start=0, end=323000, label="DEUDA NETA SEGÚN GMT RESEARCH (MILLONES DE YUANES)"),
+    "s40": dict(type="versus", left=["CHINA", "VENTAS\nEN CAÍDA"], right=["53 %", "DE SUS INGRESOS,\nFUERA DE CHINA"],
+                mid="VS", lcol="red", rcol="yellow"),
+    "s42": dict(type="stamp", text="EUROPA: ARANCELES EXTRA\nMÉXICO: FÁBRICA EN PAUSA", stamp="FRENOS"),
+    "s45": dict(type="versus", left=["2011", "\"¿HAS VISTO\nSUS COCHES?\""], right=["2025", "EL QUE MÁS\nELÉCTRICOS VENDE"],
+                lcol="white", rcol="yellow"),
+    # Shorts
+    "a01": dict(type="year", year="2011", sub="MUSK SE RÍE DE BYD", **_Z),
+    "a02": dict(type="quote", text="\"¿HAS VISTO\nSUS COCHES?\"", **_Z),
+    "a03": dict(type="bars", title="ELÉCTRICOS VENDIDOS EN 2025 (MILES)", data=[["BYD", 2255], ["TESLA", 1636]], **_Z),
+    "a04": dict(type="stamp", text="EL QUE MÁS COCHES\nELÉCTRICOS VENDE", stamp="Nº1", **_Z),
+    "b01": dict(type="year", year="1995", sub="BATERÍAS PARA MÓVILES", **_Z),
+    "b02": dict(type="quote", text="CLIENTES:\nNOKIA\nMOTOROLA", **_Z),
+    "b03": dict(type="stamp", text="COMPRA UNA FÁBRICA\nDE COCHES", stamp="2003", **_Z),
+    "b04": dict(type="versus", left=["1995", "BATERÍAS\nDE MÓVIL"], right=["2025", "MÁS ELÉCTRICOS\nQUE TESLA"], zoom=1.8),
+    "c01": dict(type="quote", text="LA ATRAVESÓ\nCON UN CLAVO", **_Z),
+    "c02": dict(type="bars", title="TEMPERATURA EN LA PRUEBA (°C)", data=[["BLADE", 60], ["CONVENCIONAL", 500]], **_Z),
+    "c03": dict(type="quote", text="BATERÍA BLADE:\nLA CLAVE PARA\nSUPERAR A TESLA", **_Z),
+    "c04": dict(type="quote", text="LA HISTORIA\nCOMPLETA,\nEN MI CANAL", **_Z),
+    "d01": dict(type="stamp", text="UNA MARCA DE COCHES\nCON FLOTA PROPIA DE", stamp="BARCOS", **_Z),
+    "d02": dict(type="num", start=0, end=7000, suffix=" COCHES", label="POR BARCO · RUMBO A EUROPA", **_Z),
+    "d03": dict(type="year", year="ABRIL 2025", sub="EN EUROPA SUPERA A TESLA", **_Z),
+    "d04": dict(type="quote", text="PRÓXIMA PARADA:\nAMÉRICA LATINA", **_Z),
+    "e01": dict(type="num", start=0, end=-34, suffix=" %", label="BAJADA DE PRECIOS", **_Z),
+    "e02": dict(type="quote", text="TAN DURA QUE\nINTERVINO EL\nGOBIERNO CHINO", **_Z),
+    "e03": dict(type="num", start=0, end=44, suffix=" MIL MILL. $", label="DEUDA REAL SEGÚN GMT RESEARCH", **_Z),
+    "e04": dict(type="quote", text="¿NUEVO REY\nO BURBUJA?", **_Z),
+}
+
 THUMBS = [
     dict(img="thumb_vs", zoom=1.05, cx=0.5, bright=1.0, items=[
         ["text", 640, 30, "BYD", 230, "red", "mt"], ["text", 640, 300, "VS", 120, "white", "mt"], ["text", 640, 440, "TESLA", 200, "white", "mt"]]),
