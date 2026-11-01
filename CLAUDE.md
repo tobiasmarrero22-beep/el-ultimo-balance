@@ -22,7 +22,12 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
 5. `python3 pipeline/img.py videos/NNN` → imágenes (nano-banana-2-lite, 500 cr). **No reintentar a ciegas**:
    los 502 "upstream request failed" de DubVoice se cobran igual. Si fallan, sustituir por escenas de código
    (quote/num/year/bars) o reutilizar imágenes.
-6. `python3 pipeline/render.py videos/NNN long` y `... short a|b|c` → `build/` (no se sube a git).
+5b. (Opcional, vídeos "premium") `python3 pipeline/vid.py videos/NNN` → clips de vídeo IA desde las imágenes
+   (`CLIPS` en guion.py; Meta AI 2.000 cr/clip, DubVoice devuelve los créditos si falla). Si existe `clips/<clave>.mp4`,
+   el render usa el clip en lugar de la foto con zoom (también en los Shorts).
+5c. (Opcional) Música IA: `POST /api/music-generate` (5.000 cr, 2 pistas) → `music/*.mp3`; si existe, sustituye al fondo sintético.
+6. `python3 pipeline/render.py videos/NNN long` y `... short a|b|c|d|e` → `build/` (no se sube a git).
+   El render añade transición de entrada en cada escena, whoosh/golpes de sonido y la gráfica `type="lines"`.
 7. `python3 pipeline/thumbs.py videos/NNN` → 10 miniaturas + TOP1-3. Revisar la hoja a tamaño móvil.
 8. `python3 pipeline/meta.py videos/NNN` → `entrega/SUBIR.md`, SRT y copia de los mp4 a `entrega/`.
 9. Enviar al usuario: mp4 (largo + Shorts), TOP1-3, SUBIR.md, SRT. Commit sin mp4/wav. Anotar en `produccion.md`.
@@ -32,6 +37,11 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   ("Narrador Cálido Español", velocidad 1.05). ElevenLabs falló el 2026-11-01. Coste típico por vídeo:
   ~8.000 (voz) + ~5.000 (10 imágenes) + ~2.000 (Shorts) ≈ 15.000 créditos. Saldo: `GET /api/v1/me`.
 - vidIQ (MCP): 5 créditos por consulta; plan gratis 150/mes. Usar solo para lo que no da la API de YouTube.
+- Fallos de DubVoice (2026-11-01): imágenes nano-banana devuelven 502 y se cobran (a veces se reembolsan más tarde);
+  google-pics, grok-image, vídeo y música devuelven 500 y **sí** reembolsan → para reintentar, usar esos modelos.
+  ElevenLabs: la voz "Adán - Narration" (`i4Kar2uamCWyas8TAu31`, latinoamericana) funciona; "Abel" falló.
+- Higgsfield (MCP): imágenes `z_image` a 0,15 créditos, pero su CDN (cloudfront) está bloqueado en este entorno: no se
+  pueden descargar los resultados sin permitir ese dominio en la red del entorno.
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue — OFL) + Inter del sistema.

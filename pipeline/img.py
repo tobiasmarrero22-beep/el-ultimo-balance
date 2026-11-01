@@ -37,7 +37,9 @@ if __name__ == "__main__":
     os.chdir(sys.argv[1]); os.makedirs("img", exist_ok=True)
     model = sys.argv[2] if len(sys.argv) > 2 else "nano-banana-2-lite"; only = set(sys.argv[3:])
     ns = {}; exec(open("guion.py").read(), ns)
-    items = [(k, p) for k, p in ns["IMAGES"].items() if not only or k in only]
+    allimgs = {**ns["IMAGES"], **ns.get("THUMB_IMAGES", {})}
+    if not only and len(sys.argv) <= 2: model = ns.get("IMAGE_MODEL", model)
+    items = [(k, p) for k, p in (allimgs.items() if only else ns["IMAGES"].items()) if not only or k in only]
     with cf.ThreadPoolExecutor(1) as ex:
         futs = {ex.submit(gen, k, p, model): k for k, p in items}
         for f in cf.as_completed(futs):

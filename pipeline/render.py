@@ -2,7 +2,7 @@
 Uso: python3 pipeline/render.py <carpeta_video> long
      python3 pipeline/render.py <carpeta_video> short <nombre>   (nombre: clave de SHORTS en guion.py)
 """
-import math, os, subprocess, sys, json, random
+import glob, math, os, subprocess, sys, json, random
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from concurrent.futures import ProcessPoolExecutor
@@ -218,7 +218,67 @@ def scene_quote(v, t, D, W, H, seed):
     im.paste(layer, (0, 0), layer)
     return im
 
-RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote)
+def scene_lines(v, t, D, W, H, seed):
+    """Gráfica de líneas que se dibuja de izquierda a derecha. series: [[nombre, valores, color], ...]"""
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    d.text((W * 0.08, H * 0.08), v["title"], font=font(INTER_B, int(48 * sc)), fill=WHITE, anchor="lt")
+    xs = v["x"]; n = len(xs)
+    vmax = max(max(s[1]) for s in v["series"]) * 1.15
+    x0, x1, y0, y1 = W * 0.10, W * 0.80, H * 0.85, H * 0.22
+    step = 10 ** int(math.log10(vmax)); step = step / 2 if vmax / step < 4 else step
+    k = 0.0
+    while k <= vmax:
+        yy = y0 - (y0 - y1) * k / vmax
+        d.line([(x0, yy), (x1, yy)], fill=(30, 38, 52), width=max(1, int(2 * sc)))
+        d.text((x0 - 16 * sc, yy), fmt_num(k), font=font(INTER_SB, int(30 * sc)), fill=GREY, anchor="rm"); k += step
+    px = lambda i: x0 + (x1 - x0) * i / (n - 1)
+    py = lambda val: y0 - (y0 - y1) * val / vmax
+    for i, lab in enumerate(xs):
+        d.text((px(i), y0 + 18 * sc), lab, font=font(INTER_B, int(38 * sc)), fill=GREY, anchor="mt")
+    p = ease_io(t / max(1.0, min(D * 0.8, 5.0))) * (n - 1)
+    cols = {"red": RED, "white": WHITE, "yellow": YEL}
+    for name, vals, c in v["series"]:
+        col = cols.get(c, WHITE)
+        pts = [(px(i), py(vals[i])) for i in range(int(p) + 1)]
+        if int(p) < n - 1:
+            f = p - int(p); a, b = vals[int(p)], vals[int(p) + 1]
+            pts.append((px(p), py(a + (b - a) * f)))
+        if len(pts) > 1: d.line(pts, fill=col, width=int(10 * sc), joint="curve")
+        ex, ey = pts[-1]
+        d.ellipse([ex - 14 * sc, ey - 14 * sc, ex + 14 * sc, ey + 14 * sc], fill=col)
+        cur = vals[min(int(round(p)), n - 1)] if p >= n - 1 else (vals[int(p)] + (vals[min(int(p) + 1, n - 1)] - vals[int(p)]) * (p - int(p)))
+        d.text((ex + 30 * sc, ey), f"{name} {fmt_num(cur)}", font=font(ANTON, int(56 * sc)), fill=col, anchor="lm")
+    return im
+
+RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines)
+
+def punch(im, i, frames=7, amount=0.06):
+    """Entrada de escena: pequeño zoom que se asienta (simula un corte con transición)."""
+    if i >= frames: return im
+    s = 1 + amount * (1 - ease_out(i / frames))
+    W, H = im.size; cw, ch = W / s, H / s
+    return im.crop((int((W - cw) / 2), int((H - ch) / 2), int((W + cw) / 2), int((H + ch) / 2))).resize((W, H), Image.BILINEAR)
+
+def clip_path(key):
+    p = os.path.join(VD, "clips", f"{key}.mp4")
+    return p if os.path.exists(p) else None
+
+def clip_frames(key, D, W, H):
+    """Fotogramas de un clip de IA ajustado a D segundos (ida y vuelta + ralentí si hace falta), recortado a WxH."""
+    src = clip_path(key); c = max(0.5, dur_of(src)); n = int(round(D * FPS))
+    if D <= c * 1.6:
+        chain = f"[0:v]setpts=PTS*{max(D / c, 1.0):.4f}"
+    else:
+        chain = f"[0:v]split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1:a=0,setpts=PTS*{max(D / (2 * c), 1.0):.4f}"
+    vf = f"{chain},fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}[v]"
+    p = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-i", src, "-filter_complex", vf, "-map", "[v]", "-frames:v", str(n),
+                          "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+    last = None; size = W * H * 3
+    for _ in range(n):
+        buf = p.stdout.read(size)
+        if len(buf) == size: last = Image.frombytes("RGB", (W, H), buf)
+        yield last.copy() if last is not None else Image.new("RGB", (W, H), BG)
+    p.stdout.close(); p.wait()
 
 def encode(frames_fn, n, W, H, out):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
@@ -230,17 +290,32 @@ def encode(frames_fn, n, W, H, out):
 
 def render_scene(args):
     sc, D, W, H, out, seed = args
-    v = sc["visual"]; fn = RENDER[v["type"]]
-    n = int(round(D * FPS))
-    encode(lambda i: fn(v, i / FPS, D, W, H, seed), n, W, H, out)
+    v = sc["visual"]; n = int(round(D * FPS))
+    if v["type"] == "img" and clip_path(v["key"]) and v.get("clip", True):
+        reader = clip_frames(v["key"], D, W, H)
+        def frame(i):
+            im = next(reader)
+            if v.get("cap"): tag(im, int(W * 0.05), int(H * 0.80), v["cap"], (i / FPS - 0.35) / 0.6, scale=W / 1920)
+            return punch(im, i)
+    else:
+        fn = RENDER[v["type"]]
+        frame = lambda i: punch(fn(v, i / FPS, D, W, H, seed), i)
+    encode(frame, n, W, H, out)
     return out
 
 # ---------- Short vertical ----------
-def short_frame(sc, t, D, W, H, seed, words_timing, title):
+_bg_cache = {}
+def short_frame(sc, t, D, W, H, seed, words_timing, title, fg=None):
     src = load_img(sc["key"])
-    bg = kenburns(src, W, H, t / D, "in", seed).filter(ImageFilter.GaussianBlur(28))
-    bg = Image.blend(bg, Image.new("RGB", (W, H), (0, 0, 0)), 0.45)
-    fg = kenburns(src, W, int(W * 9 / 16 * 1.25), t / D, "in", seed + 1)
+    if fg is None:
+        bg = kenburns(src, W, H, t / D, "in", seed).filter(ImageFilter.GaussianBlur(28))
+        bg = Image.blend(bg, Image.new("RGB", (W, H), (0, 0, 0)), 0.45)
+        fg = kenburns(src, W, int(W * 9 / 16 * 1.25), t / D, "in", seed + 1)
+    else:
+        if sc["key"] not in _bg_cache:
+            b = kenburns(src, W, H, 0.5, "in", seed).filter(ImageFilter.GaussianBlur(28))
+            _bg_cache[sc["key"]] = Image.blend(b, Image.new("RGB", (W, H), (0, 0, 0)), 0.45)
+        bg = _bg_cache[sc["key"]].copy()
     y = int(H * 0.30); bg.paste(fg, (0, y))
     d = ImageDraw.Draw(bg)
     # cabecera
@@ -272,7 +347,11 @@ def render_short_scene(args):
     W, H = 1080, 1920
     timing = chunks_for(sc["text"], A)
     n = int(round(D * FPS))
-    encode(lambda i: short_frame(sc, i / FPS, D, W, H, seed, timing, title), n, W, H, out)
+    if clip_path(sc["key"]):
+        reader = clip_frames(sc["key"], D, W, int(W * 9 / 16 * 1.25))
+        encode(lambda i: punch(short_frame(sc, i / FPS, D, W, H, seed, timing, title, fg=next(reader)), i), n, W, H, out)
+    else:
+        encode(lambda i: punch(short_frame(sc, i / FPS, D, W, H, seed, timing, title), i), n, W, H, out)
     return out
 
 # ---------- audio ----------
@@ -337,7 +416,7 @@ def main(vd, mode, sname=None):
         print("escenas por renderizar:", [os.path.basename(j[4]) for j in todo], flush=True)
         with ProcessPoolExecutor(4) as ex:
             for o in ex.map(render_scene, todo): print("escena", os.path.basename(o), flush=True)
-        build_audio(plan, B, "long")
+        build_audio(plan, B, "long", {s["id"]: s["visual"]["type"] for s in scenes})
         concat([j[4] for j in jobs], B("long_video.mp4"))
         mux(B("long_video.mp4"), B("long_audio.wav"), B("final_largo.mp4"), grain=True)
     else:
@@ -350,11 +429,60 @@ def main(vd, mode, sname=None):
             todo.append((sc, D, A, B(f"{sc['id']}.mp4"), i * 3, sh.get("bar", "EL ÚLTIMO BALANCE")))
         with ProcessPoolExecutor(4) as ex:
             for o in ex.map(render_short_scene, todo): print("escena", os.path.basename(o), flush=True)
-        build_audio(plan, B, f"short_{sname}")
+        build_audio(plan, B, f"short_{sname}", {s["id"]: "img" for s in scenes})
         concat([j[3] for j in todo], B(f"short_{sname}_video.mp4"))
         mux(B(f"short_{sname}_video.mp4"), B(f"short_{sname}_audio.wav"), B(f"final_short_{sname}.mp4"), grain=False)
 
-def build_audio(plan, B, tag_):
+def music_bed(tracks, seconds, out):
+    """Encadena las pistas de música (con fundidos cruzados) hasta cubrir la duración."""
+    seq = []; tot = 0.0
+    while tot < seconds:
+        for t_ in tracks:
+            seq.append(t_); tot += dur_of(t_) - 4
+            if tot >= seconds: break
+    inputs = sum([["-i", s] for s in seq], [])
+    if len(seq) == 1:
+        filt = "[0:a]aformat=channel_layouts=stereo[o]"
+    else:
+        chain = "[0:a]"; parts = []
+        for k in range(1, len(seq)):
+            lab = f"[x{k}]"
+            parts.append(f"{chain}[{k}:a]acrossfade=d=4{lab}"); chain = lab
+        filt = ";".join(parts) + f";{chain}aformat=channel_layouts=stereo[o]"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", filt, "-map", "[o]", "-t", f"{seconds:.3f}",
+                    "-ar", "44100", out], check=True)
+
+def _sfx_bank():
+    sr = 44100; rng = np.random.default_rng(3)
+    n = int(0.55 * sr); t = np.arange(n) / sr
+    noise = rng.normal(0, 1, n); y = np.zeros(n); a = 0.0
+    for i in range(n):
+        a = a + (0.02 + 0.3 * (i / n)) * (noise[i] - a); y[i] = a
+    wh = y * np.sin(np.pi * t / 0.55) ** 2; wh = wh / np.max(np.abs(wh)) * 0.5
+    n2 = int(0.6 * sr); t2 = np.arange(n2) / sr
+    imp = np.sin(2 * np.pi * (70 * t2 - 25 * t2 ** 2)) * np.exp(-t2 * 7) + 0.25 * rng.normal(0, 1, n2) * np.exp(-t2 * 40)
+    imp = imp / np.max(np.abs(imp)) * 0.7
+    return sr, wh, imp
+
+def sfx_track(plan, types, total, out):
+    """Whoosh al entrar en escenas de gráfico/texto y golpe grave en fechas, cifras y capítulos."""
+    sr, wh, imp = _sfx_bank(); buf = np.zeros(int((total + 1) * sr)); t = 0.0
+    def put(sig, at, vol):
+        i = int(at * sr); j = min(len(buf), i + len(sig))
+        if i < len(buf): buf[i:j] += sig[: j - i] * vol
+    for sid, pre, A, D in plan:
+        ty = types.get(sid, "img")
+        if ty in ("title", "year", "quote", "num", "bars", "lines"): put(wh, max(0.0, t - 0.15), 0.35)
+        elif ty == "img": put(wh, max(0.0, t - 0.15), 0.12)
+        if ty in ("title", "year"): put(imp, t + 0.35, 0.55)
+        if ty == "num": put(imp, t + min(D * 0.7, 2.5), 0.4)
+        t += D
+    st = np.stack([buf, buf], 1); st = np.clip(st, -1, 1)
+    import wave
+    with wave.open(out, "wb") as w:
+        w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr); w.writeframes((st * 32767).astype(np.int16).tobytes())
+
+def build_audio(plan, B, tag_, types=None):
     # narración con huecos exactos según el plan
     parts, filt, t = [], [], 0.0
     inputs = []
@@ -368,11 +496,17 @@ def build_audio(plan, B, tag_):
     filt.append(f"{mix}amix=inputs={len(plan)}:normalize=0,apad=whole_dur={total:.3f}[narr]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt), "-map", "[narr]",
                     "-t", f"{total:.3f}", B(f"{tag_}_narr.wav")], check=True)
-    ambient_pad(total + 1, B("pad.wav"))
-    # mezcla: música baja con ducking bajo la voz + normalización a -14 LUFS
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", B(f"{tag_}_narr.wav"), "-i", B("pad.wav"), "-filter_complex",
-                    "[1:a]volume=0.22,afade=t=in:d=2[m];[m][0:a]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];"
-                    "[0:a][md]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[out]",
+    tracks = sorted(glob.glob(os.path.join(VD, "music", "*.mp3")))
+    if tracks:
+        music_bed(tracks, total + 1, B("pad.wav")); mvol = 0.10
+    else:
+        ambient_pad(total + 1, B("pad.wav")); mvol = 0.22
+    sfx_track(plan, types or {}, total, B(f"{tag_}_sfx.wav"))
+    # mezcla: música con ducking bajo la voz + efectos + normalización a -14 LUFS
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", B(f"{tag_}_narr.wav"), "-i", B("pad.wav"), "-i", B(f"{tag_}_sfx.wav"), "-filter_complex",
+                    f"[1:a]volume={mvol},afade=t=in:d=2[m];[m][0:a]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[md];"
+                    "[2:a]aformat=channel_layouts=stereo[fx];"
+                    "[0:a][md][fx]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[out]",
                     "-map", "[out]", "-t", f"{total:.3f}", "-ar", "48000", B(f"{tag_}_audio.wav")], check=True)
     json.dump(plan, open(B(f"{tag_}_plan.json"), "w"))
 
