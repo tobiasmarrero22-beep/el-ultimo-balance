@@ -43,6 +43,10 @@ def main(vd):
     write_srt(os.path.join(E, "subtitulos_largo.srt"), cues)
     cap = "\n".join(f"{ts(a)} {name}" for a, name in chapters)
     fuentes = "\n".join(f"• {s}" for s in M["sources"])
+    con_img = any(os.path.exists(os.path.join(vd, "img", f"{sc['visual']['key']}.png"))
+                  for sc in ns["SCENES"] if sc["visual"]["type"] == "img")
+    aviso = ("Las imágenes de este vídeo son ilustraciones generadas con IA y no muestran a personas ni productos reales. "
+             "La narración está hecha con voz sintética." if con_img else "La narración de este vídeo está hecha con voz sintética.")
     desc = f"""{M['description']}
 
 📌 Capítulos
@@ -51,7 +55,7 @@ def main(vd):
 📚 Fuentes
 {fuentes}
 
-Las imágenes de este vídeo son ilustraciones generadas con IA y no muestran a personas ni productos reales. La narración está hecha con voz sintética.
+{aviso}
 
 {M['hashtags']}"""
     L = []

@@ -1,0 +1,564 @@
+1
+00:00:00,000 --> 00:00:05,411
+En dos mil once, un periodista le preguntó a Elon Musk si le preocupaba una empresa
+
+2
+00:00:05,411 --> 00:00:06,585
+china llamada BYD.
+
+3
+00:00:06,585 --> 00:00:07,889
+Musk se echó a reír.
+
+4
+00:00:08,239 --> 00:00:10,379
+¿Has visto sus coches?, respondió.
+
+5
+00:00:10,379 --> 00:00:15,161
+Dijo que su tecnología no era muy fuerte, y que no la veía como competencia.
+
+6
+00:00:15,511 --> 00:00:20,933
+Catorce años después, en dos mil veinticinco, BYD vendió más de dos millones
+
+7
+00:00:20,933 --> 00:00:24,285
+doscientos mil coches cien por cien eléctricos.
+
+8
+00:00:24,285 --> 00:00:26,640
+Tesla, un millón seiscientos mil.
+
+9
+00:00:26,990 --> 00:00:32,336
+Esta es la historia de cómo un químico que fabricaba baterías para teléfonos móviles
+
+10
+00:00:32,336 --> 00:00:35,009
+construyó la empresa que destronó a Tesla.
+
+11
+00:00:35,359 --> 00:00:37,971
+Y también de las dudas que la persiguen:
+
+12
+00:00:37,971 --> 00:00:43,326
+una guerra de precios brutal, proveedores asfixiados, y un informe que asegura que
+
+13
+00:00:43,326 --> 00:00:46,592
+su deuda real es muchísimo mayor de lo que parece.
+
+14
+00:00:47,542 --> 00:00:48,433
+Capítulo uno.
+
+15
+00:00:48,433 --> 00:00:50,285
+El químico de las baterías.
+
+16
+00:00:51,185 --> 00:00:54,491
+Febrero de mil novecientos noventa y cinco.
+
+17
+00:00:54,491 --> 00:00:56,721
+Shenzhen, en el sur de China.
+
+18
+00:00:56,721 --> 00:01:02,949
+Wang Chuanfu, un químico especializado en baterías, funda una pequeña empresa con
+
+19
+00:01:02,949 --> 00:01:05,179
+dinero prestado por un primo.
+
+20
+00:01:05,179 --> 00:01:06,179
+La llama BYD.
+
+21
+00:01:06,529 --> 00:01:12,210
+Las baterías recargables para móviles las dominaban empresas japonesas, con fábricas
+
+22
+00:01:12,210 --> 00:01:14,171
+llenas de máquinas carísimas.
+
+23
+00:01:14,171 --> 00:01:16,471
+Wang decide hacerlo de otra forma:
+
+24
+00:01:16,471 --> 00:01:21,340
+con mucha mano de obra, herramientas sencillas y costes mucho más bajos.
+
+25
+00:01:21,690 --> 00:01:22,379
+Funciona.
+
+26
+00:01:22,379 --> 00:01:28,737
+BYD acaba fabricando baterías y componentes para gigantes de los móviles como Nokia
+
+27
+00:01:28,737 --> 00:01:29,579
+y Motorola.
+
+28
+00:01:29,929 --> 00:01:32,216
+En dos mil dos sale a bolsa en Hong Kong.
+
+29
+00:01:32,216 --> 00:01:34,168
+Wang ya era un empresario de éxito.
+
+30
+00:01:34,168 --> 00:01:37,348
+Pero lo que hizo al año siguiente casi nadie lo entendió.
+
+31
+00:01:38,298 --> 00:01:39,167
+Capítulo dos.
+
+32
+00:01:39,167 --> 00:01:41,171
+La apuesta que nadie entendía.
+
+33
+00:01:42,071 --> 00:01:47,998
+En enero de dos mil tres, BYD compra un pequeño fabricante de coches con problemas:
+
+34
+00:01:47,998 --> 00:01:48,998
+Qinchuan Auto.
+
+35
+00:01:48,998 --> 00:01:53,069
+Su propio consejo de administración no estaba de acuerdo.
+
+36
+00:01:53,419 --> 00:01:56,207
+¿Una empresa de baterías fabricando coches?
+
+37
+00:01:56,207 --> 00:01:58,476
+A los inversores no les gustó nada.
+
+38
+00:01:58,476 --> 00:02:00,422
+Pero Wang tenía una idea fija:
+
+39
+00:02:00,422 --> 00:02:05,739
+si el futuro eran los coches eléctricos, quien dominara las baterías dominaría los
+
+40
+00:02:05,739 --> 00:02:06,193
+coches.
+
+41
+00:02:06,543 --> 00:02:09,873
+Y en dos mil ocho, alguien muy famoso le da la razón.
+
+42
+00:02:09,873 --> 00:02:15,025
+Berkshire Hathaway, la empresa de Warren Buffett, compra cerca del diez por ciento
+
+43
+00:02:15,025 --> 00:02:18,481
+de BYD por unos doscientos treinta millones de dólares.
+
+44
+00:02:18,831 --> 00:02:23,396
+Según la revista Fortune, Buffett quería una cuarta parte de la empresa.
+
+45
+00:02:23,396 --> 00:02:26,249
+Wang solo aceptó venderle el diez por ciento.
+
+46
+00:02:26,599 --> 00:02:32,798
+Durante años, BYD vende coches baratos de gasolina, híbridos y autobuses eléctricos.
+
+47
+00:02:32,798 --> 00:02:34,053
+No era glamuroso.
+
+48
+00:02:34,053 --> 00:02:37,743
+Pero estaba aprendiendo algo que casi nadie tenía:
+
+49
+00:02:37,743 --> 00:02:40,105
+a fabricar casi todo ella misma.
+
+50
+00:02:41,055 --> 00:02:41,969
+Capítulo tres.
+
+51
+00:02:41,969 --> 00:02:43,275
+Adiós a la gasolina.
+
+52
+00:02:44,175 --> 00:02:48,152
+En marzo de dos mil veinte, BYD presenta la batería Blade:
+
+53
+00:02:48,152 --> 00:02:52,884
+una batería de litio ferrofosfato, larga y delgada como una cuchilla.
+
+54
+00:02:52,884 --> 00:02:56,792
+Para demostrar que es segura, la atraviesan con un clavo.
+
+55
+00:02:57,142 --> 00:03:02,639
+Según BYD, no echó humo ni fuego, y su superficie se quedó entre treinta y sesenta
+
+56
+00:03:02,639 --> 00:03:03,108
+grados.
+
+57
+00:03:03,108 --> 00:03:08,069
+Una batería convencional de las más usadas, en la misma prueba, superó los
+
+58
+00:03:08,069 --> 00:03:09,811
+quinientos grados y ardió.
+
+59
+00:03:10,161 --> 00:03:15,652
+Y en marzo de dos mil veintidós da un paso que ningún gran fabricante se había
+
+60
+00:03:15,652 --> 00:03:16,708
+atrevido a dar:
+
+61
+00:03:16,708 --> 00:03:19,594
+deja de fabricar coches solo de gasolina.
+
+62
+00:03:19,594 --> 00:03:23,536
+A partir de ahí, solo eléctricos e híbridos enchufables.
+
+63
+00:03:23,886 --> 00:03:27,166
+Su gran ventaja es que fabrica casi todo ella misma:
+
+64
+00:03:27,166 --> 00:03:30,131
+las baterías, los motores, muchos de sus chips.
+
+65
+00:03:30,131 --> 00:03:34,988
+Cuando el resto del mundo sufría por la falta de piezas, BYD tenía las suyas.
+
+66
+00:03:35,938 --> 00:03:37,069
+Capítulo cuatro.
+
+67
+00:03:37,069 --> 00:03:39,047
+El día que adelantó a Tesla.
+
+68
+00:03:39,947 --> 00:03:44,301
+En el último trimestre de dos mil veintitrés pasa lo impensable:
+
+69
+00:03:44,301 --> 00:03:49,403
+por primera vez, BYD vende más coches eléctricos que Tesla en un trimestre.
+
+70
+00:03:49,753 --> 00:03:55,285
+En dos mil veinticuatro factura setecientos setenta y siete mil millones de yuanes,
+
+71
+00:03:55,285 --> 00:03:58,084
+unos ciento siete mil millones de dólares.
+
+72
+00:03:58,084 --> 00:04:00,150
+Por primera vez, más que Tesla.
+
+73
+00:04:00,500 --> 00:04:05,925
+Y para vender fuera de China, monta algo que casi ninguna marca de coches tenía:
+
+74
+00:04:05,925 --> 00:04:07,689
+su propia flota de barcos.
+
+75
+00:04:07,689 --> 00:04:13,386
+En enero de dos mil veinticuatro zarpa el primero, con capacidad para unos siete mil
+
+76
+00:04:13,386 --> 00:04:14,945
+coches, rumbo a Europa.
+
+77
+00:04:15,295 --> 00:04:20,786
+En abril de dos mil veinticinco, según la consultora JATO, BYD vende en Europa más
+
+78
+00:04:20,786 --> 00:04:23,733
+coches eléctricos que Tesla por primera vez.
+
+79
+00:04:24,083 --> 00:04:27,490
+Y en dos mil veinticinco llega el golpe definitivo:
+
+80
+00:04:27,490 --> 00:04:32,967
+más de dos millones doscientos cincuenta mil eléctricos para BYD, contra un millón
+
+81
+00:04:32,967 --> 00:04:34,637
+seiscientos mil de Tesla.
+
+82
+00:04:34,637 --> 00:04:38,111
+Es el mayor vendedor de coches eléctricos del mundo.
+
+83
+00:04:38,461 --> 00:04:43,774
+Y Elon Musk, el mismo que se había reído en dos mil once, ya en dos mil veintitrés
+
+84
+00:04:43,774 --> 00:04:46,820
+reconocía que sus coches eran muy competitivos.
+
+85
+00:04:47,770 --> 00:04:48,762
+Capítulo cinco.
+
+86
+00:04:48,762 --> 00:04:49,755
+El lado oscuro.
+
+87
+00:04:50,655 --> 00:04:52,848
+Pero para llegar ahí, BYD aprieta.
+
+88
+00:04:52,848 --> 00:04:58,266
+En mayo de dos mil veinticinco baja el precio de veintidós modelos, algunos hasta un
+
+89
+00:04:58,266 --> 00:05:00,072
+treinta y cuatro por ciento.
+
+90
+00:05:00,072 --> 00:05:05,231
+Su coche más barato, el Seagull, se queda en unos siete mil setecientos dólares.
+
+91
+00:05:05,581 --> 00:05:10,146
+La guerra de precios es tan dura que el propio gobierno chino interviene:
+
+92
+00:05:10,146 --> 00:05:15,273
+pide a los fabricantes que no vendan por debajo del coste, y más tarde lo prohíbe.
+
+93
+00:05:15,623 --> 00:05:20,804
+También pone la lupa en los proveedores, que tardaban demasiado en cobrar.
+
+94
+00:05:20,804 --> 00:05:25,005
+En junio, BYD promete reducir sus plazos de pago a la mitad:
+
+95
+00:05:25,005 --> 00:05:25,915
+sesenta días.
+
+96
+00:05:26,265 --> 00:05:29,897
+Y en toda la industria china aparece un fenómeno extraño:
+
+97
+00:05:29,897 --> 00:05:35,185
+coches nuevos que se registran como vendidos y acaban en el mercado de segunda mano
+
+98
+00:05:35,185 --> 00:05:36,459
+con cero kilómetros.
+
+99
+00:05:36,459 --> 00:05:40,920
+Los reguladores sospechan que sirven para inflar las cifras de ventas.
+
+100
+00:05:41,270 --> 00:05:47,070
+En enero de dos mil veinticinco, la firma de análisis GMT Research publica un
+
+101
+00:05:47,070 --> 00:05:48,426
+informe explosivo:
+
+102
+00:05:48,426 --> 00:05:54,303
+calcula que la deuda neta real de BYD, contando lo que debe a sus proveedores,
+
+103
+00:05:54,303 --> 00:06:00,480
+rondaría los trescientos veintitrés mil millones de yuanes, unos cuarenta y cuatro
+
+104
+00:06:00,480 --> 00:06:02,288
+mil millones de dólares.
+
+105
+00:06:02,288 --> 00:06:06,582
+BYD sostiene que sus cuentas siguen las normas contables.
+
+106
+00:06:06,932 --> 00:06:12,317
+Y en diciembre de dos mil veinticuatro, en Brasil, la fiscalía rescata a ciento
+
+107
+00:06:12,317 --> 00:06:17,837
+sesenta y tres trabajadores chinos en la obra de su nueva fábrica, en condiciones
+
+108
+00:06:17,837 --> 00:06:20,836
+que describió como análogas a la esclavitud.
+
+109
+00:06:20,836 --> 00:06:24,108
+Los había contratado una constructora, Jinjiang.
+
+110
+00:06:24,108 --> 00:06:26,289
+BYD rompió el contrato con ella.
+
+111
+00:06:26,639 --> 00:06:32,192
+Mientras tanto, Warren Buffett, el inversor que había creído en BYD en dos mil ocho,
+
+112
+00:06:32,192 --> 00:06:37,349
+empieza a vender sus acciones en dos mil veintidós, hasta deshacerse de todas.
+
+113
+00:06:38,299 --> 00:06:39,301
+Capítulo seis.
+
+114
+00:06:39,301 --> 00:06:40,232
+¿Y ahora qué?
+
+115
+00:06:41,132 --> 00:06:43,262
+Dos mil veintiséis empieza mal.
+
+116
+00:06:43,262 --> 00:06:48,551
+En el primer semestre, BYD vende un millón ochocientos mil vehículos, casi un
+
+117
+00:06:48,551 --> 00:06:51,573
+dieciséis por ciento menos que un año antes.
+
+118
+00:06:51,573 --> 00:06:54,115
+En China, sus ventas caen con fuerza.
+
+119
+00:06:54,465 --> 00:06:57,887
+Y su beneficio del semestre baja más de un veinte por ciento.
+
+120
+00:06:58,237 --> 00:07:00,525
+Pero fuera de China pasa lo contrario.
+
+121
+00:07:00,525 --> 00:07:05,404
+Sus ventas en el extranjero se disparan, y por primera vez más de la mitad de sus
+
+122
+00:07:05,404 --> 00:07:06,909
+ingresos llegan de fuera:
+
+123
+00:07:06,909 --> 00:07:11,908
+de Europa, del sudeste asiático y de América Latina, donde ya pisa fuerte en México
+
+124
+00:07:11,908 --> 00:07:12,630
+y en Brasil.
+
+125
+00:07:12,980 --> 00:07:15,202
+Su objetivo para dos mil veintiséis:
+
+126
+00:07:15,202 --> 00:07:18,289
+vender un millón y medio de coches fuera de China.
+
+127
+00:07:18,289 --> 00:07:20,634
+Wang Chuanfu dice que puede superarlo.
+
+128
+00:07:20,984 --> 00:07:22,825
+Aunque el mundo le pone frenos:
+
+129
+00:07:22,825 --> 00:07:27,693
+Europa cobra aranceles extra a sus eléctricos fabricados en China, y su fábrica en
+
+130
+00:07:27,693 --> 00:07:32,086
+México quedó en pausa por miedo a la política comercial de Estados Unidos.
+
+131
+00:07:32,436 --> 00:07:37,531
+Entonces, ¿BYD es el nuevo rey del automóvil, o una burbuja inflada por precios
+
+132
+00:07:37,531 --> 00:07:39,724
+imposibles y deudas que no se ven?
+
+133
+00:07:40,074 --> 00:07:41,728
+Lo que es seguro es esto:
+
+134
+00:07:41,728 --> 00:07:47,217
+una empresa que empezó haciendo baterías para móviles aprendió a fabricar casi todo
+
+135
+00:07:47,217 --> 00:07:52,706
+ella misma, apostó por los eléctricos antes que nadie, y obligó a Tesla a mirar por
+
+136
+00:07:52,706 --> 00:07:53,632
+el retrovisor.
+
+137
+00:07:53,982 --> 00:07:58,869
+Puede que en dos mil once Musk tuviera razón y aquellos coches no fueran buenos.
+
+138
+00:07:58,869 --> 00:08:02,106
+Lo que no vio venir fue lo rápido que podían mejorar.
+
+139
+00:08:02,456 --> 00:08:03,725
+¿Comprarías un BYD?
+
+140
+00:08:03,725 --> 00:08:05,463
+Te leo en los comentarios.
+
+141
+00:08:05,463 --> 00:08:09,405
+Y suscríbete, porque la próxima historia ya está en camino.
+
