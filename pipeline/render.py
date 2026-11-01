@@ -173,7 +173,7 @@ def scene_year(v, t, D, W, H, seed):
 
 def scene_bars(v, t, D, W, H, seed):
     im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920 * v.get("zoom", 1)
-    d.text((W * 0.08, H * 0.09), v["title"], font=font(INTER_B, int(52 * sc)), fill=WHITE, anchor="lt")
+    d.text((W * 0.08, H * 0.09), v["title"], font=fit_font(INTER_B, int(52 * sc), v["title"], W * (0.58 if v.get("note") else 0.84)), fill=WHITE, anchor="lt")
     data = v["data"]; n = len(data)
     vmax = max(x[1] for x in data) * 1.12
     x0, x1 = W * 0.12, W * 0.88
