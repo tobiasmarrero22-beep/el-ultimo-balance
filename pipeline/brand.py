@@ -6,8 +6,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ANTON = os.path.join(HERE, "..", "fonts", "Anton.ttf")
-INTER_SB = "/usr/share/fonts/opentype/inter/InterDisplay-SemiBold.otf"
-INTER_B = "/usr/share/fonts/opentype/inter/InterDisplay-Black.otf"
+INTER_SB = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "fonts", "InterDisplay-SemiBold.otf")
+INTER_B = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "fonts", "InterDisplay-Black.otf")
 BG, GRID = (11, 15, 23), (22, 29, 42)
 RED, YEL, WHITE, GREY = (230, 57, 70), (255, 209, 102), (245, 245, 240), (150, 158, 170)
 NAME = sys.argv[1] if len(sys.argv) > 1 else "EL ÚLTIMO BALANCE"
