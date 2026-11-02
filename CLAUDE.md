@@ -26,6 +26,8 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
    (`CLIPS` en guion.py; Meta AI 2.000 cr/clip, DubVoice devuelve los créditos si falla). Si existe `clips/<clave>.mp4`,
    el render usa el clip en lugar de la foto con zoom (también en los Shorts).
 5c. (Opcional) Música IA: `POST /api/music-generate` (5.000 cr, 2 pistas) → `music/*.mp3`; si existe, sustituye al fondo sintético.
+   Si faltan imágenes, `FALLBACK = {id_escena: visual}` en guion.py las sustituye por escenas de código
+   (también `versus` y `stamp`); thumbs.py usa un fondo sintético.
 6. `python3 pipeline/render.py videos/NNN long` y `... short a|b|c|d|e` → `build/` (no se sube a git).
    El render añade transición de entrada en cada escena, whoosh/golpes de sonido y la gráfica `type="lines"`.
 7. `python3 pipeline/thumbs.py videos/NNN` → 10 miniaturas + TOP1-3. Revisar la hoja a tamaño móvil.
@@ -40,11 +42,15 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
 - Fallos de DubVoice (2026-11-01): imágenes nano-banana devuelven 502 y se cobran (a veces se reembolsan más tarde);
   google-pics, grok-image, vídeo y música devuelven 500 y **sí** reembolsan → para reintentar, usar esos modelos.
   ElevenLabs: la voz "Adán - Narration" (`i4Kar2uamCWyas8TAu31`, latinoamericana) funciona; "Abel" falló.
-- Higgsfield (MCP): imágenes `z_image` a 0,15 créditos, pero su CDN (cloudfront) está bloqueado en este entorno: no se
-  pueden descargar los resultados sin permitir ese dominio en la red del entorno.
+- Higgsfield (MCP): imágenes `z_image` a 0,15 créditos (16:9, 2048×1152). Su CDN (`d8j0ntlcm91z4.cloudfront.net`) está
+  bloqueado en este entorno. Ruta que funciona (003): generar con `generate_image_batch`, y en `sandbox_exec` (size xl,
+  4 CPU) clonar el repo público, bajar las imágenes a `img/`, correr render/thumbs/meta y subir los resultados con
+  `media_upload` + `curl -X PUT -H "If-None-Match: *"` + `media_confirm` → enlaces `d2ol7oe51mr4n9.cloudfront.net` para el
+  usuario. Límite de subida ~90 MB por archivo (98 MB da 400): recodificar el largo con crf 24 / maxrate 3500k (~87 MB).
+  Las llamadas al sandbox cortan a los 60 s: usar background y sondear con sleep ≤ 55.
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
-- Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue — OFL) + Inter del sistema.
+- Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).
 
 ## Estilo visual
 Fondo #0b0f17 con rejilla, amarillo #ffd166, rojo #e63946, blanco. Títulos en Anton, etiquetas en Inter Display Black.

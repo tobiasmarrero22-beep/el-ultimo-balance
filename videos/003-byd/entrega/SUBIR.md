@@ -37,7 +37,7 @@ En 2011, Elon Musk se rió cuando le preguntaron por BYD. En 2025, BYD vendió m
 • AP / Euronews: trabajadores rescatados en la obra de Camaçari, Brasil (diciembre 2024)
 • CnEVPost / Automotive World: resultados del primer semestre de 2026
 
-La narración de este vídeo está hecha con voz sintética.
+Las imágenes de este vídeo son ilustraciones generadas con IA y no muestran a personas ni productos reales. La narración está hecha con voz sintética.
 
 #BYD #Tesla #CochesEléctricos #Negocios #China
 ```

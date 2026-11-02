@@ -13,7 +13,7 @@ Datos de la API de YouTube del 2026-11-01. "EN" = mejores vídeos en inglés des
 
 ## Por validar (siguiente tanda de búsquedas)
 - Caídas: Kodak, Volkswagen, Five Guys ("hamburguesas de 24 $": EN 362k), lujo ("por qué ya nadie compra lujo": EN 506k)
-- Auges (para alternar): BYD, LEGO (casi quiebra en 2003), Nintendo tras Wii U, Xiaomi
+- Auges (para alternar): ~~BYD~~ (**producido, 003**), LEGO (casi quiebra en 2003), Nintendo tras Wii U, Xiaomi
 
 ## Señales de qué funciona en español (canales pequeños/nuevos con muchas vistas)
 - Marca Cruda (7k subs, creado may-2026): Pepsi → 798k
