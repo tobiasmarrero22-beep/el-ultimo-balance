@@ -501,8 +501,10 @@ def main(vd, mode, sname=None):
         todo = [j for j in jobs if not fresh(j)]
         print("escenas por renderizar:", [os.path.basename(j[4]) for j in todo], flush=True)
         with ProcessPoolExecutor(4) as ex:
-            for o in ex.map(render_scene, todo): print("escena", os.path.basename(o), flush=True)
-        for j in todo: open(j[4] + ".sig", "w").write(sig_of(j[0]))
+            by_out = {j[4]: j for j in todo}
+            for o in ex.map(render_scene, todo):
+                open(o + ".sig", "w").write(sig_of(by_out[o][0]))  # se guarda al momento: si se corta, se retoma
+                print("escena", os.path.basename(o), flush=True)
         build_audio(plan, B, "long", {s["id"]: s["visual"]["type"] for s in scenes})
         concat([j[4] for j in jobs], B("long_video.mp4"))
         mux(B("long_video.mp4"), B("long_audio.wav"), B("final_largo.mp4"), grain=True)
