@@ -17,3 +17,11 @@ Lecturas:
   → Para el guionista: el gancho de los Shorts debe ser la historia de la persona/empresa en una frase con dos cifras.
 - Los largos no reciben tráfico de los Shorts → enlazar cada Short a su largo ("Vídeo relacionado" en YouTube Studio).
 - Roomba (001) aún no está subido.
+
+## Monetización (consultado 2026-11-02, fuentes de prensa; no encontré el texto oficial de YouTube)
+- Hoy: 1.000 suscriptores + (4.000 h públicas de vídeos largos en 12 meses **o** 10 M de vistas de Shorts en 90 días).
+  Las vistas y horas de Shorts no cuentan para las 4.000 h.
+- Anunciado el 10-ago-2026, desde el **1-feb-2027**: quien solicite por primera vez necesitará 8.000 h o 20 M de vistas de Shorts;
+  y para cobrar de los Shorts hará falta mantener 10 M de vistas de Shorts cada 90 días. → Objetivo: entrar antes del 1-feb-2027.
+- Los Shorts pagan muy poco: ~0,01–0,07 $ por 1.000 vistas (vidIQ, Fluxnote). El RPM general en España ronda 2 $ por 1.000 (largos).
+- 4.000 h ≈ 75.000 vistas de un largo de 8–9 min con ~3 min de visionado medio (≈ 830 vistas de largos al día durante 3 meses).
