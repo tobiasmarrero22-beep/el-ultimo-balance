@@ -1,15 +1,19 @@
 # 004 — Carlos Ghosn y Nissan · Paquete de subida
 
-## 🎬 VÍDEO LARGO — `004_largo.mp4` (8:10)
+## 🎬 VÍDEO LARGO — `004_largo.mp4` (8:10, versión 2 con más cambio visual)
 
 **Título** (el primero es el recomendado)
 ```
-Salvó a Nissan… y escapó de Japón escondido en una caja
+Salvó a Nissan… y luego escapó de Japón dentro de ESTO
 ```
-- Alternativa: `Carlos Ghosn: de héroe de Nissan a fugitivo`
-- Alternativa: `El hombre que salvó Nissan (y la caja en la que huyó)`
+- Alternativa: `El hombre que salvó a Nissan… y su huida imposible de Japón`
+- Alternativa: `Salvó a Nissan de la quiebra. 20 años después, huyó de Japón`
 
-**Miniatura:** `TOP1_miniatura.jpg` → si tienes "Probar y comparar", sube `TOP1`, `TOP2` y `TOP3`.
+El título ya no lo revela todo: la caja solo se ve en la miniatura y se descubre en el vídeo.
+
+**Miniatura:** `TOP1_miniatura.jpg` (la caja con la flecha, "La huida imposible de Japón"). Si tienes "Probar y comparar", sube `TOP1`, `TOP2` ("¿Héroe o fugitivo?") y `TOP3` ("Escapó en una caja", la que lo revela, como control).
+
+**Día de publicación:** lunes (programado). Si ya no llegas a este lunes, el siguiente.
 
 **Descripción**
 ```

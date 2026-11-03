@@ -30,6 +30,11 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
    (también `versus` y `stamp`); thumbs.py usa un fondo sintético.
 6. `python3 pipeline/render.py videos/NNN long` y `... short a|b|c|d|e` → `build/` (no se sube a git).
    El render añade transición de entrada en cada escena, whoosh/golpes de sonido y la gráfica `type="lines"`.
+   Desde el 004 (análisis de YouTube: "la imagen apenas cambia"): las fotos cortan a otro encuadre cada ~4 s y los gráficos
+   llevan detrás la foto anterior desenfocada en movimiento + un acercamiento lento (`BG_BROLL = False` en guion.py lo apaga).
+   Fotogramas casi iguales al anterior (1 por segundo): 46 % → 3 %. Ojo: la caché de escenas (`.sig`) no detecta cambios
+   de código: borrar `build/sNN.mp4` al cambiar el render. `CRF=27 MAXRATE=3000k` en el render deja el largo < 90 MB.
+   Títulos: dejar algo por descubrir (no revelar el detalle clave; que lo enseñe la miniatura). Publicar los lunes.
 7. `python3 pipeline/thumbs.py videos/NNN` → 10 miniaturas + TOP1-3. Revisar la hoja a tamaño móvil.
 8. `python3 pipeline/meta.py videos/NNN` → `entrega/SUBIR.md`, SRT y copia de los mp4 a `entrega/`.
 9. Enviar al usuario: mp4 (largo + Shorts), TOP1-3, SUBIR.md, SRT. Commit sin mp4/wav. Anotar en `produccion.md`.
