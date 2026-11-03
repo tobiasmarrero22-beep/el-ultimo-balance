@@ -201,12 +201,12 @@ THUMBS = [
 ]
 # Miniaturas con "algo por descubrir" (acompañan al título "…dentro de ESTO" sin decir "caja")
 THUMBS += [
-    dict(img="thumb_caja", zoom=1.2, cx=0.75, cy=0.5, shade=["left", 235, 0.62], items=[
+    dict(img="thumb_caja", zoom=1.4, cx=0.0, cy=0.6, shade=["left", 235, 0.55], items=[
         ["text", 45, 70, "LA HUIDA", 150, "white", "la"], ["text", 45, 250, "IMPOSIBLE", 125, "red", "la"],
-        ["text", 45, 420, "DE JAPÓN", 115, "yellow", "la"], ["arrow", 610, 40, 75, 170]]),
-    dict(img="caja_avion", zoom=1.1, cx=0.5, cy=0.5, shade=["left", 230, 0.6], items=[
-        ["text", 45, 70, "SALVÓ NISSAN…", 120, "white", "la"], ["text", 45, 240, "Y SE FUE", 150, "yellow", "la"],
-        ["text", 45, 430, "ASÍ", 190, "red", "la"], ["arrow", 700, 60, 75, 170]]),
+        ["text", 45, 420, "DE JAPÓN", 115, "yellow", "la"], ["arrow", 860, 15, 75, 150]]),
+    dict(img="caja_avion", zoom=1.4, cx=0.0, cy=0.6, shade=["left", 235, 0.55], items=[
+        ["text", 45, 70, "SALVÓ NISSAN…", 105, "white", "la"], ["text", 45, 230, "Y SE FUE", 150, "yellow", "la"],
+        ["text", 45, 420, "ASÍ", 190, "red", "la"], ["arrow", 860, 15, 75, 150]]),
 ]
 THUMBS_TOP = [11, 5, 1]
 
