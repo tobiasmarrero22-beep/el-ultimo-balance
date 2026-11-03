@@ -25,3 +25,22 @@ Lecturas:
   y para cobrar de los Shorts hará falta mantener 10 M de vistas de Shorts cada 90 días. → Objetivo: entrar antes del 1-feb-2027.
 - Los Shorts pagan muy poco: ~0,01–0,07 $ por 1.000 vistas (vidIQ, Fluxnote). El RPM general en España ronda 2 $ por 1.000 (largos).
 - 4.000 h ≈ 75.000 vistas de un largo de 8–9 min con ~3 min de visionado medio (≈ 830 vistas de largos al día durante 3 meses).
+
+## 2026-11-03 (vidIQ, datos públicos) — 7 suscriptores
+| Vídeo | Tipo | Publicado (UTC) | Vistas | Likes | Vistas/hora |
+|---|---|---|---|---|---|
+| Empezó haciendo baterías de móvil… hoy supera a Tesla (BYD b) | Short 22 s | 02-nov 04:05 | **1.177** | 26 | 58,9 |
+| De limpiar oficinas a 5.900 millones… y a la ruina: Forever 21 | Short 37 s | 01-nov 11:45 | 1.140 | 15 | 31,7 |
+| La tienda demandada más de 50 veces por copiar | Short 29 s | 02-nov 03:00 | 1.044 | 12 | 49,7 |
+| Elon Musk se rió de esta empresa… y le quitó el trono (BYD a) | Short 24 s | 02-nov 06:00 | 694 | 13 | 38,6 |
+| Forever 21 se alió con Shein… y quebró | Short 25 s | 01-nov 11:43 | 77 | 1 | 2,1 |
+| Amazon iba a pagar 1.700 millones por Roomba… hoy vale CERO | Short 45 s | 02-nov 19:00 | 3 | 0 | 0,4 |
+| De 5.900 millones a una venta por 81: la ruina de Forever 21 | Largo 8:37 | 01-nov 11:40 | 8 | 1 | 0,2 |
+| BYD vs TESLA: quién gana la guerra de las baterías? | Largo 8:10 | 02-nov 03:49 | 4 | 1 | 0,2 |
+
+Lecturas:
+- 4 de 6 Shorts pasan de 650 vistas en < 2 días. Ganan los ganchos "origen humilde → cifra enorme" y "conflicto"
+  (Musk se rió, demandada 50 veces). Pierden los que cuentan un hecho de negocio sin personaje (alianza con Shein)
+  y el de Roomba (45 s, el más largo; a vigilar).
+- Embudo roto: ~4.100 vistas de Shorts → 12 vistas de largos y 7 suscriptores.
+- YouTube Analytics (retención, fuentes de tráfico) aún sin filas: tarda 2–3 días en canales nuevos.
