@@ -47,7 +47,10 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   4 CPU) clonar el repo público, bajar las imágenes a `img/`, correr render/thumbs/meta y subir los resultados con
   `media_upload` + `curl -X PUT -H "If-None-Match: *"` + `media_confirm` → enlaces `d2ol7oe51mr4n9.cloudfront.net` para el
   usuario. Límite de subida ~90 MB por archivo (98 MB da 400): recodificar el largo con crf 24 / maxrate 3500k (~87 MB).
-  Las llamadas al sandbox cortan a los 60 s: usar background y sondear con sleep ≤ 55.
+  Las llamadas al sandbox cortan a los 60 s: usar background y sondear con sleep ≤ 55. Si el largo pasa de ~90 MB con crf 24,
+  usar crf 27 / maxrate 3000k (004: 67 MB). Guardar las URL de las imágenes en `videos/NNN/img_urls.txt`.
+- Fórmula ganadora de Shorts (datos 3-nov, `datos/rendimiento.md`): personaje + cifra enorme + conflicto
+  ("Empezó haciendo baterías de móvil… hoy supera a Tesla", "Musk se rió…"). El largo abre "en plena acción" y adelanta el giro.
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).
