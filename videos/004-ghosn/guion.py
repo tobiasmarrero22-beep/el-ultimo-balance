@@ -199,16 +199,25 @@ THUMBS = [
     dict(img="thumb_caja", zoom=1.1, cx=0.6, shade=["left", 230, 0.6], items=[
         ["text", 50, 90, "14 M$", 260, "red", "la"], ["text", 50, 400, "DE FIANZA… Y SE FUE", 85, "white", "la"], ["badge", 50, 540, 420, 670, "NISSAN", 110]]),
 ]
-THUMBS_TOP = [1, 3, 5]
+# Miniaturas con "algo por descubrir" (acompañan al título "…dentro de ESTO" sin decir "caja")
+THUMBS += [
+    dict(img="thumb_caja", zoom=1.2, cx=0.75, cy=0.5, shade=["left", 235, 0.62], items=[
+        ["text", 45, 70, "LA HUIDA", 150, "white", "la"], ["text", 45, 250, "IMPOSIBLE", 125, "red", "la"],
+        ["text", 45, 420, "DE JAPÓN", 115, "yellow", "la"], ["arrow", 610, 40, 75, 170]]),
+    dict(img="caja_avion", zoom=1.1, cx=0.5, cy=0.5, shade=["left", 230, 0.6], items=[
+        ["text", 45, 70, "SALVÓ NISSAN…", 120, "white", "la"], ["text", 45, 240, "Y SE FUE", 150, "yellow", "la"],
+        ["text", 45, 430, "ASÍ", 190, "red", "la"], ["arrow", 700, 60, 75, 170]]),
+]
+THUMBS_TOP = [11, 5, 1]
 
 META = {
     "code": "004",
     "name": "Carlos Ghosn y Nissan",
     "intro_chapter": "Intro: escapó en una caja",
     "titles": [
-        "Salvó a Nissan… y escapó de Japón escondido en una caja",
-        "Carlos Ghosn: de héroe de Nissan a fugitivo",
-        "El hombre que salvó Nissan (y la caja en la que huyó)",
+        "Salvó a Nissan… y luego escapó de Japón dentro de ESTO",
+        "El hombre que salvó a Nissan… y su huida imposible de Japón",
+        "Salvó a Nissan de la quiebra. 20 años después, huyó de Japón",
     ],
     "description": "En 1999 Nissan estaba al borde de la quiebra. Carlos Ghosn la salvó en un año y Japón lo convirtió en héroe de manga. En 2018 lo arrestaron en Tokio, acusado de ocultar parte de su sueldo (él lo niega), y en 2019 escapó del país escondido en una caja de equipos de música. Hoy Nissan vuelve a perder miles de millones… y quien intenta salvarla es un mexicano.",
     "sources": [

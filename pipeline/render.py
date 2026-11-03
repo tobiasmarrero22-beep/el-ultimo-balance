@@ -4,7 +4,7 @@ Uso: python3 pipeline/render.py <carpeta_video> long
 """
 import glob, math, os, subprocess, sys, json, random
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from concurrent.futures import ProcessPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -40,8 +40,20 @@ def fmt_num(v, prefix="", suffix=""):
     return ("-" if neg else "") + prefix + s + suffix
 
 # ---------- utilidades de dibujo ----------
+_BG = None  # (imagen desenfocada, duración, semilla) — fondo en movimiento de las escenas de gráficos
+
+def bg_source(key):
+    """Imagen de la escena anterior, pequeña, desenfocada y oscurecida: sirve de fondo vivo detrás del texto."""
+    im = load_img(key).resize((640, 360), Image.BILINEAR).filter(ImageFilter.GaussianBlur(5))
+    im = ImageEnhance.Brightness(im).enhance(0.42)
+    return Image.blend(im, Image.new("RGB", im.size, BG), 0.25)
+
 def bg_canvas(W, H, t=0.0, tint=(0, 0, 0)):
-    im = Image.new("RGB", (W, H), BG)
+    if _BG is not None:
+        src, D, seed = _BG
+        im = kenburns(src, W, H, min(1.0, t / max(D, 0.1)), "in" if seed % 2 else "out", seed, Image.BILINEAR)
+    else:
+        im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
     # rejilla sutil que se desplaza
     off = int((t * 12) % 60)
@@ -76,7 +88,7 @@ def load_img(key):
         _img_cache[key] = Image.open(os.path.join(VD, "img", f"{key}.png")).convert("RGB")
     return _img_cache[key]
 
-def kenburns(src, W, H, p, motion="in", seed=0):
+def kenburns(src, W, H, p, motion="in", seed=0, resample=Image.BICUBIC):
     sw, sh = src.size
     base = max(W / sw, H / sh)
     rnd = random.Random(seed)
@@ -89,12 +101,35 @@ def kenburns(src, W, H, p, motion="in", seed=0):
     # mapeo inverso: punto de salida (u,v) -> fuente
     a = 1 / s; e = 1 / s
     c = cx - (W / 2) * a; f = cy - (H / 2) * e
-    return src.transform((W, H), Image.AFFINE, (a, 0, c, 0, e, f), resample=Image.BICUBIC)
+    return src.transform((W, H), Image.AFFINE, (a, 0, c, 0, e, f), resample=resample)
+
+ANGLES = [  # (zoom inicial, zoom final, desplazamiento x, desplazamiento y) — planos de la misma foto
+    (1.00, 1.10, 0.00, 0.00),    # general, acercándose
+    (1.40, 1.48, -0.20, -0.12),  # detalle arriba-izquierda
+    (1.40, 1.48, 0.20, 0.12),    # detalle abajo-derecha
+    (1.22, 1.08, 0.00, 0.06),    # medio, alejándose
+]
+SEG = 4.0  # segundos por plano
+
+def kb_angle(src, W, H, p, angle, seed):
+    z0, z1, ox, oy = angle
+    sw, sh = src.size; s = max(W / sw, H / sh) * (z0 + (z1 - z0) * ease_io(p))
+    drift = random.Random(seed).choice([-1, 1]) * 0.04
+    hw, hh = W / 2 / s, H / 2 / s
+    cx = min(max(sw / 2 + ox * sw * 0.5 + drift * sw * (ease_io(p) - 0.5), hw), sw - hw)
+    cy = min(max(sh / 2 + oy * sh * 0.5, hh), sh - hh)
+    a = 1 / s
+    return src.transform((W, H), Image.AFFINE, (a, 0, cx - (W / 2) * a, 0, a, cy - (H / 2) * a), resample=Image.BICUBIC)
 
 def scene_img(v, t, D, W, H, seed):
-    p = t / D
-    im = kenburns(load_img(v["key"]), W, H, p, v.get("motion", "in"), seed)
-    # oscurecer bordes inferiores para legibilidad
+    n = max(1, int(round(D / SEG))) if D >= 6 else 1
+    if n == 1:
+        im = kenburns(load_img(v["key"]), W, H, t / D, v.get("motion", "in"), seed)
+    else:
+        L = D / n; k = min(int(t / L), n - 1); tl = t - k * L
+        order = [0, 1, 2, 3] if v.get("motion", "in") == "in" else [3, 2, 1, 0]
+        im = kb_angle(load_img(v["key"]), W, H, tl / L, ANGLES[order[1 + (k - 1 + seed) % 3] if k else order[0]], seed + k)
+        if k: im = punch(im, int(tl * FPS), frames=5, amount=0.045)  # corte entre planos
     if v.get("cap"):
         tag(im, int(W * 0.05), int(H * 0.80), v["cap"], (t - 0.35) / 0.6, scale=W / 1920)
     return im
@@ -355,10 +390,21 @@ def render_scene(args):
             if v.get("cap"): tag(im, int(W * 0.05), int(H * 0.80), v["cap"], (i / FPS - 0.35) / 0.6, scale=W / 1920)
             return punch(im, i)
     else:
+        global _BG
+        bgk = v.get("bg")
+        _BG = (bg_source(bgk), D, seed) if (v["type"] != "img" and bgk and os.path.exists(os.path.join(VD, "img", f"{bgk}.png"))) else None
         fn = RENDER[v["type"]]
-        frame = lambda i: punch(fn(v, i / FPS, D, W, H, seed), i)
+        if v["type"] == "img":
+            frame = lambda i: punch(fn(v, i / FPS, D, W, H, seed), i)
+        else:
+            frame = lambda i: punch(push_in(fn(v, i / FPS, D, W, H, seed), i / FPS / D), i)
     encode(frame, n, W, H, out)
     return out
+
+def push_in(im, p, amount=0.03):
+    """Acercamiento lento y continuo para que los gráficos no se queden quietos."""
+    W, H = im.size; a = 1 / (1 + amount * ease_io(p))
+    return im.transform((W, H), Image.AFFINE, (a, 0, (W - W * a) / 2, 0, a, (H - H * a) / 2), resample=Image.BILINEAR)
 
 # ---------- Short vertical ----------
 _bg_cache = {}
@@ -406,6 +452,8 @@ def chunks_for(text, D, k=3):
     return out
 
 def render_short_scene(args):
+    global _BG
+    _BG = None
     sc, D, A, out, seed, title = args
     W, H = 1080, 1920
     timing = chunks_for(sc["text"], A)
@@ -487,6 +535,16 @@ def main(vd, mode, sname=None):
     B = lambda *p: os.path.join(VD, "build", *p)
     if mode == "long":
         scenes = with_fallback(ns["SCENES"], ns.get("FALLBACK", {})); W, H = 1920, 1080
+        if ns.get("BG_BROLL", True):  # fondo en movimiento detrás de gráficos: la imagen anterior (o la siguiente)
+            keys = [sc["visual"]["key"] if sc["visual"]["type"] == "img" else None for sc in scenes]
+            out_sc = []
+            for i, sc in enumerate(scenes):
+                if keys[i] is None:
+                    prev = [k for k in keys[:i] if k]; nxt = [k for k in keys[i + 1:] if k]
+                    k = prev[-1] if prev else (nxt[0] if nxt else None)
+                    if k: sc = dict(sc, visual=dict(sc["visual"], bg=k))
+                out_sc.append(sc)
+            scenes = out_sc
         jobs, plan = [], []
         for i, sc in enumerate(scenes):
             A = dur_of(os.path.join(VD, "audio", f"{sc['id']}.mp3"))
