@@ -666,7 +666,7 @@ def concat(files, out):
 def mux(video, audio, out, grain):
     vf = "vignette=PI/5" if grain else "null"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", audio, "-vf", vf, "-c:v", "libx264", "-preset", "medium",
-                    "-crf", "21", "-maxrate", "8M", "-bufsize", "16M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out], check=True)
+                    "-crf", os.environ.get("CRF", "21"), "-maxrate", os.environ.get("MAXRATE", "8M"), "-bufsize", "16M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out], check=True)
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
