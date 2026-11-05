@@ -47,6 +47,7 @@ def main(vd):
                   for sc in ns["SCENES"] if sc["visual"]["type"] == "img")
     aviso = ("Las imágenes de este vídeo son ilustraciones generadas con IA y no muestran a personas ni productos reales. "
              "La narración está hecha con voz sintética." if con_img else "La narración de este vídeo está hecha con voz sintética.")
+    aviso = M.get("disclosure", aviso)
     desc = f"""{M['description']}
 
 📌 Capítulos
