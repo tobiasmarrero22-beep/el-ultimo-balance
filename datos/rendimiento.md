@@ -44,3 +44,25 @@ Lecturas:
   y el de Roomba (45 s, el más largo; a vigilar).
 - Embudo roto: ~4.100 vistas de Shorts → 12 vistas de largos y 7 suscriptores.
 - YouTube Analytics (retención, fuentes de tráfico) aún sin filas: tarda 2–3 días en canales nuevos.
+
+## 2026-11-05 — Retención y tráfico (YouTube Analytics vía vidIQ, 1–4 nov)
+**Tráfico:** feed de Shorts 5.039 vistas (96 %) · búsqueda 108 · página del canal 48 · otras 30 · vídeo relacionado 8.
+Las 8 vistas que llegan por "vídeo relacionado" (Short → largo) ven **5:30 de media (64 %)**: es el mejor tráfico que tenemos.
+**Shorts vs largos:** 5.214 vistas de Shorts frente a 21 de largos (49 minutos vistos en total).
+
+**Retención de los Shorts:**
+- BYD "Empezó haciendo baterías de móvil…" (22 s): visto **1,19 veces** de media (la gente lo repite); retención relativa 0,52 → 0,93.
+- Forever 21 "De limpiar oficinas…" (37 s): 71 % de media; pierde a la mitad entre el segundo 5 y el final.
+- Roomba (45 s): 77 %. → **Shorts de 20–25 s**: retienen y se repiten; los de 35–45 s se abandonan.
+
+**Retención del largo de Forever 21** (solo 13 espectadores, cada uno vale ~8 %; tomarlo con cautela):
+- 0:20 (gráfica de barras justo después del gancho): baja del 92 % al 69 %. → no poner gráficas en los primeros 30 s; el
+  gancho debe seguir con acción/personaje (formato del 004).
+- 1:33–2:50 se mantiene en ~54 %.
+- 4:18–4:44 (explicaciones: alquiler de Times Square, moda rápida) baja al 31 %. → acortar los tramos explicativos y meter
+  mini-cliffhangers cada 60–90 s ("pero lo peor estaba por llegar").
+- 6:43 (la alianza con Shein) baja al 23 % y aguanta hasta el final.
+- BYD (largo): sin curva todavía (7 vistas).
+
+**Ghosn (004, publicado 4-nov 03:00 UTC):** largo y Short con 1 vista a las 20 h; el Short de Roomba tardó ~5 h en arrancar,
+pero este es más lento. Revisar impresiones y restricciones en Studio.
