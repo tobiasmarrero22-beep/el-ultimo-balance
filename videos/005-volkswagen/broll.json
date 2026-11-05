@@ -1,0 +1,18 @@
+{
+ "road_test":     {"mp4": "https://videos.pexels.com/video-files/4608283/4608283-hd_1920_1080_24fps.mp4", "by": "K", "src": "https://www.pexels.com/video/a-vehicle-on-highway-overtaking-at-high-speed-4608283/"},
+ "exhaust":       {"mp4": "https://videos.pexels.com/video-files/6160044/6160044-hd_1920_1080_24fps.mp4", "by": "K", "src": "https://www.pexels.com/video/white-smoke-from-exhaust-6160044/"},
+ "assembly":      {"mp4": "https://videos.pexels.com/video-files/4468754/4468754-hd_1920_1080_24fps.mp4", "by": "Engin Altundağ", "src": "https://www.pexels.com/video/pedestal-shot-of-a-car-manufacturing-facility-4468754/"},
+ "factory_empty": {"mp4": "https://videos.pexels.com/video-files/10095265/10095265-hd_1920_1080_30fps.mp4", "by": "Teo Doulke", "src": "https://www.pexels.com/video/video-of-a-abandoned-factory-10095265/"},
+ "beetle":        {"mp4": "https://videos.pexels.com/video-files/37634294/15952142_640_360_25fps.mp4", "by": "Eleonora Vokueva", "src": "https://www.pexels.com/video/classic-volkswagen-beetle-at-vintage-car-show-37634294/"},
+ "lab":           {"mp4": "https://videos.pexels.com/video-files/28722030/12460590_640_360_30fps.mp4", "by": "Christopher Rodriguez", "src": "https://www.pexels.com/video/high-speed-car-testing-on-dynamometer-28722030/"},
+ "code":          {"mp4": "https://videos.pexels.com/video-files/6804121/6804121-hd_2048_1080_25fps.mp4", "by": "cottonbro studio", "src": "https://www.pexels.com/video/running-codes-on-a-computer-6804121/"},
+ "boardroom":     {"mp4": "https://videos.pexels.com/video-files/7644023/7644023-hd_2048_1080_25fps.mp4", "by": "MART PRODUCTION", "src": "https://www.pexels.com/video/colleagues-having-a-meeting-at-the-conference-room-7644023/"},
+ "stock_crash":   {"mp4": "https://videos.pexels.com/video-files/38736274/16456998_640_360_50fps.mp4", "by": "Rafael Minguet Delgado", "src": "https://www.pexels.com/video/dynamic-finance-chart-display-in-dark-room-38736274/"},
+ "money":         {"mp4": "https://videos.pexels.com/video-files/855388/855388-hd_1920_1080_25fps.mp4", "by": "Pixabay", "src": "https://www.pexels.com/video/counting-money-855388/"},
+ "court":         {"mp4": "https://videos.pexels.com/video-files/6699964/6699964-hd_1920_1080_24fps.mp4", "by": "pickarick", "src": "https://www.pexels.com/video/judge-using-a-gavel-6699964/"},
+ "prison":        {"mp4": "https://videos.pexels.com/video-files/5243246/5243246-hd_1280_720_24fps.mp4", "by": "Teela Hudak", "src": "https://www.pexels.com/video/empty-jail-5243246/"},
+ "china_ev":      {"mp4": "https://videos.pexels.com/video-files/4818143/4818143-hd_1920_1080_30fps.mp4", "by": "Gustavo Fring", "src": "https://www.pexels.com/video/a-woman-waiting-for-her-car-to-be-charged-4818143/"},
+ "workers":       {"mp4": "https://videos.pexels.com/video-files/6450803/6450803-hd_1280_720_25fps.mp4", "by": "Engin Altundağ", "src": "https://www.pexels.com/video/automated-car-factory-6450803/"},
+ "mexico_street": {"mp4": "https://videos.pexels.com/video-files/20497902/20497902-hd_1920_1080_24fps.mp4", "by": "Israyosoy S.", "src": "https://www.pexels.com/video/cars-are-parked-on-the-street-in-front-of-a-building-20497902/"},
+ "highway_night": {"mp4": "https://videos.pexels.com/video-files/7628845/7628845-hd_1280_720_25fps.mp4", "by": "ArtHouse Studio", "src": "https://www.pexels.com/video/cars-on-the-highway-at-night-7628845/"}
+}

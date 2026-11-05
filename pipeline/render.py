@@ -355,15 +355,18 @@ def clip_path(key):
     p = os.path.join(VD, "clips", f"{key}.mp4")
     return p if os.path.exists(p) else None
 
-def clip_frames(key, D, W, H):
-    """Fotogramas de un clip de IA ajustado a D segundos (ida y vuelta + ralentí si hace falta), recortado a WxH."""
+def clip_frames(key, D, W, H, seed=0):
+    """Fotogramas de un clip ajustado a D segundos (ida y vuelta + ralentí si hace falta), recortado a WxH.
+    Si el clip es más largo que la escena, empieza en un punto distinto según la semilla (tomas de stock largas)."""
     src = clip_path(key); c = max(0.5, dur_of(src)); n = int(round(D * FPS))
+    ss = ((seed * 5.3) % (c - D - 0.5)) if c > D + 1.0 else 0.0
+    c -= ss
     if D <= c * 1.6:
         chain = f"[0:v]setpts=PTS*{max(D / c, 1.0):.4f}"
     else:
         chain = f"[0:v]split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1:a=0,setpts=PTS*{max(D / (2 * c), 1.0):.4f}"
     vf = f"{chain},fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}[v]"
-    p = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-i", src, "-filter_complex", vf, "-map", "[v]", "-frames:v", str(n),
+    p = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-ss", f"{ss:.2f}", "-i", src, "-filter_complex", vf, "-map", "[v]", "-frames:v", str(n),
                           "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     last = None; size = W * H * 3
     for _ in range(n):
@@ -384,7 +387,7 @@ def render_scene(args):
     sc, D, W, H, out, seed = args
     v = sc["visual"]; n = int(round(D * FPS))
     if v["type"] == "img" and clip_path(v["key"]) and v.get("clip", True):
-        reader = clip_frames(v["key"], D, W, H)
+        reader = clip_frames(v["key"], D, W, H, seed)
         def frame(i):
             im = next(reader)
             if v.get("cap"): tag(im, int(W * 0.05), int(H * 0.80), v["cap"], (i / FPS - 0.35) / 0.6, scale=W / 1920)
@@ -459,7 +462,7 @@ def render_short_scene(args):
     timing = chunks_for(sc["text"], A)
     n = int(round(D * FPS))
     if not sc.get("alt") and clip_path(sc["key"]):
-        reader = clip_frames(sc["key"], D, W, int(W * 9 / 16 * 1.25))
+        reader = clip_frames(sc["key"], D, W, int(W * 9 / 16 * 1.25), seed)
         encode(lambda i: punch(short_frame(sc, i / FPS, D, W, H, seed, timing, title, fg=next(reader)), i), n, W, H, out)
     else:
         encode(lambda i: punch(short_frame(sc, i / FPS, D, W, H, seed, timing, title), i), n, W, H, out)
