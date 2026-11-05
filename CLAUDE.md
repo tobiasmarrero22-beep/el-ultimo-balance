@@ -56,6 +56,11 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   usar crf 27 / maxrate 3000k (004: 67 MB). Guardar las URL de las imágenes en `videos/NNN/img_urls.txt`.
 - Fórmula ganadora de Shorts (datos 3-nov, `datos/rendimiento.md`): personaje + cifra enorme + conflicto
   ("Empezó haciendo baterías de móvil… hoy supera a Tesla", "Musk se rió…"). El largo abre "en plena acción" y adelanta el giro.
+- **Tomas de vídeo reales con vidIQ (005, la vía preferida):** `vidiq_generate_broll` (1 crédito, Pexels; elegir MP4 hd 1280/1920)
+  → `vidiq_video_upload` con esa URL (gratis; devuelve un `videoUrl` en storage.googleapis.com, que SÍ se descarga aquí)
+  → `pipeline/getclip.sh <clave> <videoUrl>` deja `clips/<clave>.mp4` (1080p, sin audio) e `img/<clave>.png`. Las escenas
+  `img` usan el clip; cada escena arranca en un tramo distinto. Guardar elecciones y créditos en `videos/NNN/broll.json` y
+  acreditar a los autores en las fuentes. `META["disclosure"]` cambia el aviso (no son imágenes de IA).
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).
