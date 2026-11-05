@@ -44,7 +44,7 @@ SCENES = [
          visual=dict(type="img", key="money", cap="50.000 $ → MÁS DE 30.000 M€")),
     dict(id="s04", text="Esta es la historia de la mayor trampa de la industria del automóvil: cómo la empresa del vocho engañó a millones de conductores…",
          visual=dict(type="img", key="beetle", cap="VOLKSWAGEN")),
-    dict(id="s05", text="y por qué, diez años después, Volkswagen está cerrando fábricas en Alemania por primera vez en su historia.",
+    dict(id="s05", text="y por qué, diez años después, Volkswagen está cerrando fábricas en Alemania por primera vez en su historia. Y de paso, te cuento por qué el último vocho del mundo se fabricó en México.",
          visual=dict(type="img", key="factory_empty", cap="ALEMANIA, 2026")),
 
     # --- CAPÍTULO 1 ---
@@ -104,7 +104,7 @@ SCENES = [
          visual=dict(type="versus", title="VENTAS MUNDIALES EN 2015", left=["10,15 M", "TOYOTA"], right=["9,93 M", "VOLKSWAGEN"], mid="VS", lcol="white", rcol="red")),
     dict(id="s27", text="Llegan las multas, las demandas y las recompras de coches en medio mundo. Solo en Estados Unidos, en dos mil diecisiete, Volkswagen se declaró culpable y aceptó pagar cuatro mil trescientos millones de dólares en el acuerdo penal. La factura total supera los treinta mil millones de euros.",
          visual=dict(type="num", start=0, end=30000, prefix="+", suffix=" M€", label="LO QUE LE HA COSTADO EL ESCÁNDALO A VOLKSWAGEN")),
-    dict(id="s28", text="Y también hay cárcel. En diciembre de dos mil diecisiete, un juez de Estados Unidos condena a Oliver Schmidt, un directivo de Volkswagen, a siete años de prisión.",
+    dict(id="s28", text="Y también hay cárcel. En diciembre de dos mil diecisiete, un juez de Estados Unidos condena a Oliver Schmidt, un directivo de Volkswagen, a siete años de prisión. Se había declarado culpable.",
          visual=dict(type="img", key="prison", cap="OLIVER SCHMIDT: 7 AÑOS")),
     dict(id="s29", text="En Alemania el proceso fue mucho más lento. En mayo de dos mil veinticinco, casi diez años después, un tribunal de Braunschweig condena a cuatro exdirectivos e ingenieros. El jefe de desarrollo de motores diésel recibe cuatro años y medio de cárcel.",
          visual=dict(type="img", key="court", cap="BRAUNSCHWEIG, MAYO DE 2025")),
@@ -130,7 +130,7 @@ SCENES = [
          visual=dict(type="num", start=0, end=35000, suffix=" EMPLEOS", label="RECORTE PACTADO EN ALEMANIA HASTA 2030")),
     dict(id="s37", text="Y en septiembre de dos mil veintiséis, el consejo aprueba ir todavía más lejos: cincuenta mil empleos más y el fin de la producción en cuatro plantas.",
          visual=dict(type="img", key="workers", cap="50.000 EMPLEOS MÁS · 4 PLANTAS")),
-    dict(id="s38", text="Es la primera vez en su historia que Volkswagen deja de fabricar coches en fábricas alemanas.",
+    dict(id="s38", text="Es la primera vez en su historia que Volkswagen deja de fabricar coches en fábricas alemanas. Para una empresa que nació como símbolo de la industria de su país, es un golpe enorme.",
          visual=dict(type="stamp", text="ALEMANIA, 2026", stamp="HISTÓRICO")),
 
     # --- CAPÍTULO 6 / CIERRE ---
