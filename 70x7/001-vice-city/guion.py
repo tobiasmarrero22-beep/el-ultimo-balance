@@ -175,6 +175,19 @@ for _s in SCENES:  # cada escena de gameplay tiene su propio clip
     if _s["visual"]["type"] == "img" and not _s["visual"].get("key"):
         _s["visual"]["key"] = "g_" + _s["id"]
 
+# Pronunciación para la voz (solo TTS; subtítulos y SRT usan el texto normal). tts.py aplica esto antes de generar.
+PRONUNCIA = {
+    "Vice City Stories": "Vais Síti Stóris", "Vice City": "Vais Síti", "Vice Point": "Vais Póint", "Viceport": "Vaisport",
+    "V C Port": "ve ce port", "Washington Beach": "Uáshington Bich", "Starfish Island": "Stárfish Áiland",
+    "Star Island": "Star Áiland", "Leaf Links": "Lif Links", "Little Havana": "Lítel Jabána", "Little Haiti": "Lítel Jáiti",
+    "Little Cuba": "Lítel Cuba", "Ocean Beach": "Óushen Bich", "Ocean View": "Óushen Viu", "Ocean Drive": "Óushen Dráiv",
+    "Rockstar": "Rokstar", "GTA seis": "ge te a seis", "GTA tres": "ge te a tres", "Tommy Vercetti": "Tomi Verchéti",
+    "Tommy": "Tomi", "Ray Liotta": "Rei Lióta", "Take Two": "Teik Tu", "Tisha Woka": "Tisha Uóka", "Scarface": "Scárfeis",
+    "Jason": "Yéison", "Bonnie y Clyde": "Bóni y Cláid", "Grassrivers": "Grasríverz", "Port Gellhorn": "Port Guélhorn",
+    "Mount Kalaga": "Maunt Kalága", "PlayStation": "Pléisteishon", "Xbox Series": "Équis Box Síris", "YouTube": "Iutiub",
+    "Guinness": "Guínes", "shopping": "shóping", "PC": "pe ce",
+}
+
 SHORTS = {
     "a": {"bar": "VICE CITY → GTA 6", "scenes": [
         dict(id="a01", text="Después de veinticuatro años, Rockstar le cambió el nombre a este barrio de Vice City.", key="g_a01", at=340),

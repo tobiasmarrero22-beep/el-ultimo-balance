@@ -27,6 +27,12 @@ def tts(text, voice, out, speed=1.0, model=None, tries=2):
                     time.sleep(2 * (k + 1))
             raise RuntimeError(f"descarga fallida: {u}")
     raise RuntimeError(f"TTS failed: {s.get('error')}")
+def pronounce(table):
+    """PRONUNCIA = {"Vice City": "Vais Síti", ...} en guion.py: cambia la escritura solo para la voz (frases largas primero)."""
+    import re
+    if not table: return lambda t: t
+    rx = re.compile(r"\b(" + "|".join(re.escape(k) for k in sorted(table, key=len, reverse=True)) + r")\b")
+    return lambda t: rx.sub(lambda m: table[m.group(1)], t)
 VOZ = "fishaudio_a48e73d4fb124c689357e88b04c9db30"  # "Narrador Cálido Español" (Fish Audio)
 if __name__ == "__main__":
     # Uso: python3 pipeline/tts.py <carpeta_video> [ids...]   (voz y velocidad: VOICE / SPEED en guion.py)
@@ -34,6 +40,7 @@ if __name__ == "__main__":
     os.chdir(sys.argv[1]); os.makedirs("audio", exist_ok=True)
     ns = {}; exec(open("guion.py").read(), ns)
     voice, speed = ns.get("VOICE", VOZ), float(ns.get("SPEED", 1.05))
+    say = pronounce(ns.get("PRONUNCIA") or {})
     shorts = ns["SHORTS"] if "SHORTS" in ns else {"a": {"scenes": ns.get("SHORT", [])}}
     items = [(s["id"], s["text"]) for s in ns["SCENES"]] + [(s["id"], s["text"]) for sh in shorts.values() for s in sh["scenes"]]
     only = set(sys.argv[2:])
@@ -41,7 +48,7 @@ if __name__ == "__main__":
     import os
     items = [i for i in items if not os.path.exists(f"audio/{i[0]}.mp3")]
     with cf.ThreadPoolExecutor(8) as ex:
-        futs = {ex.submit(tts, t, voice, f"audio/{i}.mp3", speed): i for i, t in items}
+        futs = {ex.submit(tts, say(t), voice, f"audio/{i}.mp3", speed): i for i, t in items}
         for f in cf.as_completed(futs):
             try: f.result(); print("ok", futs[f], flush=True)
             except Exception as e: print("FAIL", futs[f], e, flush=True)
