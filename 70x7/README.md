@@ -11,11 +11,17 @@
 El usuario no puede mandar archivos de más de 30 MB: sube la grabación a YouTube como **oculta** y pasa el enlace.
 1. `vidiq_video_upload` con el enlace de YouTube (gratis, trabajo asíncrono → `vidiq_job_poll`) → URL de
    storage.googleapis.com que sí se descarga aquí. Guardar en el scratchpad y anotar `SRC`/`SRC_URL` en guion.py.
-2. Revisar la grabación: hoja de fotogramas cada 6 s, nombres de zona que muestra el juego, franjas negras (`CROP`),
+2. **Antes de nada, comprobar que el metraje es del usuario.** El 001 resultó ser una grabación de pantalla del iPhone
+   mientras se reproducía un vídeo ajeno de YouTube ("Night Drive Around Vice City in a Stinger Convertible", canal
+   The Gaming Motorist, `7PdCFHkEkHo`). Señales: franjas gris oscuro (~#101010, el fondo del reproductor de YouTube),
+   relación 19,5:9 (1920x886), el Centro de control con "Reproduciendo: …" en los primeros segundos, título del vídeo
+   fuente en pantalla. Buscar el título en YouTube (`ytlib.get("search", ...)`). Metraje ajeno = reclamo/strike de
+   copyright y contenido reutilizado → no se publica sin permiso del autor.
+3. Revisar la grabación: hoja de fotogramas cada 6 s, nombres de zona que muestra el juego, franjas negras (`CROP`),
    **notificaciones del celular** y tramos con el auto parado → `BAN` (detección por bordes de texto arriba a la izquierda
    y por diferencia entre fotogramas).
-3. Guion con `visual=dict(type="img", at=SEGUNDO, cap=...)` (y `at` en las escenas de los Shorts).
-4. `tts.py` → `python3 pipeline/gameplay.py <carpeta>` (corta un clip por escena, se salta los BAN y avisa si se repite
+4. Guion con `visual=dict(type="img", at=SEGUNDO, cap=...)` (y `at` en las escenas de los Shorts).
+5. `tts.py` → `python3 pipeline/gameplay.py <carpeta>` (corta un clip por escena, se salta los BAN y avisa si se repite
    metraje) → `render.py` (con `MUSIC_VOL=0.15`) → `thumbs.py` → `meta.py`.
 - **Nunca usar la radio del juego**: canciones con licencia → reclamos de Content ID. Se quita el audio original y se pone
   música generada con `vidiq_generate_music` (25 créditos/pista, WAV en S3 descargable) en `music/`.
