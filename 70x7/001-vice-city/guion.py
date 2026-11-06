@@ -12,7 +12,7 @@
 # Vice City: octubre de 2002, ambientado en 1986; Tommy Vercetti con la voz de Ray Liotta; 17,5 M de copias a marzo de
 # 2008 según Take-Two (6,2 M en EE. UU.); Starfish Island se iba a llamar Star Island (isla real de Miami); la mansión
 # y la última misión, homenaje al final de Scarface; primer escondite de Tommy: hotel Ocean View, Ocean Beach.
-VOICE = "i4Kar2uamCWyas8TAu31"  # ElevenLabs "Adán - Narration" (latinoamericana)
+VOICE = "2719189"  # voz clonada del usuario ("tobias", DubVoice → /api/minimax-tts). Antes: Adán i4Kar2uamCWyas8TAu31
 SPEED = 1.0
 SRC = "/tmp/claude-0/-home-user-el-ultimo-balance/8305f4cc-14d9-5014-b85d-03b0c591e58c/scratchpad/user_vid1/v.mp4"
 SRC_URL = "https://youtu.be/yzCP-6Hwo9w"  # vídeo oculto del usuario (se baja con vidiq_video_upload)
@@ -163,11 +163,11 @@ SCENES = [
     dict(id="s55", text="Y este es el lugar. De todos los barrios que Rockstar nombró en la web oficial de GTA seis, Ocean Beach es el único que vuelve con el mismo nombre exacto.",
          visual=dict(type="stamp", text="OCEAN BEACH\nEN GTA 6", stamp="CONFIRMADO", col="green")),
     dict(id="s56", text="Rockstar lo describe con hoteles art déco en tonos pastel y arena blanca y brillante. O sea: esto mismo que estás viendo, veinticuatro años después.",
-         visual=G(667.6, "«HOTELES ART DÉCO Y ARENA BLANCA»")),
+         visual=G(621.2, "«HOTELES ART DÉCO Y ARENA BLANCA»")),
     dict(id="s57", text="Little Havana ahora es Little Cuba. Viceport ahora es V C Port. Starfish Island y Little Haiti, sin confirmar. Pero Ocean Beach sigue acá.",
-         visual=G(678.9)),
+         visual=G(667.6)),
     dict(id="s58", text="El diecinueve de noviembre volvemos a esta misma playa, y te lo voy a mostrar acá, en setenta veces siete.",
-         visual=G(689.4, "19 DE NOVIEMBRE")),
+         visual=G(681.0, "19 DE NOVIEMBRE")),
     dict(id="s59", text="Suscribite, y contame en los comentarios cuál es el primer lugar de Vice City que vas a ir a buscar.",
          visual=G(711)),
 ]
@@ -244,10 +244,10 @@ META = {
         "Take-Two (2008): ventas de GTA Vice City",
         "GTA Wiki / Grand Theft Wiki: Starfish Island, Vercetti Estate, Ocean View Hotel",
     ],
-    "disclosure": "Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist (https://www.youtube.com/watch?v=7PdCFHkEkHo), sin la radio del juego. Música original generada con IA y narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.",
+    "disclosure": "Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist (https://www.youtube.com/watch?v=7PdCFHkEkHo), sin la radio del juego. Música original generada con IA. Narración con mi voz clonada con IA. Canal no afiliado a Rockstar Games ni a Take-Two.",
     "hashtags": "#GTA6 #ViceCity #GTAVI #70x7",
     "category": "Videojuegos",
-    "altered": "No (gameplay real; la voz sintética no imita a ninguna persona real)",
+    "altered": "No (la narración es la voz del propio creador, clonada; no imita a otra persona)",
     "playlist": "GTA 6: todo lo que sabemos",
     "tags": ["GTA 6", "GTA VI", "Vice City", "GTA Vice City", "GTA 6 Vice City", "GTA 6 mapa", "GTA 6 Leonida", "Ocean Beach",
              "Little Cuba", "Little Havana", "Starfish Island", "GTA 6 español", "GTA 6 noticias", "GTA Vice City 2002",
