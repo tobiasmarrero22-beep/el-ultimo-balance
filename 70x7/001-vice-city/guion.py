@@ -221,7 +221,7 @@ THUMBS = [  # fondos: fotogramas de los clips (img/<clave>.png)
     dict(img="g_s57", zoom=1.0, cx=0.5, cy=0.5, shade=["left", 190, 0.55], items=[
         ["text", 45, 70, "VICE CITY", 170, "pink", "la"], ["text", 45, 300, "DE NOCHE", 120, "white", "la"], ["text", 45, 460, "AL AMANECER", 120, "yellow", "la"]]),
 ]
-THUMBS.append(dict(img="g_s57", zoom=1.0, cx=0.6, cy=0.5, bright=0.95, shade=["left", 235, 0.62], items=[
+THUMBS.append(dict(img="thumb_amanecer", zoom=1.0, cx=0.6, cy=0.5, bright=0.95, shade=["left", 235, 0.62], items=[
     ["text", 45, 50, "SOLO 1", 230, "white", "la"], ["text", 45, 330, "VUELVE", 150, "pink", "la"], ["badge", 45, 560, 560, 680, "EN GTA 6", 90]]))
 THUMBS.append(dict(img="g_s02", zoom=1.15, cx=0.6, cy=0.35, bright=1.15, shade=["left", 215, 0.6], items=[
     ["text", 45, 60, "VICE CITY", 175, "pink", "la"], ["text", 45, 290, "ANTES DE", 130, "white", "la"], ["text", 45, 450, "GTA 6", 170, "yellow", "la"]]))

@@ -1,24 +1,24 @@
 1
-00:00:00,000 --> 00:00:03,291
+00:00:00,000 --> 00:00:03,944
 Esta isla de Vice City esconde un homenaje a Scarface.
 
 2
-00:00:03,441 --> 00:00:07,339
+00:00:04,094 --> 00:00:07,835
 Es Starfish Island, donde está la mansión de Tommy Vercetti.
 
 3
-00:00:07,339 --> 00:00:12,600
+00:00:07,835 --> 00:00:12,885
 Y la última misión del juego es un tiroteo dentro de la casa, como el final de la
 
 4
-00:00:12,600 --> 00:00:13,185
+00:00:12,885 --> 00:00:13,446
 película.
 
 5
-00:00:13,335 --> 00:00:14,631
+00:00:13,596 --> 00:00:15,073
 ¿Vuelve en GTA seis?
 
 6
-00:00:14,631 --> 00:00:16,705
+00:00:15,073 --> 00:00:17,436
 Rockstar todavía no lo confirmó.
 

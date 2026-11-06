@@ -3,7 +3,7 @@
 > ⚠️ **Antes de publicar:** el gameplay es de *The Gaming Motorist* (https://www.youtube.com/watch?v=7PdCFHkEkHo). Sin su permiso, el vídeo puede recibir un reclamo o un strike de copyright. Ver `PERMISO.md`. El crédito ya va en la descripción.
 
 
-## 🎬 VÍDEO LARGO — `70x7_001_largo.mp4` (7:41)
+## 🎬 VÍDEO LARGO — `70x7_001_largo.mp4` (8:03)
 
 **Título** (el primero es el recomendado)
 ```
@@ -22,15 +22,15 @@ Antes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de
 
 📌 Capítulos
 0:00 Volver a Vice City
-0:35 01. Washington Beach
-1:09 02. Vice Point
-2:43 03. Leaf Links
-3:31 04. Little Haiti
-3:58 05. Little Havana
-4:28 06. Viceport
-5:13 07. Starfish Island
-5:49 08. De vuelta a la playa
-6:36 09. Ocean Beach
+0:36 01. Washington Beach
+1:11 02. Vice Point
+2:46 03. Leaf Links
+3:36 04. Little Haiti
+4:06 05. Little Havana
+4:38 06. Viceport
+5:26 07. Starfish Island
+6:03 08. De vuelta a la playa
+6:54 09. Ocean Beach
 
 📚 Fuentes
 • Game Informer (6-may-2025): Rockstar muestra seis zonas de Vice City (web oficial de GTA VI)
@@ -39,7 +39,7 @@ Antes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de
 • Take-Two (2008): ventas de GTA Vice City
 • GTA Wiki / Grand Theft Wiki: Starfish Island, Vercetti Estate, Ocean View Hotel
 
-Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist (https://www.youtube.com/watch?v=7PdCFHkEkHo), sin la radio del juego. Música original generada con IA y narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.
+Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist (https://www.youtube.com/watch?v=7PdCFHkEkHo), sin la radio del juego. Música original generada con IA. Narración con mi voz clonada con IA. Canal no afiliado a Rockstar Games ni a Take-Two.
 
 #GTA6 #ViceCity #GTAVI #70x7
 ```
@@ -51,7 +51,7 @@ GTA 6, GTA VI, Vice City, GTA Vice City, GTA 6 Vice City, GTA 6 mapa, GTA 6 Leon
 
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No (gameplay real; la voz sintética no imita a ninguna persona real)**
+- Contenido alterado o sintético: **No (la narración es la voz del propio creador, clonada; no imita a otra persona)**
 - Subtítulos: `subtitulos_largo.srt` (Español)
 - Categoría: **Videojuegos** · Idioma: **Español**
 - Pantalla final (últimos 10 s): "Suscribirse" + "Vídeo más reciente"
@@ -64,7 +64,7 @@ GTA 6, GTA VI, Vice City, GTA Vice City, GTA 6 Vice City, GTA 6 mapa, GTA 6 Leon
 
 ---
 
-## 📱 SHORT A — `70x7_001_short_a.mp4` (17 s)
+## 📱 SHORT A — `70x7_001_short_a.mp4` (18 s)
 
 **Título**
 ```
@@ -85,7 +85,7 @@ GTA 6, Little Cuba, Little Havana, Vice City, GTA 6 mapa, 70x7
 
 ---
 
-## 📱 SHORT B — `70x7_001_short_b.mp4` (16 s)
+## 📱 SHORT B — `70x7_001_short_b.mp4` (17 s)
 
 **Título**
 ```
@@ -106,7 +106,7 @@ GTA 6, Starfish Island, Vice City, Scarface, Tommy Vercetti, 70x7
 
 ---
 
-## 📱 SHORT C — `70x7_001_short_c.mp4` (20 s)
+## 📱 SHORT C — `70x7_001_short_c.mp4` (22 s)
 
 **Título**
 ```
