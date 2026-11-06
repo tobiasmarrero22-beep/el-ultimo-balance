@@ -6,7 +6,23 @@ def req(method, path, body=None):
     r = urllib.request.Request(B + path, data=data, method=method, headers={"Content-Type": "application/json", "Authorization": "Bearer dummy"})
     with urllib.request.urlopen(r, context=CTX, timeout=60) as resp:
         return json.load(resp)
+def tts_clone(text, voice, out, tries=3):
+    """Voz clonada de la cuenta (GET /api/voice-clone → voice_id numérico): POST /api/minimax-tts devuelve el MP3 directo."""
+    import os
+    for k in range(tries):
+        try:
+            r = urllib.request.Request(B + "/api/minimax-tts", data=json.dumps({"text": text, "voice_id": voice, "language": "es"}).encode(),
+                                       method="POST", headers={"Content-Type": "application/json", "Authorization": "Bearer dummy"})
+            with urllib.request.urlopen(r, context=CTX, timeout=180) as resp:
+                data = resp.read(); ct = resp.headers.get("Content-Type", "")
+            if "audio" in ct and len(data) > 1000:
+                open(out + ".part", "wb").write(data); os.replace(out + ".part", out); return out
+            raise RuntimeError(data[:300])
+        except Exception as e:
+            err = e; time.sleep(3 * (k + 1))
+    raise RuntimeError(f"TTS clon falló: {err}")
 def tts(text, voice, out, speed=1.0, model=None, tries=2):
+    if str(voice).isdigit(): return tts_clone(text, str(voice), out)
     for attempt in range(tries):
         body = {"text": text, "voice_id": voice, "language": "es", "voice_settings": {"speed": speed}}
         if model: body["model_id"] = model

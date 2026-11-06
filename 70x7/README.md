@@ -27,3 +27,9 @@ El usuario no puede mandar archivos de más de 30 MB: sube la grabación a YouTu
   música generada con `vidiq_generate_music` (25 créditos/pista, WAV en S3 descargable) en `music/`.
 - `img/` y `clips/` no se suben a git (se regeneran con gameplay.py a partir de la grabación).
 - Revisar también el arranque y el final: el Centro de control (botón de grabar) y los controles del reproductor ("-10") aparecen al empezar/terminar la grabación. Detector usado en el 001: texto blanco desaturado y bordes horizontales largos arriba (notificaciones), píxeles blancos en los laterales (iconos del reproductor) y oscurecimiento brusco de todo el cuadro.
+
+## Voz clonada del usuario (desde el 6-nov)
+- Clon creado en la web de DubVoice ("tobias", `voice_id` **2719189**). `GET /api/voice-clone` lista los clones de la cuenta.
+- Se genera con `POST /api/minimax-tts` `{"text", "voice_id": "2719189", "language": "es"}` → MP3 directo (1 crédito/carácter).
+  `/api/voice-clone/tts` pide sesión web (401) y `/api/v1/tts` no acepta ids numéricos. `tts.py` usa minimax-tts si `VOICE` es numérico.
+- `PRONUNCIA` en guion.py: escritura fonética de nombres en inglés (Vais Síti, Rokstar, ge te a seis…), solo para la voz.
