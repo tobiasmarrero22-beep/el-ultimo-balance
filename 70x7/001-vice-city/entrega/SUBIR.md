@@ -1,19 +1,22 @@
-# 70x7_001 — Recorrí toda Vice City antes de GTA 6 · Paquete de subida
+# 70x7_001 — Toda Vice City antes de GTA 6 · Paquete de subida
 
-## 🎬 VÍDEO LARGO — `70x7_001_largo.mp4` (7:42)
+> ⚠️ **Antes de publicar:** el gameplay es de *The Gaming Motorist* (https://www.youtube.com/watch?v=7PdCFHkEkHo). Sin su permiso, el vídeo puede recibir un reclamo o un strike de copyright. Ver `PERMISO.md`. El crédito ya va en la descripción.
+
+
+## 🎬 VÍDEO LARGO — `70x7_001_largo.mp4` (7:41)
 
 **Título** (el primero es el recomendado)
 ```
-Recorrí TODA Vice City antes de GTA 6… y solo UN lugar vuelve igual
+TODA Vice City antes de GTA 6… y solo UN lugar vuelve igual
 ```
-- Alternativa: `Volví a Vice City antes de GTA 6: esto es lo que sobrevive`
+- Alternativa: `Vuelta completa a Vice City antes de GTA 6: esto es lo que sobrevive`
 - Alternativa: `Vice City de noche al amanecer: qué vuelve en GTA 6 (y qué no)`
 
 **Miniatura:** `TOP1_miniatura.jpg` → si tienes "Probar y comparar", sube `TOP1`, `TOP2` y `TOP3`.
 
 **Descripción**
 ```
-Antes de que GTA 6 nos devuelva a Vice City, agarré un auto y recorrí la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.
+Antes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.
 
 🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.
 
@@ -22,10 +25,10 @@ Antes de que GTA 6 nos devuelva a Vice City, agarré un auto y recorrí la Vice 
 0:35 01. Washington Beach
 1:09 02. Vice Point
 2:43 03. Leaf Links
-3:32 04. Little Haiti
-3:59 05. Little Havana
+3:31 04. Little Haiti
+3:58 05. Little Havana
 4:28 06. Viceport
-5:14 07. Starfish Island
+5:13 07. Starfish Island
 5:49 08. De vuelta a la playa
 6:36 09. Ocean Beach
 
@@ -36,7 +39,7 @@ Antes de que GTA 6 nos devuelva a Vice City, agarré un auto y recorrí la Vice 
 • Take-Two (2008): ventas de GTA Vice City
 • GTA Wiki / Grand Theft Wiki: Starfish Island, Vercetti Estate, Ocean View Hotel
 
-Gameplay de GTA Vice City grabado por el canal (sin la radio del juego). Música original generada con IA y narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.
+Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist (https://www.youtube.com/watch?v=7PdCFHkEkHo), sin la radio del juego. Música original generada con IA y narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.
 
 #GTA6 #ViceCity #GTAVI #70x7
 ```

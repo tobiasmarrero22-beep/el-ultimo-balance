@@ -17,7 +17,8 @@ SPEED = 1.0
 SRC = "/tmp/claude-0/-home-user-el-ultimo-balance/8305f4cc-14d9-5014-b85d-03b0c591e58c/scratchpad/user_vid1/v.mp4"
 SRC_URL = "https://youtu.be/yzCP-6Hwo9w"  # vídeo oculto del usuario (se baja con vidiq_video_upload)
 CROP = "1570:884:177:1"  # quita las franjas negras de la captura del celular
-BAN = [(138.5, 148.0), (289.5, 298.0),  # notificaciones del celular (Filo.news, Claro)
+BAN = [(0.0, 8.0),  # Centro de control (grabación de pantalla) y el "-10" del reproductor de YouTube
+       (138.5, 148.0), (289.5, 298.0),  # notificaciones del celular (Filo.news, Claro)
        (317.5, 333.5), (374.0, 393.0), (453.5, 473.0), (513.5, 532.5), (573.0, 589.5), (636.0, 641.5),
        (650.0, 667.5), (698.0, 711.5)]  # auto parado
 THEME = {"RED": (255, 56, 150), "YEL": (80, 230, 235)}  # rosa y celeste Vice City
@@ -27,7 +28,7 @@ def G(at, cap=None, key=None):
 
 SCENES = [
     # --- GANCHO (en plena acción, sin gráficas) ---
-    dict(id="s01", text="El diecinueve de noviembre, Rockstar nos devuelve a Vice City. Pero antes de que eso pase, hice algo: me subí a un auto y la recorrí entera, de punta a punta.",
+    dict(id="s01", text="El diecinueve de noviembre, Rockstar nos devuelve a Vice City. Pero antes de que eso pase, vamos a recorrer la Vice City original entera, de punta a punta.",
          visual=G(4, "VICE CITY ORIGINAL")),
     dict(id="s02", text="Desde que se pone el sol hasta que vuelve a salir. Washington Beach, Vice Point, Little Havana, el puerto, Starfish Island.",
          visual=G(22, "DE NOCHE HASTA EL AMANECER")),
@@ -196,7 +197,7 @@ THUMBS = [  # fondos: fotogramas de los clips (img/<clave>.png)
     dict(img="g_s04", zoom=1.08, cx=0.5, cy=0.45, shade=["left", 210, 0.62], items=[
         ["text", 45, 60, "SOLO 1", 220, "yellow", "la"], ["text", 45, 330, "VUELVE", 150, "white", "la"], ["text", 45, 520, "EN GTA 6", 120, "pink", "la"]]),
     dict(img="g_s02", zoom=1.12, cx=0.55, cy=0.4, shade=["left", 200, 0.6], items=[
-        ["text", 45, 70, "RECORRÍ", 150, "white", "la"], ["text", 45, 250, "TODA", 150, "white", "la"], ["text", 45, 430, "VICE CITY", 150, "pink", "la"],
+        ["text", 45, 70, "TODA", 150, "white", "la"], ["text", 45, 250, "VICE CITY", 150, "pink", "la"], ["text", 45, 430, "DE PUNTA A PUNTA", 110, "white", "la"],
         ["badge", 820, 560, 1240, 680, "ANTES DE GTA 6", 70]]),
     dict(img="g_s56", zoom=1.05, cx=0.5, cy=0.45, shade=["left", 200, 0.6], items=[
         ["text", 45, 80, "2002", 200, "white", "la"], ["text", 45, 330, "→ 2026", 200, "yellow", "la"], ["badge", 45, 590, 520, 690, "¿QUÉ VUELVE?", 70]]),
@@ -215,14 +216,14 @@ THUMBS_TOP = [7, 1, 8]
 
 META = {
     "code": "70x7_001",
-    "name": "Recorrí toda Vice City antes de GTA 6",
+    "name": "Toda Vice City antes de GTA 6",
     "titles": [
-        "Recorrí TODA Vice City antes de GTA 6… y solo UN lugar vuelve igual",
-        "Volví a Vice City antes de GTA 6: esto es lo que sobrevive",
+        "TODA Vice City antes de GTA 6… y solo UN lugar vuelve igual",
+        "Vuelta completa a Vice City antes de GTA 6: esto es lo que sobrevive",
         "Vice City de noche al amanecer: qué vuelve en GTA 6 (y qué no)",
     ],
     "intro_chapter": "Volver a Vice City",
-    "description": "Antes de que GTA 6 nos devuelva a Vice City, agarré un auto y recorrí la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.\n\n🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.",
+    "description": "Antes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.\n\n🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.",
     "sources": [
         "Game Informer (6-may-2025): Rockstar muestra seis zonas de Vice City (web oficial de GTA VI)",
         "GamesRadar / Tom's Guide: fecha de salida 19-nov-2026, plataformas",
@@ -230,7 +231,7 @@ META = {
         "Take-Two (2008): ventas de GTA Vice City",
         "GTA Wiki / Grand Theft Wiki: Starfish Island, Vercetti Estate, Ocean View Hotel",
     ],
-    "disclosure": "Gameplay de GTA Vice City grabado por el canal (sin la radio del juego). Música original generada con IA y narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.",
+    "disclosure": "Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist (https://www.youtube.com/watch?v=7PdCFHkEkHo), sin la radio del juego. Música original generada con IA y narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.",
     "hashtags": "#GTA6 #ViceCity #GTAVI #70x7",
     "category": "Videojuegos",
     "altered": "No (gameplay real; la voz sintética no imita a ninguna persona real)",

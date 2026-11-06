@@ -26,3 +26,4 @@ El usuario no puede mandar archivos de más de 30 MB: sube la grabación a YouTu
 - **Nunca usar la radio del juego**: canciones con licencia → reclamos de Content ID. Se quita el audio original y se pone
   música generada con `vidiq_generate_music` (25 créditos/pista, WAV en S3 descargable) en `music/`.
 - `img/` y `clips/` no se suben a git (se regeneran con gameplay.py a partir de la grabación).
+- Revisar también el arranque y el final: el Centro de control (botón de grabar) y los controles del reproductor ("-10") aparecen al empezar/terminar la grabación. Detector usado en el 001: texto blanco desaturado y bordes horizontales largos arriba (notificaciones), píxeles blancos en los laterales (iconos del reproductor) y oscurecimiento brusco de todo el cuadro.
