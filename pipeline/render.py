@@ -22,6 +22,17 @@ WHITE = (245, 245, 240)
 GREY = (150, 158, 170)
 
 _font_cache = {}
+def apply_theme(ns):
+    """THEME = {"RED": (r,g,b), "YEL": ...} en guion.py cambia la paleta (p. ej. otro canal)."""
+    for k, v in (ns.get("THEME") or {}).items():
+        if k in ("RED", "YEL", "WHITE", "GREY", "BG"): globals()[k] = tuple(v)
+
+if VD and os.path.exists(os.path.join(VD, "guion.py")):  # procesos hijos (spawn/forkserver): aplicar el tema al importar
+    try:
+        _ns = {}; exec(open(os.path.join(VD, "guion.py")).read(), _ns); apply_theme(_ns)
+    except Exception:
+        pass
+
 def font(path, size):
     k = (path, size)
     if k not in _font_cache: _font_cache[k] = ImageFont.truetype(path, size)
@@ -335,7 +346,7 @@ def scene_stamp(v, t, D, W, H, seed):
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d2 = ImageDraw.Draw(lay)
         f = font(ANTON, size); tw = d2.textlength(txt, font=f)
         cx, cy = W / 2, H * 0.66
-        col = RED + (int(255 * min(1, k * 1.5)),)
+        col = {"green": (70, 225, 140), "yellow": YEL, "white": WHITE}.get(v.get("col"), RED) + (int(255 * min(1, k * 1.5)),)
         d2.rectangle([cx - tw / 2 - 34 * sc * s, cy - size * 0.64, cx + tw / 2 + 34 * sc * s, cy + size * 0.64], outline=col, width=max(4, int(16 * sc * s)))
         d2.text((cx, cy), txt, font=f, fill=col, anchor="mm")
         lay = lay.rotate(v.get("angle", -7), center=(cx, cy), resample=Image.BICUBIC)
@@ -534,6 +545,7 @@ def main(vd, mode, sname=None):
     global VD
     VD = os.path.abspath(vd); os.environ["VD"] = VD
     ns = {}; exec(open(os.path.join(VD, "guion.py")).read(), ns)
+    apply_theme(ns)
     os.makedirs(os.path.join(VD, "build"), exist_ok=True)
     B = lambda *p: os.path.join(VD, "build", *p)
     if mode == "long":
@@ -648,7 +660,7 @@ def build_audio(plan, B, tag_, types=None):
                     "-t", f"{total:.3f}", B(f"{tag_}_narr.wav")], check=True)
     tracks = sorted(glob.glob(os.path.join(VD, "music", "*.mp3")))
     if tracks:
-        music_bed(tracks, total + 1, B("pad.wav")); mvol = 0.10
+        music_bed(tracks, total + 1, B("pad.wav")); mvol = float(os.environ.get("MUSIC_VOL", "0.10"))
     else:
         ambient_pad(total + 1, B("pad.wav")); mvol = 0.22
     sfx_track(plan, types or {}, total, B(f"{tag_}_sfx.wav"))

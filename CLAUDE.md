@@ -65,6 +65,12 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).
 
+## Segundo canal: 70x7 (GTA 6, voseo)
+Carpeta `70x7/NNN-slug/` con el mismo flujo; detalles en `70x7/README.md`. Grabaciones del usuario (enlace oculto de
+YouTube → `vidiq_video_upload`) cortadas por escena con `pipeline/gameplay.py` (`SRC`, `CROP`, `BAN`, `at`).
+`THEME` en guion.py cambia la paleta del render; `MUSIC_VOL` (env) el volumen de la música; sellos con `col="green"`.
+`META["category"]` y `META["altered"]` cambian esos ajustes en SUBIR.md. Nada de radio del juego (Content ID).
+
 ## Estilo visual
 Fondo #0b0f17 con rejilla, amarillo #ffd166, rojo #e63946, blanco. Títulos en Anton, etiquetas en Inter Display Black.
 Identidad del canal en `canal/` (logo A = barras que caen, banner, marca de agua). Regenerar con `pipeline/brand.py`.

@@ -19,7 +19,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANTON = os.path.join(ROOT, "assets", "fonts", "Anton.ttf")
 INTER_B = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "fonts", "InterDisplay-Black.otf")
 W, H = 1280, 720
-COL = {"white": (255, 255, 255), "yellow": (255, 210, 60), "red": (230, 40, 55), "black": (0, 0, 0)}
+COL = {"white": (255, 255, 255), "yellow": (255, 210, 60), "red": (230, 40, 55), "black": (0, 0, 0),
+       "pink": (255, 56, 150), "cyan": (80, 230, 235)}
 
 def F(size, path=ANTON): return ImageFont.truetype(path, size)
 

@@ -67,8 +67,8 @@ def main(vd):
     L.append("\n**Miniatura:** `TOP1_miniatura.jpg` → si tienes \"Probar y comparar\", sube `TOP1`, `TOP2` y `TOP3`.\n")
     L.append("**Descripción**\n```\n" + desc + "\n```\n")
     L.append("**Etiquetas**\n```\n" + ", ".join(M["tags"]) + "\n```\n")
-    L.append("**Ajustes al subir**\n- Contenido para niños: **No**\n- Contenido alterado o sintético: **Sí**\n"
-             "- Subtítulos: `subtitulos_largo.srt` (Español)\n- Categoría: **Educación** · Idioma: **Español**\n"
+    L.append("**Ajustes al subir**\n- Contenido para niños: **No**\n" f"- Contenido alterado o sintético: **{M.get('altered', 'Sí')}**\n"
+             f"- Subtítulos: `subtitulos_largo.srt` (Español)\n- Categoría: **{M.get('category', 'Educación')}** · Idioma: **Español**\n"
              f"- Pantalla final (últimos 10 s): \"Suscribirse\" + \"Vídeo más reciente\"\n- Lista de reproducción: **{M['playlist']}**\n")
     L.append("**Comentario fijado**\n```\n" + M["pinned"] + "\n```\n\n---\n")
     shorts = ns.get("SHORTS") or {"a": {"scenes": ns.get("SHORT", [])}}
