@@ -236,7 +236,7 @@ META = {
         "Vice City de noche al amanecer: qué vuelve en GTA 6 (y qué no)",
     ],
     "intro_chapter": "Volver a Vice City",
-    "description": "Antes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.\n\n🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.",
+    "description": "🎮 Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist → https://www.youtube.com/watch?v=7PdCFHkEkHo\n\nAntes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.\n\n🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.",
     "sources": [
         "Game Informer (6-may-2025): Rockstar muestra seis zonas de Vice City (web oficial de GTA VI)",
         "GamesRadar / Tom's Guide: fecha de salida 19-nov-2026, plataformas",

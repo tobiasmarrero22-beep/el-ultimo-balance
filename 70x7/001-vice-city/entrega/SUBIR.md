@@ -1,6 +1,6 @@
 # 70x7_001 — Toda Vice City antes de GTA 6 · Paquete de subida
 
-> ⚠️ **Antes de publicar:** el gameplay es de *The Gaming Motorist* (https://www.youtube.com/watch?v=7PdCFHkEkHo). Sin su permiso, el vídeo puede recibir un reclamo o un strike de copyright. Ver `PERMISO.md`. El crédito ya va en la descripción.
+> 📩 **Después de publicar:** mandale a *The Gaming Motorist* el aviso de `AVISO_AUTOR.md` con el enlace de tu video. Si pide que lo bajes, eliminalo ese día (largo y Shorts). El crédito ya va en la primera línea de la descripción.
 
 
 ## 🎬 VÍDEO LARGO — `70x7_001_largo.mp4` (8:03)
@@ -16,6 +16,8 @@ TODA Vice City antes de GTA 6… y solo UN lugar vuelve igual
 
 **Descripción**
 ```
+🎮 Gameplay: «Night Drive Around Vice City in a Stinger Convertible» de The Gaming Motorist → https://www.youtube.com/watch?v=7PdCFHkEkHo
+
 Antes de que GTA 6 nos devuelva a Vice City, recorremos la Vice City original de punta a punta, de noche hasta el amanecer: Washington Beach, Vice Point, Leaf Links, Little Haiti, Little Havana, el puerto, Starfish Island y Ocean Beach. Barrio por barrio: qué ya confirmó Rockstar para GTA 6, qué cambió de nombre y qué todavía es un misterio.
 
 🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.
