@@ -61,6 +61,15 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   → `pipeline/getclip.sh <clave> <videoUrl>` deja `clips/<clave>.mp4` (1080p, sin audio) e `img/<clave>.png`. Las escenas
   `img` usan el clip; cada escena arranca en un tramo distinto. Guardar elecciones y créditos en `videos/NNN/broll.json` y
   acreditar a los autores en las fuentes. `META["disclosure"]` cambia el aviso (no son imágenes de IA).
+- **Imágenes con vidIQ (007, la vía preferida desde el 7-nov):** `vidiq_generate_thumbnail` con `userQuery` "Photorealistic cinematic
+  documentary still, NOT a thumbnail: … Absolutely no text, no words… Wide 16:9 movie frame" → 1280×720 realista y sin texto,
+  22 créditos de vidIQ (se reembolsan si falla). Máximo ~10 trabajos a la vez; `vidiq_job_poll` → `imageUrl` en
+  ai-thumbnails.s3.amazonaws.com (se descarga aquí); reescalar a 1920×1080 y guardar en `img/`; URLs en `img_urls.txt`.
+  DubVoice nano-banana-2-lite volvió el 7-nov pero falla ~45 % con 502 y **cobra** los fallos (2.500 cr perdidos en el 007).
+- **Animación nueva en render.py (007):** escenas `board` (tablero de salidas que gira a CANCELADO), `route` (mapa con rutas
+  y avión), `headline` (titular de prensa con palabra subrayada; parafrasear y citar fuente); en escenas `img`: `pop=[...]`
+  (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes
+  (WHIP=1), destello + glitch RGB en capítulos, grano de película, planos cada 3,3 s (SEG). Vídeos sin Shorts: `SHORTS = {}`.
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).

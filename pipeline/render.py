@@ -120,7 +120,7 @@ ANGLES = [  # (zoom inicial, zoom final, desplazamiento x, desplazamiento y) —
     (1.40, 1.48, 0.20, 0.12),    # detalle abajo-derecha
     (1.22, 1.08, 0.00, 0.06),    # medio, alejándose
 ]
-SEG = 4.0  # segundos por plano
+SEG = float(os.environ.get("SEG", "3.3"))  # segundos por plano (más cambios de encuadre = más retención)
 
 def kb_angle(src, W, H, p, angle, seed):
     z0, z1, ox, oy = angle
@@ -143,7 +143,7 @@ def scene_img(v, t, D, W, H, seed):
         if k: im = punch(im, int(tl * FPS), frames=5, amount=0.045)  # corte entre planos
     if v.get("cap"):
         tag(im, int(W * 0.05), int(H * 0.80), v["cap"], (t - 0.35) / 0.6, scale=W / 1920)
-    return im
+    return fx_img(im, v, t, D)
 
 def scene_title(v, t, D, W, H, seed):
     im = bg_canvas(W, H, t)
@@ -168,8 +168,12 @@ def scene_title(v, t, D, W, H, seed):
         for ln in lines:
             ld.text((W / 2, y), ln, font=ft, fill=WHITE + (int(255 * b),), anchor="mt"); y += 125 * sc
         im.paste(layer, (0, 0), layer)
-    # fundido de entrada desde negro
-    if t < 0.25: im = Image.blend(Image.new("RGB", (W, H), (0, 0, 0)), im, t / 0.25)
+    # destello blanco + glitch RGB al entrar
+    if t < 0.5:
+        g = 1 - t / 0.5; off = int(18 * g * W / 1920)
+        r_, g_, b_ = im.split()
+        im = Image.merge("RGB", (r_.transform(im.size, Image.AFFINE, (1, 0, -off, 0, 1, 0)), g_, b_.transform(im.size, Image.AFFINE, (1, 0, off, 0, 1, 0))))
+    if t < 0.12: im = Image.blend(im, Image.new("RGB", (W, H), (255, 255, 255)), 0.85 * (1 - t / 0.12))
     return im
 
 def wrap(txt, f, maxw):
@@ -353,7 +357,119 @@ def scene_stamp(v, t, D, W, H, seed):
         im.paste(lay, (0, 0), lay)
     return im
 
-RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines, versus=scene_versus, stamp=scene_stamp)
+def pop_times(v, D):
+    """Momentos en que aparece cada palabra de "pop" (repartidas por la escena)."""
+    w = v.get("pop") or []
+    return [max(0.25, D * (k + 0.35) / max(1, len(w)) - 0.2) for k in range(len(w))]
+
+def fx_img(im, v, t, D):
+    """Efectos sobre escenas de imagen: temblor ("shake") y palabras clave que saltan ("pop")."""
+    W, H = im.size
+    if v.get("shake"):
+        dx, dy = int(10 * math.sin(t * 23) * W / 1920), int(7 * math.cos(t * 19) * W / 1920)
+        im = im.transform((W, H), Image.AFFINE, (1, 0, dx, 0, 1, dy), resample=Image.BILINEAR)
+    words = v.get("pop") or []
+    if words:
+        ts = pop_times(v, D); cur = None
+        for k, t0 in enumerate(ts):
+            if t0 <= t < t0 + 1.7: cur = (words[k], t - t0)
+        if cur:
+            txt, tt = cur; sc = W / 1920
+            k = ease_out(tt / 0.18); s_ = 1.35 - 0.35 * k if tt < 0.18 else 1.0 + 0.03 * math.sin(tt * 6)
+            a = 1.0 if tt < 1.45 else max(0.0, 1 - (tt - 1.45) / 0.25)
+            f = fit_font(ANTON, int(150 * sc * s_), txt, W * 0.86)
+            layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(layer)
+            col = RED if txt.startswith(("-", "−")) or v.get("pop_col") == "red" else YEL
+            ld.text((W / 2, H * 0.70), txt, font=f, fill=col + (int(255 * a),), anchor="mm",
+                    stroke_width=int(10 * sc), stroke_fill=(0, 0, 0, int(255 * a)))
+            im.paste(layer, (0, 0), layer)
+    return im
+
+def whip(im, i, frames=7, direction=1):
+    """Transición de barrido: la escena entra deslizándose con desenfoque de movimiento."""
+    if i >= frames: return im
+    p = 1 - ease_out(i / frames); W, H = im.size
+    blur = im.resize((max(8, int(W / (1 + 14 * p))), H), Image.BILINEAR).resize((W, H), Image.BILINEAR)
+    dx = int(direction * W * 0.22 * p)
+    return blur.transform((W, H), Image.AFFINE, (1, 0, -dx, 0, 1, 0), resample=Image.BILINEAR)
+
+def scene_board(v, t, D, W, H, seed):
+    """Tablero de salidas: rows=[[hora, destino, vuelo, estado_inicial], ...]; los estados giran a final ("CANCELADO")."""
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    x0, x1, y0 = int(W * 0.10), int(W * 0.90), int(H * 0.20)
+    d.rectangle([x0 - 20 * sc, y0 - 120 * sc, x1 + 20 * sc, H * 0.92], fill=(12, 14, 18), outline=(60, 66, 78), width=int(4 * sc))
+    d.text((x0, y0 - 64 * sc), v.get("title", "SALIDAS"), font=font(ANTON, int(64 * sc)), fill=YEL, anchor="lm")
+    rows = v["rows"]; rh = (H * 0.70) / max(6, len(rows)); fin = v.get("final", "CANCELADO")
+    cols = [x0, x0 + 190 * sc, x0 + 860 * sc, x0 + 1150 * sc]
+    fm = font(INTER_B, int(min(46, rh * 0.55 / sc) * sc))
+    for r, row in enumerate(rows):
+        y = y0 + r * rh + rh / 2
+        d.rectangle([x0 - 8 * sc, y - rh * 0.42, x1 + 8 * sc, y + rh * 0.42], fill=(22, 25, 31))
+        for c, txt in enumerate(row[:3]):
+            d.text((cols[c], y), txt, font=fm, fill=(235, 235, 225), anchor="lm")
+        tf = 0.5 + r * v.get("step", 0.32)
+        st, col = (row[3], (120, 220, 140)) if t < tf else (fin, RED)
+        k = (t - tf) / 0.12
+        if 0 <= k < 1:  # giro de la paleta
+            h2 = rh * 0.42 * abs(1 - 2 * k)
+            d.rectangle([cols[3] - 10 * sc, y - h2, x1, y + h2], fill=(40, 44, 52))
+        else:
+            d.text((cols[3], y), st, font=fm, fill=col, anchor="lm")
+    return im
+
+def scene_route(v, t, D, W, H, seed):
+    """Mapa estilizado con rutas animadas: points={nombre: [x, y]} (0-1), routes=[[origen, destino], ...]."""
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    if v.get("title"): d.text((W / 2, H * 0.07), v["title"], font=font(INTER_B, int(50 * sc)), fill=WHITE, anchor="mt")
+    pts = {k: (x * W, y * H) for k, (x, y) in v["points"].items()}
+    routes = v["routes"]; per = max(0.9, (D - 0.5) / max(1, len(routes)))
+    for k, (a, b) in enumerate(routes):
+        p = ease_io((t - 0.3 - k * per * 0.75) / per)
+        if p <= 0: continue
+        (xa, ya), (xb, yb) = pts[a], pts[b]
+        mx, my = (xa + xb) / 2, min(ya, yb) - abs(xb - xa) * 0.28 - 40 * sc
+        curve = lambda u: ((1 - u) ** 2 * xa + 2 * (1 - u) * u * mx + u ** 2 * xb, (1 - u) ** 2 * ya + 2 * (1 - u) * u * my + u ** 2 * yb)
+        n = 60; m = int(n * p)
+        for j in range(0, m, 2):
+            d.line([curve(j / n), curve(min(j + 1, m) / n)], fill=RED if v.get("red") else YEL, width=int(6 * sc))
+        px, py = curve(p); qx, qy = curve(max(0, p - 0.02)); ang = math.atan2(py - qy, px - qx)
+        tri = [(px + 34 * sc * math.cos(ang), py + 34 * sc * math.sin(ang)),
+               (px + 24 * sc * math.cos(ang + 2.5), py + 24 * sc * math.sin(ang + 2.5)),
+               (px + 24 * sc * math.cos(ang - 2.5), py + 24 * sc * math.sin(ang - 2.5))]
+        d.polygon(tri, fill=WHITE, outline=(0, 0, 0))
+    for name, (x, y) in pts.items():
+        d.ellipse([x - 13 * sc, y - 13 * sc, x + 13 * sc, y + 13 * sc], fill=YEL, outline=(0, 0, 0), width=int(3 * sc))
+        d.text((x, y + 26 * sc), name, font=font(INTER_B, int(36 * sc)), fill=WHITE, anchor="mt", stroke_width=int(4 * sc), stroke_fill=(0, 0, 0))
+    return im
+
+def scene_headline(v, t, D, W, H, seed):
+    """Titular de prensa (parafraseado, con la fuente): text, source, mark (palabra a subrayar), kicker."""
+    im = bg_canvas(W, H, t); sc = W / 1920
+    k = ease_out(t / 0.45); ang = (1 - k) * 8 - 2.5
+    cw = int(W * 0.70)
+    f = font(ANTON, int(v.get("size", 104) * sc)); lines = wrap(v["text"], f, cw - 80 * sc)
+    ch = int(115 * sc + len(lines) * f.size * 1.12 + 95 * sc)
+    card = Image.new("RGBA", (cw, ch), (244, 240, 230, 255)); cd = ImageDraw.Draw(card)
+    cd.rectangle([0, 0, cw, int(18 * sc)], fill=(30, 30, 30))
+    cd.text((int(40 * sc), int(50 * sc)), v.get("kicker", "ÚLTIMA HORA").upper(), font=font(INTER_B, int(34 * sc)), fill=RED, anchor="lt")
+    y = int(115 * sc)
+    mark = (v.get("mark") or "").lower()
+    for ln in lines:
+        if mark and mark in ln.lower() and t > 0.7:
+            i0 = ln.lower().index(mark); pre = cd.textlength(ln[:i0], font=f); wl = cd.textlength(ln[i0:i0 + len(mark)], font=f)
+            pw = wl * ease_out((t - 0.7) / 0.4)
+            cd.rectangle([40 * sc + pre - 6 * sc, y + 10 * sc, 40 * sc + pre + pw + 6 * sc, y + f.size * 1.05], fill=(255, 209, 102))
+        cd.text((int(40 * sc), y), ln, font=f, fill=(20, 20, 20), anchor="lt"); y += int(f.size * 1.12)
+    cd.text((int(40 * sc), ch - int(40 * sc)), v.get("source", ""), font=font(INTER_SB, int(30 * sc)), fill=(90, 90, 90), anchor="lb")
+    card = card.rotate(ang, resample=Image.BICUBIC, expand=True)
+    yy = int(H * 0.5 - card.height / 2 + (1 - k) * H * 0.6)
+    sh = Image.new("RGBA", card.size, (0, 0, 0, 110)); im.paste(sh, (int(W / 2 - card.width / 2 + 14 * sc), yy + int(18 * sc)), card)
+    im.paste(card, (int(W / 2 - card.width / 2), yy), card)
+    return im
+
+
+RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines, versus=scene_versus, stamp=scene_stamp,
+              board=scene_board, route=scene_route, headline=scene_headline)
 
 def punch(im, i, frames=7, amount=0.06):
     """Entrada de escena: pequeño zoom que se asienta (simula un corte con transición)."""
@@ -402,14 +518,18 @@ def render_scene(args):
         def frame(i):
             im = next(reader)
             if v.get("cap"): tag(im, int(W * 0.05), int(H * 0.80), v["cap"], (i / FPS - 0.35) / 0.6, scale=W / 1920)
-            return punch(im, i)
+            im = fx_img(im, v, i / FPS, D)
+            return whip(im, i, direction=1 if seed % 2 else -1) if os.environ.get("WHIP", "1") == "1" else punch(im, i)
     else:
         global _BG
         bgk = v.get("bg")
         _BG = (bg_source(bgk), D, seed) if (v["type"] != "img" and bgk and os.path.exists(os.path.join(VD, "img", f"{bgk}.png"))) else None
         fn = RENDER[v["type"]]
         if v["type"] == "img":
-            frame = lambda i: punch(fn(v, i / FPS, D, W, H, seed), i)
+            if os.environ.get("WHIP", "1") == "1":
+                frame = lambda i: whip(fn(v, i / FPS, D, W, H, seed), i, direction=1 if seed % 2 else -1)
+            else:
+                frame = lambda i: punch(fn(v, i / FPS, D, W, H, seed), i)
         else:
             frame = lambda i: punch(push_in(fn(v, i / FPS, D, W, H, seed), i / FPS / D), i)
     encode(frame, n, W, H, out)
@@ -578,6 +698,8 @@ def main(vd, mode, sname=None):
             for o in ex.map(render_scene, todo):
                 open(o + ".sig", "w").write(sig_of(by_out[o][0]))  # se guarda al momento: si se corta, se retoma
                 print("escena", os.path.basename(o), flush=True)
+        for (sid, pre, A, D), sc_ in zip(plan, scenes):
+            if sc_["visual"].get("pop"): POPS[sid] = pop_times(sc_["visual"], D)
         build_audio(plan, B, "long", {s["id"]: s["visual"]["type"] for s in scenes})
         concat([j[4] for j in jobs], B("long_video.mp4"))
         mux(B("long_video.mp4"), B("long_audio.wav"), B("final_largo.mp4"), grain=True)
@@ -626,6 +748,8 @@ def _sfx_bank():
     imp = imp / np.max(np.abs(imp)) * 0.7
     return sr, wh, imp
 
+POPS = {}  # id de escena -> tiempos de las palabras "pop" (para el sonido)
+
 def sfx_track(plan, types, total, out):
     """Whoosh al entrar en escenas de gráfico/texto y golpe grave en fechas, cifras y capítulos."""
     sr, wh, imp = _sfx_bank(); buf = np.zeros(int((total + 1) * sr)); t = 0.0
@@ -634,8 +758,12 @@ def sfx_track(plan, types, total, out):
         if i < len(buf): buf[i:j] += sig[: j - i] * vol
     for sid, pre, A, D in plan:
         ty = types.get(sid, "img")
-        if ty in ("title", "year", "quote", "num", "bars", "lines"): put(wh, max(0.0, t - 0.15), 0.35)
+        if ty in ("title", "year", "quote", "num", "bars", "lines", "board", "route", "headline", "versus", "stamp"): put(wh, max(0.0, t - 0.15), 0.35)
         elif ty == "img": put(wh, max(0.0, t - 0.15), 0.12)
+        if ty == "headline": put(imp, t + 0.4, 0.45)
+        if ty == "board":
+            for r in range(6): put(imp[: int(0.08 * sr)] * 0.6, t + 0.5 + r * 0.32, 0.35)
+        for pt in (POPS.get(sid) or []): put(imp[: int(0.12 * sr)], t + pt, 0.35)
         if ty in ("title", "year"): put(imp, t + 0.35, 0.55)
         if ty == "num": put(imp, t + min(D * 0.7, 2.5), 0.4)
         t += D
@@ -679,7 +807,7 @@ def concat(files, out):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", out], check=True)
 
 def mux(video, audio, out, grain):
-    vf = "vignette=PI/5" if grain else "null"
+    vf = "noise=alls=3:allf=t,vignette=PI/5" if grain else "null"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", audio, "-vf", vf, "-c:v", "libx264", "-preset", "medium",
                     "-crf", os.environ.get("CRF", "21"), "-maxrate", os.environ.get("MAXRATE", "8M"), "-bufsize", "16M", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out], check=True)
 

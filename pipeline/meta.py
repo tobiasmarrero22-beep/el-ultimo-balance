@@ -71,7 +71,7 @@ def main(vd):
              f"- Subtítulos: `subtitulos_largo.srt` (Español)\n- Categoría: **{M.get('category', 'Educación')}** · Idioma: **Español**\n"
              f"- Pantalla final (últimos 10 s): \"Suscribirse\" + \"Vídeo más reciente\"\n- Lista de reproducción: **{M['playlist']}**\n")
     L.append("**Comentario fijado**\n```\n" + M["pinned"] + "\n```\n\n---\n")
-    shorts = ns.get("SHORTS") or {"a": {"scenes": ns.get("SHORT", [])}}
+    shorts = ns["SHORTS"] if "SHORTS" in ns else {"a": {"scenes": ns.get("SHORT", [])}}
     for name, sh in shorts.items():
         sm = M["shorts"][name]
         sp = os.path.join(vd, "build", f"short_{name}_plan.json")
