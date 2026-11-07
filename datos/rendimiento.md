@@ -66,3 +66,16 @@ Las 8 vistas que llegan por "vídeo relacionado" (Short → largo) ven **5:30 de
 
 **Ghosn (004, publicado 4-nov 03:00 UTC):** largo y Short con 1 vista a las 20 h; el Short de Roomba tardó ~5 h en arrancar,
 pero este es más lento. Revisar impresiones y restricciones en Studio.
+
+## 2026-11-07 — Retención de los largos (YouTube Studio, captura del usuario)
+| Vídeo | Vistas | Duración media | % visto | Impresiones | CTR |
+|---|---|---|---|---|---|
+| Forever 21 (002) | 418 | 4:18 | 50,0 % | 3.563 | 4,0 % |
+| BYD (003), título cambiado a "Empezó haciendo baterías de móvil… hoy supera a Tesla" | 94 | 3:45 | 46,1 % | 1.466 | 1,8 % (con el título viejo) |
+| Ghosn (004) | 3 | 2:57 | 36,2 % | 22 | 4,6 % |
+| Volkswagen (005, primer vídeo con tomas de stock) | 12 | 1:41 | 20,7 % | 120 | 5,0 % |
+Lecturas: la retención de 002 y 003 (46–50 %) es muy buena para 8 min → el formato narrativo funciona; el cuello de botella
+son las impresiones (y el CTR de BYD). Volkswagen retiene la mitad: muestra pequeña (12 vistas), pero es el primero con vídeo
+de archivo de Pexels en vez de imágenes ilustradas → vigilar 005 y 006 (Red Lobster, también con stock). Si con 50+ vistas siguen
+por debajo del 30 %, volver a imágenes ilustradas/IA. Ojo: la columna de tiempo de visualización de la tabla anterior no cuadra con
+estas duraciones (distinto periodo); usar siempre "Duración media" y "% visto".
