@@ -86,9 +86,13 @@ def main(vd):
         L.append("**Etiquetas**\n```\n" + ", ".join(sm["tags"]) + "\n```")
         L.append("**Miniatura:** en la app de YouTube elige el fotograma del segundo 0.\n"
                  "**Vídeo relacionado:** enlaza el vídeo largo de esta historia.\n\n---\n")
-    L.append("## 📅 Orden de publicación\n1. Vídeo largo a la hora fija del canal.\n"
-             "2. Short A a las 2–3 h; los demás Shorts en días siguientes (uno al día entre vídeos largos).\n"
-             "3. A las 48 h: captura de YouTube Studio → Analytics del vídeo (retención y CTR) para ajustar guiones.\n")
+    if shorts:
+        L.append("## 📅 Orden de publicación\n1. Vídeo largo a la hora fija del canal.\n"
+                 "2. Short A a las 2–3 h; los demás Shorts en días siguientes (uno al día entre vídeos largos).\n"
+                 "3. A las 48 h: captura de YouTube Studio → Analytics del vídeo (retención y CTR) para ajustar guiones.\n")
+    else:
+        L.append("## 📅 Publicación\n1. Vídeo largo a la hora fija del canal (sin Shorts).\n"
+                 "2. A las 48 h: captura de YouTube Studio → Analytics del vídeo (retención y CTR) para ajustar guiones.\n")
     open(os.path.join(E, "SUBIR.md"), "w").write("\n".join(L))
     for src, dst in [("final_largo.mp4", f"{M['code']}_largo.mp4")] + [(f"final_short_{n}.mp4", f"{M['code']}_short_{n}.mp4") for n in shorts]:
         p = os.path.join(vd, "build", src)
