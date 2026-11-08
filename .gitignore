@@ -6,3 +6,6 @@ preview/
 70x7/*/img/
 70x7/*/clips/
 70x7/*/audio/
+# 70x7/002 usa imágenes IA y voz de Adán (no hay material del usuario): sí se guardan
+!70x7/002-hacker/img/
+!70x7/002-hacker/audio/

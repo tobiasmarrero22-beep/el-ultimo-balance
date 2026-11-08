@@ -33,3 +33,11 @@ El usuario no puede mandar archivos de más de 30 MB: sube la grabación a YouTu
 - Se genera con `POST /api/minimax-tts` `{"text", "voice_id": "2719189", "language": "es"}` → MP3 directo (1 crédito/carácter).
   `/api/voice-clone/tts` pide sesión web (401) y `/api/v1/tts` no acepta ids numéricos. `tts.py` usa minimax-tts si `VOICE` es numérico.
 - `PRONUNCIA` en guion.py: escritura fonética de nombres en inglés (Vais Síti, Rokstar, ge te a seis…), solo para la voz.
+
+## Vídeos sin grabación (desde el 002, 8-nov)
+- Historias narradas con imágenes IA de vidIQ (`vidiq_generate_thumbnail`, 22 créditos; pedir "plain realistic photograph… no graphic
+  overlays, no tier list" si sale un panel tipo ranking, como pasó con hospital y tribunal) + escenas de código.
+- Escenas nuevas en render.py: `chat` (ventana de chat genérica, mensajes que aparecen con "escribiendo…"; `alert` en rojo),
+  `terminal` (texto que se teclea solo, con sonido de teclas; líneas con "!" en rojo) y `timeline` (línea de tiempo; `hl` resalta un punto).
+- Voz: Adán (`i4Kar2uamCWyas8TAu31`) por pedido del usuario en el 002 (no la clonada). Sin Shorts.
+- Música: se reutilizan las pistas del 001 (`music/`). `img/` y `audio/` del 002 sí van a git (excepción en .gitignore).

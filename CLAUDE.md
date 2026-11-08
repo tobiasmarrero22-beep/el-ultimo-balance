@@ -70,6 +70,7 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   y avión), `headline` (titular de prensa con palabra subrayada; parafrasear y citar fuente); en escenas `img`: `pop=[...]`
   (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes
   (WHIP=1), destello + glitch RGB en capítulos, grano de película, planos cada 3,3 s (SEG). Vídeos sin Shorts: `SHORTS = {}`.
+  Desde el 70x7-002: `chat` (mensajes con "escribiendo…", `alert` en rojo), `terminal` (tecleo con sonido) y `timeline` (`hl`).
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).

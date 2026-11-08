@@ -468,8 +468,131 @@ def scene_headline(v, t, D, W, H, seed):
     return im
 
 
+MONO = next((f for f in ["/usr/share/fonts/truetype/jetbrains-mono/JetBrainsMono-SemiBold.ttf",
+                         "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"] if os.path.exists(f)), INTER_SB)
+
+def chat_times(v, D):
+    """Momento en que aparece cada mensaje del chat (antes, 0,55 s de "escribiendo…")."""
+    n = len(v["msgs"]); per = max(0.9, (D - 1.4) / max(1, n))
+    return [0.75 + k * per for k in range(n)]
+
+def scene_chat(v, t, D, W, H, seed):
+    """Ventana de chat genérica (sin logos): title="# canal", msgs=[[usuario, texto, "alert"?], ...]. Los mensajes
+    aparecen uno a uno con indicador de "escribiendo…"; los "alert" van resaltados en rojo."""
+    im = bg_canvas(W, H, t); sc = W / 1920
+    x0, y0, x1, y1 = int(W * 0.14), int(H * 0.10), int(W * 0.86), int(H * 0.90)
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.rounded_rectangle([x0 + 14 * sc, y0 + 18 * sc, x1 + 14 * sc, y1 + 18 * sc], radius=int(22 * sc), fill=(0, 0, 0, 120))
+    d.rounded_rectangle([x0, y0, x1, y1], radius=int(22 * sc), fill=(27, 29, 36, 250), outline=(60, 64, 76, 255), width=int(3 * sc))
+    hb = int(84 * sc)
+    d.rounded_rectangle([x0, y0, x1, y0 + hb], radius=int(22 * sc), fill=(38, 41, 51, 255))
+    d.rectangle([x0, y0 + hb - 22 * sc, x1, y0 + hb], fill=(38, 41, 51, 255))
+    for k, c in enumerate([(255, 95, 86), (255, 189, 46), (39, 201, 63)]):
+        cx = x0 + (40 + k * 36) * sc; d.ellipse([cx - 11 * sc, y0 + hb / 2 - 11 * sc, cx + 11 * sc, y0 + hb / 2 + 11 * sc], fill=c)
+    d.text((x0 + 170 * sc, y0 + hb / 2), v.get("title", "# general"), font=font(INTER_B, int(38 * sc)), fill=WHITE, anchor="lm")
+    if v.get("kicker"): d.text((x1 - 34 * sc, y0 + hb / 2), v["kicker"], font=font(INTER_SB, int(28 * sc)), fill=GREY, anchor="rm")
+    fu, ft, fs = font(INTER_B, int(44 * sc)), font(INTER_SB, int(56 * sc)), font(INTER_SB, int(30 * sc))
+    ts = chat_times(v, D); maxw = (x1 - x0) - 200 * sc
+    blocks = []
+    for k, m in enumerate(v["msgs"]):
+        lines = wrap(m[1], ft, maxw); h = int(66 * sc + len(lines) * ft.size * 1.22 + 30 * sc)
+        blocks.append((m, lines, h, ts[k]))
+    shown = [b for b in blocks if t >= b[3]]
+    typing = next((b for b in blocks if b[3] - 0.55 <= t < b[3]), None)
+    area_top, area_bot = y0 + hb + 24 * sc, y1 - 70 * sc
+    total = sum(b[2] for b in shown)
+    y = min(area_top, area_bot - total)  # si no entra, se desplaza hacia arriba (los últimos siempre visibles)
+    palette = [(88, 101, 242), (235, 69, 158), (59, 165, 93), (250, 166, 26)]
+    for (m, lines, h, t0) in shown:
+        a = ease_out((t - t0) / 0.25); dy = (1 - a) * 30 * sc; yy = y + dy
+        if yy + h > area_top - 4:
+            if len(m) > 2 and m[2] == "alert":
+                d.rectangle([x0 + 24 * sc, yy - 8 * sc, x1 - 24 * sc, yy + h - 14 * sc], fill=(230, 57, 70, int(55 * a)))
+                d.rectangle([x0 + 24 * sc, yy - 8 * sc, x0 + 32 * sc, yy + h - 14 * sc], fill=RED + (int(255 * a),))
+            col = palette[sum(map(ord, m[0])) % len(palette)]
+            ax, ay = x0 + 92 * sc, yy + 40 * sc
+            d.ellipse([ax - 38 * sc, ay - 38 * sc, ax + 38 * sc, ay + 38 * sc], fill=col + (int(255 * a),))
+            d.text((ax, ay), m[0][:1].upper(), font=font(INTER_B, int(34 * sc)), fill=WHITE + (int(255 * a),), anchor="mm")
+            tx = x0 + 150 * sc
+            d.text((tx, yy + 8 * sc), m[0], font=fu, fill=(255, 255, 255, int(255 * a)), anchor="lt")
+            d.text((tx + d.textlength(m[0], font=fu) + 18 * sc, yy + 20 * sc), m[3] if len(m) > 3 else "", font=fs, fill=GREY + (int(255 * a),), anchor="lt")
+            ly = yy + 66 * sc
+            for ln in lines:
+                d.text((tx, ly), ln, font=ft, fill=(225, 228, 235, int(255 * a)), anchor="lt"); ly += ft.size * 1.22
+        y += h
+    if typing:
+        dots = "".join("•" if int(t * 6 + i) % 3 else "·" for i in range(3))
+        d.text((x0 + 60 * sc, y1 - 42 * sc), f"{typing[0][0]} está escribiendo {dots}", font=fs, fill=GREY + (255,), anchor="lm")
+    im.paste(lay, (0, 0), lay)
+    return im
+
+def terminal_span(v, D):
+    n = sum(len(l) for l in v["lines"]); dur = min(D * 0.78 - 0.4, n / 16.0)
+    return 0.4, 0.4 + max(0.6, dur)
+
+def scene_terminal(v, t, D, W, H, seed):
+    """Terminal que escribe sola: lines=["> texto", "!línea en rojo", ...]; title opcional en la barra."""
+    im = bg_canvas(W, H, t); sc = W / 1920
+    x0, y0, x1, y1 = int(W * 0.12), int(H * 0.14), int(W * 0.88), int(H * 0.86)
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.rounded_rectangle([x0, y0, x1, y1], radius=int(18 * sc), fill=(6, 9, 8, 242), outline=(50, 70, 58, 255), width=int(3 * sc))
+    d.rectangle([x0 + 3 * sc, y0 + 3 * sc, x1 - 3 * sc, y0 + 64 * sc], fill=(24, 30, 27, 255))
+    d.text((W / 2, y0 + 34 * sc), v.get("title", "terminal"), font=font(MONO, int(28 * sc)), fill=GREY, anchor="mm")
+    f = font(MONO, int(v.get("size", 52) * sc)); GRN = (90, 255, 150)
+    a0, a1 = terminal_span(v, D); n = sum(len(l) for l in v["lines"])
+    typed = int(n * max(0.0, min(1.0, (t - a0) / max(0.1, a1 - a0))))
+    y = y0 + 100 * sc; cur = None
+    for ln in v["lines"]:
+        red = ln.startswith("!"); txt = ln[1:] if red else ln
+        k = min(len(ln), typed); typed -= k
+        part = txt[: max(0, k - (1 if red else 0))]
+        for sub in (wrap(part, f, x1 - x0 - 100 * sc) if part else [""]):
+            d.text((x0 + 50 * sc, y), sub, font=f, fill=(RED if red else GRN) + (255,), anchor="lt")
+            cur = (x0 + 50 * sc + d.textlength(sub, font=f), y); y += f.size * 1.35
+        if k < len(ln): break
+    if cur and int(t * 2.2) % 2 == 0:
+        d.rectangle([cur[0] + 6 * sc, cur[1] + 4 * sc, cur[0] + 6 * sc + f.size * 0.55, cur[1] + f.size * 1.05], fill=GRN + (255,))
+    # líneas de barrido (aspecto de monitor)
+    for yy in range(int(y0 + 66 * sc), int(y1), int(6 * sc) or 1): d.line([(x0 + 4, yy), (x1 - 4, yy)], fill=(0, 0, 0, 40))
+    im.paste(lay, (0, 0), lay)
+    return im
+
+def timeline_times(v, D):
+    n = len(v["points"]); per = max(0.7, (D - 1.0) / max(1, n))
+    return [0.5 + k * per for k in range(n)]
+
+def scene_timeline(v, t, D, W, H, seed):
+    """Línea de tiempo: points=[[arriba (fecha), abajo (qué pasó)], ...]; hl = índice resaltado en rojo (por defecto el último)."""
+    im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920
+    if v.get("title"): d.text((W / 2, H * 0.10), v["title"], font=font(INTER_B, int(50 * sc)), fill=WHITE, anchor="mt")
+    pts = v["points"]; n = len(pts); ts = timeline_times(v, D); hl = v.get("hl", n - 1)
+    xs = [W * 0.10 + (W * 0.80) * (k / max(1, n - 1)) for k in range(n)]; yl = H * 0.52
+    k_last = max([k for k in range(n) if t >= ts[k]] or [-1])
+    xr = xs[0] if k_last < 0 else xs[k_last]
+    if k_last >= 0 and k_last < n - 1:
+        xr += (xs[k_last + 1] - xs[k_last]) * ease_io((t - ts[k_last]) / (ts[k_last + 1] - ts[k_last])) * 0.85
+    d.line([(xs[0], yl), (xs[-1], yl)], fill=(55, 62, 76), width=int(8 * sc))
+    if k_last >= 0: d.line([(xs[0], yl), (xr, yl)], fill=YEL, width=int(8 * sc))
+    gap = W * 0.80 / max(1, n - 1)
+    for k, (top, bot) in enumerate(pts):
+        if t < ts[k]: continue
+        a = ease_out((t - ts[k]) / 0.3); col = RED if k == hl else YEL
+        r = (16 + 10 * (1 - a)) * sc
+        if k == hl:
+            pr = (26 + 14 * (0.5 + 0.5 * math.sin(t * 5))) * sc
+            d.ellipse([xs[k] - pr, yl - pr, xs[k] + pr, yl + pr], outline=RED, width=int(4 * sc))
+        d.ellipse([xs[k] - r, yl - r, xs[k] + r, yl + r], fill=col, outline=(0, 0, 0), width=int(3 * sc))
+        ft = fit_font(ANTON, int(66 * sc), top, gap * 0.95)
+        d.text((xs[k], yl - 48 * sc - (1 - a) * 20 * sc), top, font=ft, fill=col if k == hl else WHITE, anchor="md")
+        fb = font(INTER_B, int(36 * sc)); yy = yl + 48 * sc + (1 - a) * 20 * sc
+        for ln in wrap(bot, fb, gap * 0.92):
+            d.text((xs[k], yy), ln, font=fb, fill=(220, 224, 232), anchor="mt"); yy += fb.size * 1.2
+    return im
+
+
 RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines, versus=scene_versus, stamp=scene_stamp,
-              board=scene_board, route=scene_route, headline=scene_headline)
+              board=scene_board, route=scene_route, headline=scene_headline,
+              chat=scene_chat, terminal=scene_terminal, timeline=scene_timeline)
 
 def punch(im, i, frames=7, amount=0.06):
     """Entrada de escena: pequeño zoom que se asienta (simula un corte con transición)."""
@@ -699,7 +822,11 @@ def main(vd, mode, sname=None):
                 open(o + ".sig", "w").write(sig_of(by_out[o][0]))  # se guarda al momento: si se corta, se retoma
                 print("escena", os.path.basename(o), flush=True)
         for (sid, pre, A, D), sc_ in zip(plan, scenes):
-            if sc_["visual"].get("pop"): POPS[sid] = pop_times(sc_["visual"], D)
+            v_ = sc_["visual"]
+            if v_.get("pop"): POPS[sid] = pop_times(v_, D)
+            if v_.get("type") == "chat": POPS[sid] = chat_times(v_, D)
+            if v_.get("type") == "timeline": POPS[sid] = timeline_times(v_, D)
+            if v_.get("type") == "terminal": TYPING[sid] = terminal_span(v_, D)
         build_audio(plan, B, "long", {s["id"]: s["visual"]["type"] for s in scenes})
         concat([j[4] for j in jobs], B("long_video.mp4"))
         mux(B("long_video.mp4"), B("long_audio.wav"), B("final_largo.mp4"), grain=True)
@@ -748,7 +875,8 @@ def _sfx_bank():
     imp = imp / np.max(np.abs(imp)) * 0.7
     return sr, wh, imp
 
-POPS = {}  # id de escena -> tiempos de las palabras "pop" (para el sonido)
+POPS = {}  # id de escena -> tiempos de las palabras "pop", mensajes de chat o puntos de la línea de tiempo (sonido)
+TYPING = {}  # id de escena de terminal -> (inicio, fin) del tecleo
 
 def sfx_track(plan, types, total, out):
     """Whoosh al entrar en escenas de gráfico/texto y golpe grave en fechas, cifras y capítulos."""
@@ -758,7 +886,12 @@ def sfx_track(plan, types, total, out):
         if i < len(buf): buf[i:j] += sig[: j - i] * vol
     for sid, pre, A, D in plan:
         ty = types.get(sid, "img")
-        if ty in ("title", "year", "quote", "num", "bars", "lines", "board", "route", "headline", "versus", "stamp"): put(wh, max(0.0, t - 0.15), 0.35)
+        if ty in ("title", "year", "quote", "num", "bars", "lines", "board", "route", "headline", "versus", "stamp", "chat", "terminal", "timeline"): put(wh, max(0.0, t - 0.15), 0.35)
+        if sid in TYPING:
+            a_, b_ = TYPING[sid]; rng_ = np.random.default_rng(len(sid)); tt_ = a_
+            click = rng_.normal(0, 1, int(0.012 * sr)) * np.exp(-np.arange(int(0.012 * sr)) / (0.0025 * sr))
+            while tt_ < b_:
+                put(click, t + tt_, 0.10 + 0.06 * rng_.random()); tt_ += 0.045 + 0.05 * rng_.random()
         elif ty == "img": put(wh, max(0.0, t - 0.15), 0.12)
         if ty == "headline": put(imp, t + 0.4, 0.45)
         if ty == "board":

@@ -1,0 +1,664 @@
+1
+00:00:00,000 --> 00:00:01,949
+Septiembre de dos mil veintidós.
+
+2
+00:00:01,949 --> 00:00:07,003
+Un chico de diecisiete años está encerrado en la habitación de un hotel, controlado
+
+3
+00:00:07,003 --> 00:00:09,012
+por la policía y sin computadora.
+
+4
+00:00:09,362 --> 00:00:14,888
+Y aun así, con un Fire Stick enchufado a la tele del hotel, un celular y un teclado,
+
+5
+00:00:14,888 --> 00:00:16,598
+logró meterse en Rockstar.
+
+6
+00:00:16,948 --> 00:00:21,443
+Lo que sacó de ahí terminó siendo una de las filtraciones más grandes de la historia
+
+7
+00:00:21,443 --> 00:00:22,460
+de los videojuegos.
+
+8
+00:00:22,810 --> 00:00:28,523
+Noventa videos de GTA seis, el juego más esperado del mundo, subidos a un foro un
+
+9
+00:00:28,523 --> 00:00:29,863
+domingo cualquiera.
+
+10
+00:00:30,213 --> 00:00:35,362
+Según Rockstar, arreglar el desastre le costó cinco millones de dólares y miles de
+
+11
+00:00:35,362 --> 00:00:36,430
+horas de trabajo.
+
+12
+00:00:36,780 --> 00:00:39,084
+Al chico no lo mandaron a la cárcel.
+
+13
+00:00:39,084 --> 00:00:41,900
+Lo mandaron a un hospital de alta seguridad.
+
+14
+00:00:41,900 --> 00:00:43,180
+Sin fecha de salida.
+
+15
+00:00:43,530 --> 00:00:45,650
+Pero la historia no terminó ahí.
+
+16
+00:00:45,650 --> 00:00:51,215
+Diez días antes de que salga GTA seis, ese chico vuelve a sentarse frente a un juez.
+
+17
+00:00:51,215 --> 00:00:52,673
+Y esta vez, de verdad.
+
+18
+00:00:53,023 --> 00:00:56,970
+Esta es la historia completa del hacker que filtró GTA seis.
+
+19
+00:00:56,970 --> 00:00:58,482
+Subite, que arrancamos.
+
+20
+00:00:59,432 --> 00:01:00,356
+Capítulo uno.
+
+21
+00:01:00,356 --> 00:01:01,705
+Un chico de Oxford.
+
+22
+00:01:02,605 --> 00:01:07,429
+Se llama Arion Kurtaj, es de Oxford, en Inglaterra, y tiene autismo.
+
+23
+00:01:07,429 --> 00:01:11,330
+Cuando empieza esta historia, todavía es menor de edad.
+
+24
+00:01:11,680 --> 00:01:13,370
+Y no es un hacker cualquiera.
+
+25
+00:01:13,370 --> 00:01:18,090
+Es una de las piezas clave de Lapsus, un grupo de hackers con varios adolescentes
+
+26
+00:01:18,090 --> 00:01:21,528
+que en dos mil veintidós se volvió famoso en todo el mundo.
+
+27
+00:01:21,878 --> 00:01:27,524
+El grupo se atribuyó ataques contra gigantes como Microsoft, Samsung y Nvidia.
+
+28
+00:01:27,524 --> 00:01:29,767
+Y no pedían rescates discretos:
+
+29
+00:01:29,767 --> 00:01:33,241
+lo anunciaban en público, como si fuera un show.
+
+30
+00:01:33,591 --> 00:01:38,659
+En febrero de dos mil veintidós, según el jurado que lo juzgó después, Kurtaj entró
+
+31
+00:01:38,659 --> 00:01:43,543
+en Nvidia, la empresa de las placas de video, y se llevó cerca de un terabyte de
+
+32
+00:01:43,543 --> 00:01:44,275
+información.
+
+33
+00:01:44,625 --> 00:01:49,458
+Publicó unos ochenta gigas y amenazó con soltar el resto si no le hacían caso.
+
+34
+00:01:49,808 --> 00:01:51,910
+La policía ya lo tenía en la mira.
+
+35
+00:01:51,910 --> 00:01:56,794
+Lo detienen por los primeros hackeos y queda libre bajo fianza, a la espera del
+
+36
+00:01:56,794 --> 00:01:57,227
+juicio.
+
+37
+00:01:57,577 --> 00:02:00,264
+Y entonces pasa algo que lo cambia todo:
+
+38
+00:02:00,264 --> 00:02:05,100
+otros hackers, rivales suyos, publican en internet sus datos personales.
+
+39
+00:02:05,450 --> 00:02:09,540
+De golpe, el chico que exponía a las empresas queda expuesto él.
+
+40
+00:02:09,540 --> 00:02:12,033
+Y la policía decide sacarlo de su casa.
+
+41
+00:02:12,983 --> 00:02:13,875
+Capítulo dos.
+
+42
+00:02:13,875 --> 00:02:15,386
+Encerrado en un hotel.
+
+43
+00:02:16,286 --> 00:02:21,638
+Para protegerlo, lo llevan a un hotel barato de la cadena Travelodge en Bicester, un
+
+44
+00:02:21,638 --> 00:02:23,104
+pueblo cerca de Oxford.
+
+45
+00:02:23,454 --> 00:02:25,126
+Las condiciones son claras:
+
+46
+00:02:25,126 --> 00:02:28,657
+le quitan la computadora y tiene prohibido usar internet.
+
+47
+00:02:28,657 --> 00:02:31,630
+Sobre el papel, está completamente desconectado.
+
+48
+00:02:31,980 --> 00:02:33,966
+Pero en la habitación hay una tele.
+
+49
+00:02:34,316 --> 00:02:36,692
+Y él consigue un Fire Stick de Amazon.
+
+50
+00:02:36,692 --> 00:02:41,134
+Sí, ese aparatito que se enchufa a la tele para ver series y películas.
+
+51
+00:02:41,484 --> 00:02:44,475
+Le suma un celular nuevo, un teclado y un mouse.
+
+52
+00:02:44,475 --> 00:02:48,589
+Con eso arma su centro de operaciones, en una habitación de hotel.
+
+53
+00:02:48,939 --> 00:02:53,656
+Según se contó en el juicio, desde la tele se conectaba a servicios en la nube.
+
+54
+00:02:53,656 --> 00:02:55,626
+Y desde la nube, a todo lo demás.
+
+55
+00:02:55,976 --> 00:03:00,947
+Nadie se imaginaba que un aparato de unos cuarenta dólares, en una tele de hotel,
+
+56
+00:03:00,947 --> 00:03:04,936
+iba a poner en jaque a uno de los estudios más grandes del mundo.
+
+57
+00:03:05,886 --> 00:03:06,983
+Capítulo tres.
+
+58
+00:03:06,983 --> 00:03:08,159
+Noventa videos.
+
+59
+00:03:09,059 --> 00:03:11,240
+Septiembre de dos mil veintidós.
+
+60
+00:03:11,240 --> 00:03:16,626
+Desde esa habitación, según el jurado, Kurtaj ataca primero a Revolut, un banco
+
+61
+00:03:16,626 --> 00:03:20,239
+digital, y se lleva datos de unos cinco mil clientes.
+
+62
+00:03:20,589 --> 00:03:22,639
+Dos días después entra en Uber.
+
+63
+00:03:22,639 --> 00:03:26,806
+La fiscalía calculó los daños en casi tres millones de dólares.
+
+64
+00:03:27,156 --> 00:03:29,703
+Y entonces va por el premio mayor:
+
+65
+00:03:29,703 --> 00:03:32,250
+Rockstar Games, el estudio de GTA.
+
+66
+00:03:32,600 --> 00:03:37,151
+Entra en el chat interno de la empresa y les escribe a los empleados.
+
+67
+00:03:37,151 --> 00:03:40,118
+Según se leyó en el juicio, el mensaje decía:
+
+68
+00:03:40,118 --> 00:03:43,284
+no soy un empleado de Rockstar, soy un atacante.
+
+69
+00:03:43,634 --> 00:03:44,237
+Y amenaza:
+
+70
+00:03:44,237 --> 00:03:49,244
+si no lo contactan por Telegram en veinticuatro horas, empieza a publicar el código
+
+71
+00:03:49,244 --> 00:03:50,269
+fuente del juego.
+
+72
+00:03:50,619 --> 00:03:57,119
+El domingo dieciocho de septiembre, un usuario llamado teapotuberhacker sube noventa
+
+73
+00:03:57,119 --> 00:04:00,833
+videos de GTA seis a GTAForums, un foro de fans.
+
+74
+00:04:01,183 --> 00:04:02,950
+El nombre ya era una pista:
+
+75
+00:04:02,950 --> 00:04:03,735
+Uber hacker.
+
+76
+00:04:03,735 --> 00:04:08,184
+El mismo usuario decía estar detrás del ataque a Uber de esa semana.
+
+77
+00:04:08,534 --> 00:04:11,907
+Los videos eran de una versión muy temprana del juego:
+
+78
+00:04:11,907 --> 00:04:15,718
+gráficos sin terminar, menús de prueba, textos de desarrollo.
+
+79
+00:04:16,068 --> 00:04:18,960
+Pero lo que mostraban era oro para los fans:
+
+80
+00:04:18,960 --> 00:04:22,050
+la vuelta a Vice City y una protagonista mujer.
+
+81
+00:04:22,400 --> 00:04:25,653
+En pocas horas los videos estaban en todas las redes.
+
+82
+00:04:25,653 --> 00:04:29,766
+Take Two pedía que los borraran, y volvían a aparecer en otro lado.
+
+83
+00:04:30,116 --> 00:04:32,484
+Al día siguiente, Rockstar lo confirma:
+
+84
+00:04:32,484 --> 00:04:36,127
+alguien entró en sus sistemas y se llevó material del juego.
+
+85
+00:04:36,127 --> 00:04:40,985
+La empresa dice que está muy decepcionada, pero que el desarrollo sigue según lo
+
+86
+00:04:40,985 --> 00:04:41,532
+previsto.
+
+87
+00:04:41,882 --> 00:04:47,272
+Ese lunes, las acciones de Take Two, la dueña de Rockstar, llegaron a caer casi un
+
+88
+00:04:47,272 --> 00:04:49,901
+seis por ciento antes de abrir la bolsa.
+
+89
+00:04:50,251 --> 00:04:52,145
+Y la policía se mueve rápido.
+
+90
+00:04:52,145 --> 00:04:57,565
+Entra en la habitación del hotel y, según se contó después, encuentra el Fire Stick
+
+91
+00:04:57,565 --> 00:04:59,394
+todavía enchufado a la tele.
+
+92
+00:04:59,744 --> 00:05:04,627
+Pocos días después, la policía de Londres anuncia que detuvo a un chico de
+
+93
+00:05:04,627 --> 00:05:06,673
+diecisiete años en Oxfordshire.
+
+94
+00:05:06,673 --> 00:05:08,521
+El hotel se había terminado.
+
+95
+00:05:09,471 --> 00:05:10,457
+Capítulo cuatro.
+
+96
+00:05:10,457 --> 00:05:11,874
+Un juicio sin culpable.
+
+97
+00:05:12,774 --> 00:05:18,025
+El juicio empieza en julio de dos mil veintitrés, en Londres, y dura casi dos meses.
+
+98
+00:05:18,375 --> 00:05:20,005
+Pero tiene algo muy raro.
+
+99
+00:05:20,005 --> 00:05:25,351
+Los psiquiatras dicen que Kurtaj, por su autismo severo, no está en condiciones de
+
+100
+00:05:25,351 --> 00:05:26,133
+ser juzgado.
+
+101
+00:05:26,483 --> 00:05:30,504
+Entonces el jurado no puede declararlo culpable ni inocente.
+
+102
+00:05:30,504 --> 00:05:32,380
+Solo puede decidir una cosa:
+
+103
+00:05:32,380 --> 00:05:34,189
+si cometió los hechos o no.
+
+104
+00:05:34,539 --> 00:05:39,284
+Y el veintitrés de agosto, por unanimidad, el jurado decide que sí:
+
+105
+00:05:39,284 --> 00:05:44,596
+cometió doce delitos, entre ellos extorsión, fraude y ataques informáticos.
+
+106
+00:05:44,946 --> 00:05:50,312
+El otro acusado, un chico de diecisiete años del mismo grupo, es declarado culpable
+
+107
+00:05:50,312 --> 00:05:51,346
+de tres delitos.
+
+108
+00:05:51,696 --> 00:05:54,771
+En el juicio, Rockstar cuenta cuánto le costó todo:
+
+109
+00:05:54,771 --> 00:05:58,749
+cinco millones de dólares y miles de horas de trabajo de su gente.
+
+110
+00:05:59,099 --> 00:06:01,253
+La defensa contesta con otro dato.
+
+111
+00:06:01,253 --> 00:06:06,511
+El primer tráiler de GTA seis hizo noventa millones de vistas en YouTube en un solo
+
+112
+00:06:06,511 --> 00:06:08,032
+día, un récord Guinness.
+
+113
+00:06:08,032 --> 00:06:09,679
+¿Dónde está el daño grave?
+
+114
+00:06:10,029 --> 00:06:11,998
+En diciembre llega la decisión.
+
+115
+00:06:11,998 --> 00:06:13,268
+Y sorprende a todos.
+
+116
+00:06:13,618 --> 00:06:14,615
+No es la cárcel:
+
+117
+00:06:14,615 --> 00:06:19,287
+es una internación en un hospital de alta seguridad, por tiempo indefinido.
+
+118
+00:06:19,637 --> 00:06:21,247
+El juez explica por qué:
+
+119
+00:06:21,247 --> 00:06:26,546
+sus habilidades y sus ganas de cometer delitos informáticos lo convierten en un
+
+120
+00:06:26,546 --> 00:06:28,022
+peligro para la gente.
+
+121
+00:06:28,372 --> 00:06:31,282
+Y un informe médico agrega un dato inquietante:
+
+122
+00:06:31,282 --> 00:06:35,556
+él seguía diciendo que quería volver al cibercrimen lo antes posible.
+
+123
+00:06:35,906 --> 00:06:38,776
+En la práctica, podía quedarse ahí toda la vida.
+
+124
+00:06:38,776 --> 00:06:43,141
+Solo iba a salir el día que los médicos dijeran que ya no era un peligro.
+
+125
+00:06:44,091 --> 00:06:45,267
+Capítulo cinco.
+
+126
+00:06:45,267 --> 00:06:47,461
+Diez días antes de GTA seis.
+
+127
+00:06:48,361 --> 00:06:51,627
+Durante más de dos años, Kurtaj está internado.
+
+128
+00:06:51,627 --> 00:06:55,310
+Y mientras tanto, GTA seis se retrasa una y otra vez.
+
+129
+00:06:55,660 --> 00:06:58,347
+Primero iba a salir en dos mil veinticinco.
+
+130
+00:06:58,347 --> 00:07:01,660
+Después, el veintiséis de mayo de dos mil veintiséis.
+
+131
+00:07:01,660 --> 00:07:04,097
+Y al final, el diecinueve de noviembre.
+
+132
+00:07:04,447 --> 00:07:07,876
+Y en dos mil veintiséis, los médicos cambian de opinión:
+
+133
+00:07:07,876 --> 00:07:12,284
+deciden que Kurtaj ya está en condiciones de enfrentar un juicio normal.
+
+134
+00:07:12,634 --> 00:07:17,933
+En julio, el periodista de la BBC Joe Tidy cuenta que lo sacaron del hospital y lo
+
+135
+00:07:17,933 --> 00:07:21,228
+pasaron a una cárcel común, a la espera del juicio.
+
+136
+00:07:21,578 --> 00:07:25,142
+Ni siquiera está claro por qué cambiaron de opinión ahora.
+
+137
+00:07:25,142 --> 00:07:26,862
+Pero el resultado es enorme:
+
+138
+00:07:26,862 --> 00:07:30,303
+esta vez lo pueden juzgar como a cualquier otro acusado.
+
+139
+00:07:30,653 --> 00:07:35,130
+En dos mil veintitrés solo se decidió si había cometido los hechos.
+
+140
+00:07:35,130 --> 00:07:37,201
+Ahora se decide si es culpable.
+
+141
+00:07:37,201 --> 00:07:39,874
+Y, si lo es, qué condena le corresponde.
+
+142
+00:07:40,224 --> 00:07:45,419
+Según sus abogados, el juicio está fijado para el nueve de noviembre, en un tribunal
+
+143
+00:07:45,419 --> 00:07:46,099
+de Londres.
+
+144
+00:07:46,099 --> 00:07:49,315
+Mientras ves este video, puede que ya haya empezado.
+
+145
+00:07:49,665 --> 00:07:50,597
+Mirá las fechas.
+
+146
+00:07:50,597 --> 00:07:55,374
+El chico que filtró GTA seis desde un hotel vuelve al banquillo diez días antes de
+
+147
+00:07:55,374 --> 00:07:57,122
+que el juego salga a la venta.
+
+148
+00:07:57,122 --> 00:07:59,278
+Ni Rockstar lo hubiera escrito mejor.
+
+149
+00:07:59,628 --> 00:08:01,787
+Y ojo con lo que circula en redes.
+
+150
+00:08:01,787 --> 00:08:06,676
+Este año aparecieron nuevas filtraciones de GTA seis desde una cuenta anónima
+
+151
+00:08:06,676 --> 00:08:07,819
+llamada CyberLeek.
+
+152
+00:08:07,819 --> 00:08:11,566
+Pero no hay ninguna fuente seria que la conecte con Kurtaj.
+
+153
+00:08:11,916 --> 00:08:14,252
+¿Y a GTA seis qué le hizo todo esto?
+
+154
+00:08:14,252 --> 00:08:15,550
+Al final, casi nada.
+
+155
+00:08:15,550 --> 00:08:20,937
+Take Two espera facturar más de ocho mil millones de dólares este año fiscal, sobre
+
+156
+00:08:20,937 --> 00:08:22,365
+todo gracias al juego.
+
+157
+00:08:22,715 --> 00:08:27,917
+Lo que sí queda es la historia de un chico que, con un aparato para ver series, puso
+
+158
+00:08:27,917 --> 00:08:31,200
+en jaque a uno de los estudios más grandes del mundo.
+
+159
+00:08:31,200 --> 00:08:34,235
+Y que ahora, por fin, va a escuchar un veredicto.
+
+160
+00:08:34,585 --> 00:08:36,127
+Y ahora te pregunto a vos.
+
+161
+00:08:36,127 --> 00:08:38,795
+Si lo declaran culpable, ¿tiene que ir preso?
+
+162
+00:08:38,795 --> 00:08:41,820
+¿O ya pagó con todo el tiempo que estuvo internado?
+
+163
+00:08:41,820 --> 00:08:43,362
+Te leo en los comentarios.
+
+164
+00:08:43,712 --> 00:08:48,564
+Y suscribite, porque el diecinueve de noviembre arranca el gameplay de GTA seis acá
+
+165
+00:08:48,564 --> 00:08:49,266
+en el canal.
+
+166
+00:08:49,266 --> 00:08:51,078
+Todas las veces que haga falta.
+
