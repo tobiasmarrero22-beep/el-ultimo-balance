@@ -1,0 +1,146 @@
+{
+ "fuente": "Pexels vía vidIQ (vidiq_generate_broll 1 cr/búsqueda, 16 búsquedas) + https://www.pexels.com/download/video/<id>/ → vidiq_video_upload → getclip.sh",
+ "clips": {
+  "bmw_hq_1": {
+   "pexels_id": 35141426,
+   "autor": "Graphicpedia Creative",
+   "pagina": "https://www.pexels.com/video/35141426/"
+  },
+  "bmw_hq_2": {
+   "pexels_id": 35099668,
+   "autor": "Graphicpedia Creative",
+   "pagina": "https://www.pexels.com/video/35099668/"
+  },
+  "bmw_forest": {
+   "pexels_id": 33866940,
+   "autor": "Surja Sen Das Raj",
+   "pagina": "https://www.pexels.com/video/33866940/"
+  },
+  "bmw_drive": {
+   "pexels_id": 5951267,
+   "autor": "Kaboompics (Karola G)",
+   "pagina": "https://www.pexels.com/video/5951267/"
+  },
+  "steering": {
+   "pexels_id": 4203572,
+   "autor": "Luis Quintero",
+   "pagina": "https://www.pexels.com/video/4203572/"
+  },
+  "classic_front": {
+   "pexels_id": 31220619,
+   "autor": "K",
+   "pagina": "https://www.pexels.com/video/31220619/"
+  },
+  "classic_interior": {
+   "pexels_id": 31220571,
+   "autor": "K",
+   "pagina": "https://www.pexels.com/video/31220571/"
+  },
+  "classic_wheel": {
+   "pexels_id": 31220617,
+   "autor": "K",
+   "pagina": "https://www.pexels.com/video/31220617/"
+  },
+  "bmw_320i": {
+   "pexels_id": 30418721,
+   "autor": "Gaurav Kumar",
+   "pagina": "https://www.pexels.com/video/30418721/"
+  },
+  "antique_show": {
+   "pexels_id": 30010030,
+   "autor": "LayG Traveller",
+   "pagina": "https://www.pexels.com/video/30010030/"
+  },
+  "moto_gs": {
+   "pexels_id": 35605096,
+   "autor": "Edoardo Geninatti",
+   "pagina": "https://www.pexels.com/video/35605096/"
+  },
+  "moto_country": {
+   "pexels_id": 35604905,
+   "autor": "Edoardo Geninatti",
+   "pagina": "https://www.pexels.com/video/35604905/"
+  },
+  "factory_auto": {
+   "pexels_id": 6450803,
+   "autor": "Engin Altundağ",
+   "pagina": "https://www.pexels.com/video/6450803/"
+  },
+  "factory_pedestal": {
+   "pexels_id": 4468754,
+   "autor": "Engin Altundağ",
+   "pagina": "https://www.pexels.com/video/4468754/"
+  },
+  "robots": {
+   "pexels_id": 32386522,
+   "autor": "Usman AbdulrasheedGambo",
+   "pagina": "https://www.pexels.com/video/32386522/"
+  },
+  "munich_aerial": {
+   "pexels_id": 33388113,
+   "autor": "Fich View Studio",
+   "pagina": "https://www.pexels.com/video/33388113/"
+  },
+  "bmw_drift": {
+   "pexels_id": 4568863,
+   "autor": "Abed Ismail",
+   "pagina": "https://www.pexels.com/video/4568863/"
+  },
+  "rolls_sign": {
+   "pexels_id": 11918056,
+   "autor": "Ammad Rasool",
+   "pagina": "https://www.pexels.com/video/11918056/"
+  },
+  "luxury_pass": {
+   "pexels_id": 8747374,
+   "autor": "Yash Rao",
+   "pagina": "https://www.pexels.com/video/8747374/"
+  },
+  "mini_suv": {
+   "pexels_id": 38452040,
+   "autor": "Harshal",
+   "pagina": "https://www.pexels.com/video/38452040/"
+  },
+  "ev_charge": {
+   "pexels_id": 9790134,
+   "autor": "Kindel Media",
+   "pagina": "https://www.pexels.com/video/9790134/"
+  },
+  "merc_emblem": {
+   "pexels_id": 31220656,
+   "autor": "K",
+   "pagina": "https://www.pexels.com/video/31220656/"
+  },
+  "merc_gt": {
+   "pexels_id": 30604281,
+   "autor": "CALI_MEDIA",
+   "pagina": "https://www.pexels.com/video/30604281/"
+  },
+  "ww2_plane": {
+   "pexels_id": 13066174,
+   "autor": "Jozef Papp",
+   "pagina": "https://www.pexels.com/video/13066174/"
+  },
+  "autobahn": {
+   "pexels_id": 35044753,
+   "autor": "El Jundi",
+   "pagina": "https://www.pexels.com/video/35044753/"
+  },
+  "showroom": {
+   "pexels_id": 14228182,
+   "autor": "Amar Preciado",
+   "pagina": "https://www.pexels.com/video/14228182/"
+  },
+  "bmw_interior": {
+   "pexels_id": 3757013,
+   "autor": "Luis Quintero",
+   "pagina": "https://www.pexels.com/video/3757013/"
+  },
+  "dealership_bw": {
+   "pexels_id": 40609283,
+   "autor": "Altaf Shah",
+   "pagina": "https://www.pexels.com/video/40609283/"
+  }
+ },
+ "imagenes_ia": "7 con vidiq_generate_thumbnail (22 cr c/u): ver img_urls.txt"
+}
