@@ -12,3 +12,4 @@ preview/
 # 70x7/003 usa imágenes IA y voz de Adán (no hay material del usuario): sí se guardan
 !70x7/003-guia/img/
 !70x7/003-guia/audio/
+videos/*/audio_*/
