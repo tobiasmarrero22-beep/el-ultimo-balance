@@ -22,3 +22,13 @@ Datos de la API de YouTube del 2026-11-01. "EN" = mejores vídeos en inglés des
 - Fortunas (450k): "La caída de Nike" → 543k
 - Moatseek (55k): "Por qué ya nadie compra Doritos" → 293k
 - Lección: los temas calientes se copian en español en días → la ventaja es la velocidad.
+
+## Tanda del 2026-11-11 (API de YouTube: EN desde ago/may-2026; ES desde 2025) — 5 opciones para que elija el usuario
+| Tema | EN | ES | Notas |
+|---|---|---|---|
+| Villa Vie Odyssey: el crucero "para toda la vida" varado en Camboya | 1,67M (doc 37 min), Shorts 2M/1,2M, NewsNation 990k | solo noticias cortas (BBC Mundo 375k, 539k) | suspendió operaciones el 27-oct-2026; ~200 residentes fuera del barco en Sihanoukville; combustible por camarote 1.800 → 8.000 $/mes |
+| Buldak: el ramen picante que salvó a Samyang (auge) | 1,98M (Statrys) | ningún largo; solo Shorts de sabores | ventas 2025: 2,35 billones de wones (+36 %), 81 % fuera de Corea; valor en bolsa > Nongshim (jun-2025) |
+| De Beers: el fin de "un diamante es para siempre" | 2,07M, 1,4M, CNBC 935k | 117k (noticia), 76k (largo) | Anglo: pérdida de 3.700 M$ en 2025 (3.ª depreciación de De Beers en 3 años); precio medio −32 %; venta del 85 % |
+| Jaguar: la marca que dejó de vender coches | 1,69M (Short), 759k, 723k, 502k | 104k (noticia), resto <10k | 6 matriculaciones en RU en ene-2026 (−99 %); sin producción hasta el relanzamiento eléctrico; rebrand "Copy Nothing" |
+| Sriracha (Huy Fong): la salsa que rompió con su granjero | 1,57M | Shorts y vídeos de <3k | jurado 2019: 23,3 M$ a Underwood Ranches; escasez 2022-2024 |
+Descartados por cobertura en español: GoPro (1,2M), Labubu (997k), Theranos (millones), Forest City (3,9M). Prince Group: poco interés en largos en inglés.
