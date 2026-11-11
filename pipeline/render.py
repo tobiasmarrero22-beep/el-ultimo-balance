@@ -400,7 +400,7 @@ def scene_board(v, t, D, W, H, seed):
     d.rectangle([x0 - 20 * sc, y0 - 120 * sc, x1 + 20 * sc, H * 0.92], fill=(12, 14, 18), outline=(60, 66, 78), width=int(4 * sc))
     d.text((x0, y0 - 64 * sc), v.get("title", "SALIDAS"), font=font(ANTON, int(64 * sc)), fill=YEL, anchor="lm")
     rows = v["rows"]; rh = (H * 0.70) / max(6, len(rows)); fin = v.get("final", "CANCELADO")
-    cols = [x0, x0 + 190 * sc, x0 + 860 * sc, x0 + 1150 * sc]
+    cols = [x0 + c * sc for c in v.get("cols", [0, 190, 860, 1150])]
     fm = font(INTER_B, int(min(46, rh * 0.55 / sc) * sc))
     for r, row in enumerate(rows):
         y = y0 + r * rh + rh / 2
