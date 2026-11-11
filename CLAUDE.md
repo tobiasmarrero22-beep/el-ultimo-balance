@@ -66,6 +66,8 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   22 créditos de vidIQ (se reembolsan si falla). Máximo ~10 trabajos a la vez; `vidiq_job_poll` → `imageUrl` en
   ai-thumbnails.s3.amazonaws.com (se descarga aquí); reescalar a 1920×1080 y guardar en `img/`; URLs en `img_urls.txt`.
   DubVoice nano-banana-2-lite volvió el 7-nov pero falla ~45 % con 502 y **cobra** los fallos (2.500 cr perdidos en el 007).
+  **11-nov: NO probar otros modelos de imagen de DubVoice.** google-pics y gpt-image-2 dieron 502 y cobraron 1.000 y **15.000** cr;
+  grok-image y meta dieron 500 (reembolsan) pero no generan. Sin precio confirmado, no se llama a ningún modelo.
 - **Animación nueva en render.py (007):** escenas `board` (tablero de salidas que gira a CANCELADO), `route` (mapa con rutas
   y avión), `headline` (titular de prensa con palabra subrayada; parafrasear y citar fuente); en escenas `img`: `pop=[...]`
   (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes
