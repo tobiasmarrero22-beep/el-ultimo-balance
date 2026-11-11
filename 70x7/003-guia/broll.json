@@ -1,0 +1,59 @@
+{
+ "fuente": "Pexels vía vidIQ (11 búsquedas) + enlace de descarga → vidiq_video_upload → getclip.sh",
+ "clips": {
+  "obelisco_night": {
+   "pexels_id": 31563866,
+   "autor": "Franco Molinari"
+  },
+  "console_download": {
+   "pexels_id": 7988056,
+   "autor": "SHVETS production"
+  },
+  "friends_midnight": {
+   "pexels_id": 8888779,
+   "autor": "MART PRODUCTION"
+  },
+  "earth_night": {
+   "pexels_id": 854225,
+   "autor": "Pixabay"
+  },
+  "phone_spoilers": {
+   "pexels_id": 6756650,
+   "autor": "Joshua Malic"
+  },
+  "highway_neon": {
+   "pexels_id": 15270404,
+   "autor": "Foster"
+  },
+  "neon_racing_tv": {
+   "pexels_id": 36032432,
+   "autor": "Ege Tutuncu"
+  },
+  "swamp_airboat": {
+   "pexels_id": 11840880,
+   "autor": "MIA Alaska TV"
+  },
+  "ssd_install": {
+   "pexels_id": 38496193,
+   "autor": "Media Hopper Studio"
+  },
+  "empty_box": {
+   "pexels_id": 6332845,
+   "autor": "Kaboompics"
+  },
+  "store_night": {
+   "pexels_id": 7856589,
+   "autor": "Ron Lach"
+  },
+  "pesos_controller": {
+   "pexels_id": 12792982,
+   "autor": "Kuiyibo Campos"
+  }
+ },
+ "imagenes_ia_reutilizadas": [
+  "neon_city",
+  "controller",
+  "forum_screen"
+ ],
+ "dubvoice_fallos": "console_download, ssd_install, empty_box: 502 cobrados (1.500 cr)"
+}

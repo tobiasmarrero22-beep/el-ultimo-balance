@@ -210,10 +210,10 @@ PRONUNCIA = {
 SHORTS = {}  # sin Shorts (como el 002)
 
 THUMBS = [
-    dict(img="obelisco_night", zoom=1.05, cx=0.5, cy=0.5, shade=["left", 220, 0.62], items=[
+    dict(img="obelisco_night", zoom=1.05, cx=0.5, cy=0.5, bright=0.55, shade=["left", 220, 0.62], items=[
         ["text", 45, 60, "00:00", 230, "yellow", "la"], ["text", 45, 340, "EN ARGENTINA", 120, "white", "la"], ["badge", 45, 540, 470, 660, "GTA 6", 100]]),
     dict(img="empty_box", zoom=1.05, cx=0.55, cy=0.5, shade=["left", 220, 0.62], items=[
-        ["text", 45, 60, "SIN", 220, "pink", "la"], ["text", 45, 320, "DISCO", 200, "white", "la"], ["badge", 45, 560, 470, 680, "GTA 6", 100]]),
+        ["text", 45, 50, "SIN", 200, "pink", "la"], ["text", 45, 290, "DISCO", 190, "white", "la"], ["badge", 45, 575, 470, 690, "GTA 6", 100]]),
     dict(img="console_download", zoom=1.05, cx=0.55, cy=0.5, shade=["left", 220, 0.62], items=[
         ["text", 45, 60, "212 GB", 220, "yellow", "la"], ["text", 45, 330, "PREDESCARGA", 120, "white", "la"], ["badge", 45, 530, 470, 650, "GTA 6", 100]]),
     dict(img="phone_spoilers", zoom=1.05, cx=0.55, cy=0.5, shade=["left", 220, 0.62], items=[
@@ -251,8 +251,9 @@ META = {
         "TechRadar / TechSpot / Esquire India (jun-2026): precios oficiales y bonificación por reserva",
         "Infobae (25-jun-2026) y Notebookcheck: precios en Argentina y cambio a moneda local en PS Store",
         "TechRadar / TweakTown (2026): Rob Nelson sobre los 30 FPS; ficha de PS Store \"PS5 Pro Enhanced\"",
+        "Tomas de vídeo: Pexels — Franco Molinari, SHVETS production, MART PRODUCTION, Pixabay, Joshua Malic, Foster, Ege Tutuncu, MIA Alaska TV, Media Hopper Studio, Kaboompics, Ron Lach, Kuiyibo Campos",
     ],
-    "disclosure": "Las imágenes son ilustraciones generadas con IA y tomas de archivo: no muestran el juego. Los horarios son los que muestran las tiendas digitales; confirmalos en tu consola cerca de la fecha. Narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.",
+    "disclosure": "Las tomas de vídeo son de Pexels (autores en las fuentes) y algunas imágenes son ilustraciones generadas con IA: nada de eso muestra el juego. Los horarios son los que muestran las tiendas digitales; confirmalos en tu consola cerca de la fecha. Narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.",
     "hashtags": "#GTA6 #GTAVI #Rockstar #70x7",
     "category": "Videojuegos",
     "playlist": "GTA 6: todo lo que sabemos",
