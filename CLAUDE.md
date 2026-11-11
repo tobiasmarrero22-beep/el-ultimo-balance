@@ -74,6 +74,10 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes
   (WHIP=1), destello + glitch RGB en capítulos, grano de película, planos cada 3,3 s (SEG). Vídeos sin Shorts: `SHORTS = {}`.
   Desde el 70x7-002: `chat` (mensajes con "escribiendo…", `alert` en rojo), `terminal` (tecleo con sonido) y `timeline` (`hl`).
+- **Otros idiomas (008, 11-nov):** `pipeline/dub.py <vídeo> en|pt` → pistas de audio para YouTube "varios idiomas" + SRT, sobre el mismo
+  vídeo. Traducciones en `<vídeo>/i18n.py` (VOICES, EN, PT, META_I18N). Voces DubVoice: inglés Aaron `LFd0JubQRIlhAUIf9mOH`, portugués Nassif
+  `acdKA5HckGxoxxvy40dA` (velocidad 1,06; rehacer a 1,18 las escenas que necesiten >x1,15). Lista de voces: `GET /api/v1/voices?language=pt`.
+  Coste: ~1 cr/carácter por idioma (≈12.000 para 15 min). Entrega en `entrega/idiomas/` con `IDIOMAS.md`.
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).
