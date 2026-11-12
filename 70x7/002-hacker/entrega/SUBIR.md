@@ -13,7 +13,7 @@ Filtró GTA 6 desde un hotel… y ahora lo juzgan 10 días antes del lanzamiento
 
 **Descripción**
 ```
-En septiembre de 2022, un chico de 17 años encerrado en un hotel, sin computadora y vigilado por la policía, se metió en Rockstar con un Fire Stick enchufado a la tele y filtró 90 videos de GTA 6. Lo mandaron a un hospital de alta seguridad sin fecha de salida… y ahora, según sus abogados, su juicio está fijado para el 9 de noviembre, diez días antes del lanzamiento de GTA 6. La historia completa de Arion Kurtaj y Lapsus$: Nvidia, Uber, el chat interno de Rockstar, el juicio sin culpable y lo que puede pasar ahora.
+En septiembre de 2022, un chico de 17 años encerrado en un hotel, sin computadora y vigilado por la policía, se metió en Rockstar con un Fire Stick enchufado a la tele y filtró 90 videos de GTA 6. Lo mandaron a un hospital de alta seguridad sin fecha de salida… y ahora, según sus abogados, su juicio estaba fijado para el 9 de noviembre, diez días antes del lanzamiento de GTA 6. La historia completa de Arion Kurtaj y Lapsus$: Nvidia, Uber, el chat interno de Rockstar, el juicio sin culpable y lo que puede pasar ahora.
 
 🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.
 
