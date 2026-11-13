@@ -22,6 +22,10 @@ más subtítulos y título/descripción traducidos. YouTube muestra el idioma de
 Si no te aparece la opción **Audio** (YouTube la va habilitando por canal), cargá igual los subtítulos y el título/descripción
 traducidos, que están disponibles para todos, y avisame: te armo el vídeo completo con el audio en inglés y en portugués.
 
+## Miniaturas por idioma
+Tu miniatura con el texto traducido: `miniatura_usuario/miniatura_en.jpg` («THE LIFELINE») y `miniatura_usuario/miniatura_pt.jpg`
+(«A SALVAÇÃO»). Si en **Idiomas** Studio te deja subir una miniatura por idioma, cargalas ahí; si no, YouTube muestra la principal a todos.
+
 ## 🇺🇸 Inglés
 **Título**
 ```
