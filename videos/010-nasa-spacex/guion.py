@@ -46,6 +46,7 @@ IMAGES = {
     "vanguard_explosion": "1950s rocket exploding in a huge fireball on its launch pad, black smoke, black and white film look" + N,
     "explorer_launch": "1958 night rocket launch at Cape Canaveral, bright flame lighting the pad and the smoke, vintage film photograph" + N,
     "signing_desk": "Close-up of hands in a suit signing an official document with a fountain pen on a wooden desk in 1958, flags blurred behind, no faces" + V + N,
+    "naca_meeting": "Final meeting of the NACA in 1958 (archive photo, NASA)",
     "hangar_naca": "1950s aeronautics laboratory with a large wind tunnel and engineers in white shirts and ties seen from behind, chalkboards" + V + N,
     "astronauts_silver": "Seven astronauts in silver pressure suits walking side by side seen from behind on an airfield in 1959" + V + N,
     "rocket_factory_60s": "Huge 1960s rocket factory with giant cylindrical rocket stages, workers on scaffolding seen from behind" + V + N,
@@ -90,7 +91,7 @@ SCENES = [
     dict(id="s05", text="Pero para entender por qué una agencia del Gobierno de Estados Unidos terminó rescatando a una empresa privada con un cohete que no paraba de explotar, hay que volver cincuenta años atrás.",
          visual=I("rocket_fail", shake=True)),
     dict(id="s06", text="A un pitido. Un pitido que llegó desde el espacio en mil novecientos cincuenta y siete y que asustó a todo un país.",
-         visual=I("radio_1957", pop=["BIP… BIP… BIP…"])),
+         visual=I("sputnik_orbit", pop=["BIP… BIP… BIP…"])),
     dict(id="s07", text="Esta es la historia de cómo nació la NASA. Y de cómo, medio siglo después, la agencia que se creó para ganarle una carrera a los soviéticos acabó dependiendo de un cohete privado.",
          visual=I("saturn_launch")),
     dict(id="s08", text="Y al final te voy a hacer una pregunta incómoda: después de todo lo que pasó, ¿quién le debe más a quién?",
@@ -155,11 +156,11 @@ SCENES = [
     dict(id="s36", text="Y nace con una decisión clave: sería una agencia civil, no militar. Al menos en público, el espacio se iba a explorar con fines pacíficos.",
          visual=dict(type="quote", text="UNA AGENCIA\nCIVIL,\nNO MILITAR")),
     dict(id="s37", text="El uno de octubre, la NASA abre sus puertas. Pero no empieza de cero: absorbe una agencia que llevaba décadas investigando aviones, el NACA, fundado en mil novecientos quince.",
-         visual=dict(type="year", year="1/10/1958", sub="LA NASA EMPIEZA A FUNCIONAR")),
+         visual=I("hangar_naca", cap="NACA · TÚNEL DE VIENTO DE LANGLEY")),
     dict(id="s38", text="Con él llegan unos ocho mil empleados, varios laboratorios y un presupuesto de unos cien millones de dólares al año.",
          visual=dict(type="num", start=0, end=8000, suffix=" EMPLEADOS", label="LO QUE LA NASA HEREDÓ DEL NACA (Y UNOS 100 M$ AL AÑO)")),
     dict(id="s39", text="Su primer administrador es Keith Glennan, presidente de una universidad de Ohio. Aceptó con una condición: que el director del NACA, Hugh Dryden, fuera su número dos.",
-         visual=I("hangar_naca")),
+         visual=I("naca_meeting", cap="ÚLTIMA REUNIÓN DEL NACA · 1958")),
     dict(id="s40", text="Y en abril de mil novecientos cincuenta y nueve presenta a sus primeros siete astronautas, los del programa Mercury. El país los recibió como héroes antes de que hubieran volado.",
          visual=I("astronauts_silver", cap="ABRIL DE 1959 · LOS 7 DEL MERCURY")),
     dict(id="s41", text="Uno de ellos se llamaba Gordon Cooper. Recuerda ese nombre: volverá a aparecer en esta historia cincuenta años después.",
@@ -229,7 +230,7 @@ SCENES = [
     dict(id="s71", text="Veintiuno de marzo de dos mil siete. Segundo intento. Esta vez llega al espacio, pero la segunda etapa empieza a oscilar y no alcanza la órbita.",
          visual=I("control_room", pop=["2.º FALLO"], pop_col="red")),
     dict(id="s72", text="Dos de agosto de dos mil ocho. Tercer intento. Y esta vez el cohete lleva carga de verdad: un satélite militar y dos pequeños experimentos de la NASA.",
-         visual=I("pacific_island", cap="2 DE AGOSTO DE 2008", motion="out")),
+         visual=I("pacific_island", motion="out")),
     dict(id="s73", text="La primera etapa funciona a la perfección. Pero al separarse, un error de sincronización hace que las dos etapas choquen. Tercer fallo.",
          visual=dict(type="board", title="FALCON 1 · LANZAMIENTOS", rows=[["24/03/2006", "Vuelo 1 · Omelek", "FALCON 1", "DESPEGUE"],
                      ["21/03/2007", "Vuelo 2 · Omelek", "FALCON 1", "DESPEGUE"], ["02/08/2008", "Vuelo 3 · Omelek", "FALCON 1", "DESPEGUE"]], final="FALLO")),
@@ -260,11 +261,11 @@ SCENES = [
     # --- 08 ---
     dict(id="s85", text="Capítulo ocho: el cuarto intento.", visual=T("08", "El cuarto intento")),
     dict(id="s86", text="Veintiocho de septiembre de dos mil ocho. Omelek. El cuarto Falcon uno lleva una carga de prueba: un bloque de metal de unos ciento sesenta y cinco kilos, apodado RatSat.",
-         visual=I("pacific_island", cap="28 DE SEPTIEMBRE DE 2008", motion="out")),
+         visual=I("pacific_island", motion="out", pop=["4.º INTENTO"])),
     dict(id="s87", text="Despegue. La primera etapa funciona. Separación… limpia. La segunda etapa enciende su motor.",
          visual=dict(type="terminal", title="omelek · 28 de septiembre de 2008", lines=["> T+00:00 DESPEGUE", "> PRIMERA ETAPA: OK", "> SEPARACIÓN: OK", "> SEGUNDA ETAPA: ENCENDIDA"])),
     dict(id="s88", text="Y unos minutos después llega la confirmación: el Falcon uno está en órbita.",
-         visual=I("rocket_orbit", pop=["EN ÓRBITA"])),
+         visual=I("control_room", pop=["EN ÓRBITA"])),
     dict(id="s89", text="Es el primer cohete de combustible líquido desarrollado por una empresa privada que llega a la órbita de la Tierra. En SpaceX, los empleados gritan y se abrazan.",
          visual=dict(type="stamp", text="28 DE SEPTIEMBRE DE 2008\nFALCON 1 · VUELO 4", stamp="EN ÓRBITA", col="green")),
     dict(id="s90", text="Y fíjate en la fecha: tres días después, el uno de octubre de dos mil ocho, la NASA cumplía exactamente cincuenta años.",
@@ -357,6 +358,7 @@ FALLBACK = {
     "s30": dict(type="quote", text="CINTURONES\nDE VAN ALLEN"),
     "s32": dict(type="quote", text="HACÍA FALTA\nUNA SOLA AGENCIA"),
     "s34": dict(type="year", year="29/7/1958", sub="EISENHOWER FIRMA LA LEY DEL ESPACIO"),
+    "s37": dict(type="year", year="1/10/1958", sub="LA NASA EMPIEZA A FUNCIONAR"),
     "s39": dict(type="versus", title="LOS PRIMEROS JEFES DE LA NASA", left=["ADMINISTRADOR", "KEITH\nGLENNAN"], right=["NÚMERO DOS", "HUGH\nDRYDEN"], mid="+", lcol="yellow", rcol="white"),
     "s40": dict(type="year", year="1959", sub="LOS 7 ASTRONAUTAS DEL PROGRAMA MERCURY"),
     "s41": dict(type="quote", text="RECUERDA ESTE NOMBRE:\nGORDON COOPER"),
@@ -404,13 +406,13 @@ SHORTS = {}
 THUMBS = [
     dict(img="sputnik_orbit", zoom=1.05, cx=0.6, shade=["left", 225, 0.62], items=[
         ["text", 45, 60, "UN PITIDO", 160, "white", "la"], ["text", 45, 260, "CREÓ", 150, "white", "la"], ["text", 45, 430, "LA NASA", 180, "yellow", "la"]]),
-    dict(img="rocket_fail", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
+    dict(img="pacific_island", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
         ["text", 45, 60, "3 FALLOS", 190, "red", "la"], ["text", 45, 300, "Y CASI", 140, "white", "la"], ["text", 45, 460, "QUIEBRA", 160, "white", "la"]]),
-    dict(img="christmas_city", zoom=1.05, cx=0.5, shade=["left", 220, 0.6], items=[
+    dict(img="roadster_2008", zoom=1.05, cx=0.6, shade=["left", 220, 0.62], items=[
         ["text", 45, 60, "SALVADO", 180, "yellow", "la"], ["text", 45, 290, "EN", 120, "white", "la"], ["text", 45, 420, "NOCHEBUENA", 150, "white", "la"]]),
     dict(img="vanguard_explosion", zoom=1.05, cx=0.5, shade=["left", 220, 0.6], items=[
         ["text", 45, 60, "FLOPNIK", 200, "red", "la"], ["text", 45, 320, "EN DIRECTO", 120, "white", "la"]]),
-    dict(img="pacific_island", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
+    dict(img="explorer_launch", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
         ["text", 45, 60, "EL ÚLTIMO", 150, "white", "la"], ["text", 45, 260, "COHETE", 200, "yellow", "la"]]),
     dict(img="empty_office_night", zoom=1.05, cx=0.5, shade=["left", 220, 0.62], items=[
         ["text", 45, 60, "LA NASA", 170, "white", "la"], ["text", 45, 280, "LO SALVÓ", 170, "yellow", "la"], ["badge", 45, 540, 560, 640, "1.600 M$", 90]]),
@@ -448,7 +450,7 @@ META = {
         "AmericaSpace (16-sep-2014): contratos Commercial Crew; CBS News / NASASpaceflight (mar-2025): regreso de Wilmore y Williams",
         "NASA / NPR (abr-2026): Artemis II; CNBC / Reuters (jun-2026): salida a bolsa de SpaceX",
     ],
-    "disclosure": "Las imágenes de este vídeo son ilustraciones generadas con IA: no muestran a personas, naves ni lugares reales. La narración está hecha con voz sintética.",
+    "disclosure": "Fotos de archivo vía Wikimedia Commons: NASA, Ejército y Marina de EE. UU. (dominio público), SpaceX (CC0) y otros autores con licencia CC BY (créditos arriba). Dos imágenes (una oficina de noche y una sala de bolsa) son ilustraciones generadas con IA. Los mapas y gráficos son recreaciones. La narración está hecha con voz sintética.",
     "hashtags": "#NASA #SpaceX #ElonMusk #Historia",
     "tags": ["nasa", "historia de la nasa", "cómo nació la nasa", "spacex", "elon musk", "sputnik", "carrera espacial", "falcon 1",
              "elon musk 2008", "tesla 2008", "crew dragon", "artemis ii", "historia de empresas", "negocios", "el último balance"],
