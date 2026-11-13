@@ -302,7 +302,7 @@ SCENES = [
     dict(id="s104", text="Mientras tanto, la NASA vivía una situación incómoda. Desde que se jubiló el transbordador, en dos mil once, no tenía forma propia de llevar astronautas al espacio.",
          visual=I("shuttle_hangar", motion="out")),
     dict(id="s105", text="Para subirlos a la estación, le pagaba a Rusia por asientos en las naves Soyuz. Los más caros llegaron a costar unos ochenta y seis millones de dólares por astronauta.",
-         visual=dict(type="num", start=0, end=86, suffix=" M$", label="PRECIO MÁXIMO DE UN ASIENTO EN LA SOYUZ RUSA (INSPECTOR GENERAL DE LA NASA)")),
+         visual=dict(type="num", start=0, end=86, suffix=" M$", label="PRECIO MÁXIMO DE UN ASIENTO EN LA NAVE RUSA SOYUZ")),
     dict(id="s106", text="La agencia que había nacido para ganarle la carrera espacial a los soviéticos tenía que comprarle los viajes a Rusia.",
          visual=I("soyuz_steppe", pop=["LA IRONÍA"])),
     dict(id="s107", text="En dos mil catorce, la NASA reparte los contratos para volver a lanzar astronautas desde casa: cuatro mil doscientos millones para Boeing, el gigante de siempre. Dos mil seiscientos millones para SpaceX.",
@@ -312,7 +312,7 @@ SCENES = [
     dict(id="s109", text="¿Y Boeing? Su nave, la Starliner, tuvo tantos problemas en su primer vuelo con tripulación, en dos mil veinticuatro, que volvió a la Tierra vacía.",
          visual=dict(type="stamp", text="STARLINER · 2024", stamp="VOLVIÓ VACÍA", col="red")),
     dict(id="s110", text="Sus dos astronautas regresaron en marzo de dos mil veinticinco… a bordo de una Dragon de SpaceX, después de doscientos ochenta y seis días en el espacio.",
-         visual=dict(type="num", start=0, end=286, suffix=" DÍAS", label="EN EL ESPACIO · VOLVIERON EN UNA DRAGON DE SPACEX (MARZO DE 2025)")),
+         visual=dict(type="num", start=0, end=286, suffix=" DÍAS", label="EN EL ESPACIO · VOLVIERON EN UNA DRAGON (MARZO DE 2025)")),
     dict(id="s111", text="En dos mil veintiuno, la NASA eligió la nave Starship de SpaceX para volver a posar astronautas en la Luna, con un contrato de dos mil ochocientos noventa millones de dólares.",
          visual=dict(type="num", start=0, end=2890, suffix=" M$", label="CONTRATO DE LA NASA PARA EL MÓDULO LUNAR STARSHIP (2021)")),
     dict(id="s112", text="Y en abril de dos mil veintiséis, la propia NASA volvió a la Luna con la misión Artemis dos: cuatro astronautas la rodearon por primera vez desde mil novecientos setenta y dos.",
@@ -426,7 +426,7 @@ THUMBS = [
     dict(img="saturn_launch", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
         ["text", 45, 60, "CÓMO NACIÓ", 150, "white", "la"], ["text", 45, 260, "LA NASA", 200, "yellow", "la"]]),
 ]
-THUMBS_TOP = [6, 1, 2]
+THUMBS_TOP = [6, 4, 1]
 
 META = {
     "code": "010",
@@ -450,6 +450,8 @@ META = {
         "Tesla North / Business Today: la ronda de Tesla del 24-dic-2008",
         "AmericaSpace (16-sep-2014): contratos Commercial Crew; CBS News / NASASpaceflight (mar-2025): regreso de Wilmore y Williams",
         "NASA / NPR (abr-2026): Artemis II; CNBC / Reuters (jun-2026): salida a bolsa de SpaceX",
+        "Fotos vía Wikimedia Commons: NASA, NACA, Marina, Fuerza Aérea y Fuerza Espacial de EE. UU. (dominio público); SpaceX (CC0)",
+        "Fotos con licencia CC BY 2.0 (creativecommons.org/licenses/by/2.0): «The SpaceX Factory», de Steve Jurvetson; «2008 Tesla Roadster rear», de Rutger van der Maar",
     ],
     "disclosure": "Fotos de archivo vía Wikimedia Commons: NASA, Ejército y Marina de EE. UU. (dominio público), SpaceX (CC0) y otros autores con licencia CC BY (créditos arriba). Dos imágenes (una oficina de noche y una sala de bolsa) son ilustraciones generadas con IA. Los mapas y gráficos son recreaciones. La narración está hecha con voz sintética.",
     "hashtags": "#NASA #SpaceX #ElonMusk #Historia",

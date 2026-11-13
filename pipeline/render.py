@@ -202,7 +202,7 @@ def scene_num(v, t, D, W, H, seed):
     a = ease_out((t - 0.3) / 0.5)
     if a > 0:
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        ImageDraw.Draw(layer).text((W / 2, H * 0.68), v["label"], font=font(INTER_B, int(54 * sc)), fill=WHITE + (int(255 * a),), anchor="mm")
+        ImageDraw.Draw(layer).text((W / 2, H * 0.68), v["label"], font=fit_font(INTER_B, int(54 * sc), v["label"], W * 0.92), fill=WHITE + (int(255 * a),), anchor="mm")
         im.paste(layer, (0, 0), layer)
     return im
 
