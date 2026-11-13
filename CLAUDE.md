@@ -4,6 +4,18 @@ Canal de YouTube en español: historias de empresas (auge y caída). Vídeos lar
 El usuario **sube los vídeos y contesta comentarios**; Claude **investiga, escribe, produce y entrega el paquete de subida**.
 Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + España), español neutro, "tú".
 
+## Reglas fijas de guion (pedido del usuario, 13-nov-2026, para TODOS los canales: El Último Balance, 70x7 y Anacron)
+1. **Gancho fuerte en los primeros segundos:** qué va a ver el espectador, por qué le importa y por qué quedarse.
+2. **Estructura fija por bloques:** GANCHO → DESARROLLO → CIERRE (en guion.py: `bloque="desarrollo"` y `bloque="cierre"`
+   en la primera escena de cada bloque; el desarrollo va por capítulos `type="title"`).
+3. **Preguntas abiertas:** dudas que no se resuelven en el momento, sino más adelante (`abre="P1: ¿...?"` / `cierra="P1"`).
+4. **Regla de oro:** cuando se cierra una pregunta, se abre otra; el espectador nunca piensa «ya me puedo ir».
+5. **Sin saludos ni relleno:** nada de «hola», «bienvenidos», «en este vídeo»; el gancho arranca en el segundo 0 contando
+   la historia. Suscribirse, solo en el cierre.
+6. **Primero el guion, después el vídeo:** `python3 pipeline/guion_md.py videos/NNN` → `guion_revision.md` (bloques, minuto de
+   cada escena, preguntas abiertas y comprobación automática). Corregir los ⚠️, enviarlo al usuario y **esperar su OK** antes de
+   la voz y las imágenes (pasos 4 en adelante).
+
 ## Flujo de un vídeo (carpeta `videos/NNN-slug/`)
 1. **Tema**: elegir con datos (`pipeline/ytlib.py`, API de YouTube con la clave inyectada por el proxy;
    100 búsquedas/día, se renueva a medianoche hora del Pacífico). Criterio: mucho público en inglés en los
@@ -17,6 +29,8 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
    - `IMAGES` (prompts, terminar con "no text, no logos"), `SHORTS` (2–3, ~45 s, gancho distinto cada uno),
      `THUMBS` (10 variantes) + `THUMBS_TOP`, `META` (títulos, descripción, fuentes, etiquetas, comentario fijado).
    - **Duración mínima 8:00** (anuncios a mitad de vídeo).
+3b. **Revisión del guion con el usuario** (regla 6): `python3 pipeline/guion_md.py videos/NNN`, enviar `guion_revision.md` y
+   esperar el OK (o aplicar los cambios que pida) antes de seguir.
 4. `python3 pipeline/tts.py videos/NNN` → voz (DubVoice, 1 crédito/carácter). Revisar duraciones: si una escena
    dura mucho más de lo esperado (<10 caracteres/s), regenerarla (Fish Audio a veces añade audio de más).
 5. `python3 pipeline/img.py videos/NNN` → imágenes (nano-banana-2-lite, 500 cr). **No reintentar a ciegas**:

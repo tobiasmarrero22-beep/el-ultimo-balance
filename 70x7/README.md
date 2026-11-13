@@ -41,3 +41,8 @@ El usuario no puede mandar archivos de más de 30 MB: sube la grabación a YouTu
   `terminal` (texto que se teclea solo, con sonido de teclas; líneas con "!" en rojo) y `timeline` (línea de tiempo; `hl` resalta un punto).
 - Voz: Adán (`i4Kar2uamCWyas8TAu31`) por pedido del usuario en el 002 (no la clonada). Sin Shorts.
 - Música: se reutilizan las pistas del 001 (`music/`). `img/` y `audio/` del 002 sí van a git (excepción en .gitignore).
+
+## Reglas fijas de guion (13-nov-2026)
+Las mismas que en `CLAUDE.md` para todos los canales: gancho en el segundo 0 (qué vas a ver, por qué te importa, por qué
+quedarte), GANCHO → DESARROLLO → CIERRE, preguntas abiertas que se resuelven más adelante, al cerrar una se abre otra, y nada de
+saludos («¿qué onda, gente?») ni relleno. Antes de producir: `python3 pipeline/guion_md.py 70x7/NNN-slug` y esperar el OK del usuario.
