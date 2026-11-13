@@ -66,6 +66,7 @@ IMAGES = {
     "iss_capsule": "Unbranded cargo space capsule approaching the International Space Station above the blue Earth, sunlight" + N,
     "booster_landing": "Rocket first stage landing vertically on a concrete pad at night with a bright engine flame and landing legs extended" + N,
     "crew_launch": "Crowd watching a rocket launch at dusk from a Florida beach, rocket rising with a bright flame, silhouettes" + N,
+    "moon_view": "The Moon with the small Earth in the distance (archive photo, NASA)",
     "moon_flyby": "Spacecraft flying past the far side of the Moon with the small blue Earth in the distance, crisp sunlight" + N,
 }
 
@@ -332,7 +333,7 @@ SCENES = [
     dict(id="s119", text="Y cincuenta años después, esa misma agencia salvó con un contrato a la empresa privada que hoy le lleva a sus astronautas al espacio.",
          visual=I("crew_launch", motion="out")),
     dict(id="s120", text="¿Tú qué opinas? ¿La NASA hizo bien en apostar por empresas privadas, o el espacio debería quedar en manos de los gobiernos? Te leo en los comentarios.",
-         visual=I("moon_flyby", motion="out")),
+         visual=I("moon_view", motion="out")),
     dict(id="s121", text="Y si te gustan estas historias, suscríbete: cada semana, el último balance de una empresa. Gracias por llegar hasta el final. Nos vemos en el próximo balance.",
          visual=I("saturn_launch")),
 ]
