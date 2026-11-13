@@ -16,6 +16,23 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
    cada escena, preguntas abiertas y comprobación automática). Corregir los ⚠️, enviarlo al usuario y **esperar su OK** antes de
    la voz y las imágenes (pasos 4 en adelante).
 
+## Reglas anti-desmonetización (pedido del usuario, 13-nov-2026, para TODOS los canales)
+YouTube no castiga usar IA: castiga el contenido «no auténtico» (hecho en serie, con plantilla, casi igual entre vídeos) y el
+«reutilizado» (material ajeno sin aportar nada). La sanción es para el canal entero. Por eso, siempre:
+1. **Guion original e investigado** en cada vídeo, con datos verificados y **fuentes citadas** en la descripción
+   (`META["sources"]` / `youtube.sources`). Nada de texto genérico.
+2. **Variedad obligatoria:** cada vídeo distinto de los anteriores en enfoque, tipo de gancho, estructura y recursos visuales.
+   No repetir la misma plantilla en vídeos seguidos ni crear canales casi iguales.
+3. **Nada de material ajeno sin transformación:** tráilers, gameplays, clips o fotos de otros solo como apoyo breve y siempre con
+   análisis o comentario propio encima (la regla aplica aunque haya permiso). Preferir material propio, dominio público o
+   licencias libres con crédito.
+4. **Aviso de IA:** «Contenido alterado o sintético: Sí» cuando haya imágenes o voz realistas que puedan confundirse con personas,
+   lugares o hechos reales, y el aviso en la descripción (`META["disclosure"]`).
+5. **Calidad antes que cantidad:** ritmo de subida razonable; nada de ráfagas ni de muchos Shorts iguales al día.
+6. **Nunca** un personaje o voz de IA presentado como experto humano en salud, finanzas, temas legales o política.
+7. **Rastro del trabajo humano:** guion revisado con el usuario (regla de guion 6) y guion, fuentes e historial en el repo. Si
+   llega una desmonetización, hay 21 días para apelar y esto es la prueba.
+
 ## Flujo de un vídeo (carpeta `videos/NNN-slug/`)
 1. **Tema**: elegir con datos (`pipeline/ytlib.py`, API de YouTube con la clave inyectada por el proxy;
    100 búsquedas/día, se renueva a medianoche hora del Pacífico). Criterio: mucho público en inglés en los

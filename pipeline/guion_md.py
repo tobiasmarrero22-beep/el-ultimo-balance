@@ -37,18 +37,25 @@ def load(vd):
             chap = v.get("name") or v.get("text") if v.get("type") == "title" else None
             out.append({"id": s["id"], "text": s["text"], "chapter": chap, "bloque": s.get("bloque"),
                         "abre": as_list(s.get("abre")), "cierra": as_list(s.get("cierra")), "vis": v.get("type", "")})
-        title = (ns.get("META", {}).get("titles") or [""])[0]
-        return out, title, 15.0  # ~15 caracteres por segundo (voz Adán)
+        M = ns.get("META", {}); title = (M.get("titles") or [""])[0]
+        extra = {"sources": M.get("sources", []), "disclosure": M.get("disclosure", ""), "altered": M.get("altered")}
+        return out, title, 15.0, extra  # ~15 caracteres por segundo (voz Adán)
     s = json.load(open(os.path.join(vd, "script.json"), encoding="utf-8"))
     cfg = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(vd))), "config.json"), encoding="utf-8"))
     cps = cfg.get("voice", {}).get("chars_per_sec", 15)
     out = [{"id": f"{i + 1:03d}", "text": sc["narration"].replace("**", ""), "chapter": sc.get("chapter"), "bloque": sc.get("bloque"),
             "abre": as_list(sc.get("abre")), "cierra": as_list(sc.get("cierra")), "vis": sc.get("bg", "")} for i, sc in enumerate(s["scenes"])]
-    return out, s.get("title", ""), cps
+    y = s.get("youtube", {})
+    extra = {"sources": y.get("sources", []), "disclosure": "Anacron: voz sintética (aviso fijo en canal/disclaimer.txt)", "altered": "No"}
+    return out, s.get("title", ""), cps, extra
 
 
-def check(scenes, cps):
+def check(scenes, cps, extra=None):
     warn = []
+    extra = extra or {}
+    # reglas anti-desmonetización que se pueden comprobar solas
+    if len(extra.get("sources") or []) < 2: warn.append("faltan fuentes citadas (mínimo 2) para la descripción: regla anti-desmonetización 1")
+    if not extra.get("disclosure"): warn.append("falta el aviso de IA en la descripción (META[\"disclosure\"]): regla anti-desmonetización 4")
     # bloques
     blk, cur = [], "gancho"
     first_chap = next((i for i, s in enumerate(scenes) if s["chapter"]), None)
@@ -91,13 +98,15 @@ def check(scenes, cps):
 
 
 def write(vd):
-    scenes, title, cps = load(vd)
-    blk, timeline, warn = check(scenes, cps)
+    scenes, title, cps, extra = load(vd)
+    blk, timeline, warn = check(scenes, cps, extra)
     tot = sum(len(s["text"]) for s in scenes)
     L = [f"# Guion para revisar · {title}", "",
          f"{len(scenes)} escenas · {tot:,} caracteres · ~{tot / cps / 60:.1f} min de narración".replace(",", "."), "",
          "Reglas: gancho en el segundo 0 (qué va a ver, por qué le importa, por qué quedarse) · GANCHO → DESARROLLO → CIERRE · "
-         "preguntas abiertas que se resuelven más adelante · al cerrar una, se abre otra · sin saludos ni relleno.", ""]
+         "preguntas abiertas que se resuelven más adelante · al cerrar una, se abre otra · sin saludos ni relleno.",
+         "Anti-desmonetización: guion original con fuentes · variedad frente a los vídeos anteriores · nada de material ajeno sin "
+         "comentario · aviso de IA · calidad antes que cantidad.", ""]
     L += ["## Comprobación automática", ""] + ([f"- ⚠️ {w}" for w in warn] or ["- ✅ Cumple las reglas que se pueden comprobar solas."]) + [""]
     qs = [(s["id"], a) for s in scenes for a in s["abre"]]
     if qs:

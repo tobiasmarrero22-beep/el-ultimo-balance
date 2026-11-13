@@ -46,3 +46,10 @@ El usuario no puede mandar archivos de más de 30 MB: sube la grabación a YouTu
 Las mismas que en `CLAUDE.md` para todos los canales: gancho en el segundo 0 (qué vas a ver, por qué te importa, por qué
 quedarte), GANCHO → DESARROLLO → CIERRE, preguntas abiertas que se resuelven más adelante, al cerrar una se abre otra, y nada de
 saludos («¿qué onda, gente?») ni relleno. Antes de producir: `python3 pipeline/guion_md.py 70x7/NNN-slug` y esperar el OK del usuario.
+
+## Reglas anti-desmonetización (13-nov-2026)
+Las de `CLAUDE.md` para todos los canales y, en 70x7 en particular (es el canal con más riesgo de «contenido reutilizado»):
+- Gameplay **grabado por el usuario** como material principal; nunca vídeos de otros canales (el 001 usó uno de The Gaming
+  Motorist: no repetirlo).
+- Tráilers y material de Rockstar solo en fragmentos cortos y siempre con análisis o comentario encima, nunca un tráiler entero.
+- Cada vídeo con un ángulo propio (guía, análisis, teoría, noticia comentada), no la misma plantilla repetida.
