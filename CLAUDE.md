@@ -73,6 +73,12 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   freno tras 3 fallos seguidos: generar de una en una y dejar FALLBACK para cada escena `img`. `num` y `bars` aceptan `dec` (decimales con
   coma). Wikimedia Commons está permitido en la red del entorno, pero la descarga la bloqueó el sistema de permisos: preguntar al usuario.
   Imágenes IA realistas (lugares o hechos reales) → `META["altered"] = "Sí"`.
+- **Fotos reales de Wikimedia Commons (010, 13-nov, con permiso del usuario):** `pipeline/commons_fetch.py <vídeo> <consultas.json> <dir>`
+  (consultas por clave; solo dominio público, CC0 y CC BY; guarda candidatas + licencia/autor) → revisar la hoja → `pipeline/commons_install.py
+  img clave=archivo …` (1920×1080; las verticales van sobre fondo desenfocado) → `pipeline/commons_credits.py <json> "File:…"` para los créditos.
+  Wikimedia limita mucho las peticiones: pausas de 3 s y esperas largas (el script ya lo hace). Ideal para temas históricos (NASA, Ejército de
+  EE. UU.: dominio público). Créditos en `videos/NNN/fotos_creditos.json` y en `META["sources"]` (las CC BY con autor y licencia). No poner
+  fechas en `cap` si la foto no es de ese día. `num` ajusta su etiqueta al ancho (antes se cortaba si pasaba de ~60 caracteres).
 - **Animación nueva en render.py (007):** escenas `board` (tablero de salidas que gira a CANCELADO), `route` (mapa con rutas
   y avión), `headline` (titular de prensa con palabra subrayada; parafrasear y citar fuente); en escenas `img`: `pop=[...]`
   (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes
