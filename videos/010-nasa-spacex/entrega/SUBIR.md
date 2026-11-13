@@ -68,6 +68,70 @@ nasa, historia de la nasa, cómo nació la nasa, spacex, elon musk, sputnik, car
 
 ---
 
-## 📅 Publicación
-1. Vídeo largo a la hora fija del canal (sin Shorts).
-2. A las 48 h: captura de YouTube Studio → Analytics del vídeo (retención y CTR) para ajustar guiones.
+## 📱 SHORT A — `010_short_a.mp4` (29 s)
+
+**Título**
+```
+La Navidad en que Elon Musk casi lo pierde todo
+```
+**Descripción**
+```
+23 de diciembre de 2008: SpaceX con tres fallos seguidos y Tesla sin dinero para los sueldos. Historia completa de la NASA y SpaceX en el canal.
+Fuentes: NASA / Spaceflight Now (23-dic-2008); Tesla North / Business Today.
+#ElonMusk #SpaceX #NASA #shorts
+```
+**Etiquetas**
+```
+elon musk, spacex, nasa, tesla 2008, historia, shorts
+```
+**Miniatura:** en la app de YouTube elige el fotograma del segundo 0.
+**Vídeo relacionado:** enlaza el vídeo largo de esta historia.
+
+---
+
+## 📱 SHORT B — `010_short_b.mp4` (26 s)
+
+**Título**
+```
+Este cohete subió un metro… y explotó en directo
+```
+**Descripción**
+```
+Cabo Cañaveral, 6 de diciembre de 1957: el Vanguard TV3. La historia completa de cómo nació la NASA, en el canal.
+Fuente: NASA History (Vanguard TV3). Foto: Marina de EE. UU. (dominio público).
+#NASA #Sputnik #CarreraEspacial #shorts
+```
+**Etiquetas**
+```
+nasa, vanguard, flopnik, sputnik, carrera espacial, historia, shorts
+```
+**Miniatura:** en la app de YouTube elige el fotograma del segundo 0.
+**Vídeo relacionado:** enlaza el vídeo largo de esta historia.
+
+---
+
+## 📱 SHORT C — `010_short_c.mp4` (22 s)
+
+**Título**
+```
+Un cohete se perdió con las cenizas de un astronauta
+```
+**Descripción**
+```
+Agosto de 2008: el tercer Falcon 1 de SpaceX llevaba las cenizas de Gordon Cooper, astronauta del Mercury. Historia completa en el canal.
+Fuentes: Space.com / Spaceflight Now (2008).
+#SpaceX #NASA #ElonMusk #shorts
+```
+**Etiquetas**
+```
+spacex, falcon 1, gordon cooper, nasa, elon musk, shorts
+```
+**Miniatura:** en la app de YouTube elige el fotograma del segundo 0.
+**Vídeo relacionado:** enlaza el vídeo largo de esta historia.
+
+---
+
+## 📅 Orden de publicación
+1. Vídeo largo a la hora fija del canal.
+2. Short A a las 2–3 h; los demás Shorts en días siguientes (uno al día entre vídeos largos).
+3. A las 48 h: captura de YouTube Studio → Analytics del vídeo (retención y CTR) para ajustar guiones.

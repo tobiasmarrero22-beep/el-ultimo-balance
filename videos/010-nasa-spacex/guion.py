@@ -402,7 +402,33 @@ FALLBACK = {
     "s121": dict(type="stamp", text="EL ÚLTIMO BALANCE", stamp="SUSCRÍBETE", col="yellow"),
 }
 
-SHORTS = {}
+SHORTS = {
+    "a": {"bar": "LA NAVIDAD DE MUSK", "scenes": [
+        dict(id="a01", text="En dos mil ocho, Elon Musk estaba a días de perderlo todo.", key="empty_office_night"),
+        dict(id="a02", text="SpaceX llevaba tres cohetes fallidos seguidos.", key="pacific_island"),
+        dict(id="a03", text="Y Tesla no tenía dinero ni para pagar los sueldos.", key="roadster_2008"),
+        dict(id="a04", text="El veintitrés de diciembre, la NASA le dio a SpaceX un contrato de unos mil seiscientos millones de dólares.", key="control_room"),
+        dict(id="a05", text="Y al día siguiente, a las seis de la tarde de Nochebuena, Tesla también se salvó.", key="rocket_factory"),
+        dict(id="a06", text="Pero ¿por qué la NASA lo rescató? Todo empieza con un pitido en mil novecientos cincuenta y siete. La historia completa, en el canal.", key="sputnik_orbit"),
+    ]},
+    "b": {"bar": "FLOPNIK", "scenes": [
+        dict(id="b01", text="Este cohete subió poco más de un metro… y explotó en directo.", key="vanguard_explosion"),
+        dict(id="b02", text="Mil novecientos cincuenta y siete. Estados Unidos quería responderle al Sputnik soviético, y lo transmitió por televisión.", key="sputnik_orbit"),
+        dict(id="b03", text="La prensa lo bautizó Flopnik.", key="short_flopnik"),
+        dict(id="b04", text="Pero de esa humillación nació la NASA.", key="saturn_launch"),
+        dict(id="b05", text="Y cincuenta años después, esa misma NASA salvó a un multimillonario cuyos cohetes tampoco dejaban de fallar. ¿Quién era? Te lo cuento en el vídeo completo.", key="pacific_island"),
+    ]},
+    "c": {"bar": "LAS CENIZAS DEL ASTRONAUTA", "scenes": [
+        dict(id="c01", text="En dos mil ocho, un cohete privado se perdió con las cenizas de un astronauta a bordo.", key="pacific_island"),
+        dict(id="c02", text="Eran las de Gordon Cooper, uno de los siete primeros astronautas de la NASA.", key="astronauts_silver"),
+        dict(id="c03", text="El cohete era de SpaceX, y era su tercer fallo seguido.", key="rocket_factory"),
+        dict(id="c04", text="A Elon Musk le quedaba dinero para un solo intento más.", key="empty_office_night"),
+        dict(id="c05", text="Lo que pasó después lo cambió todo… y la NASA tuvo mucho que ver. Míralo en el vídeo completo.", key="booster_landing"),
+    ]},
+}
+# b03 no tiene foto a propósito: usa el titular de FALLBACK["b03"]
+FALLBACK["b03"] = dict(type="headline", kicker="Diciembre de 1957", text="La prensa bautiza el cohete Vanguard como \"Flopnik\"", mark="Flopnik",
+                       source="Fuente: NASA History", size=96, zoom=1.55, cw=0.92)
 
 THUMBS = [
     dict(img="sputnik_orbit", zoom=1.05, cx=0.6, shade=["left", 225, 0.62], items=[
@@ -461,5 +487,15 @@ META = {
     "playlist": "Auges y remontadas",
     "category": "Educación",
     "altered": "Sí",
-    "shorts": {},
+    "shorts": {
+        "a": {"title": "La Navidad en que Elon Musk casi lo pierde todo",
+              "description": "23 de diciembre de 2008: SpaceX con tres fallos seguidos y Tesla sin dinero para los sueldos. Historia completa de la NASA y SpaceX en el canal.\nFuentes: NASA / Spaceflight Now (23-dic-2008); Tesla North / Business Today.\n#ElonMusk #SpaceX #NASA #shorts",
+              "tags": ["elon musk", "spacex", "nasa", "tesla 2008", "historia", "shorts"]},
+        "b": {"title": "Este cohete subió un metro… y explotó en directo",
+              "description": "Cabo Cañaveral, 6 de diciembre de 1957: el Vanguard TV3. La historia completa de cómo nació la NASA, en el canal.\nFuente: NASA History (Vanguard TV3). Foto: Marina de EE. UU. (dominio público).\n#NASA #Sputnik #CarreraEspacial #shorts",
+              "tags": ["nasa", "vanguard", "flopnik", "sputnik", "carrera espacial", "historia", "shorts"]},
+        "c": {"title": "Un cohete se perdió con las cenizas de un astronauta",
+              "description": "Agosto de 2008: el tercer Falcon 1 de SpaceX llevaba las cenizas de Gordon Cooper, astronauta del Mercury. Historia completa en el canal.\nFuentes: Space.com / Spaceflight Now (2008).\n#SpaceX #NASA #ElonMusk #shorts",
+              "tags": ["spacex", "falcon 1", "gordon cooper", "nasa", "elon musk", "shorts"]},
+    },
 }

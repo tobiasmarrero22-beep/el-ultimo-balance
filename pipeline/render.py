@@ -448,9 +448,9 @@ def scene_route(v, t, D, W, H, seed):
 
 def scene_headline(v, t, D, W, H, seed):
     """Titular de prensa (parafraseado, con la fuente): text, source, mark (palabra a subrayar), kicker."""
-    im = bg_canvas(W, H, t); sc = W / 1920
+    im = bg_canvas(W, H, t); sc = W / 1920 * v.get("zoom", 1)  # zoom/cw: para el recuadro de los Shorts
     k = ease_out(t / 0.45); ang = (1 - k) * 8 - 2.5
-    cw = int(W * 0.70)
+    cw = int(W * v.get("cw", 0.70))
     f = font(ANTON, int(v.get("size", 104) * sc)); lines = wrap(v["text"], f, cw - 80 * sc)
     ch = int(115 * sc + len(lines) * f.size * 1.12 + 95 * sc)
     card = Image.new("RGBA", (cw, ch), (244, 240, 230, 255)); cd = ImageDraw.Draw(card)
