@@ -1,4 +1,4 @@
-"""Banner de Fútbol Sin Relato (2560x1440). El campo entero (105 m a 14 px/m) cabe en la franja que se ve en el móvil (1546x423).
+"""Banner de Dato de Tribuna (2560x1440). El campo entero (105 m a 14 px/m) cabe en la franja que se ve en el móvil (1546x423).
 Uso: python3 futbol/canal/banner.py  → banner.png + banner_vista_movil.png"""
 import math, os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pipeline"))
@@ -48,7 +48,7 @@ dashed((x1 - 168, CY + 122), (x1 - 130, CY - 118), WHITE); dashed((x1 - 105, CY 
 d.ellipse([x0 + 4, CY + 8, x0 + 30, CY + 34], fill=WHITE, outline=INK, width=3)
 v = Image.new("L", (BW, BH), 0); ImageDraw.Draw(v).ellipse([-500, -420, BW + 500, BH + 420], fill=255); v = v.filter(ImageFilter.GaussianBlur(240))
 im = Image.composite(im, Image.new("RGB", (BW, BH), (0, 0, 0)), v)
-title = "FÚTBOL SIN RELATO"; ft = F(ANTON, 128); tw = ft.getlength(title)
+title = "DATO DE TRIBUNA"; ft = F(ANTON, 128); tw = ft.getlength(title)
 bw_, gap = 150, 30; tot = tw + gap + bw_; tx, ty = CX - tot / 2, CY
 sh = Image.new("RGBA", (BW, BH), (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle([tx - 40, ty - 105, tx + tot + 40, ty + 105], 34, fill=(0, 0, 0, 150))
 im = im.convert("RGBA"); im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(18))); d = ImageDraw.Draw(im)

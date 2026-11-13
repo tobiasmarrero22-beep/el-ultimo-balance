@@ -1,23 +1,31 @@
-# Fútbol Sin Relato · 001 · «149 a 0» (formato: historia en tarjetas). Guion aprobado por el usuario el 13-nov-2026.
+# Dato de Tribuna · 001 · «149 a 0» (historia en tarjetas). Guion aprobado el 13-nov-2026; relato en voseo pedido el 13-nov.
 # Hechos: AS Adema 149–0 SO l'Emyrne, liga de Madagascar, 31-oct-2002. SOE metió todos los goles en contra como protesta por un
 # penal polémico (a favor de DSA Antananarivo) en el partido anterior, que les costó el título. La federación suspendió 3 años al
-# entrenador (Ratsimandresy Ratsarazaka). Guinness: récord de goles en contra en un partido de liga.
-MUSIC = 0
+# entrenador. Guinness: récord de goles en contra en un partido de liga.
+CHANNEL = "DATO DE TRIBUNA"
+VOICE = "D09EpJbk4um1HKSpeTSc"   # PENDIENTE de que el usuario elija entre futbol/muestras_voz (1 Agustín enérgico, 2 Agustín rápido, 3 Agus, 4 Renzo)
+SPEED = 1.08
+MUSIC = None                     # pedido del usuario (13-nov): sin música, con relato de IA
+PRONUNCIA = {"SO l'Emyrne": "Ese O Lemirn", "AS Adema": "A Ese Adema"}
 CARDS = [
-    dict(text="El resultado más abultado de la historia del fútbol.",
-         hero=dict(type="score", a=149, b=0, frm=(0, 0), roll=1.4, ta="AS ADEMA", tb="SO L'EMYRNE")),
+    dict(text="¡149 a 0! El resultado más abultado de la historia del fútbol.",
+         say="¡Ciento cuarenta y nueve a cero! El resultado más abultado de la historia del fútbol.",
+         hero=dict(type="score", a=149, b=0, frm=(0, 0), roll=1.6, ta="AS ADEMA", tb="SO L'EMYRNE")),
     dict(text="Y los 149 goles los metió… *el equipo que perdió*.",
+         say="Y los ciento cuarenta y nueve goles los metió… ¡el equipo que perdió!",
          hero=dict(type="score", a=149, b=0, ta="AS ADEMA", tb="SO L'EMYRNE")),
-    dict(text="Un partido de liga: AS Adema contra SO l'Emyrne.",
+    dict(text="Madagascar, 2002: AS Adema contra SO l'Emyrne, un partido de liga.",
+         say="Madagascar, dos mil dos. AS Adema contra SO l'Emyrne, un partido de liga.",
          hero=dict(type="place", name="MADAGASCAR", sub="31 DE OCTUBRE DE 2002")),
     dict(text="En el partido anterior, un *penal polémico* en el final los había dejado sin el título.",
          hero=dict(type="big", text="PENAL\nPOLÉMICO"), sfx=[("whistle", 0.1)]),
-    dict(text="Su protesta: desde el saque inicial, patearon una y otra vez *a su propio arco*.",
+    dict(text="¿Y sabés cómo protestaron? Desde el saque inicial, patearon una y otra vez *a su propio arco*.",
          hero=dict(type="counter", to=149, dur=3.2, label="GOLES EN CONTRA", col="red")),
     dict(text="El castigo: su entrenador, ^suspendido 3 años^.",
+         say="El castigo: su entrenador, suspendido tres años.",
          hero=dict(type="redcard", text="3 AÑOS")),
-    dict(text="¿Cuál es el resultado más loco que viste?",
-         hero=dict(type="final")),
+    dict(text="¿Cuál es el resultado más loco que viste? *Comentalo*.",
+         hero=dict(type="final", text="COMENTÁ")),
 ]
 META = dict(
     code="001",

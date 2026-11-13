@@ -131,9 +131,9 @@ YouTube → `vidiq_video_upload`) cortadas por escena con `pipeline/gameplay.py`
 `THEME` en guion.py cambia la paleta del render; `MUSIC_VOL` (env) el volumen de la música; sellos con `col="green"`.
 `META["category"]` y `META["altered"]` cambian esos ajustes en SUBIR.md. Nada de radio del juego (Content ID).
 
-## Tercer canal: Fútbol Sin Relato (Shorts sin voz)
-Carpeta `futbol/NNN-slug/`; detalles y reglas en `futbol/README.md`. Motor propio `pipeline/sinvoz.py` (texto tecleado, marcador con
-reloj de partido como barra de progreso, efectos sintetizados, música de `futbol/music/`). No gasta créditos de voz.
+## Tercer canal: Dato de Tribuna (Shorts de fútbol con relato de IA, sin música)
+Carpeta `futbol/NNN-slug/`; detalles y reglas en `futbol/README.md`. Motor propio `pipeline/sinvoz.py` (relato por tarjeta con `VOICE`,
+texto tecleado al ritmo de la voz, marcador con reloj de partido como barra de progreso, efectos sintetizados; `MUSIC = None`).
 
 ## Estilo visual
 Fondo #0b0f17 con rejilla, amarillo #ffd166, rojo #e63946, blanco. Títulos en Anton, etiquetas en Inter Display Black.

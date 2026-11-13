@@ -79,23 +79,23 @@ def layout(text, f=None):
 def nchars(text):
     return len(" ".join(wtext(w) for w in parse(text)))
 
-def hl_times(text):
+def hl_times(text, cps=TYPE_CPS):
     """Segundo (desde el inicio de la tarjeta) en que se termina de teclear cada palabra resaltada."""
     pos, out = 0, []
     for w in parse(text):
         for c, st in w:
             pos += len(c)
-            if st: out.append(T0 + pos / TYPE_CPS)
+            if st: out.append(T0 + pos / cps)
         pos += 1
     return out
 
-def draw_text(im, text, t):
+def draw_text(im, text, t, cps=TYPE_CPS):
     lines, f = layout(text)
-    n = int(max(0, t - T0) * TYPE_CPS); done = n >= nchars(text)
+    n = int(max(0, t - T0) * cps); done = n >= nchars(text)
     if n == 0: return
     d = ImageDraw.Draw(im); lh = 98; y = TEXT_Y; used = 0; cur_xy = None
     shake = 0
-    for ht in hl_times(text):
+    for ht in hl_times(text, cps):
         if 0 <= t - ht < 0.12: shake = 5
     for ln in lines:
         full = " ".join(wtext(w) for w in ln)
@@ -203,6 +203,7 @@ def h_counter(v, t, D):
     return L
 
 def quiz_cstart(card):
+    if card.get("_dur"): return T0 + card["_dur"] + 0.2      # con relato: la cuenta atrás empieza cuando termina la voz
     return T0 + nchars(card["text"]) / TYPE_CPS + 0.3
 
 def h_quiz(v, t, D, card):
@@ -372,9 +373,12 @@ def hero_layer(card, t, D):
 
 # ---------------------------------------------------------------- tiempos
 def card_duration(c):
-    if c.get("d"): return float(c["d"])
-    n = nchars(c["text"]); te = T0 + n / TYPE_CPS
-    D = te + max(1.2, n / 26)
+    n = nchars(c["text"])
+    if c.get("_dur"):  # con relato: lo que dura la voz + un respiro
+        D = T0 + c["_dur"] + c.get("pad", 0.35)
+    else:
+        te = T0 + n / TYPE_CPS; D = te + max(1.2, n / 26)
+    if c.get("d"): D = max(D, float(c["d"])) if c.get("_dur") else float(c["d"])
     v = c.get("hero") or {}
     ty = v.get("type")
     if ty == "quiz" and v.get("reveal") is None: D = max(D, quiz_cstart(c) + 3.3)
@@ -383,7 +387,7 @@ def card_duration(c):
     if ty == "score" and v.get("steps"): D = max(D, v["steps"][-1][0] + 1.3)
     if ty == "tactic": D = max(D, 0.3 + len(v["path"]) * v.get("step", 0.7) + 1.0)
     if ty == "badges": D = max(D, 0.25 + len(v["items"]) * 0.6 + 1.0)
-    if ty == "final": D = max(D, 3.2)
+    if ty == "final": D = max(D, 2.6)
     return round(D * FPS) / FPS
 
 # ---------------------------------------------------------------- render
@@ -398,7 +402,7 @@ def frame(cards, ci, t, starts, total):
             im.alpha_composite(hl, (int((W - hl.width) / 2), int(HERO_Y + (HERO_H - hl.height) / 2)))
         else:
             im.alpha_composite(hl, (0, HERO_Y))
-    draw_text(im, c["text"], t)
+    draw_text(im, c["text"], t, c.get("_cps", TYPE_CPS))
     topbar(im, tg, total)
     im = im.convert("RGB")
     if ci > 0 and t < 3 / FPS:  # destello al cambiar de tarjeta
@@ -418,9 +422,34 @@ def render_card(args):
 def load(vd):
     ns = {}; exec(open(os.path.join(vd, "guion.py"), encoding="utf-8").read(), ns); return ns
 
+def plain(text):
+    return " ".join(wtext(w) for w in parse(text))
+
+def word_time(c, word):
+    """Momento (desde el inicio de la tarjeta) en que la voz dice esa palabra, por proporción de caracteres."""
+    say = c.get("say") or plain(c["text"]); i = say.find(word)
+    if i < 0: i = plain(c["text"]).find(word); total = len(plain(c["text"]))
+    else: total = len(say)
+    return T0 + max(0, i) / max(1, total) * c.get("_dur", total / TYPE_CPS)
+
+def audio_path(vd, ci): return os.path.join(vd, "audio", f"c{ci:02d}.mp3")
+
+def dur_of(path):
+    return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path], capture_output=True, text=True).stdout)
+
 def plan(vd):
-    cards = load(vd)["CARDS"]; starts = [0.0]
-    for c in cards: starts.append(starts[-1] + card_duration(c))
+    global CHANNEL
+    ns = load(vd); cards = [dict(c) for c in ns["CARDS"]]; starts = [0.0]
+    CHANNEL = ns.get("CHANNEL", CHANNEL)
+    for ci, c in enumerate(cards):
+        if ns.get("VOICE"):
+            a = audio_path(vd, ci)
+            c["_dur"] = dur_of(a) if os.path.exists(a) else len(c.get("say") or plain(c["text"])) / 15.0
+            c["_cps"] = max(8.0, nchars(c["text"]) / max(0.5, c["_dur"] * 0.9))   # el texto termina un poco antes que la voz
+            v = c.get("hero") or {}
+            if v.get("steps"): v["steps"] = [(word_time(c, ts) if isinstance(ts, str) else ts, a_, b_) for ts, a_, b_ in v["steps"]]
+            if isinstance(c.get("cut"), str): c["cut"] = word_time(c, c["cut"])
+        starts.append(starts[-1] + card_duration(c))
     return cards, starts, starts[-1]
 
 # ---------------------------------------------------------------- sonido (sintetizado)
@@ -490,10 +519,11 @@ def sfx_and_env(cards, starts, total):
         t0 = starts[ci]; D = starts[ci + 1] - t0; v = c.get("hero") or {}; ty = v.get("type")
         if ci > 0: put(wh, t0 - 0.12, 0.5)
         # tecleo
-        nn = nchars(c["text"]); rr = np.random.default_rng(ci)
+        nn = nchars(c["text"]); rr = np.random.default_rng(ci); cps = c.get("_cps", TYPE_CPS)
+        tv = 0.12 if c.get("_dur") else 0.35          # con relato, el tecleo va muy por debajo de la voz
         for k in range(nn):
-            if rr.random() < 0.85: put(typ, t0 + T0 + k / TYPE_CPS, 0.35 + 0.2 * rr.random())
-        for ht in hl_times(c["text"]): put(clk, t0 + ht, 0.55)
+            if rr.random() < (0.6 if c.get("_dur") else 0.85): put(typ, t0 + T0 + k / cps, tv + 0.1 * rr.random())
+        for ht in hl_times(c["text"], cps): put(clk, t0 + ht, 0.35 if c.get("_dur") else 0.55)
         # animaciones
         if ty == "score":
             if v.get("roll"):
@@ -540,7 +570,8 @@ def sfx_and_env(cards, starts, total):
             for (ts, _, _) in v.get("steps", []):  # rugido en cada gol
                 a = int((t0 + ts) * SR); b = min(n, a + int(1.6 * SR)); crd[a:b] = np.maximum(crd[a:b], 1 + 1.6 * np.exp(-np.arange(b - a) / (0.6 * SR)))
         if c.get("cut"):
-            ht = hl_times(c["text"]); at = t0 + (ht[-1] if ht else 0.3)
+            ht = hl_times(c["text"], c.get("_cps", TYPE_CPS)); at = t0 + (ht[-1] if ht else 0.3)
+            if c.get("_dur"): at = t0 + T0 + c["_dur"]
             if isinstance(c["cut"], (int, float)) and not isinstance(c["cut"], bool): at = t0 + c["cut"]
             i, j = int(at * SR), int((t0 + D) * SR)
             mus[i:j] = 0.0; crd[i:j] = 0.0
@@ -560,14 +591,19 @@ def build_audio(vd, cards, starts, total, out):
     ns = load(vd); n = int((total + 1.5) * SR)
     fx, mus, crowd_sig = sfx_and_env(cards, starts, total)
     tracks = sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(vd)), "music", "*.mp3")))
-    music = np.zeros((n, 2))
-    if tracks:
+    music = np.zeros((n, 2)); voice = np.zeros((n, 2))
+    if ns.get("VOICE"):  # relato: cada tarjeta empieza a hablar en T0
+        for ci in range(len(cards)):
+            a = decode(audio_path(vd, ci), 60); i = int((starts[ci] + T0) * SR); j = min(n, i + len(a))
+            voice[i:j] += a[: j - i]
+    if tracks and ns.get("MUSIC", 0) is not None:
         tr = tracks[ns.get("MUSIC", 0) % len(tracks)]
         m = decode(tr, total + ns.get("MUSIC_START", 0) + 2)[int(ns.get("MUSIC_START", 0) * SR):]
         m = m[:n]; music[: len(m)] = m
     tt = np.arange(n) / SR
     fade = np.minimum(1, tt / 0.3) * np.clip((total + 0.3 - tt) / 1.2, 0, 1)
-    mix = music * (mus * fade * float(ns.get("MUSIC_VOL", 0.5)))[:, None] + (fx + crowd_sig)[:, None]
+    fxv = 0.75 if ns.get("VOICE") else 1.0
+    mix = music * (mus * fade * float(ns.get("MUSIC_VOL", 0.5)))[:, None] + ((fx + crowd_sig) * fxv)[:, None] + voice
     mix = np.clip(mix[: int(total * SR)], -1, 1)
     tmp = out + ".raw.wav"
     with wave.open(tmp, "wb") as w:
@@ -578,14 +614,17 @@ def build_audio(vd, cards, starts, total, out):
 # ---------------------------------------------------------------- paquete de subida
 def subir(vd, total):
     M = load(vd)["META"]; E = os.path.join(vd, "entrega"); os.makedirs(E, exist_ok=True)
+    ns = load(vd)
+    aviso = "Gráficos y animación hechos para este canal. Relato con voz generada por IA." if ns.get("VOICE") else \
+        "Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal."
     desc = M["description"].rstrip() + "\n\nFuentes:\n" + "\n".join("• " + s for s in M["sources"]) + \
-        "\n\nGráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.\n" + " ".join(M.get("hashtags", ["#futbol", "#shorts"]))
-    L = [f"# 📱 SUBIR · Fútbol Sin Relato · Short {M['code']} — `{M['code']}.mp4` ({total:.0f} s)", "",
+        "\n\n" + aviso + "\n" + " ".join(M.get("hashtags", ["#futbol", "#shorts"]))
+    L = [f"# 📱 SUBIR · {ns.get('CHANNEL', CHANNEL).title()} · Short {M['code']} — `{M['code']}.mp4` ({total:.0f} s)", "",
          "**Título**", "```", M["title"], "```", "**Descripción**", "```", desc, "```",
          "**Etiquetas**", "```", ", ".join(M["tags"]), "```",
          "**Ajustes al subir**",
          "- Contenido para niños: **No**",
-         "- Contenido alterado o sintético: **No** (gráficos animados, nada realista)",
+         "- Contenido alterado o sintético: **No** (gráficos animados, nada realista" + ("; el relato es una voz de IA genérica, avisada en la descripción)" if ns.get("VOICE") else ")"),
          "- Categoría: **Deportes** · Idioma: **Español**",
          f"- Comentario fijado: `{M.get('pinned', M.get('question', ''))}`",
          "- Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).",
@@ -601,7 +640,18 @@ def sheet(vd, cards, starts, total):
     for i, im in enumerate(ims): o.paste(im, (i * 270, 0))
     o.save(os.path.join(B, "hoja.png")); print(os.path.join(B, "hoja.png"), f"{total:.1f} s")
 
+def tts_cards(vd):
+    """Relato: genera audio/cNN.mp3 de cada tarjeta que no lo tenga (say o el texto sin marcas; PRONUNCIA solo para la voz)."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import tts, concurrent.futures as cf
+    ns = load(vd); os.makedirs(os.path.join(vd, "audio"), exist_ok=True); say = tts.pronounce(ns.get("PRONUNCIA") or {})
+    todo = [(ci, say(c.get("say") or plain(c["text"]))) for ci, c in enumerate(ns["CARDS"]) if not os.path.exists(audio_path(vd, ci))]
+    with cf.ThreadPoolExecutor(4) as ex:
+        fs = {ex.submit(tts.tts, txt, ns["VOICE"], audio_path(vd, ci), float(ns.get("SPEED", 1.05))): ci for ci, txt in todo}
+        for f in cf.as_completed(fs): f.result(); print("voz", f"c{fs[f]:02d}", flush=True)
+
 def main(vd, frames_only=False):
+    if load(vd).get("VOICE") and not frames_only: tts_cards(vd)
     cards, starts, total = plan(vd)
     if frames_only: return sheet(vd, cards, starts, total)
     B = os.path.join(vd, "build"); os.makedirs(B, exist_ok=True)

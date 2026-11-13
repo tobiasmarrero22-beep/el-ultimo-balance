@@ -1,11 +1,15 @@
-# Fútbol Sin Relato — canal de Shorts de fútbol (tercer canal del usuario, creado el 13-nov-2026)
+# Dato de Tribuna — canal de Shorts de fútbol (tercer canal del usuario, 13-nov-2026)
 
-- Solo Shorts, **sin voz**: texto que se teclea, efectos y música. Español neutro con «tú». 20–30 s por Short.
-- Handle sugerido `@futbolsinrelato`. Identidad en `canal/` (avatar, banner, descripción).
+Se pensó como «Fútbol Sin Relato» (sin voz, con música) y el mismo 13-nov el usuario lo cambió: **sin música y con relato de IA**
+(relator emocionado, acento argentino con voseo). Nombre nuevo **Dato de Tribuna**, handle `@datodetribuna`.
+
+- Solo Shorts con **relato de IA** (DubVoice/ElevenLabs, voz argentina; `VOICE`, `SPEED`, `PRONUNCIA` y `say` en guion.py), texto que se
+  teclea al ritmo de la voz, efectos (silbato, hinchada, golpes) y **sin música** (`MUSIC = None`). Voseo. 30–40 s por Short.
+- Identidad en `canal/` (avatar, banner con `banner.py`, descripción).
 - Motor: `python3 pipeline/sinvoz.py futbol/NNN-slug` (`--frames` para la hoja de revisión) → `entrega/NNN.mp4` + `entrega/SUBIR.md`.
   Guion en `guion.py`: `CARDS` (texto con `*amarillo*` y `^rojo^`, `hero` del tipo score, counter (style="tag"), quiz, place, redcard,
   big, items, player, badges, clock, tactic, stamp, final), `crowd`, `cut` (silencio), `sfx`; `META`; `MUSIC` y `MUSIC_START`.
-- Música: `futbol/music/*.mp3` (DubVoice music-generate, 5.000 cr las dos pistas, 13-nov). Variar pista y punto de inicio.
+- `futbol/music/*.mp3` (DubVoice, 5.000 cr) quedó sin uso desde que el usuario pidió sin música.
 - **Reglas** (además de las fijas de guion y anti-desmonetización de todos los canales):
   - Guion primero, con datos verificados y fuentes; esperar el OK del usuario.
   - Turnar formatos: historia en tarjetas, precio que sube, adivina en 3 segundos, cifra y silencio (nunca dos iguales seguidos).
