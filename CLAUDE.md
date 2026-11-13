@@ -69,6 +69,10 @@ Idioma de trabajo con el usuario: español. Público: hispanohablante (LatAm + E
   DubVoice nano-banana-2-lite volvió el 7-nov pero falla ~45 % con 502 y **cobra** los fallos (2.500 cr perdidos en el 007).
   **11-nov: NO probar otros modelos de imagen de DubVoice.** google-pics y gpt-image-2 dieron 502 y cobraron 1.000 y **15.000** cr;
   grok-image y meta dieron 500 (reembolsan) pero no generan. Sin precio confirmado, no se llama a ningún modelo.
+- **13-nov (009):** nano-banana-2-lite funcionó en 14 de 16 imágenes (+1 prueba fallida); siguen cobrando los 502. Script con
+  freno tras 3 fallos seguidos: generar de una en una y dejar FALLBACK para cada escena `img`. `num` y `bars` aceptan `dec` (decimales con
+  coma). Wikimedia Commons está permitido en la red del entorno, pero la descarga la bloqueó el sistema de permisos: preguntar al usuario.
+  Imágenes IA realistas (lugares o hechos reales) → `META["altered"] = "Sí"`.
 - **Animación nueva en render.py (007):** escenas `board` (tablero de salidas que gira a CANCELADO), `route` (mapa con rutas
   y avión), `headline` (titular de prensa con palabra subrayada; parafrasear y citar fuente); en escenas `img`: `pop=[...]`
   (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes

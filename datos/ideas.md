@@ -41,3 +41,8 @@ Descartados por cobertura en español: GoPro (1,2M), Labubu (997k), Theranos (mi
 | Crocs: el zapato feo que casi quiebra (auge) | 1,9M (may) | 115k (13 min), Short 21M | caída de ~75 $ a ~1 $ por acción en 2007-2008; colaboraciones |
 | Starbucks | 269k (31-oct), 90k | 140k, 121k, 119k | ya cubierto en español → baja prioridad |
 Descartados: Xbox (Merluso 774k en ES), Nokia y Kodak (cubiertos), Nestlé (muy cubierto), Novo Nordisk (poco EN), LEGO (poco EN reciente), Samsung (cubierto), Burger King (Javier Ledesma 526k).
+
+## Propuesta del usuario (13-nov): Elon Musk y "cómo inició la NASA"
+- Musk en general: saturado en español (millones). Hueco: la Navidad de 2008 en que casi pierde Tesla y SpaceX (EN Shorts 9,9M y
+  1,3M; ES largos ≤1.128 vistas). Idea: juntarlo con el origen de la NASA (Sputnik 1957 → NASA 1958) y el contrato de la NASA que
+  salvó a SpaceX en dic-2008 (VERIFICAR fechas e importe antes de escribir). Pendiente de que el usuario elija.

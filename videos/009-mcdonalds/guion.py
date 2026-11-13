@@ -287,6 +287,6 @@ META = {
     "pinned": "¿Cuánto pagaste por tu último combo y en qué país? 🍔 Te leo 👇 Y dime qué empresa quieres para el próximo vídeo.",
     "playlist": "Quiebras y caídas",
     "category": "Educación",
-    "altered": "No",
+    "altered": "Sí",
     "shorts": {},
 }
