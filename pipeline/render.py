@@ -45,9 +45,12 @@ def dur_of(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                                 capture_output=True, text=True).stdout)
 
-def fmt_num(v, prefix="", suffix=""):
-    neg = v < 0; v = abs(int(round(v)))
-    s = f"{v:,}".replace(",", ".")
+def fmt_num(v, prefix="", suffix="", dec=0):
+    neg = v < 0 and round(abs(v), dec) > 0
+    if dec:  # decimales con coma: 7,37 · 1.234,5
+        s = f"{abs(v):,.{dec}f}".replace(",", "#").replace(".", ",").replace("#", ".")
+    else:
+        s = f"{abs(int(round(v))):,}".replace(",", ".")
     return ("-" if neg else "") + prefix + s + suffix
 
 # ---------- utilidades de dibujo ----------
@@ -192,7 +195,8 @@ def scene_num(v, t, D, W, H, seed):
     val = v["start"] + (v["end"] - v["start"]) * p
     down = v["end"] < v["start"] or v["end"] < 0
     col = RED if down else YEL
-    txt = fmt_num(val, v.get("prefix", ""), v.get("suffix", "") if round(val) != 0 else "")
+    dec = v.get("dec", 0)
+    txt = fmt_num(val, v.get("prefix", ""), v.get("suffix", "") if round(val, dec) != 0 else "", dec)
     fs = int(260 * sc) if len(txt) < 9 else int(200 * sc)
     d.text((W / 2, H * 0.45), txt, font=font(ANTON, fs), fill=col, anchor="mm")
     a = ease_out((t - 0.3) / 0.5)
@@ -239,7 +243,7 @@ def scene_bars(v, t, D, W, H, seed):
         col = YEL if i == 0 else RED
         d.rectangle([cx - bw / 2, base_y - h, cx + bw / 2, base_y], fill=col)
         d.text((cx, base_y + 18 * sc), lab, font=font(INTER_B, int(46 * sc)), fill=GREY, anchor="mt")
-        d.text((cx, base_y - h - 14 * sc), fmt_num(val * p), font=font(ANTON, int(78 * sc)), fill=WHITE, anchor="mb")
+        d.text((cx, base_y - h - 14 * sc), fmt_num(val * p, v.get("prefix", ""), v.get("suffix", ""), v.get("dec", 0)), font=font(ANTON, int(78 * sc)), fill=WHITE, anchor="mb")
     if v.get("note"):
         a = ease_out((t - per * n) / 0.5)
         if a > 0:
