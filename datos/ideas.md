@@ -46,3 +46,13 @@ Descartados: Xbox (Merluso 774k en ES), Nokia y Kodak (cubiertos), Nestlé (muy 
 - Musk en general: saturado en español (millones). Hueco: la Navidad de 2008 en que casi pierde Tesla y SpaceX (EN Shorts 9,9M y
   1,3M; ES largos ≤1.128 vistas). Idea: juntarlo con el origen de la NASA (Sputnik 1957 → NASA 1958) y el contrato de la NASA que
   salvó a SpaceX en dic-2008 (VERIFICAR fechas e importe antes de escribir). Pendiente de que el usuario elija.
+
+## Tanda del 2026-11-13 (tarde): historias con archivo (tras el éxito de la idea NASA)
+| Tema | EN | ES | Notas |
+|---|---|---|---|
+| Concorde: el avión más rápido que nadie podía pagar | 928k (Beyond Sky, ago), 724k (Airplane Mode, 27-oct) | nada (la búsqueda solo devuelve el juego "Concord") | auge y caída 1969-2003 + vuelta del supersónico |
+| Boeing: de orgullo de EE. UU. a que las aerolíneas rechacen el 777X | 2,1M (Beyond Sky, sep), 2,8M (accidente de Miami, sep: verificar) | accidentes sí (Codigo7700); la caída de la empresa, poco | cuidado con acusaciones no probadas |
+| Atari 1983: el crash que casi mata los videojuegos | Shorts 546k-780k | 13,8k | E.T. enterrado en el desierto |
+| Enron | 74k, 66k | 32k | demanda modesta |
+Descartados: Pan Am (ES 222k), Hindenburg (ES 262k), Lehman (crisis de 2008 muy explicada en ES), Polaroid y White Star Line (poco interés).
+Siguen vivos de tandas anteriores: Stellantis (EN 3,3M, ES sin largos), Crocs, De Beers, Buldak.
