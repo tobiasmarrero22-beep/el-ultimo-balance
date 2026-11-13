@@ -11,27 +11,27 @@ Há meses, Elon Musk vê o dinheiro acabar.
 Sua empresa de foguetes, a SpaceX, falhou em três lançamentos seguidos.
 
 4
-00:00:11,560 --> 00:00:16,334
+00:00:11,560 --> 00:00:15,967
 Sua fábrica de carros elétricos, a Tesla, está prestes a não conseguir pagar os
 
 5
-00:00:16,334 --> 00:00:16,878
+00:00:15,967 --> 00:00:16,469
 salários.
 
 6
-00:00:16,878 --> 00:00:20,503
+00:00:16,469 --> 00:00:19,815
 E o mundo está afundado na pior crise financeira em décadas.
 
 7
-00:00:20,583 --> 00:00:23,171
+00:00:20,553 --> 00:00:23,149
 Nesse dia, a NASA anuncia um contrato:
 
 8
-00:00:23,171 --> 00:00:28,482
+00:00:23,149 --> 00:00:28,477
 cerca de um vírgula seis bilhão de dólares para a SpaceX levar carga à Estação
 
 9
-00:00:28,482 --> 00:00:30,048
+00:00:28,477 --> 00:00:30,048
 Espacial Internacional.
 
 10
@@ -83,11 +83,11 @@ E de como, meio século depois, a agência criada para vencer os soviéticos num
 corrida acabou dependendo de um foguete privado.
 
 22
-00:01:10,159 --> 00:01:13,217
+00:01:10,159 --> 00:01:13,127
 E no final vou te fazer uma pergunta incômoda:
 
 23
-00:01:13,217 --> 00:01:16,807
+00:01:13,127 --> 00:01:16,611
 depois de tudo o que aconteceu, quem deve mais a quem?
 
 24
@@ -115,1226 +115,1218 @@ história:
 o Sputnik.
 
 30
-00:01:31,485 --> 00:01:36,250
+00:01:31,485 --> 00:01:36,012
 É uma esfera de metal polido de cinquenta e oito centímetros, com quatro antenas
 
 31
-00:01:36,250 --> 00:01:36,846
+00:01:36,012 --> 00:01:36,578
 compridas.
 
 32
-00:01:36,846 --> 00:01:38,990
+00:01:36,578 --> 00:01:38,616
 Pesa cerca de oitenta e três quilos.
 
 33
-00:01:39,070 --> 00:01:40,414
+00:01:39,040 --> 00:01:40,389
 E quase não faz nada:
 
 34
-00:01:40,414 --> 00:01:42,077
+00:01:40,389 --> 00:01:42,059
 só emite um bipe de rádio.
 
 35
-00:01:42,077 --> 00:01:46,811
+00:01:42,059 --> 00:01:46,811
 Mas qualquer pessoa com um receptor podia ouvi-lo quando passava por cima.
 
 36
-00:01:46,891 --> 00:01:51,340
+00:01:46,891 --> 00:01:51,250
 Dava uma volta completa na Terra em pouco mais de uma hora e meia.
 
 37
-00:01:51,340 --> 00:01:54,979
+00:01:51,250 --> 00:01:54,815
 De novo e de novo, de dia e de noite, durante semanas.
 
 38
-00:01:55,059 --> 00:01:58,211
+00:01:54,895 --> 00:01:58,170
 Nos Estados Unidos, a notícia cai como uma bomba.
 
 39
-00:01:58,211 --> 00:02:03,357
+00:01:58,170 --> 00:02:03,517
 Se os soviéticos podiam lançar uma bola de metal ao espaço, também podiam lançar
 
 40
-00:02:03,357 --> 00:02:04,387
+00:02:03,517 --> 00:02:04,587
 algo muito pior.
 
 41
-00:02:04,467 --> 00:02:07,863
+00:02:04,667 --> 00:02:08,063
 Em plena Guerra Fria, o medo era fácil de entender:
 
 42
-00:02:07,863 --> 00:02:13,192
+00:02:08,063 --> 00:02:13,392
 o mesmo foguete que coloca um satélite em órbita pode levar uma bomba atômica ao
 
 43
-00:02:13,192 --> 00:02:14,524
+00:02:13,392 --> 00:02:14,724
 outro lado do mundo.
 
 44
-00:02:14,604 --> 00:02:17,744
-Um mês depois, os soviéticos fazem de novo.
+00:02:14,804 --> 00:02:17,829
+Um mês depois, os soviéticos repetem a dose.
 
 45
-00:02:17,744 --> 00:02:20,812
-Em três de novembro lançam o Sputnik dois.
+00:02:17,829 --> 00:02:21,609
+Em três de novembro, o Sputnik dois leva um passageiro:
 
 46
-00:02:20,812 --> 00:02:22,931
-Desta vez, com um passageiro:
+00:02:21,609 --> 00:02:22,641
+a cadela Laika.
 
 47
-00:02:22,931 --> 00:02:24,757
-uma cadela chamada Laika.
-
-48
-00:02:24,837 --> 00:02:26,897
+00:02:24,807 --> 00:02:26,833
 Laika não sobreviveu à viagem.
 
-49
-00:02:26,897 --> 00:02:30,536
+48
+00:02:26,833 --> 00:02:30,412
 Mas a mensagem para os Estados Unidos foi claríssima:
 
-50
-00:02:30,536 --> 00:02:32,734
+49
+00:02:30,412 --> 00:02:32,573
 os soviéticos estavam na frente.
 
-51
-00:02:32,734 --> 00:02:33,283
+50
+00:02:32,573 --> 00:02:33,114
 E muito.
 
-52
-00:02:33,363 --> 00:02:38,367
+51
+00:02:33,333 --> 00:02:38,354
 O Congresso abre audiências para descobrir como o país mais rico do mundo tinha
 
-53
-00:02:38,367 --> 00:02:39,444
+52
+00:02:38,354 --> 00:02:39,434
 ficado para trás.
 
-54
-00:02:39,444 --> 00:02:42,358
+53
+00:02:39,434 --> 00:02:42,358
 A imprensa começa a falar da crise do Sputnik.
 
-55
+54
 00:02:42,438 --> 00:02:45,502
 Os Estados Unidos precisavam responder rápido.
 
-56
+55
 00:02:45,502 --> 00:02:47,168
 Tinham um foguete pronto.
 
-57
+56
 00:02:47,168 --> 00:02:50,832
 E decidiram mostrá-lo ao mundo… ao vivo pela televisão.
 
-58
+57
 00:02:51,482 --> 00:02:53,244
 Capítulo dois:
 
-59
+58
 00:02:53,244 --> 00:02:54,251
 Flopnik.
 
-60
-00:02:54,331 --> 00:02:57,870
+59
+00:02:54,331 --> 00:02:57,797
 Seis de dezembro de mil novecentos e cinquenta e sete.
 
-61
-00:02:57,870 --> 00:02:59,443
+60
+00:02:57,797 --> 00:02:59,337
 Cabo Canaveral, Flórida.
 
-62
-00:02:59,443 --> 00:03:04,228
+61
+00:02:59,337 --> 00:03:04,022
 O foguete Vanguard espera na plataforma com um pequeno satélite na ponta.
 
-63
-00:03:04,308 --> 00:03:06,000
+62
+00:03:04,278 --> 00:03:06,858
 As câmeras de televisão transmitem ao vivo.
 
-64
-00:03:06,000 --> 00:03:08,940
+63
+00:03:06,858 --> 00:03:08,719
 O país inteiro está assistindo.
 
-65
-00:03:09,020 --> 00:03:10,617
-Contagem regressiva.
-
-66
-00:03:10,617 --> 00:03:11,256
+64
+00:03:08,990 --> 00:03:09,671
 Ignição.
 
-67
-00:03:11,256 --> 00:03:14,370
+65
+00:03:09,671 --> 00:03:12,987
 O foguete sobe… pouco mais de um metro.
 
-68
-00:03:14,450 --> 00:03:19,515
+66
+00:03:14,251 --> 00:03:19,711
 Perde empuxo, cai sobre a plataforma e explode numa enorme bola de fogo.
 
-69
-00:03:19,595 --> 00:03:25,520
+67
+00:03:19,791 --> 00:03:25,578
 O pequeno satélite foi arremessado e, segundo se contou depois, ficou caído entre os
 
-70
-00:03:25,520 --> 00:03:27,989
+68
+00:03:25,578 --> 00:03:27,989
 arbustos… ainda emitindo seu sinal.
 
-71
+69
 00:03:28,069 --> 00:03:30,075
 A imprensa não teve piedade.
 
-72
+70
 00:03:30,075 --> 00:03:33,513
 Batizaram com apelidos como Flopnik ou Kaputnik.
 
-73
+71
 00:03:33,513 --> 00:03:37,525
 O New York Times falou de um golpe no prestígio do país.
 
-74
+72
 00:03:37,605 --> 00:03:42,772
 E um senador do Texas chamado Lyndon Johnson, que anos depois seria presidente,
 
-75
+73
 00:03:42,772 --> 00:03:46,043
 chamou aquilo de humilhante para o povo americano.
 
-76
-00:03:46,123 --> 00:03:48,764
+74
+00:03:46,123 --> 00:03:48,733
 Mas oito semanas depois chega a revanche.
 
-77
-00:03:48,764 --> 00:03:54,048
+75
+00:03:48,733 --> 00:03:53,953
 Em trinta e um de janeiro de mil novecentos e cinquenta e oito, o Exército lança o
 
-78
-00:03:54,048 --> 00:03:54,821
+76
+00:03:53,953 --> 00:03:54,717
 Explorer um.
 
-79
-00:03:54,901 --> 00:03:59,888
+77
+00:03:54,871 --> 00:03:59,874
 O foguete foi preparado pela equipe do engenheiro alemão Wernher von Braun.
 
-80
-00:03:59,888 --> 00:04:04,210
+78
+00:03:59,874 --> 00:04:04,210
 E o satélite, pelo Laboratório de Propulsão a Jato da Califórnia.
 
-81
+79
 00:04:04,290 --> 00:04:08,387
 E o Explorer um fez algo que o Sputnik não tinha feito:
 
-82
+80
 00:04:08,387 --> 00:04:10,324
 uma descoberta científica.
 
-83
+81
 00:04:10,324 --> 00:04:16,507
 Detectou cinturões de radiação em volta da Terra que hoje levam o nome do cientista
 
-84
+82
 00:04:16,507 --> 00:04:17,699
 James Van Allen.
 
-85
+83
 00:04:17,779 --> 00:04:23,073
 Em março chega o Vanguard um, o primeiro satélite movido a energia solar.
 
-86
+84
 00:04:23,073 --> 00:04:25,104
 E aqui vai um dado incrível:
 
-87
+85
 00:04:25,104 --> 00:04:26,772
 ele continua em órbita.
 
-88
+86
 00:04:26,772 --> 00:04:31,920
 É o objeto feito pelo ser humano mais antigo que ainda está lá em cima.
 
-89
+87
 00:04:32,000 --> 00:04:34,541
 Os Estados Unidos já tinham satélites.
 
-90
+88
 00:04:34,541 --> 00:04:36,481
 Mas tinham um problema maior:
 
-91
+89
 00:04:36,481 --> 00:04:40,426
 cada braço do governo e das Forças Armadas ia para um lado.
 
-92
+90
 00:04:40,426 --> 00:04:42,432
 Era preciso uma única agência.
 
-93
+91
 00:04:43,082 --> 00:04:44,423
 Capítulo três:
 
-94
+92
 00:04:44,423 --> 00:04:45,668
 nasce a NASA.
 
-95
+93
 00:04:46,098 --> 00:04:50,251
 Vinte e nove de julho de mil novecentos e cinquenta e oito.
 
-96
+94
 00:04:50,251 --> 00:04:55,671
 O presidente Dwight Eisenhower assina a Lei Nacional de Aeronáutica e Espaço.
 
-97
+95
 00:04:55,751 --> 00:04:57,114
 Assim nasce a NASA:
 
-98
+96
 00:04:57,114 --> 00:05:00,845
 a Administração Nacional da Aeronáutica e do Espaço.
 
-99
+97
 00:05:01,087 --> 00:05:03,218
 E nasce com uma decisão-chave:
 
-100
+98
 00:05:03,218 --> 00:05:05,847
 seria uma agência civil, não militar.
 
-101
+99
 00:05:05,847 --> 00:05:10,608
 Pelo menos em público, o espaço seria explorado com fins pacíficos.
 
-102
+100
 00:05:10,688 --> 00:05:13,916
 Em primeiro de outubro, a NASA abre as portas.
 
-103
+101
 00:05:13,916 --> 00:05:15,530
 Mas não começa do zero:
 
-104
+102
 00:05:15,530 --> 00:05:21,074
 absorve uma agência que pesquisava aviões havia décadas, o NACA, fundado em mil
 
-105
+103
 00:05:21,074 --> 00:05:22,478
 novecentos e quinze.
 
-106
+104
 00:05:22,558 --> 00:05:27,739
 Com ele chegam cerca de oito mil funcionários, vários laboratórios e um orçamento de
 
-107
+105
 00:05:27,739 --> 00:05:29,898
 uns cem milhões de dólares por ano.
 
-108
+106
 00:05:29,978 --> 00:05:35,670
 Seu primeiro administrador é Keith Glennan, presidente de uma universidade de Ohio.
 
-109
+107
 00:05:35,670 --> 00:05:37,384
 Aceitou com uma condição:
 
-110
+108
 00:05:37,384 --> 00:05:41,498
 que o diretor do NACA, Hugh Dryden, fosse o seu número dois.
 
-111
+109
 00:05:41,578 --> 00:05:46,783
 Em abril de mil novecentos e cinquenta e nove apresenta seus primeiros sete
 
-112
+110
 00:05:46,783 --> 00:05:49,281
 astronautas, os do programa Mercury.
 
-113
+111
 00:05:49,281 --> 00:05:52,890
 O país os recebeu como heróis antes mesmo de voarem.
 
-114
+112
 00:05:52,970 --> 00:05:55,317
 Um deles se chamava Gordon Cooper.
 
-115
+113
 00:05:55,317 --> 00:05:56,491
 Guarde esse nome:
 
-116
+114
 00:05:56,491 --> 00:06:00,841
 ele vai voltar a aparecer nesta história cinquenta anos depois.
 
-117
+115
 00:06:00,921 --> 00:06:03,603
 Mas os soviéticos continuavam ganhando.
 
-118
+116
 00:06:03,603 --> 00:06:09,380
 Em doze de abril de mil novecentos e sessenta e um, Yuri Gagarin se torna o primeiro
 
-119
+117
 00:06:09,380 --> 00:06:13,025
 ser humano a viajar ao espaço e dar a volta na Terra.
 
-120
+118
 00:06:13,105 --> 00:06:17,257
 Os Estados Unidos respondem três semanas depois com Alan Shepard.
 
-121
+119
 00:06:17,257 --> 00:06:21,281
 Mas o voo dele dura quinze minutos e não dá a volta no planeta.
 
-122
+120
 00:06:21,549 --> 00:06:23,577
 Então, o presidente John F.
 
-123
+121
 00:06:23,577 --> 00:06:25,831
 Kennedy faz uma aposta enorme:
 
-124
+122
 00:06:25,831 --> 00:06:30,639
 levar um homem à Lua e trazê-lo de volta antes do fim da década.
 
-125
+123
 00:06:30,989 --> 00:06:33,648
 Para conseguir, a NASA cresce como nunca.
 
-126
+124
 00:06:33,648 --> 00:06:39,031
 Em mil novecentos e sessenta e seis chega a gastar mais de quatro por cento de todo
 
-127
+125
 00:06:39,031 --> 00:06:40,328
 o orçamento federal.
 
-128
+126
 00:06:40,408 --> 00:06:46,179
 Cerca de quatrocentas mil pessoas trabalharam no programa Apollo, entre funcionários
 
-129
+127
 00:06:46,179 --> 00:06:48,584
 da NASA e das empresas contratadas.
 
-130
-00:06:48,664 --> 00:06:52,888
+128
+00:06:48,664 --> 00:06:52,773
 E repare nesse detalhe, porque é a semente de tudo o que vem depois:
 
-131
-00:06:52,888 --> 00:06:55,995
+129
+00:06:52,773 --> 00:06:55,795
 a NASA quase nunca fabricou sozinha seus foguetes.
 
-132
-00:06:55,995 --> 00:07:00,095
+130
+00:06:55,795 --> 00:06:59,783
 Ela projetava e pagava, mas quem construía eram empresas privadas.
 
-133
-00:07:00,175 --> 00:07:05,658
+131
+00:06:59,863 --> 00:07:05,565
 E em vinte de julho de mil novecentos e sessenta e nove, os Estados Unidos vencem a
 
-134
-00:07:05,658 --> 00:07:06,186
+132
+00:07:05,565 --> 00:07:06,115
 corrida:
 
-135
-00:07:06,186 --> 00:07:07,970
+133
+00:07:06,115 --> 00:07:07,970
 a Apollo onze pousa na Lua.
 
-136
+134
 00:07:08,050 --> 00:07:13,460
 A agência que nasceu do medo de um bipe soviético tinha levado o ser humano a outro
 
-137
+135
 00:07:13,460 --> 00:07:15,155
 mundo em apenas onze anos.
 
-138
+136
 00:07:15,501 --> 00:07:18,107
 Mas vencer a corrida tinha um problema:
 
-139
+137
 00:07:18,107 --> 00:07:21,515
 quando já não há rival, a pressa também desaparece.
 
-140
+138
 00:07:21,515 --> 00:07:22,384
 E o dinheiro.
 
-141
+139
 00:07:23,034 --> 00:07:24,476
 Capítulo quatro:
 
-142
+140
 00:07:24,476 --> 00:07:26,639
 o preço de ir ao espaço.
 
-143
+141
 00:07:26,719 --> 00:07:30,439
 Depois da Apollo, o orçamento da NASA despenca.
 
-144
+142
 00:07:30,439 --> 00:07:35,822
 Sua grande aposta para as décadas seguintes é uma nave reutilizável:
 
-145
+143
 00:07:35,822 --> 00:07:37,246
 o ônibus espacial.
 
-146
-00:07:37,326 --> 00:07:41,218
+144
+00:07:37,326 --> 00:07:40,990
 Voa pela primeira vez em mil novecentos e oitenta e um.
 
-147
-00:07:41,218 --> 00:07:45,534
+145
+00:07:40,990 --> 00:07:45,053
 A ideia era que ir ao espaço fosse quase como pegar um avião:
 
-148
-00:07:45,534 --> 00:07:46,666
+146
+00:07:45,053 --> 00:07:46,119
 rápido e barato.
 
-149
-00:07:46,666 --> 00:07:47,232
+147
+00:07:46,119 --> 00:07:46,652
 Não foi.
 
-150
-00:07:47,312 --> 00:07:48,317
+148
+00:07:47,282 --> 00:07:48,290
 E custou vidas.
 
-151
-00:07:48,317 --> 00:07:52,134
+149
+00:07:48,290 --> 00:07:52,118
 Em mil novecentos e oitenta e seis, o Challenger explode.
 
-152
-00:07:52,134 --> 00:07:56,354
+150
+00:07:52,118 --> 00:07:56,349
 Em dois mil e três, o Columbia se desintegra ao voltar à Terra.
 
-153
-00:07:56,354 --> 00:07:58,162
+151
+00:07:56,349 --> 00:07:58,162
 Morrem catorze astronautas.
 
-154
-00:07:58,242 --> 00:08:02,761
+152
+00:07:58,242 --> 00:08:02,627
 Depois do Columbia, os Estados Unidos decidem aposentar o ônibus espacial.
 
-155
-00:08:02,761 --> 00:08:07,830
+153
+00:08:02,627 --> 00:08:07,546
 E a NASA precisa pensar em como vai continuar levando carga e astronautas à Estação
 
-156
-00:08:07,830 --> 00:08:09,234
+154
+00:08:07,546 --> 00:08:08,909
 Espacial Internacional.
 
-157
-00:08:09,314 --> 00:08:14,029
+155
+00:08:08,989 --> 00:08:13,703
 Em dois mil e seis, tenta algo que nos anos cinquenta pareceria loucura:
 
-158
-00:08:14,029 --> 00:08:18,875
+156
+00:08:13,703 --> 00:08:18,549
 em vez de ser dona da nave, vai pagar empresas privadas por cumprir metas.
 
-159
-00:08:18,000 --> 00:08:20,711
+157
+00:08:18,000 --> 00:08:20,495
 O programa se chama COTS.
 
-160
-00:08:20,711 --> 00:08:24,269
+158
+00:08:20,495 --> 00:08:23,605
 Em agosto de dois mil e seis, escolhe duas empresas.
 
-161
-00:08:24,269 --> 00:08:28,511
+159
+00:08:23,605 --> 00:08:27,312
 Uma delas recebe duzentos e setenta e oito milhões de dólares.
 
-162
-00:08:28,511 --> 00:08:29,879
+160
+00:08:27,312 --> 00:08:28,508
 Ela se chama SpaceX.
 
-163
-00:08:29,959 --> 00:08:35,120
+161
+00:08:29,929 --> 00:08:35,090
 A outra, a Rocketplane Kistler, não conseguiu levantar o dinheiro de que precisava e
 
-164
-00:08:35,120 --> 00:08:36,595
+162
+00:08:35,090 --> 00:08:36,565
 acabou fora do programa.
 
-165
+163
 00:08:37,097 --> 00:08:42,366
 Para entender quem estava por trás da SpaceX, precisamos viajar a Moscou, no outono
 
-166
+164
 00:08:42,366 --> 00:08:43,445
 de dois mil e um.
 
-167
+165
 00:08:43,847 --> 00:08:44,938
 Capítulo cinco:
 
-168
+166
 00:08:44,938 --> 00:08:47,556
 um milionário que queria ir a Marte.
 
-169
+167
 00:08:47,751 --> 00:08:52,343
 Elon Musk tinha trinta anos e tinha ficado rico com o PayPal, a empresa de
 
-170
+168
 00:08:52,343 --> 00:08:56,253
 pagamentos pela internet que o eBay comprou em dois mil e dois.
 
-171
+169
 00:08:56,333 --> 00:08:58,348
 E tinha uma ideia estranha:
 
-172
+170
 00:08:58,348 --> 00:09:04,394
 mandar uma pequena estufa a Marte para cultivar plantas lá, e despertar de novo o
 
-173
+171
 00:09:04,394 --> 00:09:06,857
 interesse do público pelo espaço.
 
-174
+172
 00:09:06,857 --> 00:09:08,872
 Ele a chamou de Mars Oasis.
 
-175
+173
 00:09:08,952 --> 00:09:10,458
 O problema era o foguete:
 
-176
+174
 00:09:10,458 --> 00:09:12,867
 nos Estados Unidos custavam uma fortuna.
 
-177
+175
 00:09:12,867 --> 00:09:17,444
 Então, em outubro de dois mil e um, ele viajou a Moscou para comprar mísseis
 
-178
+176
 00:09:17,444 --> 00:09:19,131
 balísticos russos adaptados.
 
-179
-00:09:19,211 --> 00:09:24,311
+177
+00:09:19,211 --> 00:09:23,661
 Foi duas vezes, em outubro de dois mil e um e em fevereiro de dois mil e dois.
 
-180
-00:09:24,311 --> 00:09:26,665
+178
+00:09:23,661 --> 00:09:25,715
 E nas duas vezes voltou sem foguete.
 
-181
-00:09:26,745 --> 00:09:31,700
+179
+00:09:26,715 --> 00:09:31,683
 Segundo contou depois, na viagem de volta ele fez as contas e chegou a uma
 
-182
-00:09:31,700 --> 00:09:32,370
+180
+00:09:31,683 --> 00:09:32,354
 conclusão:
 
-183
-00:09:32,370 --> 00:09:36,790
+181
+00:09:32,354 --> 00:09:36,785
 os materiais de um foguete custavam só uma pequena parte do preço.
 
-184
-00:09:36,790 --> 00:09:38,665
+182
+00:09:36,785 --> 00:09:38,665
 Ele mesmo podia fabricá-los.
 
-185
-00:09:38,745 --> 00:09:43,187
+183
+00:09:38,745 --> 00:09:42,974
 Em dois mil e dois ele funda a Space Exploration Technologies:
 
-186
-00:09:43,187 --> 00:09:43,832
+184
+00:09:42,974 --> 00:09:43,588
 a SpaceX.
 
-187
-00:09:43,832 --> 00:09:46,913
+185
+00:09:43,588 --> 00:09:46,521
 Seu primeiro foguete será pequeno e barato:
 
-188
-00:09:46,913 --> 00:09:47,773
+186
+00:09:46,521 --> 00:09:47,339
 o Falcon um.
 
-189
-00:09:47,853 --> 00:09:50,707
+187
+00:09:47,419 --> 00:09:50,383
 Para lançá-lo, escolhem um lugar inusitado:
 
-190
-00:09:50,707 --> 00:09:55,752
+188
+00:09:50,383 --> 00:09:55,622
 Omelek, uma ilha minúscula do atol de Kwajalein, no meio do oceano Pacífico.
 
-191
-00:09:55,832 --> 00:10:01,007
+189
+00:09:55,702 --> 00:10:00,949
 Quase todos os especialistas achavam que uma empresa privada não conseguiria chegar
 
-192
-00:10:01,007 --> 00:10:02,067
+190
+00:10:00,949 --> 00:10:02,024
 sozinha à órbita.
 
-193
-00:10:02,067 --> 00:10:05,184
+191
+00:10:02,024 --> 00:10:05,184
 E durante anos, os fatos pareceram lhes dar razão.
 
-194
+192
 00:10:05,834 --> 00:10:07,196
 Capítulo seis:
 
-195
+193
 00:10:07,196 --> 00:10:08,656
 três explosões.
 
-196
-00:10:08,955 --> 00:10:11,688
+194
+00:10:08,955 --> 00:10:11,692
 Vinte e quatro de março de dois mil e seis.
 
-197
-00:10:11,688 --> 00:10:13,785
+195
+00:10:11,692 --> 00:10:13,792
 Primeiro lançamento do Falcon um.
 
-198
-00:10:13,785 --> 00:10:16,645
+196
+00:10:13,792 --> 00:10:16,656
 Poucos segundos depois, um incêndio no motor.
 
-199
-00:10:16,645 --> 00:10:17,980
+197
+00:10:16,656 --> 00:10:17,993
 O foguete cai no mar.
 
-200
-00:10:18,060 --> 00:10:20,641
+198
+00:10:18,073 --> 00:10:20,469
 Vinte e um de março de dois mil e sete.
 
-201
-00:10:20,641 --> 00:10:21,832
+199
+00:10:20,469 --> 00:10:21,575
 Segunda tentativa.
 
-202
-00:10:21,832 --> 00:10:27,192
+200
+00:10:21,575 --> 00:10:26,551
 Desta vez chega ao espaço, mas o segundo estágio começa a oscilar e não alcança a
 
-203
-00:10:27,192 --> 00:10:27,655
+201
+00:10:26,551 --> 00:10:26,981
 órbita.
 
-204
-00:10:27,735 --> 00:10:30,038
+202
+00:10:27,705 --> 00:10:29,828
 Dois de agosto de dois mil e oito.
 
-205
-00:10:30,038 --> 00:10:31,325
+203
+00:10:29,828 --> 00:10:31,014
 Terceira tentativa.
 
-206
-00:10:31,325 --> 00:10:34,306
+204
+00:10:31,014 --> 00:10:33,760
 E desta vez o foguete leva carga de verdade:
 
-207
-00:10:34,306 --> 00:10:38,167
+205
+00:10:33,760 --> 00:10:37,318
 um satélite militar e dois pequenos experimentos da NASA.
 
-208
-00:10:38,247 --> 00:10:40,997
+206
+00:10:38,217 --> 00:10:41,013
 O primeiro estágio funciona perfeitamente.
 
-209
-00:10:40,997 --> 00:10:45,972
+207
+00:10:41,013 --> 00:10:46,074
 Mas na separação, um erro de sincronização faz os dois estágios se chocarem.
 
-210
-00:10:45,972 --> 00:10:46,955
+208
+00:10:46,074 --> 00:10:47,073
 Terceira falha.
 
-211
-00:10:47,035 --> 00:10:52,234
+209
+00:10:47,153 --> 00:10:52,352
 A bordo ia também uma cápsula com as cinzas de mais de duzentas pessoas que queriam
 
-212
-00:10:52,234 --> 00:10:53,487
+210
+00:10:52,352 --> 00:10:53,605
 descansar no espaço.
 
-213
+211
 00:10:54,355 --> 00:10:59,787
 Entre elas estavam as do ator que fazia o Scotty em Star Trek… e as de Gordon
 
-214
+212
 00:10:59,787 --> 00:11:03,668
 Cooper, um daqueles sete primeiros astronautas da NASA.
 
-215
+213
 00:11:03,748 --> 00:11:08,999
 Meio século depois de a NASA apresentar seus primeiros astronautas, as cinzas de um
 
-216
+214
 00:11:08,999 --> 00:11:13,491
 deles se perdiam num foguete privado que não conseguia chegar à órbita.
 
-217
+215
 00:11:14,595 --> 00:11:19,218
 E enquanto isso, a outra empresa de Musk também estava afundando.
 
-218
+216
 00:11:19,803 --> 00:11:21,046
 Capítulo sete:
 
-219
+217
 00:11:21,046 --> 00:11:22,023
 o pior ano.
 
-220
+218
 00:11:22,793 --> 00:11:27,834
 A Tesla tentava havia anos fabricar seu primeiro carro, um esportivo elétrico
 
-221
+219
 00:11:27,834 --> 00:11:28,948
 chamado Roadster.
 
-222
+220
 00:11:28,948 --> 00:11:32,549
 Estava atrasado e custava muito mais do que o previsto.
 
-223
-00:11:32,629 --> 00:11:36,183
+221
+00:11:32,629 --> 00:11:35,999
 Em outubro de dois mil e oito, Musk passa a comandar a Tesla.
 
-224
-00:11:36,183 --> 00:11:41,019
+222
+00:11:35,999 --> 00:11:40,584
 Demite parte dos funcionários e coloca dinheiro do próprio bolso para a empresa não
 
-225
-00:11:41,019 --> 00:11:41,427
+223
+00:11:40,584 --> 00:11:40,971
 fechar.
 
-226
-00:11:41,507 --> 00:11:44,592
+224
+00:11:41,051 --> 00:11:43,995
 E em setembro tinha quebrado o banco Lehman Brothers.
 
-227
-00:11:44,592 --> 00:11:48,375
+225
+00:11:43,995 --> 00:11:47,605
 Os bancos não emprestavam e os investidores não queriam arriscar.
 
-228
-00:11:48,375 --> 00:11:51,169
+226
+00:11:47,605 --> 00:11:50,272
 Era o pior momento possível para pedir dinheiro.
 
-229
-00:11:51,249 --> 00:11:56,217
+227
+00:11:51,219 --> 00:11:56,204
 Musk já lembrou muitas vezes daquele ano como um dos mais duros da sua vida.
 
-230
-00:11:56,217 --> 00:12:00,009
+228
+00:11:56,204 --> 00:12:00,009
 Tinha duas empresas, e as duas podiam cair ao mesmo tempo.
 
-231
+229
 00:12:00,089 --> 00:12:05,606
 Segundo se conta, a SpaceX tinha o suficiente para um último lançamento do Falcon
 
-232
+230
 00:12:05,606 --> 00:12:05,810
 um.
 
-233
+231
 00:12:05,810 --> 00:12:08,535
 Se falhasse, provavelmente acabava tudo.
 
-234
+232
 00:12:08,615 --> 00:12:12,559
 Tudo dependia de um foguete numa ilha perdida do Pacífico.
 
-235
+233
 00:12:13,114 --> 00:12:14,189
 Capítulo oito:
 
-236
+234
 00:12:14,189 --> 00:12:15,647
 a quarta tentativa.
 
-237
+235
 00:12:16,182 --> 00:12:19,302
 Vinte e oito de setembro de dois mil e oito.
 
-238
+236
 00:12:19,302 --> 00:12:19,798
 Omelek.
 
-239
+237
 00:12:19,798 --> 00:12:22,847
 O quarto Falcon um leva uma carga de teste:
 
-240
+238
 00:12:22,847 --> 00:12:28,733
 um bloco de metal de cerca de cento e sessenta e cinco quilos, apelidado de RatSat.
 
-241
+239
 00:12:28,813 --> 00:12:29,689
 Decolagem.
 
-242
+240
 00:12:29,689 --> 00:12:32,141
 O primeiro estágio funciona.
 
-243
+241
 00:12:32,141 --> 00:12:33,629
 Separação… limpa.
 
-244
+242
 00:12:33,629 --> 00:12:36,519
 O segundo estágio acende o motor.
 
-245
+243
 00:12:36,599 --> 00:12:39,896
 E alguns minutos depois chega a confirmação:
 
-246
+244
 00:12:39,896 --> 00:12:41,920
 o Falcon um está em órbita.
 
-247
+245
 00:12:41,000 --> 00:12:47,563
 É o primeiro foguete de combustível líquido desenvolvido por uma empresa privada a
 
-248
+246
 00:12:47,563 --> 00:12:49,259
 chegar à órbita da Terra.
 
-249
+247
 00:12:49,259 --> 00:12:52,448
 Na SpaceX, os funcionários gritam e se abraçam.
 
-250
+248
 00:12:52,716 --> 00:12:53,826
 E repare na data:
 
-251
+249
 00:12:53,826 --> 00:12:58,920
 três dias depois, em primeiro de outubro de dois mil e oito, a NASA completava
 
-252
+250
 00:12:58,920 --> 00:13:00,618
 exatamente cinquenta anos.
 
-253
+251
 00:13:00,698 --> 00:13:03,289
 Mas chegar à órbita não paga as contas.
 
-254
+252
 00:13:03,289 --> 00:13:07,407
 Depois do sucesso, a SpaceX continuava precisando de clientes.
 
-255
+253
 00:13:07,407 --> 00:13:08,935
 E a Tesla, de dinheiro.
 
-256
+254
 00:13:09,585 --> 00:13:10,816
 Capítulo nove:
 
-257
+255
 00:13:10,816 --> 00:13:13,190
 o Natal de dois mil e oito.
 
-258
+256
 00:13:13,489 --> 00:13:15,216
 Dezembro de dois mil e oito.
 
-259
+257
 00:13:15,216 --> 00:13:19,038
 Musk está dividindo o pouco que lhe resta entre suas empresas.
 
-260
+258
 00:13:19,038 --> 00:13:22,984
 Segundo ele contou, chegou a pedir dinheiro emprestado a amigos.
 
-261
-00:13:23,064 --> 00:13:28,219
+259
+00:13:23,064 --> 00:13:28,063
 E então, em vinte e três de dezembro, a NASA anuncia quem vai levar carga à Estação
 
-262
-00:13:28,219 --> 00:13:32,007
+260
+00:13:28,063 --> 00:13:31,737
 Espacial Internacional quando o ônibus espacial se aposentar.
 
-263
-00:13:32,087 --> 00:13:37,275
+261
+00:13:32,057 --> 00:13:37,261
 Encomenda à SpaceX doze voos por cerca de um vírgula seis bilhão de dólares.
 
-264
-00:13:37,275 --> 00:13:41,918
+262
+00:13:37,261 --> 00:13:41,918
 E à Orbital Sciences, oito voos por cerca de um vírgula nove bilhão.
 
-265
+263
 00:13:41,998 --> 00:13:47,350
 Para uma empresa que três meses antes estava a uma falha de desaparecer, aquilo
 
-266
+264
 00:13:47,350 --> 00:13:48,163
 mudava tudo.
 
-267
+265
 00:13:48,300 --> 00:13:52,928
 E no dia seguinte, vinte e quatro de dezembro, a Tesla fecha uma rodada de
 
-268
+266
 00:13:52,928 --> 00:13:56,306
 financiamento de cerca de quarenta milhões de dólares.
 
-269
-00:13:56,386 --> 00:14:01,156
+267
+00:13:56,386 --> 00:14:00,812
 Anos depois, Musk contou que ela fechou às seis da tarde da véspera de Natal, na
 
-270
-00:14:01,156 --> 00:14:02,409
+268
+00:14:00,812 --> 00:14:01,974
 última hora possível.
 
-271
-00:14:02,409 --> 00:14:07,000
+269
+00:14:01,974 --> 00:14:06,234
 Se não, dois dias depois do Natal ele não teria conseguido pagar os salários.
 
-272
-00:14:07,080 --> 00:14:12,217
+270
+00:14:07,050 --> 00:14:11,992
 Em dois dias, suas duas empresas passaram da beira da falência a ter um futuro.
 
-273
-00:14:12,217 --> 00:14:14,168
+271
+00:14:11,992 --> 00:14:13,868
 E uma delas devia isso à NASA.
 
-274
+272
 00:14:14,818 --> 00:14:16,130
 Capítulo dez:
 
-275
+273
 00:14:16,130 --> 00:14:17,744
 a dívida é paga.
 
-276
+274
 00:14:18,121 --> 00:14:21,226
 O que veio depois mudou a indústria espacial.
 
-277
+275
 00:14:21,226 --> 00:14:26,537
 Em dezembro de dois mil e dez, a SpaceX se torna a primeira empresa privada a
 
-278
+276
 00:14:26,537 --> 00:14:28,952
 recuperar uma nave vinda da órbita:
 
-279
+277
 00:14:28,952 --> 00:14:30,124
 a cápsula Dragon.
 
-280
+278
 00:14:30,204 --> 00:14:34,970
 Em maio de dois mil e doze, uma Dragon chega à Estação Espacial Internacional.
 
-281
+279
 00:14:34,970 --> 00:14:37,475
 É a primeira nave comercial a fazer isso.
 
-282
+280
 00:14:37,555 --> 00:14:42,424
 E em dezembro de dois mil e quinze consegue algo que parecia ficção científica:
 
-283
+281
 00:14:42,424 --> 00:14:47,046
 fazer pousar o primeiro estágio de um foguete orbital depois do lançamento.
 
-284
+282
 00:14:47,126 --> 00:14:50,179
 Enquanto isso, a NASA vivia uma situação incômoda.
 
-285
+283
 00:14:50,179 --> 00:14:55,307
 Desde que o ônibus espacial se aposentou, em dois mil e onze, ela não tinha um jeito
 
-286
+284
 00:14:55,307 --> 00:14:57,688
 próprio de levar astronautas ao espaço.
 
-287
+285
 00:14:57,768 --> 00:15:02,522
 Para levá-los à estação, pagava à Rússia por assentos nas naves Soyuz.
 
-288
+286
 00:15:02,522 --> 00:15:07,819
 Os mais caros chegaram a custar cerca de oitenta e seis milhões de dólares por
 
-289
+287
 00:15:07,819 --> 00:15:08,566
 astronauta.
 
-290
+288
 00:15:08,646 --> 00:15:13,619
 A agência que nasceu para vencer os soviéticos na corrida espacial tinha que comprar
 
-291
+289
 00:15:13,619 --> 00:15:14,863
 as viagens da Rússia.
 
-292
+290
 00:15:15,731 --> 00:15:21,097
 Em dois mil e catorze, a NASA distribui os contratos para voltar a lançar
 
-293
+291
 00:15:21,097 --> 00:15:22,567
 astronautas de casa:
 
-294
+292
 00:15:22,567 --> 00:15:27,197
 quatro vírgula dois bilhões para a Boeing, a gigante de sempre.
 
-295
+293
 00:15:27,197 --> 00:15:30,137
 Dois vírgula seis bilhões para a SpaceX.
 
-296
+294
 00:15:30,217 --> 00:15:35,827
 E em trinta de maio de dois mil e vinte, dois astronautas da NASA decolam da Flórida
 
-297
+295
 00:15:35,827 --> 00:15:36,963
 numa Crew Dragon.
 
-298
+296
 00:15:36,963 --> 00:15:41,371
 É o primeiro lançamento tripulado dos Estados Unidos em nove anos.
 
-299
+297
 00:15:41,371 --> 00:15:43,775
 E o primeiro de uma empresa privada.
 
-300
+298
 00:15:44,278 --> 00:15:45,051
 E a Boeing?
 
-301
+299
 00:15:45,051 --> 00:15:50,883
 Sua nave, a Starliner, teve tantos problemas no primeiro voo tripulado, em dois mil
 
-302
+300
 00:15:50,883 --> 00:15:54,257
 e vinte e quatro, que voltou vazia para a Terra.
 
-303
+301
 00:15:54,476 --> 00:16:00,060
 Seus dois astronautas voltaram em março de dois mil e vinte e cinco… a bordo de uma
 
-304
+302
 00:16:00,060 --> 00:16:04,702
 Dragon da SpaceX, depois de duzentos e oitenta e seis dias no espaço.
 
-305
+303
 00:16:04,782 --> 00:16:10,119
 Em dois mil e vinte e um, a NASA escolheu a nave Starship da SpaceX para voltar a
 
-306
+304
 00:16:10,119 --> 00:16:15,654
 pousar astronautas na Lua, com um contrato de dois vírgula oitenta e nove bilhões de
 
-307
+305
 00:16:15,654 --> 00:16:16,181
 dólares.
 
-308
+306
 00:16:16,261 --> 00:16:21,183
 E em abril de dois mil e vinte e seis, a própria NASA voltou à Lua com a missão
 
-309
+307
 00:16:21,183 --> 00:16:21,993
 Artemis dois:
 
-310
+308
 00:16:21,993 --> 00:16:27,164
 quatro astronautas a contornaram pela primeira vez desde mil novecentos e setenta e
 
-311
+309
 00:16:27,164 --> 00:16:27,476
 dois.
 
-312
+310
 00:16:27,556 --> 00:16:32,832
 E em junho de dois mil e vinte e seis, a SpaceX, já fundida com a empresa de
 
-313
+311
 00:16:32,832 --> 00:16:36,721
 inteligência artificial de Musk, abriu capital na bolsa.
 
-314
+312
 00:16:36,721 --> 00:16:40,678
 Foi avaliada em quase um vírgula oito trilhão de dólares.
 
-315
+313
 00:16:40,758 --> 00:16:46,159
 A empresa que em dois mil e oito estava a uma falha de desaparecer tinha se tornado
 
-316
+314
 00:16:46,159 --> 00:16:48,177
 uma das mais valiosas do mundo.
 
-317
+315
 00:16:48,445 --> 00:16:50,378
 Então, quem deve mais a quem?
 
-318
+316
 00:16:51,015 --> 00:16:56,270
 Sem a NASA, a SpaceX provavelmente não teria sobrevivido a dois mil e oito.
 
-319
+317
 00:16:56,270 --> 00:17:01,594
 Seu dinheiro e seus contratos lhe deram uma chance quando ninguém mais dava.
 
-320
-00:17:01,674 --> 00:17:07,186
+318
+00:17:01,674 --> 00:17:06,643
 Mas sem a SpaceX, a NASA teria passado muitos anos a mais pagando à Rússia por cada
 
-321
-00:17:07,186 --> 00:17:07,717
+319
+00:17:06,643 --> 00:17:07,122
 assento.
 
-322
-00:17:07,717 --> 00:17:13,294
+320
+00:17:07,122 --> 00:17:12,150
 E seus astronautas presos em dois mil e vinte e cinco teriam que esperar outra nave.
 
-323
-00:17:13,374 --> 00:17:15,249
+321
+00:17:13,344 --> 00:17:15,219
 E tudo começou com um bipe.
 
-324
-00:17:15,249 --> 00:17:21,082
+322
+00:17:15,219 --> 00:17:21,052
 O medo de uma pequena bola de metal soviética criou a agência que levou o ser humano
 
-325
-00:17:21,082 --> 00:17:21,498
+323
+00:17:21,052 --> 00:17:21,468
 à Lua.
 
-326
-00:17:21,578 --> 00:17:27,049
+324
+00:17:21,548 --> 00:17:27,040
 E cinquenta anos depois, essa mesma agência salvou com um contrato a empresa privada
 
-327
-00:17:27,049 --> 00:17:29,720
+325
+00:17:27,040 --> 00:17:29,720
 que hoje leva seus astronautas ao espaço.
 
-328
+326
 00:17:29,800 --> 00:17:31,125
 E você, o que acha?
 
-329
+327
 00:17:31,125 --> 00:17:36,842
 A NASA fez bem em apostar em empresas privadas, ou o espaço deveria ficar nas mãos
 
-330
+328
 00:17:36,842 --> 00:17:37,748
 dos governos?
 
-331
+329
 00:17:37,748 --> 00:17:39,491
 Me conta nos comentários.
 
-332
+330
 00:17:39,571 --> 00:17:42,718
 E se você gosta dessas histórias, se inscreva:
 
-333
+331
 00:17:42,718 --> 00:17:45,796
 toda semana, o último balanço de uma empresa.
 
-334
+332
 00:17:45,796 --> 00:17:47,984
 Obrigado por chegar até o final.
 
-335
+333
 00:17:47,984 --> 00:17:49,489
 Até o próximo balanço.
 

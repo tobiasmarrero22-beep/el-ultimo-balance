@@ -31,23 +31,23 @@ about one point six billion dollars for SpaceX to carry cargo to the Internation
 Space Station.
 
 9
-00:00:30,098 --> 00:00:31,731
+00:00:30,098 --> 00:00:31,770
 The next day, at six p.m.
 
 10
-00:00:31,731 --> 00:00:35,453
+00:00:31,770 --> 00:00:35,580
 on Christmas Eve, Tesla closes the funding that saves it.
 
 11
-00:00:35,453 --> 00:00:39,436
+00:00:35,580 --> 00:00:39,659
 According to Musk, in the last hour of the last possible day.
 
 12
-00:00:39,516 --> 00:00:44,865
+00:00:39,739 --> 00:00:45,088
 But to understand why a United States government agency ended up rescuing a private
 
 13
-00:00:44,865 --> 00:00:49,312
+00:00:45,088 --> 00:00:49,535
 company whose rocket kept blowing up, we have to go back fifty years.
 
 14
@@ -383,39 +383,39 @@ it would be a civilian agency, not a military one.
 At least in public, space would be explored for peaceful purposes.
 
 97
-00:05:10,688 --> 00:05:13,286
+00:05:10,688 --> 00:05:13,336
 On October first, NASA opens its doors.
 
 98
-00:05:13,286 --> 00:05:15,550
+00:05:13,336 --> 00:05:15,644
 But it doesn't start from scratch:
 
 99
-00:05:15,550 --> 00:05:21,146
+00:05:15,644 --> 00:05:21,346
 it absorbs an agency that had spent decades researching airplanes, the NACA, founded
 
 100
-00:05:21,146 --> 00:05:22,478
+00:05:21,346 --> 00:05:22,704
 in nineteen fifteen.
 
 101
-00:05:22,558 --> 00:05:27,656
+00:05:22,784 --> 00:05:27,594
 With it come about eight thousand employees, several laboratories, and a budget of
 
 102
-00:05:27,656 --> 00:05:30,081
+00:05:27,594 --> 00:05:29,881
 about a hundred million dollars a year.
 
 103
-00:05:30,161 --> 00:05:35,382
+00:05:29,961 --> 00:05:35,275
 Its first administrator is Keith Glennan, president of a university in Ohio.
 
 104
-00:05:35,382 --> 00:05:37,375
+00:05:35,275 --> 00:05:37,303
 He accepted on one condition:
 
 105
-00:05:37,375 --> 00:05:41,359
+00:05:37,303 --> 00:05:41,359
 that the head of the NACA, Hugh Dryden, be his number two.
 
 106
@@ -495,23 +495,23 @@ About four hundred thousand people worked on the Apollo program, between NASA
 employees and contractors.
 
 125
-00:06:48,486 --> 00:06:52,778
+00:06:48,486 --> 00:06:52,644
 And notice that detail, because it's the seed of everything to come:
 
 126
-00:06:52,778 --> 00:06:55,428
+00:06:52,644 --> 00:06:55,212
 NASA almost never built its rockets alone.
 
 127
-00:06:55,428 --> 00:06:59,783
+00:06:55,212 --> 00:06:59,431
 It designed them and paid for them, but private companies built them.
 
 128
-00:06:59,863 --> 00:07:05,213
+00:06:59,833 --> 00:07:05,183
 And on July twentieth, nineteen sixty-nine, the United States wins the race:
 
 129
-00:07:05,213 --> 00:07:07,465
+00:07:05,183 --> 00:07:07,435
 Apollo eleven lands on the Moon.
 
 130
@@ -523,15 +523,15 @@ The agency born out of fear of a Soviet beep had taken humanity to another world
 just eleven years.
 
 132
-00:07:15,501 --> 00:07:17,596
+00:07:15,501 --> 00:07:17,592
 But winning the race had a problem:
 
 133
-00:07:17,596 --> 00:07:21,067
+00:07:17,592 --> 00:07:21,057
 when there's no rival anymore, the urgency disappears too.
 
 134
-00:07:21,067 --> 00:07:22,384
+00:07:21,057 --> 00:07:22,372
 And so does the money.
 
 135
@@ -863,27 +863,27 @@ the Roadster.
 It was behind schedule and cost far more than planned.
 
 217
-00:11:32,629 --> 00:11:36,077
+00:11:32,629 --> 00:11:36,116
 In October two thousand eight, Musk takes over as Tesla's CEO.
 
 218
-00:11:36,077 --> 00:11:40,693
+00:11:36,116 --> 00:11:40,785
 He lays off part of the staff and puts in his own money so the company doesn't shut
 
 219
-00:11:40,693 --> 00:11:40,971
+00:11:40,785 --> 00:11:41,066
 down.
 
 220
-00:11:41,051 --> 00:11:44,125
+00:11:41,146 --> 00:11:44,191
 And in September, Lehman Brothers had collapsed.
 
 221
-00:11:44,125 --> 00:11:48,095
+00:11:44,191 --> 00:11:48,124
 Banks weren't lending and investors didn't want to take risks.
 
 222
-00:11:48,095 --> 00:11:51,169
+00:11:48,124 --> 00:11:51,169
 It was the worst possible time to ask for money.
 
 223
@@ -903,7 +903,7 @@ As the story goes, SpaceX had just enough left for one last Falcon one launch.
 If it failed, it was probably all over.
 
 227
-00:12:08,585 --> 00:12:12,464
+00:12:08,585 --> 00:12:12,477
 Everything depended on one rocket on a remote island in the Pacific.
 
 228
