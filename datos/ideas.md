@@ -32,3 +32,12 @@ Datos de la API de YouTube del 2026-11-01. "EN" = mejores vídeos en inglés des
 | Jaguar: la marca que dejó de vender coches | 1,69M (Short), 759k, 723k, 502k | 104k (noticia), resto <10k | 6 matriculaciones en RU en ene-2026 (−99 %); sin producción hasta el relanzamiento eléctrico; rebrand "Copy Nothing" |
 | Sriracha (Huy Fong): la salsa que rompió con su granjero | 1,57M | Shorts y vídeos de <3k | jurado 2019: 23,3 M$ a Underwood Ranches; escasez 2022-2024 |
 Descartados por cobertura en español: GoPro (1,2M), Labubu (997k), Theranos (millones), Forest City (3,9M). Prince Group: poco interés en largos en inglés.
+
+## Tanda del 2026-11-13 (API de YouTube: EN desde may-2026; ES desde 2025, largos de 4-20 min) — vídeo de ~9 min, marcas conocidas en Argentina
+| Tema | EN | ES | Notas |
+|---|---|---|---|
+| McDonald's: por qué la gente deja de ir | 1,44M (Michael Girdley, jul), 221k, 164k (Damon Cassidy, 12-nov) | 95k (7 min, feb-2025), 37k | ángulo argentino: Arcos Dorados (verificar); combo de 18 $ viral, brote de E. coli de oct-2024 |
+| Stellantis (Fiat, Peugeot, Citroën, Jeep) | 3,31M (Nimbus, oct), 249k | ningún largo en español (francés 160k, portugués 105k, noticias argentinas 42-80k) | plantas en Argentina; Tavares dimitió en dic-2024 |
+| Crocs: el zapato feo que casi quiebra (auge) | 1,9M (may) | 115k (13 min), Short 21M | caída de ~75 $ a ~1 $ por acción en 2007-2008; colaboraciones |
+| Starbucks | 269k (31-oct), 90k | 140k, 121k, 119k | ya cubierto en español → baja prioridad |
+Descartados: Xbox (Merluso 774k en ES), Nokia y Kodak (cubiertos), Nestlé (muy cubierto), Novo Nordisk (poco EN), LEGO (poco EN reciente), Samsung (cubierto), Burger King (Javier Ledesma 526k).
