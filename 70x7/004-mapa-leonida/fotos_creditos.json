@@ -68,5 +68,45 @@
   "page": "https://commons.wikimedia.org/wiki/File:American_Alligator_-_Alligator_mississippiensis,_Everglades_National_Park,_Homestead,_Florida_-_23768845571.jpg",
   "artist": "judygva (back in town and trying to catch up)",
   "credit": "https://www.flickr.com/photos/52450054@N04/23768845571/"
+ },
+ "gulf_motel": {
+  "title": "File:Panama City Beach - View 1.jpg",
+  "lic": "CC0",
+  "w": 4032,
+  "h": 3024,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Panama_City_Beach_-_View_1.jpg/1920px-Panama_City_Beach_-_View_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Panama_City_Beach_-_View_1.jpg",
+  "artist": "Jesselikeswx",
+  "credit": "Own work"
+ },
+ "okeechobee": {
+  "title": "File:Pahokee - Lake Okeechobee Scenic Trail.jpg",
+  "lic": "CC BY 4.0",
+  "w": 4272,
+  "h": 2848,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Pahokee_-_Lake_Okeechobee_Scenic_Trail.jpg/1920px-Pahokee_-_Lake_Okeechobee_Scenic_Trail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Pahokee_-_Lake_Okeechobee_Scenic_Trail.jpg",
+  "artist": "RicoRico",
+  "credit": "Own work"
+ },
+ "forest_north": {
+  "title": "File:Ocala National Forest, Ocala, Florida, US.jpg",
+  "lic": "CC BY 2.0",
+  "w": 4798,
+  "h": 2856,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Ocala_National_Forest%2C_Ocala%2C_Florida%2C_US.jpg/1920px-Ocala_National_Forest%2C_Ocala%2C_Florida%2C_US.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Ocala_National_Forest,_Ocala,_Florida,_US.jpg",
+  "artist": "Trish Hartmann",
+  "credit": "https://www.flickr.com/photos/21078769@N00/21150974294/"
+ },
+ "canyon": {
+  "title": "File:Providence Canyon Overlook.JPG",
+  "lic": "CC0",
+  "w": 3456,
+  "h": 2304,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Providence_Canyon_Overlook.JPG/1920px-Providence_Canyon_Overlook.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Providence_Canyon_Overlook.JPG",
+  "artist": "Thomsonmg2000",
+  "credit": "Own work"
  }
 }
