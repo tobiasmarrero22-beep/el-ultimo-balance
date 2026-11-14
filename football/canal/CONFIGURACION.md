@@ -27,7 +27,7 @@
 - País: **Argentina**.
 - Palabras clave del canal (copiar tal cual):
 ```
-"football facts" "soccer facts" "football shorts" "football records" "world cup facts" "football history" "football quiz" "soccer trivia" "transfer facts" "stoppage time facts"
+football facts, soccer facts, football shorts, football records, world cup facts, football history, football quiz, soccer trivia, transfer facts, stoppage time facts
 ```
 
 **Canal → Configuración avanzada**

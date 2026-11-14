@@ -26,7 +26,7 @@
 - País: **Argentina**.
 - Palabras clave del canal (copiar tal cual):
 ```
-"datos de fútbol" "curiosidades del fútbol" "historias del fútbol" "récords del fútbol" "fútbol shorts" "historia de los mundiales" "quiz de fútbol" "fichajes raros" "fútbol argentino" "dato de tribuna"
+datos de fútbol, curiosidades del fútbol, historias del fútbol, récords del fútbol, fútbol shorts, historia de los mundiales, quiz de fútbol, fichajes raros, fútbol argentino, dato de tribuna
 ```
 
 **Canal → Configuración avanzada**
