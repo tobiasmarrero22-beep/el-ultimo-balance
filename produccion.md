@@ -17,3 +17,11 @@
 | 010 | Cómo nació la NASA… y por qué 50 años después salvó a SpaceX (Sputnik, Flopnik, Apolo, Soyuz, Falcon 1, Navidad de 2008, Crew Dragon, Artemis II) | 2026-11-13 | 17:49 | 3 (Navidad de Musk, Flopnik, cenizas del astronauta; ~1.250 cr de voz) | ~16.000 (voz Adán) + ~3.000 imágenes (2 bien, 9 con 502) | pendiente (programar) | DubVoice imágenes caído → 21 fotos reales de Wikimedia Commons (dominio público NASA/FF. AA. de EE. UU., SpaceX CC0, 2 CC BY 2.0; créditos en `fotos_creditos.json`) + 2 IA + escenas de código; etiquetas de `num` ajustadas al ancho |
 
 Saldo DubVoice tras el 002: 153.907 créditos. Tras el 003: 140.034. Higgsfield: ~2,5 créditos. Tras el 004: DubVoice 117.959; Higgsfield ~0,25 (ya no llega para otro vídeo). Tras el 007: DubVoice 38.901. Tras el 70x7-002: DubVoice 30.914. Tras el 008: DubVoice 1.047; vidIQ ~11 (se renueva el 2-dic). El usuario recargó DubVoice el 11-nov (≈1.001.000). Tras el 70x7-003: DubVoice 993.537; vidIQ ~6. Tras el 009 (13-nov): DubVoice 931.585. Tras el 010 + idiomas EN/PT (13-nov): DubVoice 876.859. Tras los 3 Shorts del 010: 875.610. Tras la música de Fútbol Sin Relato: 870.610. Tras las muestras y el relato de los 4 Shorts de Dato de Tribuna (14-nov): 868.095. Tras Stoppage Time Facts (muestras + 4 Shorts en inglés): 865715.
+
+## Estado de subida (revisado el 14-nov con la API de YouTube)
+- 001 Roomba: largo descartado por el usuario; queda publicado solo el Short del 2-nov.
+- 003 BYD: publicados el largo y los Shorts a y b; los Shorts c, d y e, descartados por el usuario (14-nov).
+- 004 Ghosn: publicados el largo y el Short b; los Shorts a y c, descartados por el usuario (14-nov).
+- 010 NASA: estreno programado para el 14-nov a las 00:00 de Argentina (03:00 UTC). De los 3 Shorts el usuario subirá 1 o 2
+  (recomendados: A «La Navidad en que Elon Musk casi lo pierde todo» y B «Este cohete subió un metro… y explotó en directo»).
+- 70x7-001: faltan los 3 Shorts. Dato de Tribuna: el nombre se puede cambiar a partir del 28-nov (espera de 14 días de YouTube).
