@@ -2,7 +2,7 @@
 
 - Adaptación al inglés de Dato de Tribuna (no una copia): guiones reescritos, voz de relator en inglés «Ben» `hbdLfaIj2uL2NimPQh6e`, elegida el 14-nov (`LANG = "en"`), números con
   coma (`THOUSANDS = ","`) y paleta propia de partido de noche (`THEME`: azul y naranja). Sin música.
-- Handle `@stoppagetimefacts`. Identidad en `canal/` (`brand.py` → avatar, banner, vista móvil, marca de agua) y configuración
+- Handle `@stoppagetimefacts`. Identidad en `canal/` (`brand.py` → avatar, banner, vista móvil) y configuración
   completa de la cuenta en `canal/CONFIGURACION.md`.
 - Motor: `python3 pipeline/sinvoz.py football/NNN-slug` (el mismo de Dato de Tribuna).
 - Mismas reglas que Dato de Tribuna: guion primero con el OK del usuario, hechos verificados con fuentes, formatos turnados,

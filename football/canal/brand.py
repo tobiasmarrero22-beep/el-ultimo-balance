@@ -1,4 +1,4 @@
-"""Identidad de Stoppage Time Facts (canal de Shorts de fútbol en inglés): avatar, banner, vista en el móvil y marca de agua.
+"""Identidad de Stoppage Time Facts (canal de Shorts de fútbol en inglés): avatar, banner y vista en el móvil.
 Paleta propia de «partido de noche» (azul y naranja) para no ser una copia de Dato de Tribuna.
 Uso: python3 football/canal/brand.py"""
 import math, os, sys
@@ -29,8 +29,7 @@ d.ellipse([60, 60, S - 60, S - 60], outline=WHITE, width=10); d.line([S / 2, 60,
 box = badge_box(580, 440, BADGE, "FACTS", 250, 120)
 im.paste(box, (int(S / 2 - box.width / 2), int(S / 2 - box.height / 2)), box); im.save(os.path.join(OUT, "avatar.png"))
 
-# marca de agua 150x150 (YouTube: Personalización → Marca de agua)
-wm = badge_box(150, 150, BADGE, None, 90, rot=0); wm.save(os.path.join(OUT, "watermark.png"))
+# (sin marca de agua: YouTube no la muestra en los Shorts; el nombre del canal va en el marcador de cada Short)
 
 # banner 2560x1440: el campo entero cabe en la franja del móvil (1546x423)
 BW, BH = 2560, 1440; CX, CY = BW // 2, BH // 2; K = 14.0

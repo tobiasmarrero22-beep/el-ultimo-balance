@@ -14,7 +14,8 @@
 - Nombre: `Stoppage Time Facts` · Identificador: `@stoppagetimefacts`.
 - Descripción: copiar `description.txt` (está en inglés).
 - Enlaces: ninguno por ahora. Correo de contacto: el que quieras usar para el canal (opcional).
-- Marca de agua: `watermark.png`, tiempo de visualización **Todo el video**.
+
+- Marca de agua: **no hace falta**. YouTube no la muestra en los Shorts; el nombre del canal ya va en el marcador de arriba de cada Short («STOPPAGE TIME FACTS»).
 
 **Diseño**
 - Pestaña de inicio: que se vean primero los **Shorts**. Agregar las secciones de las listas de reproducción cuando tengan 3 Shorts o más.

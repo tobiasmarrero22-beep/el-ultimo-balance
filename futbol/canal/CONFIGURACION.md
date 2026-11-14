@@ -13,7 +13,8 @@
 - Nombre: `Dato de Tribuna` · Identificador: `@datodetribuna`.
 - Descripción: copiar `descripcion.txt`.
 - Enlaces: ninguno por ahora. Correo de contacto: el que quieras usar para el canal (opcional).
-- Marca de agua: `watermark.png`, tiempo de visualización **Todo el video**.
+
+- Marca de agua: **no hace falta**. YouTube no la muestra en los Shorts; el nombre del canal ya va en el marcador de arriba de cada Short («DATO DE TRIBUNA»).
 
 **Diseño**
 - Pestaña de inicio: que se vean primero los **Shorts**. Agregar las listas como secciones cuando tengan 3 Shorts o más.
