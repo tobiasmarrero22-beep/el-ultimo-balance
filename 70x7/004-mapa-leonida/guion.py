@@ -229,9 +229,14 @@ PRONUNCIA = {
 SHORTS = {}  # sin Shorts (como el 002 y el 003)
 
 THUMBS = [
-    dict(bg="leonida", text=["NO VAYAS", "A VICE CITY"]),
-    dict(bg="alligator", text=["LO DE MENOS", "SON LOS CAIMANES"]),
-    dict(bg="leonida", text=["6 REGIONES", "DE GTA 6"]),
+    dict(img="leonida_map", zoom=1.0, cx=0.62, cy=0.5, shade=["left", 220, 0.55], items=[
+        ["text", 45, 60, "6 REGIONES", 190, "yellow", "la"], ["text", 45, 300, "DE LEONIDA", 130, "white", "la"], ["badge", 45, 520, 470, 640, "GTA 6", 100]]),
+    dict(img="swamp_airboat", zoom=1.05, cx=0.55, cy=0.5, shade=["left", 220, 0.62], items=[
+        ["text", 45, 60, "NO VAYAS", 190, "pink", "la"], ["text", 45, 300, "A VICE CITY", 150, "white", "la"], ["badge", 45, 540, 470, 660, "GTA 6", 100]]),
+    dict(img="alligator", zoom=1.05, cx=0.55, cy=0.5, shade=["left", 220, 0.62], items=[
+        ["text", 45, 60, "LO DE MENOS", 160, "yellow", "la"], ["text", 45, 270, "SON LOS CAIMANES", 105, "white", "la"], ["badge", 45, 500, 470, 620, "GTA 6", 100]]),
+    dict(img="highway_neon", zoom=1.05, cx=0.55, cy=0.5, shade=["left", 220, 0.62], items=[
+        ["text", 45, 60, "EL MAPA", 200, "yellow", "la"], ["text", 45, 320, "COMPLETO", 160, "white", "la"], ["badge", 45, 560, 470, 680, "GTA 6", 100]]),
 ]
 THUMBS_TOP = [1, 2, 3]
 

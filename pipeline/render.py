@@ -594,7 +594,63 @@ def scene_timeline(v, t, D, W, H, seed):
     return im
 
 
-RENDER = dict(img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines, versus=scene_versus, stamp=scene_stamp,
+
+LEONIDA_SHAPE = [(0.12, 0.10), (0.62, 0.10), (0.66, 0.14), (0.70, 0.30), (0.74, 0.45), (0.78, 0.60), (0.80, 0.74), (0.78, 0.84),
+                 (0.72, 0.88), (0.66, 0.82), (0.62, 0.70), (0.58, 0.58), (0.55, 0.46), (0.52, 0.36), (0.48, 0.28), (0.40, 0.24),
+                 (0.30, 0.26), (0.20, 0.24), (0.12, 0.20)]
+LEONIDA_REG = {  # centro (0-1), radios (0-1) y nombre en pantalla
+    "kalaga": ((0.36, 0.17), (0.17, 0.06), "MOUNT KALAGA"), "port": ((0.53, 0.38), (0.06, 0.08), "PORT GELLHORN"),
+    "ambrosia": ((0.65, 0.45), (0.07, 0.09), "AMBROSIA"), "grass": ((0.68, 0.70), (0.06, 0.09), "GRASSRIVERS"),
+    "vice": ((0.77, 0.70), (0.035, 0.09), "VICE CITY"), "keys": ((0.64, 0.935), (0.10, 0.035), "LEONIDA KEYS")}
+LEONIDA_ORDER = ["vice", "keys", "grass", "port", "ambrosia", "kalaga"]
+
+def scene_leonida(v, t, D, W, H, seed):
+    """Mapa estilizado de Leonida (GTA 6, inspirado en Florida): hl = región resaltada, all = todas con nombre, sub = texto."""
+    im = bg_canvas(W, H, t).convert("RGBA"); sc = W / 1920
+    MW = W * 0.64  # ancho del mapa, centrado
+    P = lambda x, y: (W * 0.5 - MW / 2 + (x - 0.12) / 0.68 * MW, H * 0.05 + y * H * 0.86)
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    k = ease_out(t / 0.6)
+    d.polygon([P(x, y) for x, y in LEONIDA_SHAPE], fill=(28, 44, 52, int(235 * k)), outline=(150, 200, 210, int(255 * k)), width=int(5 * sc))
+    for i in range(7):  # cayos
+        x = 0.71 - i * 0.025; y = 0.905 + i * 0.011
+        cx, cy = P(x, y); r = (16 - i) * sc
+        d.ellipse([cx - r * 1.6, cy - r, cx + r * 1.6, cy + r], fill=(28, 44, 52, int(235 * k)), outline=(150, 200, 210, int(255 * k)), width=int(3 * sc))
+    lx, ly = P(0.655, 0.46); d.ellipse([lx - 34 * sc, ly - 44 * sc, lx + 34 * sc, ly + 44 * sc], fill=(40, 90, 120, int(230 * k)))  # lago Leonida
+    hl = v.get("hl"); show_all = v.get("all")
+    order = LEONIDA_ORDER
+    for i, key in enumerate(order):
+        (cx, cy), (rx, ry), name = LEONIDA_REG[key]
+        X, Y = P(cx, cy); RX, RY = rx * MW / 0.68, ry * H * 0.86
+        if hl == key:
+            pulse = 1 + 0.06 * math.sin(t * 4)
+            a = ease_out((t - 0.3) / 0.4)
+            d.ellipse([X - RX * pulse, Y - RY * pulse, X + RX * pulse, Y + RY * pulse], fill=RED + (int(150 * a),), outline=YEL + (int(255 * a),), width=int(7 * sc))
+        elif show_all:
+            a = ease_out((t - 0.4 - i * 0.18) / 0.35)
+            d.ellipse([X - RX, Y - RY, X + RX, Y + RY], fill=YEL + (int(70 * a),), outline=YEL + (int(200 * a),), width=int(4 * sc))
+        else:
+            d.ellipse([X - RX, Y - RY, X + RX, Y + RY], outline=(255, 255, 255, int(70 * k)), width=int(3 * sc))
+    im.alpha_composite(lay); d = ImageDraw.Draw(im)
+    for i, key in enumerate(order):
+        (cx, cy), _, name = LEONIDA_REG[key]; X, Y = P(cx, cy)
+        if hl == key: a = ease_out((t - 0.45) / 0.3); col = WHITE; f = font(ANTON, int(64 * sc))
+        elif show_all: a = ease_out((t - 0.5 - i * 0.18) / 0.3); col = WHITE; f = font(INTER_B, int(34 * sc))
+        else: continue
+        if a <= 0: continue
+        dx = 0 if key not in ("vice",) else 120 * sc
+        d.text((X + dx, Y), name, font=f, fill=col, anchor="mm", stroke_width=int(5 * sc), stroke_fill=(0, 0, 0))
+    if v.get("sub"):
+        f = fit_font(ANTON, int(86 * sc), v["sub"], W * 0.40)
+        a = ease_out((t - 0.2) / 0.4)
+        x0 = W * 0.06; y0 = H * 0.80
+        tw = d.textlength(v["sub"], font=f)
+        d.rectangle([x0 - 20 * sc, y0 - 12 * sc, x0 + tw + 20 * sc, y0 + f.size + 18 * sc], fill=RED)
+        d.text((x0, y0), v["sub"], font=f, fill=WHITE, anchor="lt")
+    d.text((W * 0.94, H * 0.06), "LEONIDA", font=font(ANTON, int(54 * sc)), fill=YEL, anchor="rt")
+    return im.convert("RGB")
+
+RENDER = dict(leonida=scene_leonida, img=scene_img, title=scene_title, num=scene_num, year=scene_year, bars=scene_bars, quote=scene_quote, lines=scene_lines, versus=scene_versus, stamp=scene_stamp,
               board=scene_board, route=scene_route, headline=scene_headline,
               chat=scene_chat, terminal=scene_terminal, timeline=scene_timeline)
 
@@ -890,7 +946,7 @@ def sfx_track(plan, types, total, out):
         if i < len(buf): buf[i:j] += sig[: j - i] * vol
     for sid, pre, A, D in plan:
         ty = types.get(sid, "img")
-        if ty in ("title", "year", "quote", "num", "bars", "lines", "board", "route", "headline", "versus", "stamp", "chat", "terminal", "timeline"): put(wh, max(0.0, t - 0.15), 0.35)
+        if ty in ("title", "year", "quote", "num", "bars", "lines", "board", "route", "headline", "versus", "stamp", "chat", "terminal", "timeline", "leonida"): put(wh, max(0.0, t - 0.15), 0.35)
         if sid in TYPING:
             a_, b_ = TYPING[sid]; rng_ = np.random.default_rng(len(sid)); tt_ = a_
             click = rng_.normal(0, 1, int(0.012 * sr)) * np.exp(-np.arange(int(0.012 * sr)) / (0.0025 * sr))
