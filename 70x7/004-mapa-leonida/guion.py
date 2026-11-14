@@ -88,7 +88,7 @@ SCENES = [
     dict(id="s13", text="Se inspira en Miami, y se nota: los edificios art decó, las palmeras, el neón y las playas llenas.",
          visual=I("miami_beach", cap="MIAMI BEACH (FOTO REAL)")),
     dict(id="s13b", text="El distrito art decó de Miami Beach tiene más de ochocientos edificios históricos, con esos colores pastel que en los tráileres de GTA seis aparecen por todos lados.",
-         visual=I("miami_beach", pop=["+800 EDIFICIOS ART DECÓ"])),
+         visual=I("miami_neon", pop=["+800 EDIFICIOS ART DECÓ"])),
     dict(id="s14", text="Si te interesa la ciudad a fondo, ya tenemos un video entero recorriéndola, barrio por barrio. Te lo dejo arriba.",
          visual=I("neon_city", pop=["VIDEO COMPLETO ARRIBA"])),
     dict(id="s15", text="Pero la ciudad es solo el sur del mapa. Apenas salís de Vice City, empieza otro juego.",

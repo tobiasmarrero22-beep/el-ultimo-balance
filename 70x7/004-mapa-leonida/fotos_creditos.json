@@ -1,0 +1,72 @@
+{
+ "miami_beach": {
+  "title": "File:Miami South Beach Art Deco Welcome Center by Don Ramey Logan.jpg",
+  "lic": "CC BY 4.0",
+  "w": 4564,
+  "h": 2960,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Miami_South_Beach_Art_Deco_Welcome_Center_by_Don_Ramey_Logan.jpg/1920px-Miami_South_Beach_Art_Deco_Welcome_Center_by_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Miami_South_Beach_Art_Deco_Welcome_Center_by_Don_Ramey_Logan.jpg",
+  "artist": "Don Ramey Logan",
+  "credit": "Own work"
+ },
+ "miami_neon": {
+  "title": "File:Boulevard Hotel (Neon sign), Miami Beach.jpg",
+  "lic": "Public domain",
+  "w": 3372,
+  "h": 2250,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Boulevard_Hotel_%28Neon_sign%29%2C_Miami_Beach.jpg/1920px-Boulevard_Hotel_%28Neon_sign%29%2C_Miami_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Boulevard_Hotel_(Neon_sign),_Miami_Beach.jpg",
+  "artist": "Photograph:  Radomianin",
+  "credit": "Own work"
+ },
+ "keys_bridge": {
+  "title": "File:Seven Mile Bridge, Florida Keys aerial (2003).jpg",
+  "lic": "Public domain",
+  "w": 2100,
+  "h": 1400,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Seven_Mile_Bridge%2C_Florida_Keys_aerial_%282003%29.jpg/1920px-Seven_Mile_Bridge%2C_Florida_Keys_aerial_%282003%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Seven_Mile_Bridge,_Florida_Keys_aerial_(2003).jpg",
+  "artist": "United States Department of Transportation",
+  "credit": "http://www.fhwa.dot.gov/byways/photos/76001"
+ },
+ "keys_island": {
+  "title": "File:Florida Keys Scenic Highway - Over Indian Key - NARA - 7718445.jpg",
+  "lic": "Public domain",
+  "w": 2100,
+  "h": 1589,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Florida_Keys_Scenic_Highway_-_Over_Indian_Key_-_NARA_-_7718445.jpg/1920px-Florida_Keys_Scenic_Highway_-_Over_Indian_Key_-_NARA_-_7718445.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Florida_Keys_Scenic_Highway_-_Over_Indian_Key_-_NARA_-_7718445.jpg",
+  "artist": "Unknown authorUnknown author or not provided",
+  "credit": "U.S. National Archives and Records Administration"
+ },
+ "everglades": {
+  "title": "File:Sawgrass Prairie NPS Photo G Gardner (42295786392).jpg",
+  "lic": "Public domain",
+  "w": 3504,
+  "h": 2336,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Sawgrass_Prairie_NPS_Photo_G_Gardner_%2842295786392%29.jpg/1920px-Sawgrass_Prairie_NPS_Photo_G_Gardner_%2842295786392%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Sawgrass_Prairie_NPS_Photo_G_Gardner_(42295786392).jpg",
+  "artist": "evergladesnps",
+  "credit": "Sawgrass Prairie NPS Photo G. Gardner"
+ },
+ "airboat": {
+  "title": "File:Airboat in the Everglades - panoramio.jpg",
+  "lic": "CC BY 3.0",
+  "w": 3008,
+  "h": 2000,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Airboat_in_the_Everglades_-_panoramio.jpg/1920px-Airboat_in_the_Everglades_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:Airboat_in_the_Everglades_-_panoramio.jpg",
+  "artist": "qwesy qwesy",
+  "credit": "https://web.archive.org/web/20161024124924/http://www.panoramio.com/photo/77806298"
+ },
+ "alligator": {
+  "title": "File:American Alligator - Alligator mississippiensis, Everglades National Park, Homestead, Florida - 23768845571.jpg",
+  "lic": "CC BY 2.0",
+  "w": 5184,
+  "h": 3456,
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/American_Alligator_-_Alligator_mississippiensis%2C_Everglades_National_Park%2C_Homestead%2C_Florida_-_23768845571.jpg/1920px-American_Alligator_-_Alligator_mississippiensis%2C_Everglades_National_Park%2C_Homestead%2C_Florida_-_23768845571.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "page": "https://commons.wikimedia.org/wiki/File:American_Alligator_-_Alligator_mississippiensis,_Everglades_National_Park,_Homestead,_Florida_-_23768845571.jpg",
+  "artist": "judygva (back in town and trying to catch up)",
+  "credit": "https://www.flickr.com/photos/52450054@N04/23768845571/"
+ }
+}
