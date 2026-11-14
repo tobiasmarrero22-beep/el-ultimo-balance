@@ -27,6 +27,7 @@ CARDS = [
          hero=dict(type="final", text="COMENTÁ")),
 ]
 META = dict(
+    playlists=['Fichajes insólitos'],
     code="002",
     title="Lo ficharon a cambio de ropa de entrenamiento… y jugó dos Mundiales",
     description="Inglaterra, 1982: el Gillingham fichó a Tony Cascarino y le pagó al Crockenhill con ropa y material de entrenamiento. Cinco años después valía 225.000 libras.",

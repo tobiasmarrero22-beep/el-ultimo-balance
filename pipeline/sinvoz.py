@@ -626,6 +626,7 @@ def subir(vd, total):
          "- Contenido para niños: **No**",
          "- Contenido alterado o sintético: **No** (gráficos animados, nada realista" + ("; el relato es una voz de IA genérica, avisada en la descripción)" if ns.get("VOICE") else ")"),
          "- Categoría: **Deportes** · Idioma: **Español**",
+         "- Listas de reproducción: " + (" + ".join(f"**{x}**" for x in M.get("playlists", [])) or "—"),
          f"- Comentario fijado: `{M.get('pinned', M.get('question', ''))}`",
          "- Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).",
          "- Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).", ""]

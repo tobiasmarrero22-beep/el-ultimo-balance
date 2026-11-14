@@ -26,6 +26,7 @@ CARDS = [
          hero=dict(type="final", text="COMENTÁ")),
 ]
 META = dict(
+    playlists=['Quiz: ¿cuánto sabés de fútbol?', 'Historias de los Mundiales'],
     code="003",
     title="¿Cuánto tardó el gol más rápido de un Mundial? Tenés 3 segundos",
     description="El récord que ni el Mundial 2026 pudo romper: Hakan Şükür, Turquía contra Corea del Sur, partido por el tercer puesto de 2002.",

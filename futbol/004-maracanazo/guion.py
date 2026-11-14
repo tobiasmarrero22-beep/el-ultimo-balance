@@ -27,6 +27,7 @@ CARDS = [
          hero=dict(type="final", text="COMENTÁ")),
 ]
 META = dict(
+    playlists=['Historias de los Mundiales', 'Récords imposibles del fútbol'],
     code="004",
     title="173.850 personas… y de golpe, silencio",
     description="Río de Janeiro, 16 de julio de 1950. A Brasil le alcanzaba con empatar contra Uruguay. Lo que pasó después tiene nombre propio: el Maracanazo.",

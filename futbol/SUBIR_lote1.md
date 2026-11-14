@@ -6,6 +6,12 @@
 **Antes de subir el primero:** crear el canal **Dato de Tribuna** (`@datodetribuna`), poner `canal/avatar.png` como foto,
 `canal/banner.png` como banner y el texto de `canal/descripcion.txt` como descripción.
 
+**Listas de reproducción** (crearlas una vez, públicas):
+- **Récords imposibles del fútbol** — «Resultados, cifras y marcas que parecen inventadas… pero pasaron.» (001, 004)
+- **Historias de los Mundiales** — «Los momentos que hicieron historia en la Copa del Mundo.» (003, 004)
+- **Quiz: ¿cuánto sabés de fútbol?** — «Tenés 3 segundos para responder. Comentá tu respuesta sin hacer trampa.» (003)
+- **Fichajes insólitos** — «Los pases más raros, baratos y absurdos de la historia.» (002)
+
 ---
 
 
@@ -34,6 +40,7 @@ Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 - Contenido para niños: **No**
 - Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
+- Listas de reproducción: **Récords imposibles del fútbol**
 - Comentario fijado: `¿Cuál es el resultado más loco que viste en vivo? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
 - Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).
@@ -67,6 +74,7 @@ tony cascarino, fichajes raros, fichaje más barato, gillingham, millwall, irlan
 - Contenido para niños: **No**
 - Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
+- Listas de reproducción: **Fichajes insólitos**
 - Comentario fijado: `¿Qué jugador valió muchísimo más de lo que costó? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
 - Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).
@@ -99,6 +107,7 @@ gol más rápido, hakan şükür, mundial 2002, récords mundiales, quiz de fút
 - Contenido para niños: **No**
 - Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
+- Listas de reproducción: **Quiz: ¿cuánto sabés de fútbol?** + **Historias de los Mundiales**
 - Comentario fijado: `¿Acertaste? A, B o C 👇 (sin hacer trampa)`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
 - Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).
@@ -132,6 +141,7 @@ maracanazo, uruguay, brasil, mundial 1950, ghiggia, récord de público, fútbol
 - Contenido para niños: **No**
 - Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
+- Listas de reproducción: **Historias de los Mundiales** + **Récords imposibles del fútbol**
 - Comentario fijado: `¿Cuál fue la derrota más dolorosa de tu selección? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
 - Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).

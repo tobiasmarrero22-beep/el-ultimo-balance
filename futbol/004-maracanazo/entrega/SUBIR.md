@@ -24,6 +24,7 @@ maracanazo, uruguay, brasil, mundial 1950, ghiggia, récord de público, fútbol
 - Contenido para niños: **No**
 - Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
+- Listas de reproducción: **Historias de los Mundiales** + **Récords imposibles del fútbol**
 - Comentario fijado: `¿Cuál fue la derrota más dolorosa de tu selección? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
 - Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).

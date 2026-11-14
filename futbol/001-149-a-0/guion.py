@@ -28,6 +28,7 @@ CARDS = [
          hero=dict(type="final", text="COMENTÁ")),
 ]
 META = dict(
+    playlists=['Récords imposibles del fútbol'],
     code="001",
     title="149 a 0… y los goles los metió el equipo que perdió",
     description="Madagascar, 31 de octubre de 2002: AS Adema 149, SO l'Emyrne 0. El récord más loco del fútbol tuvo una explicación: una protesta.",
