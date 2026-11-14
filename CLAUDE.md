@@ -33,6 +33,13 @@ YouTube no castiga usar IA: castiga el contenido «no auténtico» (hecho en ser
 7. **Rastro del trabajo humano:** guion revisado con el usuario (regla de guion 6) y guion, fuentes e historial en el repo. Si
    llega una desmonetización, hay 21 días para apelar y esto es la prueba.
 
+## Entrega: datos de subida siempre en el mensaje (pedido del usuario, 14-nov-2026, para TODOS los canales)
+Cada vez que se entrega un vídeo o un Short, además de los archivos (SUBIR.md / youtube.txt), el mensaje del chat lleva los datos
+de subida listos para copiar, cada uno en su bloque de código: **título**, **descripción completa** (con capítulos, fuentes y avisos),
+**etiquetas**, **comentario fijado**, **listas de reproducción**, **subtítulos** (qué archivo subir y en qué idioma), **tarjetas y
+pantalla final** (si aplica), **ajustes clave** (audiencia, contenido alterado, categoría, idioma) y **cuándo publicar**. El usuario no
+tiene que pedirlo ni abrir ningún archivo para subir el vídeo.
+
 ## Flujo de un vídeo (carpeta `videos/NNN-slug/`)
 1. **Tema**: elegir con datos (`pipeline/ytlib.py`, API de YouTube con la clave inyectada por el proxy;
    100 búsquedas/día, se renueva a medianoche hora del Pacífico). Criterio: mucho público en inglés en los
@@ -68,7 +75,8 @@ YouTube no castiga usar IA: castiga el contenido «no auténtico» (hecho en ser
    Títulos: dejar algo por descubrir (no revelar el detalle clave; que lo enseñe la miniatura). Publicar los lunes.
 7. `python3 pipeline/thumbs.py videos/NNN` → 10 miniaturas + TOP1-3. Revisar la hoja a tamaño móvil.
 8. `python3 pipeline/meta.py videos/NNN` → `entrega/SUBIR.md`, SRT y copia de los mp4 a `entrega/`.
-9. Enviar al usuario: mp4 (largo + Shorts), TOP1-3, SUBIR.md, SRT. Commit sin mp4/wav. Anotar en `produccion.md`.
+9. Enviar al usuario: mp4 (largo + Shorts), TOP1-3, SUBIR.md, SRT **y, en el mismo mensaje, los datos de subida listos para copiar**
+   (ver «Entrega»). Commit sin mp4/wav. Anotar en `produccion.md`.
 
 ## Servicios y costes
 - DubVoice (`www.dubvoice.ai`, clave inyectada por el proxy): voz Fish Audio `fishaudio_a48e73d4fb124c689357e88b04c9db30`
