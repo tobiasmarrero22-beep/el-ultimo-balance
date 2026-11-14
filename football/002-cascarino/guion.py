@@ -2,7 +2,7 @@
 CHANNEL = "STOPPAGE TIME FACTS"
 LANG = "en"
 THOUSANDS = ","
-VOICE = "gU0LNdkMOQCOrPrwtbee"   # PENDIENTE de que el usuario elija entre football/voice_samples (1 British Football Announcer, 2 Connor, 3 Ben)
+VOICE = "hbdLfaIj2uL2NimPQh6e"   # Ben, sports narrator (americano), elegida por el usuario el 14-nov
 SPEED = 1.05
 MUSIC = None
 THEME = {"GREEN_D": (9, 30, 46), "GREEN_L": (12, 39, 58), "YEL": (255, 152, 32)}   # partido de noche: azul y naranja
