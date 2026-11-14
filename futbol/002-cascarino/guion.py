@@ -3,7 +3,7 @@
 # entrenamiento (Gillingham FC, «Past Masters», 2013). Vendido al Millwall en junio de 1987 por 225.000 £. Irlanda: Mundiales 1990
 # y 1994; 88 partidos y 19 goles.
 CHANNEL = "DATO DE TRIBUNA"
-VOICE = "D09EpJbk4um1HKSpeTSc"   # PENDIENTE de que el usuario elija entre futbol/muestras_voz (1 Agustín enérgico, 2 Agustín rápido, 3 Agus, 4 Renzo)
+VOICE = "D09EpJbk4um1HKSpeTSc"   # Agustín enérgico (ElevenLabs vía DubVoice), elegida por el usuario el 14-nov
 SPEED = 1.08
 MUSIC = None                     # pedido del usuario (13-nov): sin música, con relato de IA
 PRONUNCIA = {"Crockenhill": "Cróquenjil", "Gillingham": "Yílingam", "Millwall": "Mílgual"}

@@ -3,7 +3,7 @@
 # penal polémico (a favor de DSA Antananarivo) en el partido anterior, que les costó el título. La federación suspendió 3 años al
 # entrenador. Guinness: récord de goles en contra en un partido de liga.
 CHANNEL = "DATO DE TRIBUNA"
-VOICE = "D09EpJbk4um1HKSpeTSc"   # PENDIENTE de que el usuario elija entre futbol/muestras_voz (1 Agustín enérgico, 2 Agustín rápido, 3 Agus, 4 Renzo)
+VOICE = "D09EpJbk4um1HKSpeTSc"   # Agustín enérgico (ElevenLabs vía DubVoice), elegida por el usuario el 14-nov
 SPEED = 1.08
 MUSIC = None                     # pedido del usuario (13-nov): sin música, con relato de IA
 PRONUNCIA = {"SO l'Emyrne": "Ese O Lemirn", "AS Adema": "A Ese Adema"}

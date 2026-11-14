@@ -1,4 +1,4 @@
-# 📱 SUBIR · Fútbol Sin Relato · Short 004 — `004.mp4` (27 s)
+# 📱 SUBIR · Dato de Tribuna · Short 004 — `004.mp4` (35 s)
 
 **Título**
 ```
@@ -13,7 +13,7 @@ Fuentes:
 • El Observador (Uruguay): «Maracaná 1950, el origen del mito del Maracanazo»
 • History.com: «The Maracanã Blow: Brazil's stunning World Cup defeat»
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #maracanazo #mundial #shorts
 ```
 **Etiquetas**
@@ -22,7 +22,7 @@ maracanazo, uruguay, brasil, mundial 1950, ghiggia, récord de público, fútbol
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Cuál fue la derrota más dolorosa de tu selección? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).

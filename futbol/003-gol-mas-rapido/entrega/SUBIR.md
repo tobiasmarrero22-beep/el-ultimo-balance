@@ -1,8 +1,8 @@
-# 📱 SUBIR · Fútbol Sin Relato · Short 003 — `003.mp4` (26 s)
+# 📱 SUBIR · Dato de Tribuna · Short 003 — `003.mp4` (29 s)
 
 **Título**
 ```
-¿Cuánto tardó el gol más rápido de un Mundial? Tienes 3 segundos
+¿Cuánto tardó el gol más rápido de un Mundial? Tenés 3 segundos
 ```
 **Descripción**
 ```
@@ -12,7 +12,7 @@ Fuentes:
 • ESPN: «Who scored the fastest goal in men's World Cup history?»
 • El Gráfico (2026): los goles más rápidos de la historia de la Copa del Mundo
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #mundial #quiz #shorts
 ```
 **Etiquetas**
@@ -21,7 +21,7 @@ gol más rápido, hakan şükür, mundial 2002, récords mundiales, quiz de fút
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Acertaste? A, B o C 👇 (sin hacer trampa)`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).

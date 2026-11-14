@@ -1,4 +1,4 @@
-# 📱 SUBIR · Fútbol Sin Relato · Short 002 — `002.mp4` (30 s)
+# 📱 SUBIR · Dato de Tribuna · Short 002 — `002.mp4` (34 s)
 
 **Título**
 ```
@@ -13,7 +13,7 @@ Fuentes:
 • FourFourTwo: entrevista a Tony Cascarino sobre sus comienzos en el Gillingham
 • The Irish Times: «Cascarino, the hard facts» (88 partidos y 19 goles con Irlanda)
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #fichajes #shorts
 ```
 **Etiquetas**
@@ -22,7 +22,7 @@ tony cascarino, fichajes raros, fichaje más barato, gillingham, millwall, irlan
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Qué jugador valió muchísimo más de lo que costó? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).

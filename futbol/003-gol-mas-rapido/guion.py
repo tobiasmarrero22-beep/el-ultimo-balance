@@ -2,7 +2,7 @@
 # Hechos: Hakan Şükür marcó a los 11 segundos (algunas fuentes: 10,8) ante Corea del Sur, partido por el tercer puesto del Mundial
 # 2002. Corea sacó del medio; Hong Myung-bo perdió la pelota, İlhan Mansız se la dio a Şükür. En el Mundial 2026 nadie lo superó.
 CHANNEL = "DATO DE TRIBUNA"
-VOICE = "D09EpJbk4um1HKSpeTSc"   # PENDIENTE de que el usuario elija entre futbol/muestras_voz (1 Agustín enérgico, 2 Agustín rápido, 3 Agus, 4 Renzo)
+VOICE = "D09EpJbk4um1HKSpeTSc"   # Agustín enérgico (ElevenLabs vía DubVoice), elegida por el usuario el 14-nov
 SPEED = 1.08
 MUSIC = None                     # pedido del usuario (13-nov): sin música, con relato de IA
 PRONUNCIA = {"Şükür": "Shukur", "Hakan": "Jakan"}

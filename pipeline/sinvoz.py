@@ -619,7 +619,7 @@ def subir(vd, total):
         "Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal."
     desc = M["description"].rstrip() + "\n\nFuentes:\n" + "\n".join("• " + s for s in M["sources"]) + \
         "\n\n" + aviso + "\n" + " ".join(M.get("hashtags", ["#futbol", "#shorts"]))
-    L = [f"# 📱 SUBIR · {ns.get('CHANNEL', CHANNEL).title()} · Short {M['code']} — `{M['code']}.mp4` ({total:.0f} s)", "",
+    L = [f"# 📱 SUBIR · {ns.get('CHANNEL', CHANNEL).title().replace(' De ', ' de ')} · Short {M['code']} — `{M['code']}.mp4` ({total:.0f} s)", "",
          "**Título**", "```", M["title"], "```", "**Descripción**", "```", desc, "```",
          "**Etiquetas**", "```", ", ".join(M["tags"]), "```",
          "**Ajustes al subir**",

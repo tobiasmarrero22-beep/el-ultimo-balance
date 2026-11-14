@@ -1,4 +1,4 @@
-# 📱 SUBIR · Fútbol Sin Relato · Short 001 — `001.mp4` (30 s)
+# 📱 SUBIR · Dato de Tribuna · Short 001 — `001.mp4` (36 s)
 
 **Título**
 ```
@@ -12,7 +12,7 @@ Fuentes:
 • Guinness World Records: más goles en contra en un partido de liga (AS Adema 149–0 SO l'Emyrne, 2002)
 • ESPN y The Guardian (noviembre de 2002): la protesta de SO l'Emyrne y la sanción a su entrenador
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #records #shorts
 ```
 **Etiquetas**
@@ -21,7 +21,7 @@ Gráficos y animación hechos para este canal. Música de fondo generada con IA 
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Cuál es el resultado más loco que viste en vivo? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).

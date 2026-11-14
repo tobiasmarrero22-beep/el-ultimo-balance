@@ -2,7 +2,7 @@
 # Hechos: 16-jul-1950, Maracaná (Río de Janeiro), último partido de la ronda final del Mundial: a Brasil le bastaba el empate.
 # Friaça 1-0 (47'), Schiaffino 1-1 (66'), Ghiggia 1-2 (79'). Público oficial: 173.850 (récord de un partido de Mundial).
 CHANNEL = "DATO DE TRIBUNA"
-VOICE = "D09EpJbk4um1HKSpeTSc"   # PENDIENTE de que el usuario elija entre futbol/muestras_voz (1 Agustín enérgico, 2 Agustín rápido, 3 Agus, 4 Renzo)
+VOICE = "D09EpJbk4um1HKSpeTSc"   # Agustín enérgico (ElevenLabs vía DubVoice), elegida por el usuario el 14-nov
 SPEED = 1.08
 MUSIC = None                     # pedido del usuario (13-nov): sin música, con relato de IA
 PRONUNCIA = {}

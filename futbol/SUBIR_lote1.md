@@ -1,14 +1,15 @@
-# Fútbol Sin Relato · lote 1 (4 Shorts)
+# Dato de Tribuna · lote 1 (4 Shorts con relato)
 
 **Orden de publicación:** un Short por día, entre las 18:00 y las 21:00 (hora de Argentina).
 1. 001 «149 a 0» → 2. 004 «173.850» (Maracanazo) → 3. 003 quiz del gol más rápido → 4. 002 Cascarino.
 
-**Antes de subir el primero:** crear el canal, poner `canal/avatar.png` como foto, `canal/banner.png` como banner y el texto de
-`canal/descripcion.txt` como descripción. Handle sugerido: `@futbolsinrelato`.
+**Antes de subir el primero:** crear el canal **Dato de Tribuna** (`@datodetribuna`), poner `canal/avatar.png` como foto,
+`canal/banner.png` como banner y el texto de `canal/descripcion.txt` como descripción.
 
 ---
 
-# 📱 SUBIR · Fútbol Sin Relato · Short 001 — `001.mp4` (30 s)
+
+# 📱 SUBIR · Dato de Tribuna · Short 001 — `001.mp4` (36 s)
 
 **Título**
 ```
@@ -22,7 +23,7 @@ Fuentes:
 • Guinness World Records: más goles en contra en un partido de liga (AS Adema 149–0 SO l'Emyrne, 2002)
 • ESPN y The Guardian (noviembre de 2002): la protesta de SO l'Emyrne y la sanción a su entrenador
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #records #shorts
 ```
 **Etiquetas**
@@ -31,7 +32,7 @@ Gráficos y animación hechos para este canal. Música de fondo generada con IA 
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Cuál es el resultado más loco que viste en vivo? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
@@ -40,7 +41,7 @@ Gráficos y animación hechos para este canal. Música de fondo generada con IA 
 
 ---
 
-# 📱 SUBIR · Fútbol Sin Relato · Short 002 — `002.mp4` (30 s)
+# 📱 SUBIR · Dato de Tribuna · Short 002 — `002.mp4` (34 s)
 
 **Título**
 ```
@@ -55,7 +56,7 @@ Fuentes:
 • FourFourTwo: entrevista a Tony Cascarino sobre sus comienzos en el Gillingham
 • The Irish Times: «Cascarino, the hard facts» (88 partidos y 19 goles con Irlanda)
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #fichajes #shorts
 ```
 **Etiquetas**
@@ -64,7 +65,7 @@ tony cascarino, fichajes raros, fichaje más barato, gillingham, millwall, irlan
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Qué jugador valió muchísimo más de lo que costó? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
@@ -73,11 +74,11 @@ tony cascarino, fichajes raros, fichaje más barato, gillingham, millwall, irlan
 
 ---
 
-# 📱 SUBIR · Fútbol Sin Relato · Short 003 — `003.mp4` (26 s)
+# 📱 SUBIR · Dato de Tribuna · Short 003 — `003.mp4` (29 s)
 
 **Título**
 ```
-¿Cuánto tardó el gol más rápido de un Mundial? Tienes 3 segundos
+¿Cuánto tardó el gol más rápido de un Mundial? Tenés 3 segundos
 ```
 **Descripción**
 ```
@@ -87,7 +88,7 @@ Fuentes:
 • ESPN: «Who scored the fastest goal in men's World Cup history?»
 • El Gráfico (2026): los goles más rápidos de la historia de la Copa del Mundo
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #mundial #quiz #shorts
 ```
 **Etiquetas**
@@ -96,7 +97,7 @@ gol más rápido, hakan şükür, mundial 2002, récords mundiales, quiz de fút
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Acertaste? A, B o C 👇 (sin hacer trampa)`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
@@ -105,7 +106,7 @@ gol más rápido, hakan şükür, mundial 2002, récords mundiales, quiz de fút
 
 ---
 
-# 📱 SUBIR · Fútbol Sin Relato · Short 004 — `004.mp4` (27 s)
+# 📱 SUBIR · Dato de Tribuna · Short 004 — `004.mp4` (35 s)
 
 **Título**
 ```
@@ -120,7 +121,7 @@ Fuentes:
 • El Observador (Uruguay): «Maracaná 1950, el origen del mito del Maracanazo»
 • History.com: «The Maracanã Blow: Brazil's stunning World Cup defeat»
 
-Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal.
+Gráficos y animación hechos para este canal. Relato con voz generada por IA.
 #futbol #maracanazo #mundial #shorts
 ```
 **Etiquetas**
@@ -129,7 +130,7 @@ maracanazo, uruguay, brasil, mundial 1950, ghiggia, récord de público, fútbol
 ```
 **Ajustes al subir**
 - Contenido para niños: **No**
-- Contenido alterado o sintético: **No** (gráficos animados, nada realista)
+- Contenido alterado o sintético: **No** (gráficos animados, nada realista; el relato es una voz de IA genérica, avisada en la descripción)
 - Categoría: **Deportes** · Idioma: **Español**
 - Comentario fijado: `¿Cuál fue la derrota más dolorosa de tu selección? 👇`
 - Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).
