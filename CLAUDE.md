@@ -135,6 +135,10 @@ YouTube → `vidiq_video_upload`) cortadas por escena con `pipeline/gameplay.py`
 Carpeta `futbol/NNN-slug/`; detalles y reglas en `futbol/README.md`. Motor propio `pipeline/sinvoz.py` (relato por tarjeta con `VOICE`,
 texto tecleado al ritmo de la voz, marcador con reloj de partido como barra de progreso, efectos sintetizados; `MUSIC = None`).
 
+## Cuarto canal: Stoppage Time Facts (Shorts de fútbol en inglés)
+Carpeta `football/NNN-slug/`; detalles en `football/README.md` y configuración en `football/canal/CONFIGURACION.md`. Mismo motor
+`sinvoz.py` con `LANG = "en"`, `THOUSANDS = ","` y `THEME` propio (azul y naranja). Adaptación, nunca copia de Dato de Tribuna.
+
 ## Estilo visual
 Fondo #0b0f17 con rejilla, amarillo #ffd166, rojo #e63946, blanco. Títulos en Anton, etiquetas en Inter Display Black.
 Identidad del canal en `canal/` (logo A = barras que caen, banner, marca de agua). Regenerar con `pipeline/brand.py`.

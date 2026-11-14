@@ -21,10 +21,10 @@ def tts_clone(text, voice, out, tries=3):
         except Exception as e:
             err = e; time.sleep(3 * (k + 1))
     raise RuntimeError(f"TTS clon falló: {err}")
-def tts(text, voice, out, speed=1.0, model=None, tries=2):
+def tts(text, voice, out, speed=1.0, model=None, tries=2, lang="es"):
     if str(voice).isdigit(): return tts_clone(text, str(voice), out)
     for attempt in range(tries):
-        body = {"text": text, "voice_id": voice, "language": "es", "voice_settings": {"speed": speed}}
+        body = {"text": text, "voice_id": voice, "language": lang, "voice_settings": {"speed": speed}}
         if model: body["model_id"] = model
         j = req("POST", "/api/v1/tts", body); tid = j["task_id"]
         for _ in range(90):

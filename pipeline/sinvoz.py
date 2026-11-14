@@ -40,8 +40,9 @@ def eo(x): x = max(0.0, min(1.0, x)); return 1 - (1 - x) ** 3
 def back(x):  # entrada con rebote
     x = max(0.0, min(1.0, x)); c = 1.9; return 1 + (c + 1) * (x - 1) ** 3 + c * (x - 1) ** 2
 
+SEP = "."   # separador de miles (THOUSANDS = "," en los canales en inglés)
 def fmt(v, pre="", suf=""):
-    return pre + f"{int(round(v)):,}".replace(",", ".") + suf
+    return pre + f"{int(round(v)):,}".replace(",", SEP) + suf
 
 def fit(path, size, txt, maxw):
     s = size
@@ -438,9 +439,11 @@ def dur_of(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path], capture_output=True, text=True).stdout)
 
 def plan(vd):
-    global CHANNEL
+    global CHANNEL, SEP
     ns = load(vd); cards = [dict(c) for c in ns["CARDS"]]; starts = [0.0]
-    CHANNEL = ns.get("CHANNEL", CHANNEL)
+    CHANNEL = ns.get("CHANNEL", CHANNEL); SEP = ns.get("THOUSANDS", ".")
+    for k, v in (ns.get("THEME") or {}).items():   # paleta propia por canal (el canal en inglés no es una copia del español)
+        if k in ("GREEN_D", "GREEN_L", "YEL", "RED", "OK"): globals()[k] = tuple(v)
     for ci, c in enumerate(cards):
         if ns.get("VOICE"):
             a = audio_path(vd, ci)
@@ -614,10 +617,11 @@ def build_audio(vd, cards, starts, total, out):
 # ---------------------------------------------------------------- paquete de subida
 def subir(vd, total):
     M = load(vd)["META"]; E = os.path.join(vd, "entrega"); os.makedirs(E, exist_ok=True)
-    ns = load(vd)
-    aviso = "Gráficos y animación hechos para este canal. Relato con voz generada por IA." if ns.get("VOICE") else \
+    ns = load(vd); en = ns.get("LANG") == "en"
+    aviso = "Graphics and animation made for this channel. Narration by an AI voice." if en else \
+        "Gráficos y animación hechos para este canal. Relato con voz generada por IA." if ns.get("VOICE") else \
         "Gráficos y animación hechos para este canal. Música de fondo generada con IA para el canal."
-    desc = M["description"].rstrip() + "\n\nFuentes:\n" + "\n".join("• " + s for s in M["sources"]) + \
+    desc = M["description"].rstrip() + ("\n\nSources:\n" if en else "\n\nFuentes:\n") + "\n".join("• " + s for s in M["sources"]) + \
         "\n\n" + aviso + "\n" + " ".join(M.get("hashtags", ["#futbol", "#shorts"]))
     L = [f"# 📱 SUBIR · {ns.get('CHANNEL', CHANNEL).title().replace(' De ', ' de ')} · Short {M['code']} — `{M['code']}.mp4` ({total:.0f} s)", "",
          "**Título**", "```", M["title"], "```", "**Descripción**", "```", desc, "```",
@@ -625,11 +629,13 @@ def subir(vd, total):
          "**Ajustes al subir**",
          "- Contenido para niños: **No**",
          "- Contenido alterado o sintético: **No** (gráficos animados, nada realista" + ("; el relato es una voz de IA genérica, avisada en la descripción)" if ns.get("VOICE") else ")"),
-         "- Categoría: **Deportes** · Idioma: **Español**",
+         "- Categoría: **Deportes** · Idioma: **" + ("Inglés" if en else "Español") + "**",
          "- Listas de reproducción: " + (" + ".join(f"**{x}**" for x in M.get("playlists", [])) or "—"),
          f"- Comentario fijado: `{M.get('pinned', M.get('question', ''))}`",
          "- Miniatura: en la app, elige el fotograma donde ya se ve completa la cifra o el marcador grande (hacia el segundo 2).",
-         "- Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina).", ""]
+         ("- Publicar **un Short al día como máximo**, idealmente entre las 14:00 y las 17:00 de Argentina "
+          "(tarde en el Reino Unido y mediodía en EE. UU.)." if en else
+          "- Publicar **un Short al día como máximo**, idealmente entre las 18:00 y las 21:00 (hora de Argentina)."), ""]
     open(os.path.join(E, "SUBIR.md"), "w", encoding="utf-8").write("\n".join(L))
 
 def sheet(vd, cards, starts, total):
@@ -648,7 +654,7 @@ def tts_cards(vd):
     ns = load(vd); os.makedirs(os.path.join(vd, "audio"), exist_ok=True); say = tts.pronounce(ns.get("PRONUNCIA") or {})
     todo = [(ci, say(c.get("say") or plain(c["text"]))) for ci, c in enumerate(ns["CARDS"]) if not os.path.exists(audio_path(vd, ci))]
     with cf.ThreadPoolExecutor(4) as ex:
-        fs = {ex.submit(tts.tts, txt, ns["VOICE"], audio_path(vd, ci), float(ns.get("SPEED", 1.05))): ci for ci, txt in todo}
+        fs = {ex.submit(tts.tts, txt, ns["VOICE"], audio_path(vd, ci), float(ns.get("SPEED", 1.05)), lang=ns.get("LANG", "es")): ci for ci, txt in todo}
         for f in cf.as_completed(fs): f.result(); print("voz", f"c{fs[f]:02d}", flush=True)
 
 def main(vd, frames_only=False):
