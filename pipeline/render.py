@@ -258,6 +258,7 @@ def scene_quote(v, t, D, W, H, seed):
     im = bg_canvas(W, H, t); sc = W / 1920 * v.get("zoom", 1)
     lines = v["text"].split("\n")
     fs = int((130 if len(lines) <= 3 else 100) * sc)
+    while fs > 40 and max(font(ANTON, fs).getlength(ln) for ln in lines) > W * 0.9: fs -= 4  # que ninguna línea se salga
     f = font(ANTON, fs)
     lh = fs * 1.18
     y0 = H / 2 - lh * len(lines) / 2 + lh / 2
