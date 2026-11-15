@@ -79,3 +79,20 @@ son las impresiones (y el CTR de BYD). Volkswagen retiene la mitad: muestra pequ
 de archivo de Pexels en vez de imágenes ilustradas → vigilar 005 y 006 (Red Lobster, también con stock). Si con 50+ vistas siguen
 por debajo del 30 %, volver a imágenes ilustradas/IA. Ojo: la columna de tiempo de visualización de la tabla anterior no cuadra con
 estas duraciones (distinto periodo); usar siempre "Duración media" y "% visto".
+
+## 2026-11-15 — Shorts de El Último Balance (captura del usuario con vidIQ; «engaged views» = vistas que no se deslizaron enseguida)
+| Short | Vistas | Engaged | % engaged | Edad | Vistas/h |
+|---|---|---|---|---|---|
+| La Navidad en que Elon Musk casi lo pierde todo (010-A) | 870 | 483 | 56 % | 3 h | 290 |
+| La marca nº1 de México está en crisis… y la salva un mexicano (004-C) | 1.100 | 409 | 37 % | 14 h | 85 |
+| Estos coches sabían cuándo los estaban examinando (005-C) | 1.200 | 663 | 55 % | 4 días | 10 |
+| ¿La oferta que hundió a Red Lobster fue un plan? 🤔 (006) | 461 | 75 | 16 % | 3 días | 5 |
+| Salvó a Nissan en un año… y acabó arrestado (004-B) | 344 | 103 | 30 % | 2 días | 6 |
+Lecturas:
+- Se confirma la fórmula personaje famoso + cifra + conflicto: el de Musk es el arranque más rápido del canal (290 vistas/h).
+- El ángulo latinoamericano funciona: «la salva un mexicano» (1.100 en 14 h) y «El último vocho del mundo se hizo en México»
+  (804 engaged) están entre los mejores → buscar en cada historia el dato que conecta con México/Argentina/Colombia.
+- Las preguntas tipo «¿fue un plan? 🤔» retienen poco (16 %): mejor afirmar el dato sorprendente que preguntar.
+- No subir otro Short del mismo canal mientras uno está despegando (dejar 24 h entre Shorts).
+Dato de Tribuna (15-nov): «El gol más rápido…» (quiz) 1.400 vistas en 1 día (59/h) en un canal de 2 días → priorizar quiz en el lote 2.
+Stoppage Time Facts (15-nov): 149–0 con 13 vistas en 23 h (normal en un canal nuevo en inglés).
