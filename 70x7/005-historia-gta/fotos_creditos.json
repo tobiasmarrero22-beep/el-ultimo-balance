@@ -1,0 +1,56 @@
+{
+ "ps1": {
+  "title": "File:PSX-Console-wController.jpg",
+  "lic": "Public domain",
+  "artist": "Evan-Amos",
+  "page": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.jpg"
+ },
+ "ps2": {
+  "title": "File:PS2-Versions.jpg",
+  "lic": "Public domain",
+  "artist": "Evan-Amos",
+  "page": "https://commons.wikimedia.org/wiki/File:PS2-Versions.jpg"
+ },
+ "ps4": {
+  "title": "File:PS4-Console-wDS4.jpg",
+  "lic": "Public domain",
+  "artist": "Evan-Amos",
+  "page": "https://commons.wikimedia.org/wiki/File:PS4-Console-wDS4.jpg"
+ },
+ "xbox360": {
+  "title": "File:Xbox-360-Pro-wController.jpg",
+  "lic": "Public domain",
+  "artist": "Evan-Amos",
+  "page": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg"
+ },
+ "nyc_skyline": {
+  "title": "File:Lower Manhattan night skyline 20261003 – 1.jpg",
+  "lic": "CC BY 4.0",
+  "artist": "VynedJ",
+  "page": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_night_skyline_20261003_%E2%80%93_1.jpg"
+ },
+ "nyc_skyline2": {
+  "title": "File:Lower Manhattan night skyline 20261003 – 3.jpg",
+  "lic": "CC BY 4.0",
+  "artist": "VynedJ",
+  "page": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_night_skyline_20261003_%E2%80%93_3.jpg"
+ },
+ "las_vegas": {
+  "title": "File:Reflection of the Flamingo Hotel in front of the Bellagio.jpg",
+  "lic": "CC0",
+  "artist": "Julian Lupyan",
+  "page": "https://commons.wikimedia.org/wiki/File:Reflection_of_the_Flamingo_Hotel_in_front_of_the_Bellagio.jpg"
+ },
+ "los_angeles": {
+  "title": "File:Los Angeles Skyline; August 30, 2022.jpg",
+  "lic": "CC0",
+  "artist": "ItzAPotato2009",
+  "page": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Skyline;_August_30,_2022.jpg"
+ },
+ "london_1969": {
+  "title": "File:1960s tube carriage, London Transport Museum 2025-11-16.jpg",
+  "lic": "CC BY 4.0",
+  "artist": "Matt From London",
+  "page": "https://commons.wikimedia.org/wiki/File:1960s_tube_carriage,_London_Transport_Museum_2025-11-16.jpg"
+ }
+}

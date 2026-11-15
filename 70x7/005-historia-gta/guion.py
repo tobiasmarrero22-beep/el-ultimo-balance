@@ -62,7 +62,7 @@ SCENES = [
     dict(id="s11", text="Después vinieron una expansión en el Londres de mil novecientos sesenta y nueve y GTA dos. Y en Nueva York, unos hermanos británicos fundaban Rockstar Games: Sam y Dan Houser.",
          visual=I("london_1969", cap="LONDRES, AÑOS 60")),
     dict(id="s12", text="Pero el salto que cambió todo todavía no había llegado. Y llegó en el peor momento posible.",
-         visual=I("nyc_skyline"), abre="P3: ¿Qué pasó con GTA III justo antes de salir?"),
+         visual=dict(type="stamp", text="GTA III", stamp="2001", col="yellow"), abre="P3: ¿Qué pasó con GTA III justo antes de salir?"),
 
     # --- 02 EL SALTO A 3D ---
     dict(id="s13", text="Capítulo dos: el salto a 3D.", visual=T("02", "El salto a 3D")),
@@ -97,7 +97,7 @@ SCENES = [
     dict(id="s24", text="Y esa fue la última vez que la saga pisó Vice City. Hasta ahora.",
          visual=I("highway_neon", pop=["HASTA 2026"])),
     dict(id="s25", text="Pero para dar el siguiente paso, Rockstar hizo algo que nadie esperaba: volvió a Liberty City, y con un protagonista totalmente distinto.",
-         visual=I("nyc_skyline"), abre="P5: ¿Cuánto recaudó GTA IV en su primera semana?"),
+         visual=I("nyc_skyline2"), abre="P5: ¿Cuánto recaudó GTA IV en su primera semana?"),
 
     # --- 04 GTA IV ---
     dict(id="s26", text="Capítulo cuatro: Niko y Liberty City.", visual=T("04", "Niko y Liberty City")),
@@ -188,8 +188,21 @@ PRONUNCIA = {
 
 SHORTS = {}
 
-THUMBS = []
-THUMBS_TOP = []
+THUMBS = [
+    dict(img="ps1", zoom=1.0, cx=0.6, items=[
+        ["text", 45, 40, "1997", 200, "pink", "la"], ["text", 45, 290, "→ GTA 6", 170, "cyan", "la"]]),
+    dict(img="controller", zoom=1.05, cx=0.55, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "TODA LA", 150, "white", "la"], ["text", 45, 250, "HISTORIA", 190, "pink", "la"], ["badge", 45, 520, 470, 640, "GTA", 110]]),
+    dict(img="neon_city", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "UN ERROR", 170, "pink", "la"], ["text", 45, 280, "CREÓ GTA", 170, "white", "la"]]),
+    dict(img="nyc_skyline", zoom=1.1, cx=0.6, shade=["left", 200, 0.55], items=[
+        ["text", 45, 60, "EL JUEGO QUE", 130, "white", "la"], ["text", 45, 230, "CAMBIÓ TODO", 150, "cyan", "la"], ["badge", 45, 470, 470, 590, "2001", 100]]),
+    dict(img="highway_neon", zoom=1.05, cx=0.55, shade=["left", 200, 0.6], items=[
+        ["text", 45, 60, "13 AÑOS", 200, "pink", "la"], ["text", 45, 320, "ESPERANDO", 150, "white", "la"]]),
+    dict(img="friends_midnight", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "¿CUÁL FUE", 150, "white", "la"], ["text", 45, 250, "TU PRIMER", 150, "white", "la"], ["text", 45, 440, "GTA?", 190, "pink", "la"]]),
+]
+THUMBS_TOP = [3, 1, 2]
 
 META = {
     "code": "70x7_005",
@@ -207,7 +220,8 @@ META = {
         "Take-Two (mayo de 2008): ventas de GTA IV en su primera semana",
         "Guinness World Records: GTA V, 1.000 millones de dólares en 3 días; tráiler 1 de GTA 6, 90 millones de vistas en 24 h",
         "Rockstar Games: fechas de lanzamiento y retrasos de GTA 6 (19-nov-2026)",
-        "Fotos vía Wikimedia Commons (créditos al final de la descripción)",
+        "Fotos vía Wikimedia Commons (dominio público / CC0): consolas PlayStation, PlayStation 2, PlayStation 4 y Xbox 360, de Evan-Amos; «Reflection of the Flamingo Hotel in front of the Bellagio», de Julian Lupyan; «Los Angeles Skyline; August 30, 2022», de ItzAPotato2009",
+        "Fotos con licencia CC BY 4.0: «Lower Manhattan night skyline 20261003 – 1» y «– 3», de VynedJ; «1960s tube carriage, London Transport Museum 2025-11-16», de Matt From London",
     ],
     "disclosure": "Las fotos son de lugares y consolas reales (Wikimedia Commons) y algunas imágenes son ilustraciones generadas con IA de videos anteriores del canal: nada de eso muestra el juego. Narración con voz sintética. Canal no afiliado a Rockstar Games ni a Take-Two.\n\n🦁 70x7: GTA 6 todas las veces que haga falta. Suscribite, el 19/11 arranca el gameplay.",
     "hashtags": "#GTA6 #GTA #Rockstar #70x7",
