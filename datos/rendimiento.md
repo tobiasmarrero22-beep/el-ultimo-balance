@@ -96,3 +96,19 @@ Lecturas:
 - No subir otro Short del mismo canal mientras uno está despegando (dejar 24 h entre Shorts).
 Dato de Tribuna (15-nov): «El gol más rápido…» (quiz) 1.400 vistas en 1 día (59/h) en un canal de 2 días → priorizar quiz en el lote 2.
 Stoppage Time Facts (15-nov): 149–0 con 13 vistas en 23 h (normal en un canal nuevo en inglés).
+
+## 2026-11-15 — Largos de El Último Balance (API + captura del usuario con vidIQ)
+| Largo | Vistas | Días | Nota |
+|---|---|---|---|
+| Forever 21 (002) | 542 | 14 | vidIQ 19,6x; miniatura antes/después + «$5.900 M» + «¿POR QUÉ CAYÓ?» |
+| BYD (003) | 104 | 13 | 3,8x |
+| Red Lobster (006) | 103 | 6 | 3,7x |
+| Spirit (007, 15 min) | 26 | 8 | |
+| Volkswagen (005) | 17 | 10 | |
+| BMW (008, 15 min) | 7 | 4,5 | |
+| Ghosn (004) | 5 | 11 | su Short C hizo 1.100 vistas en 14 h y el largo sigue en 5 |
+| McDonald's (009) | 2 | 2 | título sin tilde («esta» → «está») |
+| NASA (010, 18 min) | 4 | 1,5 | |
+Lecturas: los Shorts sacan 300–1.200 vistas y los largos casi no reciben tráfico desde ellos → enlazar SIEMPRE el largo como
+«Vídeo relacionado» en cada Short. Funcionan las marcas conocidas en LatAm/España (Forever 21, BYD) y la miniatura con contraste
+antes/después + cifra grande; las de 15+ min no rinden mejor que las de 8–10. Candidatas a miniatura nueva: Ghosn, Volkswagen, Spirit, BMW.
