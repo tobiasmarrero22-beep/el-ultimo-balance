@@ -112,3 +112,19 @@ Stoppage Time Facts (15-nov): 149–0 con 13 vistas en 23 h (normal en un canal 
 Lecturas: los Shorts sacan 300–1.200 vistas y los largos casi no reciben tráfico desde ellos → enlazar SIEMPRE el largo como
 «Vídeo relacionado» en cada Short. Funcionan las marcas conocidas en LatAm/España (Forever 21, BYD) y la miniatura con contraste
 antes/después + cifra grande; las de 15+ min no rinden mejor que las de 8–10. Candidatas a miniatura nueva: Ghosn, Volkswagen, Spirit, BMW.
+
+## 2026-11-15 — Impresiones y CTR (captura de YouTube Studio del usuario; los últimos 2 días pueden venir incompletos)
+| Largo | Impresiones | CTR | Vistas | Horas |
+|---|---|---|---|---|
+| Forever 21 | 4.188 | 3,8 % | 533 | 13,6 |
+| Red Lobster | 1.972 | 2,5 % | 96 | 4,3 |
+| BYD | 1.511 | 1,9 % | 104 | 3,2 |
+| Volkswagen | 150 | 4,7 % | 16 | 0,3 |
+| BMW | 129 | 1,6 % | 5 | 0,5 |
+| Spirit | 95 | 7,4 % | 26 | 0,3 |
+| Ghosn | 56 | 1,8 % | 4 | 0,1 |
+| McDonald's | 16 | 6,3 % | 1 | 0 |
+| NASA | 7 | 0 % | 1 | 0,3 |
+Lecturas: el cuello de botella son las impresiones (desde el 004, YouTube casi no ofrece los largos nuevos). Con impresiones
+suficientes, CTR bajo en BYD, BMW y Ghosn (<2 %) → probar miniatura/título nuevos; Spirit y Volkswagen tienen buen CTR pero
+nadie los ve. Los Shorts traen suscriptores (Forever 21 37 s: 4; Nissan: 2) → enlazar cada Short a su largo.
