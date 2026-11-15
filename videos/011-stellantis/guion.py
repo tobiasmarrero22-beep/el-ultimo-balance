@@ -40,7 +40,7 @@ SCENES = [
     dict(id="s01", text="En Argentina, casi uno de cada tres autos nuevos que se venden es de la misma empresa. En Brasil, también.",
          visual=dict(type="num", start=0, end=30.5, dec=1, suffix=" %", label="AUTOS NUEVOS EN ARGENTINA DE UNA SOLA EMPRESA (2025)")),
     dict(id="s02", text="Esa empresa se llama Stellantis. Fiat, Peugeot, Citroën, Jeep, Ram… catorce marcas bajo el mismo techo.",
-         visual=I("fiat_strada", pop=["14 MARCAS"])),
+         visual=I("citroen_c3", pop=["14 MARCAS"])),
     dict(id="s03", text="Y en dos mil veinticinco perdió más de veintidós mil millones de euros. La primera pérdida anual de toda su historia.",
          visual=dict(type="num", start=0, end=-22300, prefix="", suffix=" M€", label="RESULTADO NETO DE STELLANTIS EN 2025")),
     dict(id="s04", text="¿Cómo pasa una empresa de batir récords a perder todo eso en solo dos años? Y lo más raro: mientras se hundía en medio mundo, en Sudamérica seguía siendo la reina.",
@@ -114,7 +114,7 @@ SCENES = [
     dict(id="s26", text="Y reconoció problemas de calidad que vinculó a los recortes de la etapa anterior. O sea: la receta que había hecho ganar récords también explicaba parte del agujero.",
          visual=dict(type="versus", title="LA RECETA", left=["RECORTES", "RÉCORDS EN 2023"], right=["RECORTES", "PROBLEMAS DE CALIDAD"], mid="→", lcol="yellow", rcol="red")),
     dict(id="s27", text="Ahora, la parte que casi nadie cuenta: mientras todo eso pasaba en Europa y Estados Unidos, en Sudamérica la empresa seguía arrasando.",
-         visual=I("fiat_strada")),
+         visual=dict(type="stamp", text="EXCEPTO EN\nSUDAMÉRICA", stamp="2025", col="yellow")),
 
     # --- 05 LA EXCEPCIÓN SUDAMERICANA ---
     dict(id="s28", text="Capítulo cinco: la excepción sudamericana.", visual=T("05", "La excepción sudamericana")),
@@ -214,8 +214,33 @@ FALLBACK.update({
     "b03": dict(type="num", start=0, end=-22300, suffix=" M€", label="2025"), "b04": dict(type="quote", text="LA HISTORIA COMPLETA\nEN EL CANAL 👆"),
 })
 
-THUMBS = []  # se definen al tener las fotos
-THUMBS_TOP = []
+THUMBS = [
+    dict(img="fiat_strada", zoom=1.1, cx=0.35, shade=["right", 225, 0.6], items=[
+        ["text", 1240, 50, "1 DE CADA 3", 150, "white", "ra"], ["text", 1240, 240, "AUTOS", 150, "yellow", "ra"],
+        ["badge", 760, 470, 1240, 600, "-22.000 M€", 96]]),
+    dict(img="tavares", zoom=1.15, cx=0.6, shade=["left", 230, 0.6], items=[
+        ["text", 45, 60, "EL MAGO", 170, "yellow", "la"], ["text", 45, 280, "SE FUE…", 150, "white", "la"],
+        ["badge", 45, 500, 560, 630, "-22.000 M€", 96]]),
+    dict(img="car_factory", zoom=1.05, cx=0.6, shade=["left", 220, 0.62], items=[
+        ["text", 45, 60, "-22.000 M€", 170, "red", "la"], ["text", 45, 300, "EN UN AÑO", 130, "white", "la"]]),
+    dict(img="jeep_wrangler", zoom=1.1, cx=0.6, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "DEL RÉCORD", 140, "white", "la"], ["text", 45, 240, "AL AGUJERO", 150, "red", "la"],
+        ["crash", 60, 520, 560, 690]]),
+    dict(img="fiat_500", zoom=1.05, cx=0.5, shade=["left", 210, 0.55], items=[
+        ["text", 45, 60, "14 MARCAS", 160, "yellow", "la"], ["text", 45, 290, "1 AGUJERO", 150, "white", "la"]]),
+    dict(img="ram_truck", zoom=1.1, cx=0.4, shade=["right", 225, 0.6], items=[
+        ["text", 1240, 60, "DEMASIADO", 150, "white", "ra"], ["text", 1240, 260, "CARO", 200, "red", "ra"]]),
+    dict(img="citroen_c3", zoom=1.1, cx=0.55, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "¿QUIÉN", 170, "white", "la"], ["text", 45, 280, "LOS SALVA?", 150, "yellow", "la"]]),
+    dict(img="fiat_strada", zoom=1.1, cx=0.35, shade=["right", 225, 0.6], items=[
+        ["text", 1240, 60, "SOLO GANA", 140, "white", "ra"], ["text", 1240, 240, "AQUÍ", 210, "yellow", "ra"],
+        ["badge", 800, 520, 1240, 640, "SUDAMÉRICA", 80]]),
+    dict(img="tavares", zoom=1.15, cx=0.6, shade=["left", 230, 0.6], items=[
+        ["text", 45, 60, "RÉCORD", 170, "yellow", "la"], ["text", 45, 280, "→ RUINA", 170, "red", "la"]]),
+    dict(img="car_factory", zoom=1.05, cx=0.6, shade=["left", 200, 0.5], items=[
+        ["stamp", "PÉRDIDA HISTÓRICA", 640, 360, -10, 120]]),
+]
+THUMBS_TOP = [1, 2, 8]
 
 META = {
     "code": "011",
@@ -234,6 +259,8 @@ META = {
         "Stellantis, informe anual 20-F 2025 (SEC): cuota de mercado en Sudamérica, Brasil y Argentina",
         "Perfil / El Cronista / iProfesional (2025-2026): plantas de Ferreyra y El Palomar",
         "Stellantis / Bloomberg Línea: biografía de Antonio Filosa",
+        "Fotos vía Wikimedia Commons (dominio público): «Fiat Strada double cab», de David Digan; «'19 Ram 1500 Crew Cab», de Bull-Doser",
+        "Fotos con licencia CC BY: «001 Car factory assembly line - Opel factory in Gliwice, Poland», de Marek Ślusarczyk (Tupungato) (CC BY 3.0); «2017 Citroën C3 Aircross», de User3204 (CC BY 4.0); «1966 Fiat Nuova 500F and 2008 Fiat 500», de dave_7 (CC BY 2.0); «Jeep Wrangler (JL) Washington DC Metro Area, USA (7)», de OWS Photography (CC BY 4.0); «Carlos Tavares, Chief Operating Officer, Renault @ LeWeb 11 Les Docks-9256», de LeWeb13 (CC BY 2.0)",
     ],
     "disclosure": "Fotos reales de Wikimedia Commons (créditos en las fuentes). Narración con voz sintética.",
     "altered": "No",

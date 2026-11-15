@@ -1,0 +1,44 @@
+{
+ "car_factory": {
+  "title": "File:001 Car factory assembly line - Opel factory in Gliwice, Poland.jpg",
+  "lic": "CC BY 3.0",
+  "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+  "page": "https://commons.wikimedia.org/wiki/File:001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice,_Poland.jpg"
+ },
+ "citroen_c3": {
+  "title": "File:2017 Citroën C3 Aircross.jpg",
+  "lic": "CC BY 4.0",
+  "artist": "User3204",
+  "page": "https://commons.wikimedia.org/wiki/File:2017_Citro%C3%ABn_C3_Aircross.jpg"
+ },
+ "fiat_500": {
+  "title": "File:1966 Fiat Nuova 500F and 2008 Fiat 500.jpg",
+  "lic": "CC BY 2.0",
+  "artist": "dave_7",
+  "page": "https://commons.wikimedia.org/wiki/File:1966_Fiat_Nuova_500F_and_2008_Fiat_500.jpg"
+ },
+ "fiat_strada": {
+  "title": "File:Fiat Strada double cab.jpg",
+  "lic": "Public domain",
+  "artist": "David Digan",
+  "page": "https://commons.wikimedia.org/wiki/File:Fiat_Strada_double_cab.jpg"
+ },
+ "jeep_wrangler": {
+  "title": "File:Jeep Wrangler (JL) Washington DC Metro Area, USA (7).jpg",
+  "lic": "CC BY 4.0",
+  "artist": "OWS Photography",
+  "page": "https://commons.wikimedia.org/wiki/File:Jeep_Wrangler_(JL)_Washington_DC_Metro_Area,_USA_(7).jpg"
+ },
+ "ram_truck": {
+  "title": "File:'19 Ram 1500 Crew Cab.jpg",
+  "lic": "Public domain",
+  "artist": "Bull-Doser",
+  "page": "https://commons.wikimedia.org/wiki/File:%2719_Ram_1500_Crew_Cab.jpg"
+ },
+ "tavares": {
+  "title": "File:Carlos Tavares, Chief Operating Officer, Renault @ LeWeb 11 Les Docks-9256.jpg",
+  "lic": "CC BY 2.0",
+  "artist": "LeWeb13",
+  "page": "https://commons.wikimedia.org/wiki/File:Carlos_Tavares,_Chief_Operating_Officer,_Renault_@_LeWeb_11_Les_Docks-9256.jpg"
+ }
+}
