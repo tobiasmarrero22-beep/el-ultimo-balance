@@ -95,6 +95,11 @@ tiene que pedirlo ni abrir ningún archivo para subir el vídeo.
   usar crf 27 / maxrate 3000k (004: 67 MB). Guardar las URL de las imágenes en `videos/NNN/img_urls.txt`.
 - Fórmula ganadora de Shorts (datos 3-nov, `datos/rendimiento.md`): personaje + cifra enorme + conflicto
   ("Empezó haciendo baterías de móvil… hoy supera a Tesla", "Musk se rió…"). El largo abre "en plena acción" y adelanta el giro.
+- Shorts, datos del 15-nov (`datos/rendimiento.md`): todos se quedan en 1.200–1.700 vistas y casi no traen suscriptores (17 de 14.000
+  vistas). Desde ahora: cifra o conflicto en el primer segundo, 20–25 s, final que enlace con el principio (bucle), ángulo
+  latinoamericano cuando exista ("el último vocho se hizo en México", "la salva un mexicano"), afirmar en vez de preguntar
+  ("¿fue un plan? 🤔" retuvo un 16 %) y cierre con "La historia completa, en el vídeo del canal 👆". En SUBIR.md: enlazar el largo
+  como «Vídeo relacionado» y en el comentario fijado. El usuario no quiere rehacer miniaturas de vídeos ya publicados (15-nov).
 - **Tomas de vídeo reales con vidIQ (005, la vía preferida):** `vidiq_generate_broll` (1 crédito, Pexels; elegir MP4 hd 1280/1920)
   → `vidiq_video_upload` con esa URL (gratis; devuelve un `videoUrl` en storage.googleapis.com, que SÍ se descarga aquí)
   (008: para tener HD/4K, pasar a `vidiq_video_upload` la URL `https://www.pexels.com/download/video/<id>/` en vez del MP4 de 640×360)
