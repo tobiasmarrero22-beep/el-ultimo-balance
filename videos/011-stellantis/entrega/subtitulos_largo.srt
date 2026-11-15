@@ -1,0 +1,604 @@
+1
+00:00:00,000 --> 00:00:04,816
+En Argentina, casi uno de cada tres autos nuevos que se venden es de la misma
+
+2
+00:00:04,816 --> 00:00:05,316
+empresa.
+
+3
+00:00:05,316 --> 00:00:06,504
+En Brasil, también.
+
+4
+00:00:06,854 --> 00:00:09,518
+Esa empresa se llama Stellantis.
+
+5
+00:00:09,518 --> 00:00:15,344
+Fiat, Peugeot, Citroën, Jeep, Ram… catorce marcas bajo el mismo techo.
+
+6
+00:00:15,694 --> 00:00:20,123
+Y en dos mil veinticinco perdió más de veintidós mil millones de euros.
+
+7
+00:00:20,123 --> 00:00:22,930
+La primera pérdida anual de toda su historia.
+
+8
+00:00:23,280 --> 00:00:28,403
+¿Cómo pasa una empresa de batir récords a perder todo eso en solo dos años?
+
+9
+00:00:28,403 --> 00:00:29,359
+Y lo más raro:
+
+10
+00:00:29,359 --> 00:00:34,278
+mientras se hundía en medio mundo, en Sudamérica seguía siendo la reina.
+
+11
+00:00:35,228 --> 00:00:36,159
+Capítulo uno:
+
+12
+00:00:36,159 --> 00:00:37,448
+la boda del siglo.
+
+13
+00:00:38,348 --> 00:00:40,601
+Enero de dos mil veintiuno.
+
+14
+00:00:40,601 --> 00:00:42,938
+Dos grupos gigantes se unen:
+
+15
+00:00:42,938 --> 00:00:49,865
+el francés PSA, el de Peugeot y Citroën, y el ítalo-estadounidense FCA, el de Fiat,
+
+16
+00:00:49,865 --> 00:00:51,200
+Chrysler y Jeep.
+
+17
+00:00:51,550 --> 00:00:54,777
+FCA, a su vez, venía de otra historia increíble:
+
+18
+00:00:54,777 --> 00:00:59,753
+Fiat se había quedado con Chrysler después de su quiebra en dos mil nueve.
+
+19
+00:01:00,103 --> 00:01:02,329
+La fusión se hizo mitad y mitad:
+
+20
+00:01:02,329 --> 00:01:04,833
+ninguno de los dos se comía al otro.
+
+21
+00:01:04,833 --> 00:01:06,503
+Al menos sobre el papel.
+
+22
+00:01:06,853 --> 00:01:11,333
+Nace Stellantis, uno de los mayores fabricantes de autos del mundo.
+
+23
+00:01:11,333 --> 00:01:15,212
+Catorce marcas, de Fiat y Peugeot a Maserati y Alfa Romeo.
+
+24
+00:01:15,562 --> 00:01:17,378
+El nombre viene del latín:
+
+25
+00:01:17,378 --> 00:01:20,662
+«stello», que significa iluminar con estrellas.
+
+26
+00:01:20,662 --> 00:01:24,574
+La idea era que juntas, todas esas marcas brillaran más.
+
+27
+00:01:24,924 --> 00:01:30,280
+Al frente ponen a Carlos Tavares, un ejecutivo portugués con fama de mago de los
+
+28
+00:01:30,280 --> 00:01:30,815
+números:
+
+29
+00:01:30,815 --> 00:01:35,033
+antes había rescatado a Peugeot y a Opel cuando perdían dinero.
+
+30
+00:01:35,383 --> 00:01:40,430
+En dos mil catorce, Peugeot estaba tan mal que el Estado francés y la china Dongfeng
+
+31
+00:01:40,430 --> 00:01:42,473
+tuvieron que entrar en su capital.
+
+32
+00:01:42,473 --> 00:01:45,597
+Tavares llegó ese año y la devolvió a las ganancias.
+
+33
+00:01:45,947 --> 00:01:50,730
+Después compró Opel, que llevaba casi veinte años perdiendo dinero con General
+
+34
+00:01:50,730 --> 00:01:51,159
+Motors.
+
+35
+00:01:51,159 --> 00:01:53,183
+Al año siguiente, Opel ya ganaba.
+
+36
+00:01:53,533 --> 00:01:54,911
+Su receta era simple:
+
+37
+00:01:54,911 --> 00:01:59,046
+recortar costes en todo lo que se pudiera y subir los márgenes.
+
+38
+00:01:59,046 --> 00:02:01,474
+Y al principio funcionó de maravilla.
+
+39
+00:02:02,424 --> 00:02:03,316
+Capítulo dos:
+
+40
+00:02:03,316 --> 00:02:05,167
+la máquina de hacer dinero.
+
+41
+00:02:06,067 --> 00:02:11,608
+En dos mil veintitrés, Stellantis gana unos dieciocho mil seiscientos millones de
+
+42
+00:02:11,608 --> 00:02:12,018
+euros.
+
+43
+00:02:12,018 --> 00:02:12,702
+Un récord.
+
+44
+00:02:13,052 --> 00:02:15,628
+Buena parte venía de Estados Unidos:
+
+45
+00:02:15,628 --> 00:02:19,922
+camionetas Ram y Jeep vendidas a precios cada vez más altos.
+
+46
+00:02:20,272 --> 00:02:23,702
+Y Jeep tiene una marca con más de ochenta años de historia:
+
+47
+00:02:23,702 --> 00:02:28,527
+nació como el todoterreno del ejército estadounidense en la Segunda Guerra Mundial.
+
+48
+00:02:28,877 --> 00:02:30,877
+Los accionistas estaban felices.
+
+49
+00:02:30,877 --> 00:02:35,564
+Pero dentro de la empresa, y en los concesionarios, algo empezaba a crujir.
+
+50
+00:02:35,914 --> 00:02:40,980
+Porque cuando subes tanto los precios y recortas tanto por dentro, tarde o temprano
+
+51
+00:02:40,980 --> 00:02:42,445
+alguien deja de comprar.
+
+52
+00:02:43,395 --> 00:02:44,520
+Capítulo tres:
+
+53
+00:02:44,520 --> 00:02:45,485
+las grietas.
+
+54
+00:02:46,385 --> 00:02:49,852
+En dos mil veinticuatro, las ventas en Estados Unidos caen.
+
+55
+00:02:49,852 --> 00:02:54,789
+Los concesionarios se llenan de autos sin vender y la empresa tiene que avisar a los
+
+56
+00:02:54,789 --> 00:02:56,964
+inversores de que ganará mucho menos.
+
+57
+00:02:57,314 --> 00:03:01,989
+En septiembre de dos mil veinticuatro, los propios concesionarios de Estados Unidos
+
+58
+00:03:01,989 --> 00:03:06,607
+le escribieron una carta abierta a la empresa criticando a Tavares por cómo iba el
+
+59
+00:03:06,607 --> 00:03:07,058
+negocio.
+
+60
+00:03:07,408 --> 00:03:12,836
+En Italia, la cuna de Fiat, la producción de Stellantis en dos mil veinticuatro cayó
+
+61
+00:03:12,836 --> 00:03:17,876
+a su nivel más bajo desde mil novecientos cincuenta y seis, según el sindicato
+
+62
+00:03:17,876 --> 00:03:18,458
+FIM-CISL.
+
+63
+00:03:18,808 --> 00:03:23,234
+El beneficio de ese año se queda en unos cinco mil quinientos millones.
+
+64
+00:03:23,234 --> 00:03:26,226
+Un setenta por ciento menos que el año anterior.
+
+65
+00:03:26,576 --> 00:03:31,111
+Y el uno de diciembre de dos mil veinticuatro, Carlos Tavares deja la empresa.
+
+66
+00:03:31,111 --> 00:03:34,831
+Stellantis habló de «puntos de vista diferentes» con el consejo.
+
+67
+00:03:35,181 --> 00:03:40,158
+Según Reuters, al consejo le preocupaba que tantos recortes estuvieran afectando a
+
+68
+00:03:40,158 --> 00:03:43,618
+la calidad de los autos y a la llegada de modelos nuevos.
+
+69
+00:03:43,968 --> 00:03:47,860
+Pero la verdadera factura de esos años todavía no había llegado.
+
+70
+00:03:47,860 --> 00:03:50,839
+Y cuando llegó, fue la más grande de su historia.
+
+71
+00:03:51,789 --> 00:03:52,965
+Capítulo cuatro:
+
+72
+00:03:52,965 --> 00:03:53,774
+el agujero.
+
+73
+00:03:54,674 --> 00:03:57,375
+Seis de febrero de dos mil veintiséis.
+
+74
+00:03:57,375 --> 00:04:02,564
+Stellantis anuncia cargos por veintidós mil doscientos millones de euros.
+
+75
+00:04:02,564 --> 00:04:08,179
+Ese día, su acción llega a caer un veinticinco por ciento en la bolsa de Milán.
+
+76
+00:04:08,529 --> 00:04:10,312
+¿De dónde salía semejante cifra?
+
+77
+00:04:10,312 --> 00:04:14,825
+Sobre todo de planes de autos eléctricos que ya no iban a dar lo que se esperaba.
+
+78
+00:04:15,175 --> 00:04:17,226
+A fin de mes llegan las cuentas:
+
+79
+00:04:17,226 --> 00:04:22,292
+una pérdida neta de unos veintidós mil trescientos millones de euros en dos mil
+
+80
+00:04:22,292 --> 00:04:23,061
+veinticinco.
+
+81
+00:04:23,061 --> 00:04:26,460
+La primera pérdida anual desde que existe la empresa.
+
+82
+00:04:26,810 --> 00:04:30,179
+Y ese año, ni un euro de dividendo para los accionistas.
+
+83
+00:04:30,529 --> 00:04:32,060
+¿La explicación oficial?
+
+84
+00:04:32,060 --> 00:04:37,291
+El nuevo jefe, Antonio Filosa, dijo que habían sobrestimado lo rápido que la gente
+
+85
+00:04:37,291 --> 00:04:39,333
+iba a pasarse al auto eléctrico.
+
+86
+00:04:39,683 --> 00:04:45,023
+Mientras tanto, desde abril de dos mil veinticinco, Estados Unidos cobraba aranceles
+
+87
+00:04:45,023 --> 00:04:48,202
+del veinticinco por ciento a los autos importados.
+
+88
+00:04:48,202 --> 00:04:51,699
+Otro golpe para una empresa que fabrica en medio mundo.
+
+89
+00:04:52,049 --> 00:04:57,047
+Y reconoció problemas de calidad que vinculó a los recortes de la etapa anterior.
+
+90
+00:04:57,047 --> 00:04:57,417
+O sea:
+
+91
+00:04:57,417 --> 00:05:02,106
+la receta que había hecho ganar récords también explicaba parte del agujero.
+
+92
+00:05:02,456 --> 00:05:04,990
+Ahora, la parte que casi nadie cuenta:
+
+93
+00:05:04,990 --> 00:05:10,592
+mientras todo eso pasaba en Europa y Estados Unidos, en Sudamérica la empresa seguía
+
+94
+00:05:10,592 --> 00:05:11,259
+arrasando.
+
+95
+00:05:12,209 --> 00:05:13,213
+Capítulo cinco:
+
+96
+00:05:13,213 --> 00:05:14,952
+la excepción sudamericana.
+
+97
+00:05:15,852 --> 00:05:21,050
+En dos mil veinticinco, Stellantis vendió casi uno de cada cuatro autos nuevos de
+
+98
+00:05:21,050 --> 00:05:21,756
+Sudamérica.
+
+99
+00:05:21,756 --> 00:05:24,131
+En Brasil, el veintinueve por ciento.
+
+100
+00:05:24,131 --> 00:05:26,249
+En Argentina, el treinta y medio.
+
+101
+00:05:26,599 --> 00:05:29,053
+Fiat es la marca líder de la región.
+
+102
+00:05:29,053 --> 00:05:34,710
+En Brasil, camionetas como la Strada, la Toro y la Titano dominan el mercado de las
+
+103
+00:05:34,710 --> 00:05:35,324
+pick-ups.
+
+104
+00:05:35,674 --> 00:05:41,083
+La Strada, una pick-up chica fabricada en Brasil, fue durante varios años seguidos
+
+105
+00:05:41,083 --> 00:05:43,458
+el vehículo más vendido de ese país.
+
+106
+00:05:43,808 --> 00:05:46,803
+Y en Argentina tiene dos fábricas:
+
+107
+00:05:46,803 --> 00:05:52,968
+en Ferreyra, Córdoba, salen el Fiat Cronos, la Titano y la Ram Dakota.
+
+108
+00:05:52,968 --> 00:05:57,548
+En El Palomar, Buenos Aires, los Peugeot 208 y 2008.
+
+109
+00:05:57,898 --> 00:06:02,558
+Solo en dos mil veinticinco, la planta de Córdoba sumó unos mil ochocientos
+
+110
+00:06:02,558 --> 00:06:07,093
+trabajadores y se convirtió en un centro de pick-ups para toda la región.
+
+111
+00:06:07,443 --> 00:06:13,062
+De El Palomar salieron incluso los primeros autos electrificados que Argentina
+
+112
+00:06:13,062 --> 00:06:14,647
+fabricó para exportar:
+
+113
+00:06:14,647 --> 00:06:16,952
+los Peugeot 208 y 2008 híbridos.
+
+114
+00:06:17,302 --> 00:06:22,371
+Según la propia empresa, en dos mil veinticinco superó el millón de vehículos
+
+115
+00:06:22,371 --> 00:06:23,885
+vendidos en Sudamérica.
+
+116
+00:06:24,235 --> 00:06:25,452
+¿Por qué allá sí?
+
+117
+00:06:25,452 --> 00:06:26,168
+Una pista:
+
+118
+00:06:26,168 --> 00:06:31,752
+en la región vende autos accesibles y populares, justo lo que el mercado pide.
+
+119
+00:06:31,752 --> 00:06:34,186
+Y otra pista, todavía más curiosa:
+
+120
+00:06:34,186 --> 00:06:35,833
+quién es el nuevo jefe.
+
+121
+00:06:36,783 --> 00:06:37,769
+Capítulo seis:
+
+122
+00:06:37,769 --> 00:06:38,403
+¿y ahora?
+
+123
+00:06:39,303 --> 00:06:44,466
+Antonio Filosa, el italiano que tomó el mando en dos mil veinticinco, fue presidente
+
+124
+00:06:44,466 --> 00:06:47,662
+de Stellantis para Sudamérica antes de dirigir Jeep.
+
+125
+00:06:48,012 --> 00:06:48,443
+O sea:
+
+126
+00:06:48,443 --> 00:06:54,477
+el hombre que tiene que salvar al gigante viene justo de la única región donde nunca
+
+127
+00:06:54,477 --> 00:06:55,483
+dejó de ganar.
+
+128
+00:06:55,833 --> 00:06:57,127
+Y hay alguna señal:
+
+129
+00:06:57,127 --> 00:07:02,849
+a fines de dos mil veinticinco, Jeep cortó una racha de seis años seguidos de ventas
+
+130
+00:07:02,849 --> 00:07:04,688
+en caída en Estados Unidos.
+
+131
+00:07:05,038 --> 00:07:10,583
+Además, en dos mil veintitrés Stellantis compró alrededor del veintiuno por ciento
+
+132
+00:07:10,583 --> 00:07:16,263
+de Leapmotor, un fabricante chino de autos eléctricos, para vender sus modelos fuera
+
+133
+00:07:16,263 --> 00:07:16,872
+de China.
+
+134
+00:07:17,222 --> 00:07:18,775
+Pero el camino es largo.
+
+135
+00:07:18,775 --> 00:07:24,018
+Solo por los aranceles de Estados Unidos, la empresa calcula un golpe de unos mil
+
+136
+00:07:24,018 --> 00:07:27,383
+seiscientos millones de euros en dos mil veintiséis.
+
+137
+00:07:27,733 --> 00:07:29,166
+Filosa lo resumió así:
+
+138
+00:07:29,166 --> 00:07:33,593
+este año, el objetivo es cerrar las brechas de ejecución del pasado.
+
+139
+00:07:33,593 --> 00:07:34,765
+En otras palabras:
+
+140
+00:07:34,765 --> 00:07:36,458
+arreglar lo que se rompió.
+
+141
+00:07:36,808 --> 00:07:42,036
+Así que la próxima vez que veas un Fiat, un Peugeot o un Jeep por la calle,
+
+142
+00:07:42,036 --> 00:07:42,733
+acuérdate:
+
+143
+00:07:42,733 --> 00:07:47,055
+es de una empresa que perdió veintidós mil millones en un año.
+
+144
+00:07:47,055 --> 00:07:47,892
+¿Se salvará?
+
+145
+00:07:47,892 --> 00:07:49,425
+Todavía nadie lo sabe.
+
+146
+00:07:49,775 --> 00:07:54,433
+Y que, aun así, en Argentina y en Brasil sigue vendiendo casi uno de cada tres
+
+147
+00:07:54,433 --> 00:07:54,791
+autos.
+
+148
+00:07:55,141 --> 00:07:58,660
+¿Tú tienes o tuviste un auto de alguna de sus catorce marcas?
+
+149
+00:07:58,660 --> 00:08:00,391
+Cuéntamelo en los comentarios.
+
+150
+00:08:00,741 --> 00:08:05,591
+Y si te gustan estas historias de empresas que suben y caen, suscríbete:
+
+151
+00:08:05,591 --> 00:08:07,612
+cada semana, un nuevo balance.
+

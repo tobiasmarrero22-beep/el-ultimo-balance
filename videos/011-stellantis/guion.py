@@ -184,7 +184,7 @@ FALLBACK = {
     "s42": dict(type="quote", text="¿TIENES UN AUTO\nDE STELLANTIS?"),
     "s43": dict(type="quote", text="SUSCRÍBETE\nCADA SEMANA, UN NUEVO BALANCE"),
     "s12b": dict(type="year", year="1941", sub="JEEP NACE COMO VEHÍCULO MILITAR"),
-    "s16b": dict(type="num", start=0, end=1956, label="PRODUCCIÓN EN ITALIA: LA MÁS BAJA DESDE"),
+    "s16b": dict(type="year", year="1956", sub="ITALIA: LA PRODUCCIÓN MÁS BAJA DESDE ENTONCES"),
     "s22b": dict(type="quote", text="PLANES ELÉCTRICOS\nQUE NO IBAN A RENDIR"),
     "s30b": dict(type="quote", text="FIAT STRADA\nLA MÁS VENDIDA DE BRASIL"),
 }

@@ -1,0 +1,616 @@
+1
+00:00:00,000 --> 00:00:04,311
+El diecinueve sale GTA seis, trece años después de GTA cinco.
+
+2
+00:00:04,311 --> 00:00:10,036
+Pero toda esta locura empezó en mil novecientos noventa y siete, en una ciudad de
+
+3
+00:00:10,036 --> 00:00:12,722
+Escocia, con un error de programación.
+
+4
+00:00:13,072 --> 00:00:17,600
+Un error que convirtió un juego de autos cualquiera en la saga que vendió casi
+
+5
+00:00:17,600 --> 00:00:19,341
+quinientos millones de copias.
+
+6
+00:00:19,691 --> 00:00:22,761
+Te cuento toda la historia, de punta a punta:
+
+7
+00:00:22,761 --> 00:00:27,059
+del juego que se veía desde arriba al más esperado del planeta.
+
+8
+00:00:27,059 --> 00:00:30,401
+Ideal si el diecinueve vas a jugar tu primer GTA.
+
+9
+00:00:30,751 --> 00:00:33,503
+Y al final, la pregunta que todos se hacen:
+
+10
+00:00:33,503 --> 00:00:36,446
+por qué tardaron trece años en hacer el sexto.
+
+11
+00:00:37,396 --> 00:00:38,232
+Capítulo uno:
+
+12
+00:00:38,232 --> 00:00:39,904
+un juego hecho en Escocia.
+
+13
+00:00:40,804 --> 00:00:46,436
+La historia arranca en Dundee, Escocia, en un estudio llamado DMA Design, el mismo
+
+14
+00:00:46,436 --> 00:00:48,222
+que había creado Lemmings.
+
+15
+00:00:48,572 --> 00:00:53,660
+DMA lo había fundado a fines de los ochenta David Jones, un programador escocés.
+
+16
+00:00:53,660 --> 00:00:58,937
+Nadie se imaginaba que de ese estudio chico saldría una de las sagas más grandes de
+
+17
+00:00:58,937 --> 00:00:59,701
+la historia.
+
+18
+00:01:00,051 --> 00:01:04,721
+Estaban haciendo un juego de persecuciones que se llamaba Race and Chase.
+
+19
+00:01:04,721 --> 00:01:07,600
+Vos eras el policía y perseguías a los malos.
+
+20
+00:01:07,950 --> 00:01:12,617
+Pero según contaron sus creadores, un fallo hizo que la policía del juego se
+
+21
+00:01:12,617 --> 00:01:16,179
+volviera muy agresiva y persiguiera al jugador sin piedad.
+
+22
+00:01:16,179 --> 00:01:19,679
+Y probarlo era mucho más divertido que el juego original.
+
+23
+00:01:20,029 --> 00:01:21,803
+Así que cambiaron la idea:
+
+24
+00:01:21,803 --> 00:01:23,851
+ahora vos eras el delincuente.
+
+25
+00:01:23,851 --> 00:01:29,448
+En mil novecientos noventa y siete sale Grand Theft Auto, visto desde arriba, para
+
+26
+00:01:29,448 --> 00:01:30,608
+PC y PlayStation.
+
+27
+00:01:30,958 --> 00:01:34,188
+El juego armó un escándalo en la prensa británica:
+
+28
+00:01:34,188 --> 00:01:36,643
+había políticos que pedían prohibirlo.
+
+29
+00:01:36,643 --> 00:01:40,519
+Y esa polémica, paradójicamente, lo hizo todavía más famoso.
+
+30
+00:01:40,869 --> 00:01:44,762
+Ya tenía tres ciudades con nombres que vas a reconocer:
+
+31
+00:01:44,762 --> 00:01:47,452
+Liberty City, San Andreas y Vice City.
+
+32
+00:01:47,802 --> 00:01:53,350
+Después vinieron una expansión en el Londres de mil novecientos sesenta y nueve y
+
+33
+00:01:53,350 --> 00:01:53,898
+GTA dos.
+
+34
+00:01:53,898 --> 00:01:58,419
+Y en Nueva York, unos hermanos británicos fundaban Rockstar Games:
+
+35
+00:01:58,419 --> 00:01:59,583
+Sam y Dan Houser.
+
+36
+00:01:59,933 --> 00:02:03,397
+Pero el salto que cambió todo todavía no había llegado.
+
+37
+00:02:03,397 --> 00:02:05,602
+Y llegó en el peor momento posible.
+
+38
+00:02:06,552 --> 00:02:07,646
+Capítulo dos:
+
+39
+00:02:07,646 --> 00:02:08,824
+el salto a 3D.
+
+40
+00:02:09,724 --> 00:02:11,314
+Octubre de dos mil uno.
+
+41
+00:02:11,314 --> 00:02:13,732
+Sale GTA tres para PlayStation dos.
+
+42
+00:02:13,732 --> 00:02:19,468
+Por primera vez podías caminar y manejar por una ciudad entera en tres dimensiones.
+
+43
+00:02:19,818 --> 00:02:22,366
+El protagonista ni siquiera hablaba.
+
+44
+00:02:22,366 --> 00:02:27,675
+Pero la ciudad, con sus radios, sus peatones y su policía, era la verdadera
+
+45
+00:02:27,675 --> 00:02:28,595
+protagonista.
+
+46
+00:02:28,945 --> 00:02:32,203
+La ciudad era Liberty City, inspirada en Nueva York.
+
+47
+00:02:32,203 --> 00:02:36,965
+Y salió apenas unas semanas después de los atentados del once de septiembre.
+
+48
+00:02:37,315 --> 00:02:42,097
+Rockstar cambió la portada y el color de los patrulleros, que se parecían mucho a
+
+49
+00:02:42,097 --> 00:02:43,986
+los de la policía de Nueva York.
+
+50
+00:02:43,986 --> 00:02:47,529
+Según la empresa, el juego quedó un uno por ciento distinto.
+
+51
+00:02:47,879 --> 00:02:52,771
+Aun así, GTA tres terminó siendo uno de los juegos más vendidos de dos mil uno y
+
+52
+00:02:52,771 --> 00:02:55,950
+convirtió a la PlayStation dos en la consola de GTA.
+
+53
+00:02:56,300 --> 00:02:59,288
+GTA tres fue un éxito enorme y creó un género.
+
+54
+00:02:59,288 --> 00:03:03,249
+Desde ese día, cada juego de mundo abierto se comparó con él.
+
+55
+00:03:03,599 --> 00:03:04,973
+Y Rockstar no esperó:
+
+56
+00:03:04,973 --> 00:03:10,403
+en apenas tres años sacó los dos juegos que muchos consideran la época dorada de la
+
+57
+00:03:10,403 --> 00:03:10,730
+saga.
+
+58
+00:03:11,680 --> 00:03:12,656
+Capítulo tres:
+
+59
+00:03:12,656 --> 00:03:13,770
+la época dorada.
+
+60
+00:03:14,670 --> 00:03:15,595
+Dos mil dos:
+
+61
+00:03:15,595 --> 00:03:16,365
+Vice City.
+
+62
+00:03:16,365 --> 00:03:22,838
+Una ciudad inspirada en Miami, en mil novecientos ochenta y seis, con Tommy Vercetti
+
+63
+00:03:22,838 --> 00:03:25,380
+y mucho de Scarface y Miami Vice.
+
+64
+00:03:25,730 --> 00:03:26,805
+Dos mil cuatro:
+
+65
+00:03:26,805 --> 00:03:27,665
+San Andreas.
+
+66
+00:03:27,665 --> 00:03:31,392
+Ya no era una ciudad, era un estado entero con tres:
+
+67
+00:03:31,392 --> 00:03:34,116
+Los Santos, San Fierro y Las Venturas.
+
+68
+00:03:34,466 --> 00:03:38,556
+Con CJ volviendo a su barrio, gimnasio, comida y hasta aviones.
+
+69
+00:03:38,556 --> 00:03:43,426
+San Andreas terminó siendo el juego más vendido de toda la PlayStation dos.
+
+70
+00:03:43,776 --> 00:03:46,968
+Aunque también trajo la mayor polémica de su época:
+
+71
+00:03:46,968 --> 00:03:52,164
+en dos mil cinco apareció un contenido oculto que obligó a cambiar su clasificación
+
+72
+00:03:52,164 --> 00:03:54,042
+de edad y a reeditar el juego.
+
+73
+00:03:54,392 --> 00:03:58,738
+Después llegaron dos versiones para la consola portátil de Sony:
+
+74
+00:03:58,738 --> 00:04:01,523
+Liberty City Stories y Vice City Stories.
+
+75
+00:04:01,873 --> 00:04:04,876
+Y esa fue la última vez que la saga pisó Vice City.
+
+76
+00:04:04,876 --> 00:04:05,582
+Hasta ahora.
+
+77
+00:04:05,932 --> 00:04:10,651
+Pero para dar el siguiente paso, Rockstar hizo algo que nadie esperaba:
+
+78
+00:04:10,651 --> 00:04:14,971
+volvió a Liberty City, y con un protagonista totalmente distinto.
+
+79
+00:04:15,921 --> 00:04:17,174
+Capítulo cuatro:
+
+80
+00:04:17,174 --> 00:04:18,742
+Niko y Liberty City.
+
+81
+00:04:19,642 --> 00:04:21,383
+Abril de dos mil ocho.
+
+82
+00:04:21,383 --> 00:04:26,052
+GTA cuatro, en PlayStation tres y Xbox trescientos sesenta.
+
+83
+00:04:26,052 --> 00:04:32,067
+Más realista, más oscuro y con un protagonista que venía de Europa del Este:
+
+84
+00:04:32,067 --> 00:04:33,017
+Niko Bellic.
+
+85
+00:04:33,367 --> 00:04:38,687
+Según Take-Two, recaudó unos quinientos millones de dólares en su primera semana.
+
+86
+00:04:38,687 --> 00:04:40,132
+Una cifra de película.
+
+87
+00:04:40,482 --> 00:04:45,317
+Al año siguiente sumó dos expansiones con historias nuevas en la misma ciudad,
+
+88
+00:04:45,317 --> 00:04:47,300
+contadas desde otros personajes.
+
+89
+00:04:47,650 --> 00:04:49,842
+Liberty City se veía como nunca:
+
+90
+00:04:49,842 --> 00:04:53,815
+una Nueva York con lluvia, tráfico y vida en cada esquina.
+
+91
+00:04:54,165 --> 00:04:57,644
+Pero lo que vino después hizo que todo eso pareciera chico.
+
+92
+00:04:57,644 --> 00:05:02,420
+Cinco años más tarde, Rockstar lanzó el juego que iba a romper todos los récords.
+
+93
+00:05:03,370 --> 00:05:04,502
+Capítulo cinco:
+
+94
+00:05:04,502 --> 00:05:05,407
+el monstruo.
+
+95
+00:05:06,307 --> 00:05:09,348
+Diecisiete de septiembre de dos mil trece.
+
+96
+00:05:09,348 --> 00:05:11,665
+Sale GTA cinco, con una novedad:
+
+97
+00:05:11,665 --> 00:05:13,041
+tres protagonistas.
+
+98
+00:05:13,041 --> 00:05:18,689
+Michael, Franklin y Trevor, y podías cambiar entre ellos en cualquier momento.
+
+99
+00:05:19,039 --> 00:05:22,055
+En solo tres días facturó mil millones de dólares.
+
+100
+00:05:22,055 --> 00:05:27,062
+Guinness lo registró como el producto de entretenimiento que más rápido llegó a esa
+
+101
+00:05:27,062 --> 00:05:27,424
+cifra.
+
+102
+00:05:27,774 --> 00:05:33,475
+Ese mismo año arrancó GTA Online, el modo en línea que mantuvo vivo al juego durante
+
+103
+00:05:33,475 --> 00:05:34,697
+más de una década.
+
+104
+00:05:35,047 --> 00:05:40,182
+En dos mil quince llegaron los atracos cooperativos, los famosos golpes con amigos,
+
+105
+00:05:40,182 --> 00:05:45,317
+y GTA Online se convirtió en un juego dentro del juego, con actualizaciones durante
+
+106
+00:05:45,317 --> 00:05:45,626
+años.
+
+107
+00:05:45,976 --> 00:05:49,795
+GTA cinco salió en tres generaciones de consolas:
+
+108
+00:05:49,795 --> 00:05:53,925
+PlayStation tres, cuatro y cinco, y lo mismo en Xbox.
+
+109
+00:05:53,925 --> 00:05:55,172
+Y también en PC.
+
+110
+00:05:55,522 --> 00:05:59,718
+En la nueva generación incluso agregaron la vista en primera persona:
+
+111
+00:05:59,718 --> 00:06:03,123
+podías jugar todo GTA cinco como si fueras el personaje.
+
+112
+00:06:03,473 --> 00:06:04,351
+¿El resultado?
+
+113
+00:06:04,351 --> 00:06:09,558
+Más de doscientos treinta millones de copias vendidas, según Take-Two a mediados de
+
+114
+00:06:09,558 --> 00:06:10,749
+dos mil veintiséis.
+
+115
+00:06:10,749 --> 00:06:13,635
+Uno de los juegos más vendidos de la historia.
+
+116
+00:06:13,985 --> 00:06:16,640
+Y justamente por eso GTA seis tardó tanto.
+
+117
+00:06:16,640 --> 00:06:18,347
+Pero no fue la única razón.
+
+118
+00:06:19,297 --> 00:06:20,311
+Capítulo seis:
+
+119
+00:06:20,311 --> 00:06:21,831
+el camino a GTA seis.
+
+120
+00:06:22,731 --> 00:06:28,513
+Primero, porque GTA cinco y GTA Online seguían vendiendo y dando ganancias año tras
+
+121
+00:06:28,513 --> 00:06:28,791
+año.
+
+122
+00:06:28,791 --> 00:06:29,836
+No había apuro.
+
+123
+00:06:30,186 --> 00:06:35,550
+Rockstar recién confirmó que estaba haciendo el próximo GTA en febrero de dos mil
+
+124
+00:06:35,550 --> 00:06:38,728
+veintidós, casi nueve años después de GTA cinco.
+
+125
+00:06:39,078 --> 00:06:40,752
+Segundo, por el tamaño:
+
+126
+00:06:40,752 --> 00:06:46,208
+Leonida, el estado de GTA seis, es el mundo más grande y detallado que hizo
+
+127
+00:06:46,208 --> 00:06:46,863
+Rockstar.
+
+128
+00:06:47,213 --> 00:06:51,450
+En septiembre de dos mil veintidós hubo una filtración enorme de videos del
+
+129
+00:06:51,450 --> 00:06:52,072
+desarrollo.
+
+130
+00:06:52,072 --> 00:06:54,501
+De eso tenemos un video entero en el canal.
+
+131
+00:06:54,851 --> 00:06:58,547
+En diciembre de dos mil veintitrés llegó el primer tráiler:
+
+132
+00:06:58,547 --> 00:07:02,870
+noventa millones de vistas en veinticuatro horas, un récord Guinness.
+
+133
+00:07:03,220 --> 00:07:07,948
+El tráiler confirmó la vuelta a Vice City y presentó a los protagonistas:
+
+134
+00:07:07,948 --> 00:07:10,927
+Jason y Lucía, una pareja metida en el crimen.
+
+135
+00:07:11,277 --> 00:07:15,962
+Y el segundo tráiler, en mayo de dos mil veinticinco, sumó según Rockstar
+
+136
+00:07:15,962 --> 00:07:21,097
+cuatrocientos setenta y cinco millones de vistas en veinticuatro horas, contando
+
+137
+00:07:21,097 --> 00:07:22,509
+todas las plataformas.
+
+138
+00:07:22,859 --> 00:07:24,274
+Después, dos retrasos:
+
+139
+00:07:24,274 --> 00:07:29,546
+de dos mil veinticinco pasó a mayo de dos mil veintiséis, y de mayo, al diecinueve
+
+140
+00:07:29,546 --> 00:07:30,382
+de noviembre.
+
+141
+00:07:30,732 --> 00:07:33,862
+Así que, entre un juego y otro, pasaron trece años.
+
+142
+00:07:33,862 --> 00:07:36,009
+Nunca la saga había esperado tanto.
+
+143
+00:07:36,359 --> 00:07:39,791
+Y llega con algo que ningún GTA de la era moderna tuvo:
+
+144
+00:07:39,791 --> 00:07:43,908
+una protagonista mujer, Lucía, compartiendo la historia con Jason.
+
+145
+00:07:44,258 --> 00:07:45,058
+Repasemos:
+
+146
+00:07:45,058 --> 00:07:51,056
+un error en Escocia, el salto a 3D, Vice City y San Andreas, Niko, los tres
+
+147
+00:07:51,056 --> 00:07:54,655
+protagonistas de GTA cinco… y ahora, Leonida.
+
+148
+00:07:55,005 --> 00:08:00,117
+Casi treinta años después de aquel juego visto desde arriba, el diecinueve volvemos
+
+149
+00:08:00,117 --> 00:08:00,857
+a Vice City.
+
+150
+00:08:01,207 --> 00:08:03,215
+Y vos, ¿cuál fue tu primer GTA?
+
+151
+00:08:03,215 --> 00:08:08,529
+Contalo en los comentarios, que quiero ver quién arrancó con el de mil novecientos
+
+152
+00:08:08,529 --> 00:08:09,566
+noventa y siete.
+
+153
+00:08:09,916 --> 00:08:13,625
+Suscribite, que el diecinueve arranca el gameplay en el canal.
+
+154
+00:08:13,625 --> 00:08:15,480
+Todas las veces que haga falta.
+

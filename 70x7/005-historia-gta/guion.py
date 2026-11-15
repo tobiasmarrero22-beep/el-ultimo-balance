@@ -211,7 +211,7 @@ META = {
     "titles": [
         "De 1997 a GTA 6: toda la historia de GTA (antes del 19)",
         "GTA empezó con un error de programación: toda la saga antes de GTA 6",
-        "Toda la saga GTA en 10 minutos: del juego visto desde arriba a GTA 6",
+        "Toda la saga GTA en 8 minutos: del juego visto desde arriba a GTA 6",
     ],
     "description": "Antes de que salga GTA 6 el 19 de noviembre, te cuento toda la historia de Grand Theft Auto: del primer juego hecho en Escocia en 1997 (y el error que lo hizo nacer) al salto a 3D con GTA III, Vice City, San Andreas, Niko Bellic, los tres protagonistas de GTA V y los 13 años de espera hasta Leonida.",
     "sources": [

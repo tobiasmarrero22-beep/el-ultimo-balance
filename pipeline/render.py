@@ -229,9 +229,14 @@ def scene_bars(v, t, D, W, H, seed):
     im = bg_canvas(W, H, t); d = ImageDraw.Draw(im); sc = W / 1920 * v.get("zoom", 1)
     d.text((W * 0.08, H * 0.09), v["title"], font=fit_font(INTER_B, int(52 * sc), v["title"], W * (0.58 if v.get("note") else 0.84)), fill=WHITE, anchor="lt")
     data = v["data"]; n = len(data)
-    vmax = max(x[1] for x in data) * 1.12
+    pos = max(0, max(x[1] for x in data)); neg = max(0, -min(x[1] for x in data))
     x0, x1 = W * 0.12, W * 0.88
     base_y, top_y = H * 0.86, H * 0.24
+    if neg:  # hay valores negativos: el cero sube y esas barras bajan desde él (en rojo)
+        area_top, area_bot = H * 0.30, H * 0.76
+        k = (area_bot - area_top) / (pos + neg); base_y = area_top + pos * k
+    else:
+        k = (base_y - top_y) / (pos * 1.12)
     slot = (x1 - x0) / max(n, 2)
     bw = slot * 0.62
     per = min(D * 0.75, 1.0 + 0.9 * n) / n
@@ -239,11 +244,17 @@ def scene_bars(v, t, D, W, H, seed):
         p = ease_out((t - i * per * 0.8) / per)
         if p <= 0: continue
         cx = x0 + slot * (i + 0.5) if n > 1 else W / 2
-        h = (base_y - top_y) * (val / vmax) * p
-        col = YEL if i == 0 else RED
-        d.rectangle([cx - bw / 2, base_y - h, cx + bw / 2, base_y], fill=col)
-        d.text((cx, base_y + 18 * sc), lab, font=font(INTER_B, int(46 * sc)), fill=GREY, anchor="mt")
-        d.text((cx, base_y - h - 14 * sc), fmt_num(val * p, v.get("prefix", ""), v.get("suffix", ""), v.get("dec", 0)), font=font(ANTON, int(78 * sc)), fill=WHITE, anchor="mb")
+        h = k * abs(val) * p
+        col = RED if val < 0 else (YEL if i == 0 else RED)
+        txt = fmt_num(val * p, v.get("prefix", ""), v.get("suffix", ""), v.get("dec", 0))
+        if val >= 0:
+            d.rectangle([cx - bw / 2, base_y - h, cx + bw / 2, base_y], fill=col)
+            d.text((cx, base_y + 18 * sc), lab, font=font(INTER_B, int(46 * sc)), fill=GREY, anchor="mt")
+            d.text((cx, base_y - h - 14 * sc), txt, font=font(ANTON, int(78 * sc)), fill=WHITE, anchor="mb")
+        else:
+            d.rectangle([cx - bw / 2, base_y, cx + bw / 2, base_y + h], fill=col)
+            d.text((cx, base_y - 18 * sc), lab, font=font(INTER_B, int(46 * sc)), fill=GREY, anchor="mb")
+            d.text((cx, base_y + h + 14 * sc), txt, font=font(ANTON, int(78 * sc)), fill=WHITE, anchor="mt")
     if v.get("note"):
         a = ease_out((t - per * n) / 0.5)
         if a > 0:
