@@ -1,9 +1,27 @@
-# Traducciones para YouTube Studio
+# 011 — Stellantis · Audio, subtítulos, título y miniatura en inglés y portugués
 
-YouTube Studio → Subtítulos → el vídeo → «Añadir idioma» → título y descripción (y el SRT en «Subtítulos»).
+Mismo vídeo (`011_largo.mp4`), dos pistas de audio nuevas con la misma duración (8:07), el mismo fondo y los mismos efectos,
+más subtítulos, título, descripción y miniatura traducidos. YouTube muestra el idioma de cada espectador automáticamente.
 
-## Inglés
+| Idioma | Audio | Subtítulos | Miniatura | Voz |
+|---|---|---|---|---|
+| Inglés | `011_audio_en.mp3` | `subtitulos_en.srt` | `miniatura_en.jpg` | Aaron (narrador americano) |
+| Portugués (Brasil) | `011_audio_pt.mp3` | `subtitulos_pt.srt` | `miniatura_pt.jpg` | Nassif (narrador de documentales) |
 
+## Cómo cargarlo en YouTube Studio
+1. **Contenido** → el vídeo de Stellantis → **Idiomas** (o **Subtítulos**) en el menú de la izquierda.
+2. Si te pide el idioma del vídeo, elegí **Español**.
+3. **Agregar idioma** → **Inglés**:
+   - **Audio** → *Agregar* → subí `011_audio_en.mp3`.
+   - **Subtítulos** → *Agregar* → *Subir archivo* → *Con sincronización* → `subtitulos_en.srt`.
+   - **Título y descripción** → *Agregar* → pegá los de abajo.
+   - **Miniatura** (si Studio te deja una por idioma) → `miniatura_en.jpg`.
+4. Repetí con **Portugués (Brasil)** y los archivos `_pt`.
+5. Publicar. En el reproductor: engranaje → *Pista de audio* para cambiar de idioma.
+
+Si no te aparece la opción **Audio** (YouTube la va habilitando por canal), cargá igual los subtítulos y el título/descripción.
+
+## 🇺🇸 Inglés
 **Título**
 ```
 Fiat, Peugeot and Jeep: the giant that lost €22 billion (and still rules Argentina)
@@ -35,10 +53,8 @@ Real photos from Wikimedia Commons (credits in the sources). The narration uses 
 
 #Stellantis #Fiat #Peugeot #Jeep
 ```
-**Subtítulos:** `subtitulos_en.srt`
 
-## Portugués (Brasil)
-
+## 🇧🇷 Portugués (Brasil)
 **Título**
 ```
 Fiat, Peugeot e Jeep: a gigante que perdeu €22 bilhões (e ainda reina no Brasil)
@@ -70,4 +86,3 @@ Fotos reais do Wikimedia Commons (créditos nas fontes). A narração usa voz si
 
 #Stellantis #Fiat #Peugeot #Jeep
 ```
-**Subtítulos:** `subtitulos_pt.srt`

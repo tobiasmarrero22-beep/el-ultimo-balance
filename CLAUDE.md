@@ -136,6 +136,7 @@ tiene que pedirlo ni abrir ningún archivo para subir el vídeo.
   correr dub.py (solo mezcla). Si aún no entra, acortar ese texto en i18n.py. 010: EN máx. x1,13, PT máx. x1,14.
   Solo subtítulos (sin audio, gratis): `python3 pipeline/i18n_srt.py <vídeo> en pt` → `entrega/idiomas/subtitulos_<idioma>.srt` +
   `TRADUCCIONES.md` (título y descripción de META_I18N). Miniaturas traducidas (011): borrar el texto de la imagen y rehacerlo encima.
+  En i18n.py, `EN_TTS`/`PT_TTS` = versión para la voz con los números en palabras (los SRT usan EN/PT con cifras). 011: EN máx. x1,12, PT máx. x1,11.
 - La API de YouTube con clave **no** sube vídeos ni da analíticas privadas: la retención la manda el usuario
   como captura de YouTube Studio.
 - Fuentes tipográficas en `assets/fonts` (Anton, Bebas Neue, Inter Display — OFL).

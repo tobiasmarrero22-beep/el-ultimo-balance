@@ -4,7 +4,7 @@ sys.path.insert(0, "/home/user/el-ultimo-balance/pipeline")
 import dub
 vd, lang, speed, ids = sys.argv[1], sys.argv[2], float(sys.argv[3]), sys.argv[4:]
 ns = {}; exec(open(os.path.join(vd, "i18n.py")).read(), ns)
-voice = ns["VOICES"][lang][0]; texts = ns[lang.upper()]
+voice = ns["VOICES"][lang][0]; texts = {**ns[lang.upper()], **ns.get(lang.upper() + "_TTS", {})}
 A = os.path.join(vd, f"audio_{lang}")
 for sid in ids:
     p = os.path.join(A, f"{sid}.mp3")

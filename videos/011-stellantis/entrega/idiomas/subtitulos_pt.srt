@@ -1,568 +1,564 @@
 1
-00:00:00,000 --> 00:00:05,272
+00:00:00,080 --> 00:00:05,530
 Na Argentina, quase um em cada três carros novos vendidos é da mesma empresa.
 
 2
-00:00:05,272 --> 00:00:06,504
+00:00:05,530 --> 00:00:06,804
 No Brasil, também.
 
 3
-00:00:06,854 --> 00:00:09,656
+00:00:06,884 --> 00:00:09,775
 Essa empresa se chama Stellantis.
 
 4
-00:00:09,656 --> 00:00:15,344
+00:00:09,775 --> 00:00:15,644
 Fiat, Peugeot, Citroën, Jeep, Ram… catorze marcas sob o mesmo teto.
 
 5
-00:00:15,694 --> 00:00:19,312
+00:00:15,724 --> 00:00:19,477
 E em 2025 ela perdeu mais de 22 bilhões de euros.
 
 6
-00:00:19,312 --> 00:00:22,930
+00:00:19,477 --> 00:00:23,230
 O primeiro prejuízo anual de toda a sua história.
 
 7
-00:00:23,280 --> 00:00:28,168
+00:00:23,310 --> 00:00:28,407
 Como uma empresa passa de bater recordes a perder tudo isso em só dois anos?
 
 8
-00:00:28,168 --> 00:00:29,325
+00:00:28,407 --> 00:00:29,614
 E o mais estranho:
 
 9
-00:00:29,325 --> 00:00:34,278
+00:00:29,614 --> 00:00:34,778
 enquanto afundava em meio mundo, na América do Sul continuava sendo a rainha.
 
 10
-00:00:35,228 --> 00:00:36,011
+00:00:35,228 --> 00:00:36,343
 Capítulo um:
 
 11
-00:00:36,011 --> 00:00:37,448
+00:00:36,343 --> 00:00:38,388
 o casamento do século.
 
 12
-00:00:38,348 --> 00:00:39,806
+00:00:38,468 --> 00:00:39,752
 Janeiro de 2021.
 
 13
-00:00:39,806 --> 00:00:42,450
+00:00:39,752 --> 00:00:42,078
 Dois grupos gigantes se unem:
 
 14
-00:00:42,450 --> 00:00:49,468
+00:00:42,078 --> 00:00:48,255
 a francesa PSA, da Peugeot e da Citroën, e a ítalo-americana FCA, da Fiat, da
 
 15
-00:00:49,468 --> 00:00:51,200
+00:00:48,255 --> 00:00:49,779
 Chrysler e da Jeep.
 
 16
-00:00:51,550 --> 00:00:55,173
+00:00:51,550 --> 00:00:55,357
 A FCA, por sua vez, vinha de outra história incrível:
 
 17
-00:00:55,173 --> 00:00:59,753
+00:00:55,357 --> 00:01:00,171
 a Fiat tinha ficado com a Chrysler depois da falência dela em 2009.
 
 18
-00:01:00,103 --> 00:01:02,361
+00:01:00,251 --> 00:01:01,984
 A fusão foi meio a meio:
 
 19
-00:01:02,361 --> 00:01:04,620
+00:01:01,984 --> 00:01:03,717
 nenhuma engoliu a outra.
 
 20
-00:01:04,620 --> 00:01:06,503
+00:01:03,717 --> 00:01:05,162
 Pelo menos no papel.
 
 21
-00:01:06,853 --> 00:01:11,161
+00:01:06,853 --> 00:01:11,315
 Nasce a Stellantis, uma das maiores fabricantes de carros do mundo.
 
 22
-00:01:11,161 --> 00:01:15,212
+00:01:11,315 --> 00:01:15,512
 Catorze marcas, da Fiat e da Peugeot à Maserati e à Alfa Romeo.
 
 23
-00:01:15,562 --> 00:01:16,992
+00:01:15,592 --> 00:01:16,997
 O nome vem do latim:
 
 24
-00:01:16,992 --> 00:01:20,282
+00:01:16,997 --> 00:01:20,230
 "stello", que significa iluminar com estrelas.
 
 25
-00:01:20,282 --> 00:01:24,574
+00:01:20,230 --> 00:01:24,447
 A ideia era que, juntas, todas essas marcas brilhassem mais.
 
 26
-00:01:24,924 --> 00:01:30,044
+00:01:24,924 --> 00:01:30,196
 No comando colocam Carlos Tavares, um executivo português com fama de mago dos
 
 27
-00:01:30,044 --> 00:01:30,569
+00:01:30,196 --> 00:01:30,737
 números:
 
 28
-00:01:30,569 --> 00:01:35,033
+00:01:30,737 --> 00:01:35,333
 antes, ele tinha resgatado a Peugeot e a Opel quando davam prejuízo.
 
 29
-00:01:35,383 --> 00:01:40,490
+00:01:35,413 --> 00:01:40,655
 Em 2014, a Peugeot estava tão mal que o Estado francês e a chinesa Dongfeng tiveram
 
 30
-00:01:40,490 --> 00:01:42,151
+00:01:40,655 --> 00:01:42,360
 que entrar no capital dela.
 
 31
-00:01:42,151 --> 00:01:45,597
+00:01:42,360 --> 00:01:45,897
 Tavares chegou naquele ano e a trouxe de volta ao lucro.
 
 32
-00:01:45,947 --> 00:01:50,378
-Depois ele comprou a Opel, que dava prejuízo havia quase vinte anos nas mãos da
+00:01:45,977 --> 00:01:50,750
+Depois comprou a Opel, que dava prejuízo havia quase vinte anos com a General
 
 33
-00:01:50,378 --> 00:01:51,220
-General Motors.
+00:01:50,750 --> 00:01:51,184
+Motors.
 
 34
-00:01:51,220 --> 00:01:53,183
-No ano seguinte, a Opel já lucrava.
+00:01:51,184 --> 00:01:52,795
+Um ano depois, já lucrava.
 
 35
-00:01:53,533 --> 00:01:55,262
+00:01:53,533 --> 00:01:54,989
 A receita dele era simples:
 
 36
-00:01:55,262 --> 00:01:59,425
+00:01:54,989 --> 00:01:58,495
 cortar custos em tudo o que fosse possível e aumentar as margens.
 
 37
-00:01:59,425 --> 00:02:01,474
+00:01:58,495 --> 00:02:00,220
 E no começo funcionou muito bem.
 
 38
-00:02:02,424 --> 00:02:03,338
+00:02:02,424 --> 00:02:03,704
 Capítulo dois:
 
 39
-00:02:03,338 --> 00:02:05,167
+00:02:03,704 --> 00:02:06,264
 a máquina de fazer dinheiro.
 
 40
-00:02:06,067 --> 00:02:11,659
-Em 2023, a Stellantis lucra cerca de 18,6 bilhões de euros.
+00:02:06,344 --> 00:02:10,948
+Em 2023, a Stellantis lucra 18,6 bilhões de euros.
 
 41
-00:02:11,659 --> 00:02:12,702
+00:02:10,948 --> 00:02:11,961
 Um recorde.
 
 42
-00:02:13,052 --> 00:02:15,638
+00:02:13,052 --> 00:02:15,751
 Boa parte vinha dos Estados Unidos:
 
 43
-00:02:15,638 --> 00:02:19,922
+00:02:15,751 --> 00:02:20,222
 picapes Ram e Jeeps vendidos a preços cada vez mais altos.
 
 44
-00:02:20,272 --> 00:02:23,692
+00:02:20,302 --> 00:02:23,690
 E a Jeep é uma marca com mais de oitenta anos de história:
 
 45
-00:02:23,692 --> 00:02:28,527
+00:02:23,690 --> 00:02:28,479
 nasceu como o utilitário do Exército dos Estados Unidos na Segunda Guerra Mundial.
 
 46
-00:02:28,877 --> 00:02:30,903
+00:02:28,877 --> 00:02:30,943
 Os acionistas estavam felizes.
 
 47
-00:02:30,903 --> 00:02:35,564
+00:02:30,943 --> 00:02:35,695
 Mas dentro da empresa, e nas concessionárias, algo começava a rachar.
 
 48
-00:02:35,914 --> 00:02:40,972
+00:02:35,914 --> 00:02:41,336
 Porque quando você sobe tanto os preços e corta tanto por dentro, cedo ou tarde
 
 49
-00:02:40,972 --> 00:02:42,445
+00:02:41,336 --> 00:02:42,915
 alguém para de comprar.
 
 50
-00:02:43,395 --> 00:02:44,440
+00:02:43,395 --> 00:02:44,858
 Capítulo três:
 
 51
-00:02:44,440 --> 00:02:45,485
+00:02:44,858 --> 00:02:46,321
 as rachaduras.
 
 52
-00:02:46,385 --> 00:02:49,076
+00:02:46,401 --> 00:02:49,165
 Em 2024, as vendas nos Estados Unidos caem.
 
 53
-00:02:49,076 --> 00:02:54,272
+00:02:49,165 --> 00:02:54,500
 As concessionárias ficam lotadas de carros encalhados e a empresa precisa avisar os
 
 54
-00:02:54,272 --> 00:02:56,964
+00:02:54,500 --> 00:02:57,264
 investidores de que vai lucrar muito menos.
 
 55
-00:02:57,314 --> 00:03:02,520
+00:02:57,344 --> 00:03:02,694
 Em setembro de 2024, as próprias concessionárias da empresa nos Estados Unidos
 
 56
-00:03:02,520 --> 00:03:07,058
+00:03:02,694 --> 00:03:07,358
 escreveram uma carta aberta criticando Tavares pelo rumo do negócio.
 
 57
-00:03:07,408 --> 00:03:14,804
+00:03:07,438 --> 00:03:14,449
 Na Itália, berço da Fiat, a produção da Stellantis em 2024 caiu ao nível mais baixo
 
 58
-00:03:14,804 --> 00:03:18,458
+00:03:14,449 --> 00:03:17,913
 desde 1956, segundo o sindicato FIM-CISL.
 
 59
-00:03:18,808 --> 00:03:22,634
+00:03:18,808 --> 00:03:22,230
 O lucro daquele ano fica em cerca de 5,5 bilhões.
 
 60
-00:03:22,634 --> 00:03:26,226
+00:03:22,230 --> 00:03:25,443
 Setenta por cento a menos que no ano anterior.
 
 61
-00:03:26,576 --> 00:03:30,507
-E em 1º de dezembro de 2024, Carlos Tavares deixa a empresa.
+00:03:26,576 --> 00:03:30,474
+Em 1º de dezembro de 2024, Tavares deixa a empresa.
 
 62
-00:03:30,507 --> 00:03:34,831
-A Stellantis falou em "pontos de vista diferentes" com o conselho.
+00:03:30,474 --> 00:03:34,831
+A Stellantis falou em "visões diferentes" com o conselho.
 
 63
-00:03:35,181 --> 00:03:40,243
+00:03:35,181 --> 00:03:40,463
 Segundo a Reuters, o conselho temia que tantos cortes estivessem afetando a
 
 64
-00:03:40,243 --> 00:03:43,618
+00:03:40,463 --> 00:03:43,984
 qualidade dos carros e a chegada de modelos novos.
 
 65
-00:03:43,968 --> 00:03:47,922
+00:03:44,064 --> 00:03:48,123
 Mas a verdadeira conta daqueles anos ainda não tinha chegado.
 
 66
-00:03:47,922 --> 00:03:50,839
+00:03:48,123 --> 00:03:51,117
 E quando chegou, foi a maior da sua história.
 
 67
-00:03:51,789 --> 00:03:53,112
+00:03:51,789 --> 00:03:53,460
 Capítulo quatro:
 
 68
-00:03:53,112 --> 00:03:53,774
+00:03:53,460 --> 00:03:54,296
 o rombo.
 
 69
-00:03:54,674 --> 00:03:56,877
+00:03:54,674 --> 00:03:56,926
 6 de fevereiro de 2026.
 
 70
-00:03:56,877 --> 00:04:02,911
+00:03:56,926 --> 00:04:03,094
 A Stellantis anuncia baixas contábeis de 22,2 bilhões de euros.
 
 71
-00:04:02,911 --> 00:04:08,179
+00:04:03,094 --> 00:04:08,479
 Naquele dia, a ação chega a cair 25% na Bolsa de Milão.
 
 72
-00:04:08,529 --> 00:04:10,278
+00:04:08,559 --> 00:04:10,438
 De onde saía um número desses?
 
 73
-00:04:10,278 --> 00:04:14,825
+00:04:10,438 --> 00:04:15,325
 Principalmente de planos de carros elétricos que já não iam render o esperado.
 
 74
-00:04:15,175 --> 00:04:17,808
+00:04:15,405 --> 00:04:18,054
 No fim do mês chegam os resultados:
 
 75
-00:04:17,808 --> 00:04:22,472
+00:04:18,054 --> 00:04:22,748
 um prejuízo líquido de cerca de 22,3 bilhões de euros em 2025.
 
 76
-00:04:22,472 --> 00:04:26,460
+00:04:22,748 --> 00:04:26,760
 O primeiro prejuízo anual desde que a empresa existe.
 
 77
-00:04:26,810 --> 00:04:30,179
+00:04:26,840 --> 00:04:30,479
 E naquele ano, nem um euro de dividendos para os acionistas.
 
 78
-00:04:30,529 --> 00:04:31,754
+00:04:30,559 --> 00:04:31,824
 A explicação oficial?
 
 79
-00:04:31,754 --> 00:04:36,534
+00:04:31,824 --> 00:04:36,760
 O novo chefe, Antonio Filosa, disse que eles tinham superestimado a velocidade com
 
 80
-00:04:36,534 --> 00:04:39,333
+00:04:36,760 --> 00:04:39,650
 que as pessoas iam migrar para o carro elétrico.
 
 81
-00:04:39,683 --> 00:04:46,076
+00:04:39,730 --> 00:04:46,345
 Enquanto isso, desde abril de 2025, os Estados Unidos cobravam tarifas de 25% sobre
 
 82
-00:04:46,076 --> 00:04:47,462
+00:04:46,345 --> 00:04:47,780
 carros importados.
 
 83
-00:04:47,462 --> 00:04:51,699
+00:04:47,780 --> 00:04:52,164
 Outro golpe para uma empresa que fabrica em meio mundo.
 
 84
-00:04:52,049 --> 00:04:57,217
+00:04:52,244 --> 00:04:57,466
 E reconheceu problemas de qualidade que ligou aos cortes da fase anterior.
 
 85
-00:04:57,217 --> 00:04:57,776
+00:04:57,466 --> 00:04:58,031
 Ou seja:
 
 86
-00:04:57,776 --> 00:05:02,106
+00:04:58,031 --> 00:05:02,406
 a receita dos lucros recordes também explicava parte do rombo.
 
 87
-00:05:02,456 --> 00:05:04,776
+00:05:02,486 --> 00:05:04,799
 Agora, a parte que quase ninguém conta:
 
 88
-00:05:04,776 --> 00:05:09,534
+00:05:04,799 --> 00:05:09,543
 enquanto tudo isso acontecia na Europa e nos Estados Unidos, na América do Sul a
 
 89
-00:05:09,534 --> 00:05:11,259
+00:05:09,543 --> 00:05:11,263
 empresa continuava arrasando.
 
 90
-00:05:12,209 --> 00:05:13,264
+00:05:12,209 --> 00:05:13,495
 Capítulo cinco:
 
 91
-00:05:13,264 --> 00:05:14,952
+00:05:13,495 --> 00:05:15,553
 a exceção sul-americana.
 
 92
-00:05:15,852 --> 00:05:23,191
+00:05:15,852 --> 00:05:23,357
 Em 2025, a Stellantis vendeu quase um em cada quatro carros novos da América do Sul.
 
 93
-00:05:23,191 --> 00:05:24,501
+00:05:23,357 --> 00:05:24,697
 No Brasil, 29%.
 
 94
-00:05:24,501 --> 00:05:26,249
+00:05:24,697 --> 00:05:26,484
 Na Argentina, 30,5%.
 
 95
-00:05:26,599 --> 00:05:29,394
+00:05:26,599 --> 00:05:29,285
 A Fiat é a marca líder da região.
 
 96
-00:05:29,394 --> 00:05:35,324
+00:05:29,285 --> 00:05:34,984
 No Brasil, picapes como a Strada, a Toro e a Titano dominam o mercado.
 
 97
-00:05:35,674 --> 00:05:41,387
+00:05:35,674 --> 00:05:41,214
 A Strada, uma picape pequena fabricada no Brasil, foi por vários anos seguidos o
 
 98
-00:05:41,387 --> 00:05:43,458
+00:05:41,214 --> 00:05:43,223
 veículo mais vendido do país.
 
 99
-00:05:43,808 --> 00:05:47,109
+00:05:43,808 --> 00:05:46,977
 E na Argentina ela tem duas fábricas:
 
 100
-00:05:47,109 --> 00:05:52,998
+00:05:46,977 --> 00:05:52,631
 em Ferreyra, Córdoba, saem o Fiat Cronos, a Titano e a Ram Dakota.
 
 101
-00:05:52,998 --> 00:05:57,548
+00:05:52,631 --> 00:05:56,000
 Em El Palomar, Buenos Aires, os Peugeot 208 e 2008.
 
 102
-00:05:57,898 --> 00:06:04,674
+00:05:57,898 --> 00:06:04,895
 Só em 2025, a fábrica de Córdoba ganhou cerca de 1.800 trabalhadores e virou um polo
 
 103
-00:06:04,674 --> 00:06:07,093
+00:06:04,895 --> 00:06:07,393
 de picapes para toda a região.
 
 104
-00:06:07,443 --> 00:06:13,609
+00:06:07,473 --> 00:06:13,814
 De El Palomar saíram até os primeiros carros eletrificados que a Argentina fabricou
 
 105
-00:06:13,609 --> 00:06:14,649
+00:06:13,814 --> 00:06:14,884
 para exportar:
 
 106
-00:06:14,649 --> 00:06:16,952
+00:06:14,884 --> 00:06:17,252
 os Peugeot 208 e 2008 híbridos.
 
 107
-00:06:17,302 --> 00:06:22,867
+00:06:17,332 --> 00:06:23,125
 Segundo a própria empresa, em 2025 ela passou de um milhão de veículos vendidos na
 
 108
-00:06:22,867 --> 00:06:23,885
+00:06:23,125 --> 00:06:24,185
 América do Sul.
 
 109
-00:06:24,235 --> 00:06:25,624
+00:06:24,265 --> 00:06:25,686
 Por que lá dá certo?
 
 110
-00:06:25,624 --> 00:06:26,318
+00:06:25,686 --> 00:06:26,397
 Uma pista:
 
 111
-00:06:26,318 --> 00:06:32,083
+00:06:26,397 --> 00:06:32,295
 na região ela vende carros acessíveis e populares, exatamente o que o mercado pede.
 
 112
-00:06:32,083 --> 00:06:34,444
+00:06:32,295 --> 00:06:34,712
 E outra pista, ainda mais curiosa:
 
 113
-00:06:34,444 --> 00:06:35,833
+00:06:34,712 --> 00:06:36,133
 quem é o novo chefe.
 
 114
-00:06:36,783 --> 00:06:37,814
+00:06:36,783 --> 00:06:38,080
 Capítulo seis:
 
 115
-00:06:37,814 --> 00:06:38,403
+00:06:38,080 --> 00:06:38,821
 e agora?
 
 116
-00:06:39,303 --> 00:06:44,052
+00:06:39,303 --> 00:06:44,223
 Antonio Filosa, o italiano que assumiu o comando em 2025, foi presidente da
 
 117
-00:06:44,052 --> 00:06:47,662
+00:06:44,223 --> 00:06:47,962
 Stellantis para a América do Sul antes de dirigir a Jeep.
 
 118
-00:06:48,012 --> 00:06:48,570
+00:06:48,042 --> 00:06:48,610
 Ou seja:
 
 119
-00:06:48,570 --> 00:06:54,296
+00:06:48,610 --> 00:06:54,436
 o homem que precisa salvar a gigante vem justamente da única região onde ela nunca
 
 120
-00:06:54,296 --> 00:06:55,483
+00:06:54,436 --> 00:06:55,643
 deixou de lucrar.
 
 121
-00:06:55,833 --> 00:06:57,147
+00:06:55,833 --> 00:06:57,192
 E há alguns sinais:
 
 122
-00:06:57,147 --> 00:07:02,890
+00:06:57,192 --> 00:07:03,129
 no fim de 2025, a Jeep interrompeu uma sequência de seis anos seguidos de queda nas
 
 123
-00:07:02,890 --> 00:07:04,688
+00:07:03,129 --> 00:07:04,988
 vendas nos Estados Unidos.
 
 124
-00:07:05,038 --> 00:07:11,380
+00:07:05,068 --> 00:07:11,555
 Além disso, em 2023 a Stellantis comprou cerca de 21% da Leapmotor, uma fabricante
 
 125
-00:07:11,380 --> 00:07:16,872
+00:07:11,555 --> 00:07:17,172
 chinesa de carros elétricos, para vender os modelos dela fora da China.
 
 126
-00:07:17,222 --> 00:07:18,968
+00:07:17,252 --> 00:07:18,935
 Mas o caminho é longo.
 
 127
-00:07:18,968 --> 00:07:25,478
+00:07:18,935 --> 00:07:25,211
 Só com as tarifas dos Estados Unidos, a empresa calcula um impacto de cerca de 1,6
 
 128
-00:07:25,478 --> 00:07:27,383
+00:07:25,211 --> 00:07:27,048
 bilhão de euros em 2026.
 
 129
-00:07:27,733 --> 00:07:29,176
+00:07:27,733 --> 00:07:29,167
 Filosa resumiu assim:
 
 130
-00:07:29,176 --> 00:07:33,504
+00:07:29,167 --> 00:07:33,470
 este ano, o objetivo é fechar as falhas de execução do passado.
 
 131
-00:07:33,504 --> 00:07:34,809
+00:07:33,470 --> 00:07:34,767
 Em outras palavras:
 
 132
-00:07:34,809 --> 00:07:36,458
+00:07:34,767 --> 00:07:36,406
 consertar o que quebrou.
 
 133
-00:07:36,808 --> 00:07:42,928
+00:07:36,808 --> 00:07:43,181
 Então, da próxima vez que você vir um Fiat, um Peugeot ou um Jeep na rua, lembre:
 
 134
-00:07:42,928 --> 00:07:46,630
+00:07:43,181 --> 00:07:47,037
 é de uma empresa que perdeu 22 bilhões em um ano.
 
 135
-00:07:46,630 --> 00:07:47,990
+00:07:47,037 --> 00:07:48,453
 Ela vai se salvar?
 
 136
-00:07:47,990 --> 00:07:49,425
+00:07:48,453 --> 00:07:49,948
 Ninguém sabe ainda.
 
 137
-00:07:49,775 --> 00:07:54,405
-E que, mesmo assim, no Brasil e na Argentina continua vendendo quase um em cada três
+00:07:50,028 --> 00:07:54,521
+E que ainda vende quase um em cada três carros no Brasil e na Argentina.
 
 138
-00:07:54,405 --> 00:07:54,791
-carros.
-
-139
-00:07:55,141 --> 00:07:58,698
+00:07:55,141 --> 00:07:58,662
 Você tem ou já teve um carro de alguma das suas catorze marcas?
 
-140
-00:07:58,698 --> 00:08:00,391
+139
+00:07:58,662 --> 00:08:00,339
 Conta pra mim nos comentários.
 
-141
-00:08:00,741 --> 00:08:05,696
+140
+00:08:00,741 --> 00:08:05,912
 E se você gosta dessas histórias de empresas que sobem e caem, se inscreve:
 
-142
-00:08:05,696 --> 00:08:07,612
+141
+00:08:05,912 --> 00:08:07,912
 toda semana, um novo balanço.
 

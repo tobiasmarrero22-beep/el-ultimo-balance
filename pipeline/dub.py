@@ -54,7 +54,8 @@ def main(vd, lang):
     if missing: sys.exit(f"faltan traducciones: {missing}")
     A = os.path.join(vd, f"audio_{lang}"); os.makedirs(A, exist_ok=True)
     with cf.ThreadPoolExecutor(4) as ex:
-        futs = {ex.submit(gen, texts[sid], voice, lang, speed, os.path.join(A, f"{sid}.mp3")): sid for sid, *_ in plan}
+        say = ns.get(lang.upper() + "_TTS", {})  # versión para la voz (números en palabras); el SRT usa texts
+        futs = {ex.submit(gen, say.get(sid, texts[sid]), voice, lang, speed, os.path.join(A, f"{sid}.mp3")): sid for sid, *_ in plan}
         for f in cf.as_completed(futs):
             try: f.result()
             except Exception as e: sys.exit(f"FALLO {futs[f]}: {e}")
