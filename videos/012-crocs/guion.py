@@ -29,11 +29,12 @@ SPEED = 1.0
 
 # Fotos reales (Wikimedia Commons, solo dominio público / CC0 / CC BY, con crédito). Las que no aparezcan van como escenas de código.
 IMAGES = {
-    "crocs_clog": "Zueco Crocs clásico (foto real)", "crocs_many": "Crocs de muchos colores (foto real)",
+    "crocs_clog": "Photorealistic product photo of a single bright lime-green foam clog shoe with round ventilation holes on top and a heel strap, resting on a weathered wooden boat deck, soft morning light, shallow depth of field, cinematic 16:9, no text, no logos",
+    "crocs_many": "Photorealistic wide shot of a store wall filled with rows of colorful foam clog shoes with round ventilation holes, every color of the rainbow, bright retail lighting, cinematic 16:9, no text, no logos",
     "crocs_store": "Tienda de Crocs (foto real)", "crocs_feet": "Pies con Crocs (foto real)",
     "boat_show": "Salón náutico / velero (foto real)", "boulder": "Boulder, Colorado (foto real)",
-    "nasdaq": "Nasdaq MarketSite (foto real)", "jibbitz": "Jibbitz (foto real)", "nurses": "Personal sanitario (foto real)",
-    "runway": "Pasarela de moda (foto real)", "warehouse": "Almacén con cajas (foto real)", "wall_street": "Wall Street (foto real)",
+    "nasdaq": "Nasdaq MarketSite (foto real)", "jibbitz": "Photorealistic close-up of a child's colorful foam clog shoe decorated with small playful charms plugged into its round holes (flowers, stars, smiley faces), on a kitchen table, warm light, cinematic 16:9, no text, no logos", "nurses": "Photorealistic hospital corridor, tired doctors and nurses in blue scrubs wearing colorful foam clog shoes, face masks, 2020 pandemic atmosphere, cinematic documentary still, 16:9, no text, no logos",
+    "runway": "Photorealistic high-fashion runway show in Paris, model walking toward camera wearing oversized chunky platform foam clogs, audience with phones on both sides, dramatic lighting, cinematic 16:9, no text, no logos", "warehouse": "Photorealistic huge warehouse with endless shelves stacked to the ceiling with unsold shoe boxes, dim lighting, forklift, sense of excess inventory, cinematic 16:9, no text, no logos", "wall_street": "Photorealistic 2008 financial crisis scene, stressed stock trader holding his head in front of screens full of red falling charts, cinematic documentary still, 16:9, no text, no logos",
 }
 
 def I(key, cap=None, pop=None, **kw):
@@ -114,6 +115,8 @@ SCENES = [
     dict(id="s28", text="Capítulo cuatro: el rescate.", visual=T("04", "El rescate")),
     dict(id="s29", text="Primero, el dinero: en enero de dos mil catorce, el fondo Blackstone mete doscientos millones de dólares en la empresa.",
          visual=dict(type="num", start=0, end=200, suffix=" M$", label="INVERSIÓN DE BLACKSTONE (ENERO DE 2014)")),
+    dict(id="s29b", text="A cambio se queda con acciones preferentes y dos asientos en el consejo. Ahora alguien vigilaba cada dólar.",
+         visual=dict(type="stamp", text="BLACKSTONE", stamp="2014", col="yellow")),
     dict(id="s30", text="Ese año llega Andrew Rees, que en dos mil diecisiete se convierte en director general. Su receta es casi lo contrario de la de dos mil siete.",
          visual=dict(type="timeline", title="ANDREW REES", points=[["2014", "Llega como presidente"], ["2017", "Director general"], ["2018", "Cierra las fábricas propias"]], hl=1)),
     dict(id="s31", text="Cierra unas ciento sesenta tiendas, recorta modelos y vuelve a lo esencial: el zueco clásico de siempre, el mismo que todos llamaban feo.",
@@ -159,6 +162,8 @@ SCENES = [
          visual=dict(type="versus", title="2025", left=["CROCS", "+1,5 %"], right=["HEYDUDE", "−13,3 %"], mid="VS", lcol="yellow", rcol="red"), cierra="P6", abre="P7: ¿Durará esta vez la moda de Crocs?"),
     dict(id="s48", text="Y en dos mil veintiséis, la empresa vuelve a crecer: en el tercer trimestre supera los mil millones de dólares y mejora su pronóstico por tercera vez en el año.",
          visual=dict(type="num", start=0, end=1000, prefix="+", suffix=" M$", label="INGRESOS DEL 3.ER TRIMESTRE DE 2026")),
+    dict(id="s48b", text="En ese trimestre, la marca Crocs vende ochocientos setenta y tres millones de dólares. Y HEYDUDE, la que casi la hunde, vuelve a crecer: un seis por ciento.",
+         visual=dict(type="versus", title="3.ER TRIMESTRE DE 2026", left=["CROCS", "873 M$"], right=["HEYDUDE", "+6 %"], mid="+", lcol="yellow", rcol="yellow")),
     dict(id="s49", text="¿Durará? Nadie lo sabe. La moda de lo feo ya se apagó una vez. Pero esta vez Crocs aprendió algo: no fabricar como si la fiesta no fuera a terminar nunca.",
          visual=I("crocs_many", pop=["¿DURARÁ?"])),
 
@@ -218,8 +223,30 @@ FALLBACK.update({
     "b03": dict(type="num", start=0, end=4000, prefix="+", suffix=" M$", label="AL AÑO"), "b04": dict(type="quote", text="LA HISTORIA COMPLETA\nEN EL CANAL 👆"),
 })
 
-THUMBS = []  # se definen al tener las fotos
-THUMBS_TOP = []
+THUMBS = [
+    dict(img="crocs_clog", zoom=1.05, cx=0.35, shade=["right", 225, 0.6], items=[
+        ["text", 1240, 50, "EL PEOR", 170, "white", "ra"], ["text", 1240, 250, "INVENTO", 170, "red", "ra"],
+        ["badge", 760, 490, 1240, 620, "4.000 M$", 100]]),
+    dict(img="crocs_many", zoom=1.05, cx=0.5, shade=["left", 230, 0.62], items=[
+        ["text", 45, 60, "1 $", 200, "red", "la"], ["text", 45, 300, "→ 4.000 M$", 150, "yellow", "la"]]),
+    dict(img="wall_street", zoom=1.1, cx=0.62, shade=["left", 220, 0.55], items=[
+        ["text", 45, 60, "VALÍA", 170, "white", "la"], ["text", 45, 270, "1 DÓLAR", 180, "red", "la"], ["crash", 60, 520, 560, 690]]),
+    dict(img="warehouse", zoom=1.05, cx=0.6, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "EL ERROR", 170, "white", "la"], ["text", 45, 270, "QUE CASI", 140, "white", "la"], ["text", 45, 440, "LOS MATA", 170, "red", "la"]]),
+    dict(img="runway", zoom=1.1, cx=0.62, shade=["left", 220, 0.55], items=[
+        ["text", 45, 60, "850 $", 210, "yellow", "la"], ["text", 45, 320, "POR UNOS", 130, "white", "la"], ["text", 45, 480, "CROCS", 150, "white", "la"]]),
+    dict(img="crocs_many", zoom=1.05, cx=0.5, shade=["left", 230, 0.62], items=[
+        ["text", 45, 60, "DE FEO", 170, "white", "la"], ["text", 45, 270, "A MINA", 170, "yellow", "la"], ["text", 45, 470, "DE ORO", 170, "yellow", "la"]]),
+    dict(img="crocs_clog", zoom=1.05, cx=0.35, shade=["right", 200, 0.55], items=[
+        ["stamp", "PEOR INVENTO", 900, 250, -10, 120], ["badge", 760, 470, 1240, 600, "+4.000 M$", 100]]),
+    dict(img="jibbitz", zoom=1.05, cx=0.7, shade=["left", 220, 0.6], items=[
+        ["text", 45, 60, "10 M$", 210, "yellow", "la"], ["text", 45, 320, "POR ESTO", 160, "white", "la"]]),
+    dict(img="nurses", zoom=1.05, cx=0.4, shade=["right", 220, 0.55], items=[
+        ["text", 1240, 60, "860.000", 170, "yellow", "ra"], ["text", 1240, 270, "GRATIS", 180, "white", "ra"]]),
+    dict(img="wall_street", zoom=1.1, cx=0.62, shade=["left", 220, 0.55], items=[
+        ["text", 45, 60, "DE 75 $", 170, "white", "la"], ["text", 45, 270, "A 1 $", 210, "red", "la"]]),
+]
+THUMBS_TOP = [1, 7, 2]
 
 META = {
     "code": "012",
@@ -240,9 +267,10 @@ META = {
         "Refinery29 / Dazed (2017-2018): Crocs de Balenciaga en París y preventa a 850 $",
         "Crocs (2020): programa «A Free Pair for Healthcare»; The New York Times / Fox Business (septiembre de 2020): Bad Bunny × Crocs",
         "Crocs, formularios 10-K de 2024 y 2025 y comunicado del 3.er trimestre de 2026 (SEC): ingresos, HEYDUDE y depreciación",
+        "Fotos vía Wikimedia Commons con licencia CC BY: «Crocs store in Toronto», de bargainmoose (CC BY 2.0); «Example of wear and tear on Crocs», de Baron Maddock (CC BY 4.0); «Caribbean Sunset», de Woody Hibbard (CC BY 2.0)",
     ],
-    "disclosure": "Fotos reales de Wikimedia Commons (créditos en las fuentes). Narración con voz sintética.",
-    "altered": "No",
+    "disclosure": "Las escenas de zuecos, almacén, pasarela, hospital y bolsa son ilustraciones generadas con IA: no muestran productos, personas ni lugares reales. Las fotos de tiendas y lugares son reales (Wikimedia Commons, créditos en las fuentes). Narración con voz sintética.",
+    "altered": "Sí",
     "hashtags": "#Crocs #BadBunny #Negocios",
     "tags": ["crocs", "historia de crocs", "crocs bad bunny", "crocs balenciaga", "heydude", "zapatos crocs", "peores inventos",
              "historia de empresas", "auge y caída", "negocios", "marcas", "el último balance"],
