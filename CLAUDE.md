@@ -123,6 +123,8 @@ tiene que pedirlo ni abrir ningún archivo para subir el vídeo.
   Wikimedia limita mucho las peticiones: pausas de 3 s y esperas largas (el script ya lo hace). Ideal para temas históricos (NASA, Ejército de
   EE. UU.: dominio público). Créditos en `videos/NNN/fotos_creditos.json` y en `META["sources"]` (las CC BY con autor y licencia). No poner
   fechas en `cap` si la foto no es de ese día. `num` ajusta su etiqueta al ancho (antes se cortaba si pasaba de ~60 caracteres).
+  18-nov (012): Wikimedia respondió «too many requests» durante más de 30 min → no esperar: generar con nano-banana-2-lite las que
+  falten (7 de 7 bien) y dejar FALLBACK en el resto. Si un render se hizo con fallbacks, matarlo y relanzar: las escenas cambiadas se rehacen solas.
 - **Animación nueva en render.py (007):** escenas `board` (tablero de salidas que gira a CANCELADO), `route` (mapa con rutas
   y avión), `headline` (titular de prensa con palabra subrayada; parafrasear y citar fuente); en escenas `img`: `pop=[...]`
   (palabras clave que saltan, con clic de sonido), `shake=True`, `pop_col="red"`; barrido con desenfoque entre imágenes

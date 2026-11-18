@@ -257,7 +257,7 @@ META = {
         "Crocs: de valer 1 dólar en bolsa a facturar 4.000 millones",
         "El zapato más feo del mundo casi quiebra… y hoy es una mina de oro",
     ],
-    "description": "En 2010, la revista Time puso a Crocs entre los 50 peores inventos de la historia. Dos años antes, su acción había pasado de 75 dólares a casi 1 y sus auditores dudaban de que sobreviviera. Hoy vende más de 4.000 millones de dólares al año. Cómo un zapato para barcos se volvió la locura de 2007, el error que casi lo mata, el rescate, la pasarela de Balenciaga, los Crocs de Bad Bunny y la apuesta de 2.500 millones que casi repite la historia.",
+    "description": "En 2010, la revista Time puso a Crocs entre los 50 peores inventos de la historia. Poco antes, su acción había pasado de 75 dólares a casi 1 y sus auditores dudaban de que sobreviviera. Hoy vende más de 4.000 millones de dólares al año. Cómo un zapato para barcos se volvió la locura de 2007, el error que casi lo mata, el rescate, la pasarela de Balenciaga, los Crocs de Bad Bunny y la apuesta de 2.500 millones que casi repite la historia.",
     "sources": [
         "Crocs: comunicados de resultados anuales 2005-2008 y salida a bolsa (febrero de 2006)",
         "Crocs, informe anual 2008 (marzo de 2009): advertencia de los auditores; Reuters, NBC News y Time (2008-2009): caída de la acción y recortes",
